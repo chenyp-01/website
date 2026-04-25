@@ -58,17 +58,17 @@ const resolvedLink = computed(() => {
   --m-nav-box-gap: 12px;
 
   display: block;
-  border: 1px solid var(--vp-c-bg-soft);
   border-radius: 8px;
   height: 100%;
   text-decoration: inherit;
   background-color: var(--vp-c-bg-alt);
-  transition: all 0.25s;
+  transition: all 0.3s ease;
+
   &:hover {
-    box-shadow: var(--vp-shadow-2);
-    border-color: var(--vp-c-brand);
     text-decoration: initial;
     background-color: var(--vp-c-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   }
 
   .box {
@@ -126,6 +126,11 @@ const resolvedLink = computed(() => {
     font-size: 12px;
     color: var(--vp-c-text-2);
   }
+}
+
+/* 首页板块卡片 dark 模式阴影 */
+:global(.dark) .m-nav-link:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 960px) {

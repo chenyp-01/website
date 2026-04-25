@@ -31,7 +31,8 @@ export default defineConfig({
     nav,
     sidebar,
 
-    /* 右侧大纲配置 */
+    /* 大纲配置 */
+    aside: 'left',
     outline: {
       level: 'deep',
       label: '目录',
