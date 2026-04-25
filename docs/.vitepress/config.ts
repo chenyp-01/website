@@ -78,6 +78,6 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [MarkdownPreview()],
+    // plugins: [MarkdownPreview()],
   },
 })

@@ -12,6 +12,15 @@ const props = defineProps<{
   link: NavLink['link']
 }>()
 
+const isExternal = computed(() => {
+  return /^https?:\/\//.test(props.link)
+})
+
+const normalizeInternalLink = (link: string) => {
+  // For VitePress pages, prefer route path over direct .md source path.
+  return link.replace(/\.md(?=($|[?#]))/i, '')
+}
+
 const formatTitle = computed(() => {
   if (!props.title) {
     return ''
@@ -23,17 +32,21 @@ const svg = computed(() => {
   if (typeof props.icon === 'object') return props.icon.svg
   return ''
 })
-// 处理article链接的 base 路径
+
 const resolvedLink = computed(() => {
-  return withBase(props.link)
+  if (isExternal.value) return props.link
+  return withBase(normalizeInternalLink(props.link))
 })
 </script>
 
 <template>
-  <!-- 原先的绝对路径 -->
-  <!-- <a v-if="link" class="m-nav-link" :href="link" target="_blank" rel="noreferrer"> -->
-  <!-- 对/article/、/others/链接使用相对路径 -->
-  <a v-if="link" class="m-nav-link" :href="resolvedLink" target="_blank" rel="noreferrer">
+  <a
+    v-if="link"
+    class="m-nav-link"
+    :href="resolvedLink"
+    :target="isExternal ? '_blank' : undefined"
+    :rel="isExternal ? 'noreferrer' : undefined"
+  >
     <article class="box">
       <div class="box-header">
         <div v-if="svg" class="icon" v-html="svg"></div>
