@@ -12,7 +12,7 @@ const { visitor } = theme.value
     v-if="!DEV && visitor"
     class="visitor"
     :src="`https://visitor-badge.laobi.icu/badge?page_id=${visitor.badgeId}`"
-    onerror="this.style.display='none'"
+    onerror="this.style.display = 'none'"
   />
 </template>
 

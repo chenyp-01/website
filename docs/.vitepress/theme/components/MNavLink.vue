@@ -41,7 +41,7 @@ const resolvedLink = computed(() => {
           <img
             :src="withBase(icon)"
             :alt="title"
-            onerror="this.parentElement.style.display='none'"
+            onerror="this.parentElement.style.display = 'none'"
           />
         </div>
         <h5 v-if="title" :id="formatTitle" class="title">{{ title }}</h5>

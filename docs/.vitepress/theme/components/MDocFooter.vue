@@ -25,7 +25,7 @@ const isDocFooterVisible = computed(() => {
         class="visitor"
         :src="`https://visitor-badge.laobi.icu/badge?page_id=${visitor.badgeId}.${pageId}`"
         title="当前页面累计访问数"
-        onerror="this.style.display='none'"
+        onerror="this.style.display = 'none'"
       />
       <p v-if="footer?.message">{{ footer.message }}</p>
     </div>

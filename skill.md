@@ -502,42 +502,42 @@ pageId: custom-page-id
 ## 16. 最小改造清单（10 步快速换成你自己的站）
 
 1. 改站点名称和描述  
-文件：`docs/.vitepress/config.ts`  
-修改 `title`、`description`
+   文件：`docs/.vitepress/config.ts`  
+   修改 `title`、`description`
 
 2. 替换站点 logo  
-文件：`docs/public/logo.png`、`docs/.vitepress/config.ts`  
-把 `logo.png` 换成你的图，然后确认 `themeConfig.logo` 指向 `/logo.png`
+   文件：`docs/public/logo.png`、`docs/.vitepress/config.ts`  
+   把 `logo.png` 换成你的图，然后确认 `themeConfig.logo` 指向 `/logo.png`
 
 3. 替换 favicon  
-文件：`docs/public/favicon.ico`、`docs/.vitepress/configs/head.ts`  
-确认 `head.ts` 中图标链接是 `/favicon.ico`
+   文件：`docs/public/favicon.ico`、`docs/.vitepress/configs/head.ts`  
+   确认 `head.ts` 中图标链接是 `/favicon.ico`
 
 4. 改首页主视觉文案  
-文件：`docs/index.md`  
-修改 `hero.name`、`hero.text`、`hero.tagline`
+   文件：`docs/index.md`  
+   修改 `hero.name`、`hero.text`、`hero.tagline`
 
 5. 改首页按钮跳转  
-文件：`docs/index.md`  
-修改 `hero.actions` 里的 `text` 与 `link`
+   文件：`docs/index.md`  
+   修改 `hero.actions` 里的 `text` 与 `link`
 
 6. 改首页功能卡片  
-文件：`docs/index.md`  
-修改 `features` 的 `icon/title/details/link`
+   文件：`docs/index.md`  
+   修改 `features` 的 `icon/title/details/link`
 
 7. 改顶部导航菜单  
-文件：`docs/.vitepress/configs/nav.ts`  
-保留你需要的菜单项，删除空白占位项
+   文件：`docs/.vitepress/configs/nav.ts`  
+   保留你需要的菜单项，删除空白占位项
 
 8. 改导航页站点数据  
-文件：`docs/nav/data.ts`  
-按你的分类替换 `NAV_DATA`（每项至少保留 `title + link`）
+   文件：`docs/nav/data.ts`  
+   按你的分类替换 `NAV_DATA`（每项至少保留 `title + link`）
 
 9. 改页脚与社交链接  
-文件：`docs/.vitepress/config.ts`  
-修改 `themeConfig.socialLinks`、`themeConfig.footer`
+   文件：`docs/.vitepress/config.ts`  
+   修改 `themeConfig.socialLinks`、`themeConfig.footer`
 
 10. 处理评论与访问统计  
-文件：`docs/.vitepress/config.ts`  
-要开启：填写 `themeConfig.comment`（giscus）和 `themeConfig.visitor.badgeId`  
-暂时不用：可先清空或注释这两项，避免前台显示无效信息
+    文件：`docs/.vitepress/config.ts`  
+    要开启：填写 `themeConfig.comment`（giscus）和 `themeConfig.visitor.badgeId`  
+    暂时不用：可先清空或注释这两项，避免前台显示无效信息
