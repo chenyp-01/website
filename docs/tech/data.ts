@@ -11,6 +11,18 @@ export const TECH_DATA: NavData[] = [
     items: [
       {
         icon: '🟨',
+        title: 'html',
+        desc: 'HTML 基础与进阶',
+        link: '/tech/',
+      },
+      {
+        icon: '🎨',
+        title: 'CSS',
+        desc: 'CSS 布局、动画与进阶',
+        link: '/tech/',
+      },
+      {
+        icon: '🟨',
         title: 'JavaScript',
         desc: 'JavaScript 核心知识整理',
         link: '/tech/',
@@ -21,12 +33,7 @@ export const TECH_DATA: NavData[] = [
         desc: 'TypeScript 类型系统与实战',
         link: '/tech/',
       },
-      {
-        icon: '🎨',
-        title: 'CSS',
-        desc: 'CSS 布局、动画与进阶',
-        link: '/tech/',
-      },
+
     ],
   },
   {
