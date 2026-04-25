@@ -1,0 +1,56 @@
+{
+  "name": "vitepress-nav-template",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "基于 VitePress 打造个人前端导航网站",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev docs --port=8732",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --port 8730",
+    "prepare": "husky install",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maomao1996/vitepress-nav-template.git"
+  },
+  "author": "maomao1996 <1714487678@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maomao1996/vitepress-nav-template/issues"
+  },
+  "homepage": "https://github.com/maomao1996/vitepress-nav-template#readme",
+  "devDependencies": {
+    "@femm/prettier": "^1.1.0",
+    "@femm/tailwind-config": "^1.0.0",
+    "@femm/verify-commit": "^1.0.1",
+    "@giscus/vue": "^3.1.1",
+    "@mdit-vue/shared": "^0.12.1",
+    "@types/node": "^20.19.21",
+    "autoprefixer": "^10.4.21",
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.3.0",
+    "medium-zoom": "^1.1.0",
+    "postcss": "^8.5.6",
+    "prettier": "^2.8.8",
+    "sass": "^1.93.2",
+    "tailwindcss": "^3.4.18",
+    "vite-plugin-markdown-preview": "^1.1.1",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.22"
+  },
+  "prettier": "@femm/prettier",
+  "lint-staged": {
+    "*.{js,jsx,tsx,vue,css,scss,less,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "vite-plugin-markdown-preview@1.1.1": "patches/vite-plugin-markdown-preview@1.1.1.patch"
+    }
+  },
+  "packageManager": "pnpm@9.15.9+sha512.68046141893c66fad01c079231128e9afb89ef87e2691d69e4d40eee228988295fd4682181bae55b58418c3a253bde65a505ec7c5f9403ece5cc3cd37dcf2531"
+}
