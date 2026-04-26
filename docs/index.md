@@ -1,6 +1,7 @@
 ---
 layout: home
-layoutClass: 'm-home-layout'
+# layoutClass: 'm-home-layout'
+layoutClass: m-nav-layout
 
 hero:
   name: 鹏友记的
