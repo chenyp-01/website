@@ -41,8 +41,8 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/chenyp-01' }],
 
     footer: {
-      message: '如有转载或 CV 的请标注本站原文地址',
-      copyright: 'Copyright © 2019-present maomao',
+      // message: '如有转载或 CV 的请标注本站原文地址',
+      // copyright: 'Copyright © 2019-present maomao',
     },
 
     lastUpdated: {

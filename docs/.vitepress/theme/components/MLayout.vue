@@ -98,6 +98,10 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </template>
 
 <style>
+footer.VPFooter {
+  border-top: none !important;
+}
+
 .prev-next.prev-next {
   border-top: none;
 }

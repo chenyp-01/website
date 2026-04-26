@@ -146,4 +146,11 @@ table {
     margin-top: 24px;
   }
 }
-
+.VPFooter,
+.VPFooter .container {
+  border-top: none !important;
+}
+.m-life-post-layout .VPFooter,
+.m-life-post-layout .VPFooter .container {
+  border-top: none !important;
+}
