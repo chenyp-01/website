@@ -5,7 +5,10 @@ outline: false
 ---
 
 <script setup lang="ts">
-import { data as JAVASCRIPT_FILES } from './files.data'
+import { data as TECH_FILES } from '../files.data'
+import { getFilesByRoute } from '../../.vitepress/utils/files-loader'
+
+const JAVASCRIPT_FILES = getFilesByRoute(TECH_FILES, '/tech/javascript/')
 </script>
 
 # JavaScript

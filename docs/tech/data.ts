@@ -55,7 +55,7 @@ export const TECH_DATA: NavData[] = [
         icon: '📦',
         title: '工程化',
         desc: '构建工具、打包、CI/CD',
-        link: '/tech/',
+        link: '/tech/Internet/',
       },
     ],
   },
