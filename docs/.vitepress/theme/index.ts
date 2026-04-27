@@ -19,10 +19,8 @@ export default {
     // 获取 frontmatter
     const { frontmatter } = useData()
 
-    /* 添加自定义 class */
-    if (frontmatter.value?.layoutClass) {
-      props.class = frontmatter.value.layoutClass
-    }
+    /* 默认 m-nav-layout，页面 frontmatter.layoutClass 可覆盖 */
+    props.class = frontmatter.value?.layoutClass || 'm-nav-layout'
 
     return h(MLayout, props)
   },

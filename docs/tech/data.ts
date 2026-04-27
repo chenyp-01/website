@@ -87,6 +87,24 @@ export const TECH_DATA: NavData[] = [
         desc: 'uni-app 开发',
         link: '/tech/uniapp/',
       },
+      {
+        icon: '📦',
+        title: 'python',
+        desc: 'python 开发',
+        link: '/tech/python/',
+      },
+      {
+        icon: '📦',
+        title: '前端工程化',
+        desc: '前端工程化实践',
+        link: '/tech/前端工程化/',
+      },
+      {
+        icon: '📦',
+        title: '前端微服务',
+        desc: '前端微服务实践',
+        link: '/tech/前端微服务/',
+      },
     ],
   },
 ]

@@ -11,9 +11,9 @@ import { getFilesByRoute } from '../../.vitepress/utils/files-loader'
 const JAVASCRIPT_FILES = getFilesByRoute(TECH_FILES, '/tech/HTML/')
 </script>
 
-# JavaScript
+# HTML
 
-JavaScript 文档列表，点击任意条目即可进入对应 md 文件阅读。
+HTML 文档列表，点击任意条目即可进入对应 md 文件阅读。
 
 <MNavLinks v-if="JAVASCRIPT_FILES.length" title="文件列表" :items="JAVASCRIPT_FILES" />
 
