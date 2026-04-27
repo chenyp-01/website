@@ -1,0 +1,47 @@
+//--------------前端
+function files() {
+  let param = new FormData();
+
+  let btn3 = document.querySelector(".btn3");
+
+  let file = document.querySelector(".file");
+  console.log(file);
+  file.addEventListener("change", function () {
+    console.log(this.file);
+    let file = this.files[0];
+    param.append("file", file);
+  });
+  btn3.addEventListener("click", async function () {
+    let res = await axios.post("http://localhost:8000/product", param, {
+      headers: {
+        "content-type": "multipart/from-data",
+      },
+    });
+    console.log(res.data.msg);
+    // let img = document.querySelector(".img");
+    // img.src = `http://localhost:8000/${res.data.msg}`;
+  });
+}
+files();
+//----------------后端
+router.post("/product", upload.single("file"), async (req, res) => {
+  console.log(req.file);
+  let imgUrl = req.file.filename;
+  let sql = "insert into device (imgUrl) values (?)";
+  let results = await query(sql, [imgUrl]);
+  try {
+    if (results.affectedRows === 1) {
+      res.send({
+        code: 0,
+        msg: imgUrl,
+      });
+    } else {
+      res.send({
+        code: 0,
+        msg: "添加失败",
+      });
+    }
+  } catch (ree) {
+    console.log(ree);
+  }
+});

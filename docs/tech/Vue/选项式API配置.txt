@@ -1,0 +1,28 @@
+{
+  "Print to console": {
+    "prefix": ["v3", "cyp"],
+    "body": [
+      "<script>",
+      "    export default {",
+      "        data(){",
+      "            return {",
+      "",
+      "            }",
+      "        }",
+      "    }",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "   <div class=\"$1\">",
+      "",
+      "   </div>",
+      "</template>",
+
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Log output to console"
+  }
+}

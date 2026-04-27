@@ -1,0 +1,26 @@
+1.安装淘宝镜像 
+npm install -g cnpm --registry=http://registry.npm.taobao.org
+2.安装nodemon
+npm install nodemon -g    // (global,全局安装)
+nodemon -v  //查看nodemon版本，显示版本即安装成功
+3.安装uuid 模块来生成 UUID
+-S表示本地安装，只能在当前项目中使用
+会自动安装到node_modules文件夹中-S 等价于 --save
+npm install uuid -S 
+4.安装express
+npm install express --save
+也可以简写为 npm i express -S
+5.安装数据库
+https://www.xp.cn/download.html
+6.node.js中安装mysql模块
+npm i mysql -S
+7.跨域插件 实现跨域的中间件
+npm i cors
+const cors = require("cors")
+app.use(cors())
+8.上传文件 使用multer实现图片上传
+npm i multer -S
+9. console模块是Node.js提供的标准输出模块。
+const { log } = require("console");
+10. Socket.IO 实现客户端和服务器端方案
+cnpm i socket.io -S

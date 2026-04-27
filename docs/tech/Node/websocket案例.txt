@@ -1,0 +1,27 @@
+1.前端引入文件
+后端关联http对象，绑定io对象
+//把app应用关联到http对象
+const http = require("http").Server(app);
+//在http对象上绑定io对象
+const io = require("socket.io")(http, { cors: true });
+2.建立连接
+   const socket = io("http://localhost:3000/");
+3.发送消息
+  socket.emit("send", username);
+4.服务器接收消息
+io.on("connection", function (socket) {
+  // 显示 几个用户连接
+  console.log("a user connected");
+  // 接收客户端发送过来的请求
+  socket.on("send", (msg) => {
+    console.log("msg", msg);
+    //5.服务器相应消息
+    // socket.emit("reply", "你好" + msg);
+    io.emit("reply", "你好" + msg);
+  });
+});
+
+6.客户端接收消息
+  socket.on("reply", (msg) => {
+          console.log(msg);
+        });
