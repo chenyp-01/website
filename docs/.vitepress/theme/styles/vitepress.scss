@@ -116,6 +116,7 @@ table {
 /* 导航卡片布局（用于板块首页） */
 .m-nav-layout {
   --vp-layout-max-width: 1660px;
+  --m-doc-footer-height: 88px;
 
   .container {
     max-width: var(--vp-layout-max-width) !important;
@@ -144,6 +145,27 @@ table {
 
   .vp-doc h2 {
     margin-top: 24px;
+  }
+
+  .VPDoc .aside-container {
+    height: calc(100vh - var(--m-doc-footer-height));
+  }
+
+  .VPDoc .aside-content {
+    min-height: auto;
+    height: calc(
+      100vh - (var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px + var(--m-doc-footer-height))
+    );
+  }
+
+  .VPDoc .VPDocAside {
+    max-height: 100%;
+    overflow-y: auto;
+    padding-bottom: 16px;
+  }
+
+  .VPDoc .content {
+    padding-bottom: calc(128px + var(--m-doc-footer-height));
   }
 }
 .VPFooter,

@@ -25,7 +25,7 @@ export const TECH_DATA: NavData[] = [
         icon: '🟨',
         title: 'JavaScript',
         desc: 'JavaScript 核心知识整理',
-        link: '/tech/',
+        link: '/tech/javascript/',
       },
       {
         icon: '🟦',
