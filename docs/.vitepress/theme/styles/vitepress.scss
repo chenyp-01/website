@@ -154,7 +154,11 @@ table {
   .VPDoc .aside-content {
     min-height: auto;
     height: calc(
-      100vh - (var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px + var(--m-doc-footer-height))
+      100vh -
+        (
+          var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px +
+            var(--m-doc-footer-height)
+        )
     );
   }
 

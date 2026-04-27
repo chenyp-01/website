@@ -89,4 +89,10 @@ features:
 .m-home-layout .features:nth-child(3) {
   background-color: var(--vp-c-bg-alt);
 }
+.VPImage.image-src,
+.VPImage.logo {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 </style>
