@@ -49,7 +49,7 @@ export default {
 ```
 ## 组合式API
 组合式 API 的核心思想是直接在函数作用域内定义响应式状态变量，并将从多个函数中得到的状态组合起来处理复杂问题。这种形式更加自由，也需要你对 Vue 的响应式系统有更深的理解才能高效使用。相应的，它的灵活性也使得组织和重用逻辑的模式变得更加强大。
-下面是使用了组合式 API 与 <script setup> 改造后和上面的模板完全一样的组件
+下面是使用了组合式 API 与 `<script setup>` 改造后和上面的模板完全一样的组件
 > 只做简单了解，具体语法会在后面讲
 
 ```vue
@@ -206,9 +206,9 @@ export default {
   </div>
 </template>
 ```
-# 这个地方开始<script setup>
+# 这个地方开始 `<script setup>`
 
-在 setup() 函数中手动暴露大量的状态和方法非常繁琐。幸运的是，我们可以通过使用构建工具来简化该操作。当使用单文件组件（SFC）时，我们可以使用 <script setup> 来大幅度地简化代码。
+在 setup() 函数中手动暴露大量的状态和方法非常繁琐。幸运的是，我们可以通过使用构建工具来简化该操作。当使用单文件组件（SFC）时，我们可以使用 `<script setup>` 来大幅度地简化代码。
 *** 注意： 以后我们直接使用script setup语法，而不再使用setup()钩子函数 ***
 
 ```vue
@@ -505,7 +505,7 @@ onMounted(() => {
 </template>
 ```
 # 传递props
-在使用 <script setup> 的单文件组件中，props 可以使用 defineProps() 宏来声明
+在使用 `<script setup>` 的单文件组件中，props 可以使用 defineProps() 宏来声明
 父组件
 
 ```vue
@@ -573,8 +573,8 @@ let user = ref('Jenny')
 <style lang="scss" scoped></style>
 ```
 子组件
-我们在 <template> 中使用的 $emit 方法不能在组件的 <script setup> 部分中使用，但 defineEmits() 会返回一个相同作用的函数供我们使用
-defineEmits() 宏**不能**在子函数中使用。如上所示，它必须直接放置在 <script setup> 的顶级作用域下。
+我们在 `<template>` 中使用的 $emit 方法不能在组件的 `<script setup>` 部分中使用，但 defineEmits() 会返回一个相同作用的函数供我们使用
+defineEmits() 宏**不能**在子函数中使用。如上所示，它必须直接放置在 `<script setup>` 的顶级作用域下。
 
 ```vue
 <script setup>

@@ -1,7 +1,7 @@
 ---
 layout: home
-# layoutClass: 'm-home-layout'
-layoutClass: m-nav-layout
+layoutClass: m-home-layout
+# layoutClass: m-nav-layout
 
 hero:
   name: 鹏友记的
@@ -66,29 +66,6 @@ features:
   text-align: right;
 }
 
-/* 确保去掉features模块的黑色边框 */
-.m-home-layout .features:hover,
-.m-home-layout .features:focus {
-  outline: none !important;
-}
-
-/* 强制去掉.VPFeature的边框 */
-.VPFeature {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-/* 为.VPFeature添加触摸效果 */
-.VPFeature:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-/* 为读书笔记模块添加背景色，使其与第一个模块一致 */
-.m-home-layout .features:nth-child(3) {
-  background-color: var(--vp-c-bg-alt);
-}
 .VPImage.image-src,
 .VPImage.logo {
   border-radius: 50%;
