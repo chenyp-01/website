@@ -139,9 +139,10 @@ if (typeof window !== 'undefined') {
 
 <style scoped lang="scss">
 .m-life-posts {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0px 24px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 
   .hero {
     margin-bottom: 0px;

@@ -1,0 +1,141 @@
+/**
+ * 彩色氛围背景（极光光斑）
+ * 由 MBackgroundFx 组件控制显隐，浅色/深色模式自动适配
+ * -------------------------------------------------------------------------- */
+
+/* 深色模式下给 body 一个更"有氛围"的深蓝紫渐变底色 */
+html.dark body {
+  background: linear-gradient(160deg, #0d0f1e 0%, #141a33 48%, #221437 100%);
+}
+
+/* 光斑容器：置于所有页面内容之下 */
+.m-fx-stage {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.orb {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+/* 浅色模式：柔和糖果色 */
+.o1 {
+  top: -22vmax;
+  left: -14vmax;
+  width: 72vmax;
+  height: 72vmax;
+  background: radial-gradient(circle at 35% 35%, rgba(255, 158, 203, 0.4), transparent 62%);
+  animation: fx-drift-1 21s ease-in-out infinite alternate;
+}
+.o2 {
+  top: -18vmax;
+  right: -16vmax;
+  width: 68vmax;
+  height: 68vmax;
+  background: radial-gradient(circle at 60% 40%, rgba(127, 216, 255, 0.38), transparent 62%);
+  animation: fx-drift-2 26s ease-in-out infinite alternate;
+}
+.o3 {
+  bottom: -24vmax;
+  left: 8vmax;
+  width: 74vmax;
+  height: 74vmax;
+  background: radial-gradient(circle at 40% 60%, rgba(196, 167, 255, 0.36), transparent 62%);
+  animation: fx-drift-3 24s ease-in-out infinite alternate;
+}
+.o4 {
+  bottom: -14vmax;
+  right: 4vmax;
+  width: 58vmax;
+  height: 58vmax;
+  background: radial-gradient(circle at 55% 55%, rgba(155, 240, 217, 0.32), transparent 60%);
+  animation: fx-drift-4 19s ease-in-out infinite alternate;
+}
+
+/* 深色模式：浓郁霓虹，压低透明度避免刺眼 */
+html.dark .o1 {
+  background: radial-gradient(circle at 35% 35%, rgba(255, 92, 176, 0.2), transparent 62%);
+}
+html.dark .o2 {
+  background: radial-gradient(circle at 60% 40%, rgba(64, 186, 255, 0.18), transparent 62%);
+}
+html.dark .o3 {
+  background: radial-gradient(circle at 40% 60%, rgba(158, 110, 255, 0.18), transparent 62%);
+}
+html.dark .o4 {
+  background: radial-gradient(circle at 55% 55%, rgba(64, 235, 190, 0.14), transparent 60%);
+}
+
+@keyframes fx-drift-1 {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(7vmax, 5vmax, 0) scale(1.12);
+  }
+}
+@keyframes fx-drift-2 {
+  from {
+    transform: translate3d(0, 0, 0) scale(1.1);
+  }
+  to {
+    transform: translate3d(-6vmax, 6vmax, 0) scale(0.96);
+  }
+}
+@keyframes fx-drift-3 {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(8vmax, -5vmax, 0) scale(1.15);
+  }
+}
+@keyframes fx-drift-4 {
+  from {
+    transform: translate3d(0, 0, 0) scale(1.05);
+  }
+  to {
+    transform: translate3d(-7vmax, -6vmax, 0) scale(0.92);
+  }
+}
+
+/* 用户偏好减少动态：光斑静止保留色彩氛围 */
+@media (prefers-reduced-motion: reduce) {
+  .orb {
+    animation: none;
+  }
+}
+
+/**
+ * 顶部导航毛玻璃化
+ * 默认 VitePress 导航背景为不透明的 --vp-c-bg，会盖住光斑；
+ * 特效开启（body.m-fx-active）时改为透明 + backdrop blur，露出彩色背景
+ * -------------------------------------------------------------------------- */
+body.m-fx-active .VPNav {
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+}
+
+body.m-fx-active .VPNavBar,
+body.m-fx-active .VPNavBar .title,
+body.m-fx-active .VPNavBar .content-body {
+  background-color: transparent !important;
+}
+
+body.m-fx-active .VPNavBar .divider,
+body.m-fx-active .VPNavBar .divider-line {
+  background-color: transparent !important;
+}
+
+/* 移动端底部局部导航同样透明化（VitePress 用 --vp-local-nav-bg-color） */
+body.m-fx-active .VPLocalNav {
+  background-color: transparent !important;
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+}

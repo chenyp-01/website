@@ -10,8 +10,8 @@ export default defineConfig({
   base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
 
   lang: 'zh-CN',
-  title: '鹏友记',
-  description: '鹏友记的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等',
+  title: 'Code · AI · Agent · Life',
+  description: '有鹏在折腾的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等',
   head,
 
   lastUpdated: true,

@@ -8,6 +8,7 @@ import { usePageId } from '../composables'
 
 import MNavVisitor from './MNavVisitor.vue'
 import MDocFooter from './MDocFooter.vue'
+import MBackgroundFx from './MBackgroundFx.vue'
 
 const { Layout } = DefaultTheme
 const { isDark, theme, frontmatter } = useData()
@@ -63,6 +64,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 
 <template>
+  <MBackgroundFx />
   <Layout v-bind="$attrs">
     <!--
       相关插槽

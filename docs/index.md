@@ -4,12 +4,12 @@ layoutClass: m-home-layout
 # layoutClass: m-nav-layout
 
 hero:
-  name: 鹏友记的
-  text: 个人博客
+  name: 有鹏在折腾
+  text:
   tagline: 生活、工作、学习，记录一切值得记录的事
   image:
     src: /logo.png
-    alt: 鹏友记
+    alt:
   actions:
     - text: 生活
       link: /life/
