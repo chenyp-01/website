@@ -4,7 +4,7 @@ layoutClass: m-home-layout
 # layoutClass: m-nav-layout
 
 hero:
-  name: Code · AI · Agent 
+  name: Code · AI · Agent
   text:
   tagline: 生活、工作、学习，记录一切值得记录的事
   image:
@@ -50,12 +50,23 @@ features:
 ---
 
 <style>
-/*爱的魔力转圈圈*/
+/* ===== 本页专属样式（只影响首页） =====
+   全局样式请去 .vitepress/theme/styles/ 下对应文件修改 */
+
+/* hero 头像：圆形裁切 */
+.VPImage.image-src {
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* 头像 hover：爱的魔力转圈圈 */
 .m-home-layout .image-src:hover {
   transform: translate(-50%, -50%) rotate(666turn);
   transition: transform 59s 1s cubic-bezier(0.3, 0, 0.8, 1);
 }
 
+/* features 卡片底部的小字备注 */
 .m-home-layout .details small {
   opacity: 0.8;
 }
@@ -65,13 +76,4 @@ features:
   margin-top: 2em;
   text-align: right;
 }
-
-.VPImage.image-src,
-.VPImage.logo {
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: -30px !important;
-  cursor: pointer;
-}
-
 </style>

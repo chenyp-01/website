@@ -1,13 +1,31 @@
-/***** vitepress 样式优化 ******/
+/***** VitePress 主题样式定制 *****
+ *
+ * 目录：
+ *   1. 全局布局微调
+ *   2. 首页（.m-home-layout，桌面端单屏布局）
+ *   3. Feature 卡片（首页下方的导航卡片）
+ *   4. 文档内容样式
+ *   5. 链接颜色修正（暗色模式可读性）
+ *   6. 明暗切换过渡（view-transition）
+ *   7. 板块导航布局（.m-nav-layout）
+ *   8. 页脚
+ *
+ * 注意：本文件经 index.scss 以 @use 内联合并，
+ * dev 服务器改动后若未生效，touch 一下 index.scss 强制重编译
+ ***************************************************************/
 
-/* 大屏大一点 */
+/* --------------------------------------------------------------------------
+ * 1. 全局布局微调
+ * -------------------------------------------------------------------------- */
+
+/* 大屏内容区放宽 */
 @media (min-width: 1440px) {
   .VPDoc.has-aside .content-container.content-container {
     max-width: 100%;
   }
 }
 
-/* nav 换行问题（6 个还是有点小多，后面看看怎么优化） */
+/* 小屏 nav 菜单换行问题：收窄左右内边距 */
 @media (max-width: 960px) {
   .VPNav {
     .VPNavBarMenuLink,
@@ -18,16 +36,20 @@
   }
 }
 
-/* 首页样式修改 */
+/* --------------------------------------------------------------------------
+ * 2. 首页（.m-home-layout）
+ * 桌面端（≥960px）压缩为首屏单页、不滚动；移动端保持默认自然滚动
+ * -------------------------------------------------------------------------- */
 .m-home-layout {
-  /* 让首页整体撑满并保持在单屏内（桌面端）
-     注意 VPContent 本身已有 nav 高度的顶部 padding，这里只需再扣除底部 margin */
+  /* 让首页恰好撑满一屏：
+     VPContent 自带 nav 高度的顶部 padding，这里只需再扣除底部 margin */
   .VPHome {
     min-height: calc(100vh - var(--vp-nav-height, 64px) - 24px);
     display: flex;
     flex-direction: column;
   }
 
+  /* hero 图片光晕的呼吸效果 */
   .VPHero {
     .image-bg {
       opacity: 0.8;
@@ -37,10 +59,12 @@
       opacity: 0.4;
     }
   }
-
-  /* 桌面端：压缩首屏尺寸，并避免图片被顶部导航栏裁剪 */
+.VPFeatures .container .items .item{
+  opacity: 0.8 !important;
+  transition: opacity 1s ease !important;
+}
   @media (min-width: 960px) {
-    /* 去掉首页底部的大留白和空页脚，确保单屏放下 */
+    /* 去掉首页底部大留白和空页脚，确保单屏放下 */
     .VPHome {
       margin-bottom: 24px !important;
     }
@@ -69,8 +93,8 @@
         padding-top: 12px !important;
       }
 
-      /* 去掉默认的「图片上移 + 撑满整行」样式，避免图片钻到导航栏下；
-         尺寸放开为 VitePress 默认的最大 320px */
+      /* 去掉默认的「图片上移 + 撑满整行」，避免图片钻到导航栏下被裁剪；
+         尺寸固定为 VitePress 默认上限 320px */
       .image {
         min-height: 0 !important;
       }
@@ -84,17 +108,15 @@
       .image-src {
         max-width: 320px !important;
         max-height: 320px !important;
-
       }
     }
 
-    /* features 卡片紧凑化 */
+    /* features 卡片紧凑化，配合单屏布局 */
     .VPFeatures {
       padding: 8px 64px 16px !important;
     }
 
     .VPFeature {
-      
       .box {
         padding: 16px 20px !important;
       }
@@ -117,7 +139,27 @@
   }
 }
 
-/* 自定义块样式 */
+/* --------------------------------------------------------------------------
+ * 3. Feature 卡片（全局，不仅首页）
+ *
+ * 默认效果（当前生效）：1px 浅灰边框，hover 变彩虹品牌色（主题自带）。
+ * 备选方案：去掉边框 —— 取消下面一行的注释即可
+ * -------------------------------------------------------------------------- */
+// .VPFeature {
+//   border: none !important;
+// }
+
+/* 触摸/聚焦时不显示浏览器默认的黑色焦点框 */
+.VPFeature.link:focus,
+.VPFeature.link:focus-visible {
+  outline: none;
+}
+
+/* --------------------------------------------------------------------------
+ * 4. 文档内容样式
+ * -------------------------------------------------------------------------- */
+
+/* 自定义块 */
 .custom-block .custom-block-title {
   font-size: 16px;
 }
@@ -125,37 +167,22 @@
   color: var(--vp-c-brand-1);
 }
 
-/* feature 卡片：彻底去掉边框；触摸/聚焦时也不显示浏览器默认的黑色焦点框 */
-.VPFeature {
-  border: none !important;
-}
-
-.VPFeature.link:focus,
-.VPFeature.link:focus-visible {
-  outline: none;
-}
-
-/* code-group 样式 */
+/* code-group 标签页背景 */
 .vp-code-group .tabs label {
   background-color: transparent;
 }
 
-/* table 样式 */
+/* 表格撑满 */
 table {
   width: 100% !important;
   display: table !important;
 }
 
-/**
- * VitePress: Custom fix
+/* --------------------------------------------------------------------------
+ * 5. 链接颜色修正
+ * 暗色模式下用更亮的品牌色保证可读性；
+ * 类名写两遍是为了压过 scoped data attribute 的优先级
  * -------------------------------------------------------------------------- */
-
-/*
-  Use lighter colors for links in dark mode for a11y.
-  Also specify some classes twice to have higher specificity
-  over scoped class data attribute.
-*/
-
 .link.active,
 .link.active span,
 .VPNavBarMenuLink:hover span,
@@ -169,12 +196,14 @@ table {
   color: var(--vp-c-brand-2);
 }
 
-/* Transition by color instead of opacity */
+/* 暗色模式 custom-block 链接用颜色过渡而非透明度 */
 .dark .vp-doc .custom-block a {
   transition: color 0.25s;
 }
 
-/* dark/light radial transition */
+/* --------------------------------------------------------------------------
+ * 6. 明暗切换过渡（view-transition）
+ * -------------------------------------------------------------------------- */
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
@@ -191,7 +220,9 @@ table {
   z-index: 9999;
 }
 
-/* 导航卡片布局（用于板块首页） */
+/* --------------------------------------------------------------------------
+ * 7. 板块导航布局（.m-nav-layout，用于各板块首页）
+ * -------------------------------------------------------------------------- */
 .m-nav-layout {
   --vp-layout-max-width: 1660px;
   --m-doc-footer-height: 88px;
@@ -199,6 +230,7 @@ table {
   .container {
     max-width: var(--vp-layout-max-width) !important;
   }
+
   .content-container,
   .content {
     max-width: 100% !important;
@@ -250,11 +282,11 @@ table {
     padding-bottom: calc(128px + var(--m-doc-footer-height));
   }
 }
+
+/* --------------------------------------------------------------------------
+ * 8. 页脚
+ * -------------------------------------------------------------------------- */
 .VPFooter,
 .VPFooter .container {
-  border-top: none !important;
-}
-.m-life-post-layout .VPFooter,
-.m-life-post-layout .VPFooter .container {
   border-top: none !important;
 }
