@@ -57,6 +57,16 @@ html.dark body {
   background: radial-gradient(circle at 55% 55%, rgba(155, 240, 217, 0.32), transparent 60%);
   animation: fx-drift-4 19s ease-in-out infinite alternate;
 }
+/* 底部中央：兜住页脚区域的色彩，避免底部中间一片空白 */
+.o5 {
+  bottom: -20vmax;
+  left: 50%;
+  width: 70vmax;
+  height: 46vmax;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 190, 220, 0.3), transparent 62%);
+  animation: fx-drift-5 22s ease-in-out infinite alternate;
+  transform: translateX(-50%);
+}
 
 /* 深色模式：浓郁霓虹，压低透明度避免刺眼 */
 html.dark .o1 {
@@ -70,6 +80,9 @@ html.dark .o3 {
 }
 html.dark .o4 {
   background: radial-gradient(circle at 55% 55%, rgba(64, 235, 190, 0.14), transparent 60%);
+}
+html.dark .o5 {
+  background: radial-gradient(circle at 50% 30%, rgba(255, 112, 180, 0.14), transparent 62%);
 }
 
 @keyframes fx-drift-1 {
@@ -102,6 +115,14 @@ html.dark .o4 {
   }
   to {
     transform: translate3d(-7vmax, -6vmax, 0) scale(0.92);
+  }
+}
+@keyframes fx-drift-5 {
+  from {
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+  to {
+    transform: translateX(-50%) translateY(-5vmax) scale(1.12);
   }
 }
 
@@ -138,4 +159,9 @@ body.m-fx-active .VPLocalNav {
   background-color: transparent !important;
   backdrop-filter: blur(18px) saturate(1.4);
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
+}
+
+/* 页脚：VitePress 默认用不透明的 --vp-c-bg 打底，改为透明露出光斑 */
+body.m-fx-active .VPFooter {
+  background-color: transparent !important;
 }

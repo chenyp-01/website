@@ -19,13 +19,101 @@
 }
 
 /* 首页样式修改 */
-.VPHero {
-  .image-bg {
-    opacity: 0.8;
-    transition: opacity 1s ease;
+.m-home-layout {
+  /* 让首页整体撑满并保持在单屏内（桌面端）
+     注意 VPContent 本身已有 nav 高度的顶部 padding，这里只需再扣除底部 margin */
+  .VPHome {
+    min-height: calc(100vh - var(--vp-nav-height, 64px) - 24px);
+    display: flex;
+    flex-direction: column;
   }
-  .image-container:hover .image-bg {
-    opacity: 0.4;
+
+  .VPHero {
+    .image-bg {
+      opacity: 0.8;
+      transition: opacity 1s ease;
+    }
+    .image-container:hover .image-bg {
+      opacity: 0.4;
+    }
+  }
+
+  /* 桌面端：压缩首屏尺寸，并避免图片被顶部导航栏裁剪 */
+  @media (min-width: 960px) {
+    /* 去掉首页底部的大留白和空页脚，确保单屏放下 */
+    .VPHome {
+      margin-bottom: 24px !important;
+    }
+
+    .VPFooter {
+      display: none !important;
+    }
+
+    .VPHero {
+      margin-top: 0 !important;
+      padding: calc(var(--vp-nav-height, 64px) + 24px) 64px 16px !important;
+
+      .name,
+      .text {
+        font-size: 40px !important;
+        line-height: 48px !important;
+      }
+
+      .tagline {
+        padding-top: 4px !important;
+        font-size: 18px !important;
+        line-height: 28px !important;
+      }
+
+      .actions {
+        padding-top: 12px !important;
+      }
+
+      /* 去掉默认的「图片上移 + 撑满整行」样式，避免图片钻到导航栏下；
+         尺寸放开为 VitePress 默认的最大 320px */
+      .image {
+        min-height: 0 !important;
+      }
+
+      .image-container {
+        transform: none !important;
+        width: 320px !important;
+        height: 320px !important;
+      }
+
+      .image-src {
+        max-width: 320px !important;
+        max-height: 320px !important;
+
+      }
+    }
+
+    /* features 卡片紧凑化 */
+    .VPFeatures {
+      padding: 8px 64px 16px !important;
+    }
+
+    .VPFeature {
+      
+      .box {
+        padding: 16px 20px !important;
+      }
+      .icon {
+        margin-bottom: 8px !important;
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 18px !important;
+      }
+      .title {
+        line-height: 20px !important;
+        font-size: 15px !important;
+      }
+      .details {
+        padding-top: 4px !important;
+        line-height: 20px !important;
+        font-size: 13px !important;
+      }
+    }
   }
 }
 
@@ -35,6 +123,16 @@
 }
 .custom-block.tip .custom-block-title {
   color: var(--vp-c-brand-1);
+}
+
+/* feature 卡片：彻底去掉边框；触摸/聚焦时也不显示浏览器默认的黑色焦点框 */
+.VPFeature {
+  border: none !important;
+}
+
+.VPFeature.link:focus,
+.VPFeature.link:focus-visible {
+  outline: none;
 }
 
 /* code-group 样式 */

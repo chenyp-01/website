@@ -27,6 +27,7 @@
     "@giscus/vue": "^3.1.1",
     "@mdit-vue/shared": "^3.0.2",
     "@tailwindcss/postcss": "^4.1.6",
+    "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^22.15.2",
     "cross-env": "^10.0.0",
     "husky": "^9.1.7",
@@ -51,5 +52,8 @@
       "vite-plugin-markdown-preview@1.1.1": "patches/vite-plugin-markdown-preview@1.1.1.patch"
     }
   },
-  "packageManager": "pnpm@9.15.9+sha512.68046141893c66fad01c079231128e9afb89ef87e2691d69e4d40eee228988295fd4682181bae55b58418c3a253bde65a505ec7c5f9403ece5cc3cd37dcf2531"
+  "packageManager": "pnpm@9.15.9+sha512.68046141893c66fad01c079231128e9afb89ef87e2691d69e4d40eee228988295fd4682181bae55b58418c3a253bde65a505ec7c5f9403ece5cc3cd37dcf2531",
+  "dependencies": {
+    "canvas-confetti": "^1.9.4"
+  }
 }

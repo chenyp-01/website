@@ -4,7 +4,7 @@ layoutClass: m-home-layout
 # layoutClass: m-nav-layout
 
 hero:
-  name: 有鹏在折腾
+  name: Code · AI · Agent 
   text:
   tagline: 生活、工作、学习，记录一切值得记录的事
   image:
@@ -70,6 +70,8 @@ features:
 .VPImage.logo {
   border-radius: 50%;
   object-fit: cover;
+  margin-top: -30px !important;
+  cursor: pointer;
 }
 
 </style>
