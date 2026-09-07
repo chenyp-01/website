@@ -79,5 +79,13 @@ export default defineConfig({
 
   vite: {
     // plugins: [MarkdownPreview()],
+    server: {
+      watch: {
+        // 本项目 scss 经 @use 内联合并，部分文件变更事件偶发丢失导致样式不重编译；
+        // 开启轮询保证 dev 下样式改动可靠热更新
+        usePolling: true,
+        interval: 300,
+      },
+    },
   },
 })

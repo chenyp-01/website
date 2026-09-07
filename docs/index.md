@@ -58,6 +58,7 @@ features:
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+  margin-top: -40px;
 }
 
 /* 头像 hover：爱的魔力转圈圈 */
@@ -75,5 +76,32 @@ features:
   display: block;
   margin-top: 2em;
   text-align: right;
+}
+
+/* features 卡片 hover：彩虹渐变描边淡入
+   注意：border-color 不支持渐变，这里用 ::before + mask 画渐变环，
+   颜色跟随 rainbow.scss 的品牌色动画（--vp-c-brand-1 → --vp-c-brand-next） */
+.m-home-layout .VPFeature.link {
+  position: relative;
+}
+
+.m-home-layout .VPFeature.link::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: 12px;
+  background: linear-gradient(
+    120deg,
+    var(--vp-c-brand-1) 30%,
+    var(--vp-c-brand-next)
+  );
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.m-home-layout .VPFeature.link:hover::before,
+.m-home-layout .VPFeature.link:focus-visible::before {
+  opacity: 1;
 }
 </style>
