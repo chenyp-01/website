@@ -926,7 +926,7 @@ app.mount('#app')
 
 ```
 组件中
-> 注意： 全局注册后，使用组件用<van-xxx>的形式
+> 注意： 全局注册后，使用组件用 `<van-xxx>` 的形式
 
 ```vue
 <template>
@@ -945,7 +945,7 @@ main.js
 import 'vant/lib/index.css';
 ```
 组件
-> 注意： 局部注册后，在模板中使用不要加 'van-xxxx' , 直接用<xxx>
+> 注意： 局部注册后，在模板中使用不要加 'van-xxxx' , 直接用 `<xxx>`
 
 ```vue
 <script setup>

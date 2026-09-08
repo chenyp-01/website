@@ -166,9 +166,7 @@ git config --global --replace-all user.email "输入你的邮箱"
 
 ）
 
-![93826d5eab373e1c3b35316256ea296](./gitimg/93826d5eab373e1c3b35316256ea296.jpg)
 
-![WechatIMG158](./gitimg/7242bc64761f97e7d5bf6140f7211b3.jpg)
 
 ## 6. git 工作流程
 
@@ -367,19 +365,15 @@ gitee（国内）: https://gitee.com/
 
 #### gitee创建仓库
 
-![8c8fa8f5-9ab2-48d4-8558-f3cec54c25f5](gitimg/8c8fa8f5-9ab2-48d4-8558-f3cec54c25f5.png)
 
 
 
-![f78dd8b9-bf2c-43d6-a73d-8bdaeb79da91](gitimg/f78dd8b9-bf2c-43d6-a73d-8bdaeb79da91.png)
 
-![gitee03](gitimg/gitee03.png)
 
 #### 仓库地址
 
 每个远程仓库都有一个地址，一种时https还有一种是ssh，我们先使用https的地址进行操作
 
-![gitee04](gitimg/gitee04.png)
 
 
 
@@ -391,13 +385,10 @@ gitee（国内）: https://gitee.com/
 - 描述可以写也可以不写（可以也中文）
 - 点击 creat respository 就创建成功了
 
-![微信图片_20211227195927](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211227195927.png)
-
-![微信图片_20211227195942](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211227195942.png)
 
 
 
-![微信图片_20211227195933](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211227195933.png)
+
 
 
 
@@ -452,7 +443,6 @@ $ git push -u origin master
 
 再次提交
 
-![微信图片_20211227200010](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211227200010.png)
 
 ### 5. 拉取远程代码
 
@@ -518,11 +508,9 @@ git pull
 
 git push origin 分支名称
 
-![微信图片_20211227200034](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211227200034.png)
 
 
 
-![微信图片_20211227200018](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211227200018.png)
 
 - 删除远程分支
 
@@ -724,11 +712,8 @@ ssh-keygen -t rsa -C "747094687@qq.com"
 
 
 
-![微信图片_20211227195857](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211227195857.png)
 
-![](./gitimg/微信图片_20211227195845.png)
 
-![微信图片_20211227195837](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211227195837.png)
 
 将秘钥添加到gitee或github
 
@@ -736,7 +721,6 @@ ssh-keygen -t rsa -C "747094687@qq.com"
 
   - 打开[Gitee](https://gitee.com) ，进入到设置中
 
-    ![git5](gitimg/git5.png)
 
 ​			
 
@@ -744,7 +728,6 @@ ssh-keygen -t rsa -C "747094687@qq.com"
 
 
 
-![gitee6](gitimg/gitee6.png)
 
 
 
@@ -752,7 +735,6 @@ ssh-keygen -t rsa -C "747094687@qq.com"
 
 点击后查看对应的设置如下
 
-![gitee7](gitimg/gitee7.png)
 
 
 
@@ -762,19 +744,16 @@ ssh-keygen -t rsa -C "747094687@qq.com"
 
 
 
-![gitee8](gitimg/gitee8.png)
 
 
 
 填写点击确认后，然后可以输入密码，验证即可
 
-![gitee9](gitimg/gitee9.png)
 
 
 
 
 
-![gitee10](gitimg/gitee10.png)
 
 
 
@@ -784,7 +763,6 @@ ssh-keygen -t rsa -C "747094687@qq.com"
 
 - github
 
-![微信图片56666666666_20211227203911](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%8756666666666_20211227203911.png)![微信图片_20211227195720](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211227195720.png)
 
 
 
@@ -792,9 +770,7 @@ ssh-keygen -t rsa -C "747094687@qq.com"
 
 第一次链接ssh，会出现提示，输入yes回车即可，之后对应的host就会被添加到.ssh文件夹的`known_hosts`中，就不会再出现相关的提示了。
 
-![微信图片5555_20211227203443](./gitimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%875555_20211227203443.png)
 
-![微信图片_20211227195821](C:\Users\admin\Desktop\git-img\微信图片_20211227195821.png)
 
 ## 13. 团队管理
 

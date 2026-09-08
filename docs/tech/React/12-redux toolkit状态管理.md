@@ -8,8 +8,6 @@ RTK ( Redux Toolkit ) 是[redux](https://so.csdn.net/so/search?q=redux&spm=1001.
 
 Redux的核心是store，它由Redux提供的 createStore(reducer) 这个方法生成,  在RTK版本中，已经集成到configureStore方法中。
 
-![](.\react配图\01-react废弃了createStore.png)
-
 # 2. Redux Toolkit实现状态管理的流程
 
 ## 2.1 安装 

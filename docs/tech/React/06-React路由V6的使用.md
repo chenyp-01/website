@@ -66,7 +66,7 @@ export default function App() {
 
 - Routes 组件替换 v5 的 Switch 组件
 
-- 路由配置的包裹元素，<Route>必须放在<Routes>中，不然报错
+- 路由配置的包裹元素，`<Route>` 必须放在 `<Routes>` 中，不然报错
 
 ## 3.3 Route （同v5的Route组件，只是添加了element属性）
 配置路由, Route里面的path代表路径，element配置映射的路由组件
@@ -85,7 +85,7 @@ v6 移除了 Redirect 组件，改⽤ Navigate 组件。
 <Route path="/" element={<Navigate to="/home"></Navigate>}></Route>
 ```
 
-> 注意： Navigate不能是<Routes>的子元素
+> 注意： Navigate不能是 `<Routes>` 的子元素
 
 
 ## 3.5 Link和NavLink （和v5相同）
@@ -105,7 +105,7 @@ v6 移除了 Redirect 组件，改⽤ Navigate 组件。
 - v5嵌套路由需在对应一级路由页面内设置
 - v6直接在App中配置一级和嵌套路由
 
-App.js中配置<Home>的二级路由
+App.js中配置 `<Home>` 的二级路由
 
 ```
 <Route path="/home" element={<Home></Home>}>

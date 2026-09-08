@@ -161,7 +161,7 @@ axios.get(`${baseUrl}/product`).then((res) => {
 
 \_like: 包含
 
-例：http://localhost:3001/data1?age_gte=20&age_lte=30
+例：`http://localhost:3001/data1?age_gte=20&age_lte=30`
 
 \_page：访问第几页数据
 
@@ -171,7 +171,7 @@ axios.get(`${baseUrl}/product`).then((res) => {
 
 \_order：设定排序的方式（升序：asc；降序：desc；默认升序）
 
-例：http://localhost:3001/data1?\_sort=age&\_order=asc
+例：`http://localhost:3001/data1?_sort=age&_order=asc`
 
 q：全文搜索关键字
 
