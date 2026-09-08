@@ -65,10 +65,24 @@ features:
   border: none;
 }
 
-/* 头像 hover：爱的魔力转圈圈 */
-.m-home-layout .image-src:hover {
-  transform: translate(-50%, -50%) rotate(666turn);
-  transition: transform 59s 1s cubic-bezier(0.3, 0, 0.8, 1);
+/* 头像缓慢匀速旋转（类似音乐播放器的唱片效果）
+   注意：必须保留 translate(-50%, -50%)，这是 VitePress 图片居中定位，
+   去掉它旋转时头像会跑位 */
+.m-home-layout .image-src {
+  animation: m-logo-spin 12s linear infinite;
+}
+
+@keyframes m-logo-spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* 用户偏好减少动态：停止旋转，保留静态头像 */
+@media (prefers-reduced-motion: reduce) {
+  .m-home-layout .image-src {
+    animation: none;
+  }
 }
 
 /* features 卡片底部的小字备注 */
