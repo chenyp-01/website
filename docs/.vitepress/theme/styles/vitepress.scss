@@ -25,6 +25,19 @@
   }
 }
 
+/* 统一文档页内容容器宽度与首页内容区一致（1152px 居中），
+   从首页切换到其他页面时左右留白不再跳动 */
+@media (min-width: 960px) {
+  .VPDoc {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .VPDoc .container {
+    max-width: 1152px !important;
+  }
+}
+
 /* 小屏 nav 菜单换行问题：收窄左右内边距 */
 @media (max-width: 960px) {
   .VPNav {
@@ -229,12 +242,7 @@ table {
  * 7. 板块导航布局（.m-nav-layout，用于各板块首页）
  * -------------------------------------------------------------------------- */
 .m-nav-layout {
-  --vp-layout-max-width: 1660px;
   --m-doc-footer-height: 88px;
-
-  .container {
-    max-width: var(--vp-layout-max-width) !important;
-  }
 
   .content-container,
   .content {
