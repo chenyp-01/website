@@ -78,11 +78,18 @@ features:
   text-align: right;
 }
 
-/* features 卡片 hover：彩虹渐变描边淡入
-   注意：border-color 不支持渐变，这里用 ::before + mask 画渐变环，
-   颜色跟随 rainbow.scss 的品牌色动画（--vp-c-brand-1 → --vp-c-brand-next） */
+/* features 卡片 hover：品牌色渐变描边淡入
+   注意：描边颜色固定为品牌静态色（#00a98e → #009ff7），
+   不引用会随 rainbow 动画漂移的 --vp-c-brand-* 变量——
+   否则触屏上 hover 粘滞时，动画循环到暗色段描边会发黑 */
 .m-home-layout .VPFeature.link {
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 边框色同样固定，避免跟随动画变暗 */
+.m-home-layout .VPFeature.link:hover {
+  border-color: #00a98e;
 }
 
 .m-home-layout .VPFeature.link::before {
@@ -91,11 +98,7 @@ features:
   inset: -1px;
   z-index: -1;
   border-radius: 12px;
-  background: linear-gradient(
-    120deg,
-    var(--vp-c-brand-1) 30%,
-    var(--vp-c-brand-next)
-  );
+  background: linear-gradient(120deg, #00a98e 30%, #009ff7);
   opacity: 0;
   transition: opacity 0.25s;
 }
