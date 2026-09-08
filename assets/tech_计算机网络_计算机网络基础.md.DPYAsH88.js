@@ -1,0 +1,105 @@
+import{_ as n,c as a,o as p,al as l}from"./chunks/framework.QMC68jD7.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"tech/计算机网络/计算机网络基础.md","filePath":"tech/计算机网络/计算机网络基础.md","lastUpdated":1777271852000}'),e={name:"tech/计算机网络/计算机网络基础.md"};function i(r,s,c,t,b,u){return p(),a("div",null,[...s[0]||(s[0]=[l(`<h2 id="计算机网络基础" tabindex="-1"><strong>计算机网络基础</strong> <a class="header-anchor" href="#计算机网络基础" aria-label="Permalink to &quot;**计算机网络基础**&quot;">​</a></h2><p>这些工具和知识属于以下几个技术领域：</p><h2 id="_1-计算机网络基础" tabindex="-1">1. <strong>计算机网络基础</strong> <a class="header-anchor" href="#_1-计算机网络基础" aria-label="Permalink to &quot;1. **计算机网络基础**&quot;">​</a></h2><ul><li><p><strong>所属领域</strong>: 计算机科学 / 网络工程</p></li><li><p><strong>核心知识</strong>:</p><ul><li>TCP/IP 协议栈</li></ul><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span></span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><ul><li>OSI 七层模型</li></ul><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span></span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><ul><li>IP 地址、端口、协议</li></ul><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span></span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><ul><li>数据包传输原理</li></ul><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span></span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div></li></ul><h2 id="_2-网络诊断与排错" tabindex="-1">2. <strong>网络诊断与排错</strong> <a class="header-anchor" href="#_2-网络诊断与排错" aria-label="Permalink to &quot;2. **网络诊断与排错**&quot;">​</a></h2><ul><li><p><strong>所属领域</strong>: 系统运维 / 网络管理</p></li><li><p><strong>核心技能</strong>:</p><ul><li>网络连通性测试</li></ul><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span># 1. 查看所有网络接口</span></span>
+<span class="line"><span>ifconfig</span></span>
+<span class="line"><span>ifconfig en0 | grep &quot;ether&quot;   查看mac地址</span></span>
+<span class="line"><span>ifconfig en0 | grep &quot;inet&quot;    查看ip地址</span></span>
+<span class="line"><span>ifconfig en0 | grep status    检查网络接口状态</span></span>
+<span class="line"><span># 2. 查看默认网关</span></span>
+<span class="line"><span>netstat -nr | grep default</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 3. 测试本地网络栈</span></span>
+<span class="line"><span>ping 127.0.0.1</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 4. 测试到网关（先用上一步找到网关地址）</span></span>
+<span class="line"><span>ping 192.168.1.1</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 5. 测试互联网连通性（绕过DNS）</span></span>
+<span class="line"><span>ping 8.8.8.8</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 6. 测试DNS解析</span></span>
+<span class="line"><span>ping www.apple.com</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 7. 如果DNS有问题，使用特定DNS服务器测试</span></span>
+<span class="line"><span>nslookup www.apple.com 8.8.8.8</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 8. 追踪到目标网站的路径</span></span>
+<span class="line"><span>traceroute www.google.com</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><ul><li>端口和服务检测</li></ul><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span># 测试80端口 (HTTP)</span></span>
+<span class="line"><span>telnet 5edata.com 80</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 测试443端口 (HTTPS)  </span></span>
+<span class="line"><span>telnet 5edata.com 443</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 测试22端口 (SSH)</span></span>
+<span class="line"><span>telnet 5edata.com 22</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>故障定位和排查</li></ul><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span></span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><ul><li>性能监控</li></ul><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span></span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div></li></ul><h2 id="_3-具体技术分层" tabindex="-1">3. <strong>具体技术分层</strong> <a class="header-anchor" href="#_3-具体技术分层" aria-label="Permalink to &quot;3. **具体技术分层**&quot;">​</a></h2><h3 id="网络层-ping" tabindex="-1">网络层 (ping) <a class="header-anchor" href="#网络层-ping" aria-label="Permalink to &quot;网络层 (ping)&quot;">​</a></h3><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>知识领域: 网络协议基础</span></span>
+<span class="line"><span>相关概念: </span></span>
+<span class="line"><span>  - ICMP 协议</span></span>
+<span class="line"><span># 基本用法  </span></span>
+<span class="line"><span>ping 8.8.8.8  （测试ip地址是否可以抵达）</span></span>
+<span class="line"><span>traceroute google.com （显示数据包到达目标经过的所有路由节点）</span></span>
+<span class="line"><span>  - IP 路由</span></span>
+<span class="line"><span>  - 子网划分</span></span>
+<span class="line"><span>  - 网关和DNS</span></span>
+<span class="line"><span>应用场景: 网络工程师、运维工程师</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="传输层-telnet" tabindex="-1">传输层 (telnet) <a class="header-anchor" href="#传输层-telnet" aria-label="Permalink to &quot;传输层 (telnet)&quot;">​</a></h3><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>知识领域: 网络编程基础  </span></span>
+<span class="line"><span>相关概念:</span></span>
+<span class="line"><span>  - TCP</span></span>
+<span class="line"><span># 需要可靠传输的应用</span></span>
+<span class="line"><span>🌐 网页浏览 (HTTP/HTTPS)</span></span>
+<span class="line"><span>📧 电子邮件 (SMTP/POP3/IMAP)</span></span>
+<span class="line"><span>💾 文件传输 (FTP/SFTP)</span></span>
+<span class="line"><span>🛡️ 远程登录 (SSH/Telnet)</span></span>
+<span class="line"><span>🗄️ 数据库连接 (MySQL/PostgreSQL)</span></span>
+<span class="line"><span>UDP 协议</span></span>
+<span class="line"><span># 实时性要求高的应用</span></span>
+<span class="line"><span>🎥 视频流媒体 (Zoom/直播)</span></span>
+<span class="line"><span>🎮 在线游戏 (实时对战)</span></span>
+<span class="line"><span>📞 语音通话 (VoIP)</span></span>
+<span class="line"><span>🔍 域名解析 (DNS)</span></span>
+<span class="line"><span>📡 网络时间同步 (NTP)</span></span>
+<span class="line"><span>  - 端口和Socket</span></span>
+<span class="line"><span>#查看所有监听端口</span></span>
+<span class="line"><span>netstat -tuln</span></span>
+<span class="line"><span># 端口就像大楼里的房间号</span></span>
+<span class="line"><span>IP地址 = 大楼地址 (192.168.1.100)</span></span>
+<span class="line"><span>端口号 = 房间号 (80, 443, 22等)</span></span>
+<span class="line"><span># 周知端口 (0-1023) - 系统服务</span></span>
+<span class="line"><span>80  → HTTP     (网页服务)</span></span>
+<span class="line"><span>443 → HTTPS    (安全网页)</span></span>
+<span class="line"><span>22  → SSH      (安全远程登录)</span></span>
+<span class="line"><span>21  → FTP      (文件传输)</span></span>
+<span class="line"><span>53  → DNS      (域名解析)</span></span>
+<span class="line"><span># 注册端口 (1024-49151) - 应用程序</span></span>
+<span class="line"><span>3306 → MySQL   (数据库)</span></span>
+<span class="line"><span>3389 → RDP     (远程桌面)</span></span>
+<span class="line"><span>5432 → PostgreSQL</span></span>
+<span class="line"><span># 动态端口 (49152-65535) - 客户端临时使用</span></span>
+<span class="line"><span># 数据包通过端口找到正确的应用程序</span></span>
+<span class="line"><span>📦 数据包 → IP地址:端口 → 🖥️ 具体应用</span></span>
+<span class="line"><span># 查看端口占用</span></span>
+<span class="line"><span>sudo lsof -i :端口号</span></span>
+<span class="line"><span># Socket = IP地址 + 端口号</span></span>
+<span class="line"><span># 它是网络通信的端点</span></span>
+<span class="line"><span>Socket A: 192.168.1.100:8080  (服务器监听)</span></span>
+<span class="line"><span>Socket B: 192.168.1.50:54321   (客户端连接)</span></span>
+<span class="line"><span>  - 三次握手</span></span>
+<span class="line"><span># TCP 就像可靠的快递服务：</span></span>
+<span class="line"><span>✅ 保证送达（确认机制）</span></span>
+<span class="line"><span>✅ 按顺序送达（序列号）</span></span>
+<span class="line"><span>✅ 知道包裹大小（数据分段）</span></span>
+<span class="line"><span>✅ 适应路况（拥塞控制）</span></span>
+<span class="line"><span>第一次：客户端说&quot;我想连接&quot;</span></span>
+<span class="line"><span>第二次：服务器说&quot;我准备好了，你准备好了吗&quot;</span></span>
+<span class="line"><span>第三次：客户端说&quot;我也准备好了&quot;</span></span>
+<span class="line"><span>确保双方都能正常收发数据</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  - 连接状态</span></span>
+<span class="line"><span># 查看所有连接状态</span></span>
+<span class="line"><span>netstat -an | grep tcp</span></span>
+<span class="line"><span>（大量TIME_WAIT）</span></span>
+<span class="line"><span>（大量CLOSE_WAIT）</span></span>
+<span class="line"><span>（SYN_RCVD与 SYN Flood攻击）</span></span>
+<span class="line"><span>应用场景: 后端开发、运维、安全测试</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br></div></div><p>![image-20251112095648894](/Users/chenyoupeng/Library/Application Support/typora-user-images/image-20251112095648894.png)</p><p>![image-20251112095724216](/Users/chenyoupeng/Library/Application Support/typora-user-images/image-20251112095724216.png)</p><h3 id="应用层-curl" tabindex="-1">应用层 (curl) <a class="header-anchor" href="#应用层-curl" aria-label="Permalink to &quot;应用层 (curl)&quot;">​</a></h3><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>知识领域: Web 开发基础</span></span>
+<span class="line"><span>相关概念:</span></span>
+<span class="line"><span>  - HTTP/HTTPS 协议</span></span>
+<span class="line"><span>  - RESTful API</span></span>
+<span class="line"><span>  - 请求/响应模型</span></span>
+<span class="line"><span>  - 状态码和头部</span></span>
+<span class="line"><span>应用场景: 前后端开发、测试工程师</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="_4-相关的课程和认证" tabindex="-1">4. <strong>相关的课程和认证</strong> <a class="header-anchor" href="#_4-相关的课程和认证" aria-label="Permalink to &quot;4. **相关的课程和认证**&quot;">​</a></h2><h3 id="大学课程" tabindex="-1">大学课程 <a class="header-anchor" href="#大学课程" aria-label="Permalink to &quot;大学课程&quot;">​</a></h3><ul><li>《计算机网络》</li><li>《网络协议分析》</li><li>《Web 开发技术》</li><li>《系统管理与维护》</li></ul><h3 id="专业认证" tabindex="-1">专业认证 <a class="header-anchor" href="#专业认证" aria-label="Permalink to &quot;专业认证&quot;">​</a></h3><ul><li><strong>Cisco CCNA</strong> (网络工程师)</li><li><strong>CompTIA Network+</strong> (网络基础)</li><li><strong>RHCE</strong> (Linux 系统管理)</li></ul><h2 id="_5-在实际工作中的重要性" tabindex="-1">5. <strong>在实际工作中的重要性</strong> <a class="header-anchor" href="#_5-在实际工作中的重要性" aria-label="Permalink to &quot;5. **在实际工作中的重要性**&quot;">​</a></h2><h3 id="前端开发者需要" tabindex="-1">前端开发者需要 <a class="header-anchor" href="#前端开发者需要" aria-label="Permalink to &quot;前端开发者需要&quot;">​</a></h3><ul><li>✅ <code>curl</code> - 测试接口、调试 API</li><li>✅ <code>ping</code> - 检查网络连通性</li><li>⚠️ <code>telnet</code> - 基础网络排查</li></ul><h3 id="后端开发者需要" tabindex="-1">后端开发者需要 <a class="header-anchor" href="#后端开发者需要" aria-label="Permalink to &quot;后端开发者需要&quot;">​</a></h3><ul><li>✅ <code>curl</code> - API 开发和测试</li><li>✅ <code>telnet</code> - 服务部署和监控</li><li>✅ <code>ping</code> - 服务器网络诊断</li></ul><h3 id="运维工程师需要" tabindex="-1">运维工程师需要 <a class="header-anchor" href="#运维工程师需要" aria-label="Permalink to &quot;运维工程师需要&quot;">​</a></h3><ul><li>✅ 所有工具熟练使用</li><li>✅ 深入理解原理</li><li>✅ 自动化监控和告警</li></ul><h2 id="_6-学习路径建议" tabindex="-1">6. <strong>学习路径建议</strong> <a class="header-anchor" href="#_6-学习路径建议" aria-label="Permalink to &quot;6. **学习路径建议**&quot;">​</a></h2><h3 id="初级阶段-前端重点" tabindex="-1">初级阶段 (前端重点) <a class="header-anchor" href="#初级阶段-前端重点" aria-label="Permalink to &quot;初级阶段 (前端重点)&quot;">​</a></h3><ol><li>HTTP 协议和 RESTful API</li><li>使用 curl 测试接口</li><li>基础网络概念 (IP、端口、DNS)</li></ol><h3 id="中级阶段-全栈发展" tabindex="-1">中级阶段 (全栈发展) <a class="header-anchor" href="#中级阶段-全栈发展" aria-label="Permalink to &quot;中级阶段 (全栈发展)&quot;">​</a></h3><ol><li>TCP/IP 协议详解</li><li>网络诊断工具使用</li><li>服务部署和监控</li></ol><h3 id="高级阶段-架构师方向" tabindex="-1">高级阶段 (架构师方向) <a class="header-anchor" href="#高级阶段-架构师方向" aria-label="Permalink to &quot;高级阶段 (架构师方向)&quot;">​</a></h3><ol><li>网络性能优化</li><li>安全性和防火墙</li><li>分布式系统网络</li></ol><h2 id="_7-这些知识在前端面试中的重要性" tabindex="-1">7. <strong>这些知识在前端面试中的重要性</strong> <a class="header-anchor" href="#_7-这些知识在前端面试中的重要性" aria-label="Permalink to &quot;7. **这些知识在前端面试中的重要性**&quot;">​</a></h2><h3 id="常考问题" tabindex="-1">常考问题 <a class="header-anchor" href="#常考问题" aria-label="Permalink to &quot;常考问题&quot;">​</a></h3><ul><li>&quot;从输入URL到页面加载发生了什么&quot;</li><li>&quot;HTTP 状态码有哪些&quot;</li><li>&quot;如何调试跨域问题&quot;</li><li>&quot;前端性能优化手段&quot;</li></ul><h3 id="实际价值" tabindex="-1">实际价值 <a class="header-anchor" href="#实际价值" aria-label="Permalink to &quot;实际价值&quot;">​</a></h3><ul><li>独立解决开发环境问题</li><li>更好的前后端协作</li><li>快速定位线上故障</li></ul><p>这些属于<strong>计算机基础能力</strong>，越是资深的前端工程师，越需要掌握这些底层网络知识！</p><p>![image-20251106171239353](/Users/chenyoupeng/Library/Application Support/typora-user-images/image-20251106171239353.png)</p>`,41)])])}const m=n(e,[["render",i]]);export{d as __pageData,m as default};

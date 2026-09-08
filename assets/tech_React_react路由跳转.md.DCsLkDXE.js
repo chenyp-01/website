@@ -1,0 +1,36 @@
+import{_ as s,c as n,o as e,al as p}from"./chunks/framework.QMC68jD7.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"tech/React/react路由跳转.md","filePath":"tech/React/react路由跳转.md","lastUpdated":1777271852000}'),l={name:"tech/React/react路由跳转.md"};function t(i,a,r,c,o,u){return e(),n("div",null,[...a[0]||(a[0]=[p(`<h2 id="_1-声明式导航的两种方式" tabindex="-1">1.声明式导航的两种方式 <a class="header-anchor" href="#_1-声明式导航的两种方式" aria-label="Permalink to &quot;1.声明式导航的两种方式&quot;">​</a></h2><h3 id="_1-两种传参方式-第1种" tabindex="-1">1.两种传参方式 - 第1种 <a class="header-anchor" href="#_1-两种传参方式-第1种" aria-label="Permalink to &quot;1.两种传参方式 - 第1种&quot;">​</a></h3><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>1.在路由上设置</span></span>
+<span class="line"><span> &lt;Route path=&quot;/detail/:id/:type&quot; element={&lt;Detail&gt;&lt;/Detail&gt;}&gt;&lt;/Route&gt;</span></span>
+<span class="line"><span>2.跳转的地方设置</span></span>
+<span class="line"><span>  &lt;NavLink to=&quot;/detail/12/car&quot;&gt;商品2&lt;/NavLink&gt;</span></span>
+<span class="line"><span>3.接受参数</span></span>
+<span class="line"><span> //接收参数一  /detail/3/car</span></span>
+<span class="line"><span>import { useParams } from &#39;react-router-dom&#39;</span></span>
+<span class="line"><span>    // const {id,type} = useParams()</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_2-两种传参方式-第2种" tabindex="-1">2.两种传参方式 - 第2种 <a class="header-anchor" href="#_2-两种传参方式-第2种" aria-label="Permalink to &quot;2.两种传参方式 - 第2种&quot;">​</a></h3><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>1.路由配置上面什么也不需要加</span></span>
+<span class="line"><span>&lt;Route path=&quot;/detail&quot; element={&lt;Detail&gt;&lt;/Detail&gt;}&gt;&lt;/Route&gt;</span></span>
+<span class="line"><span>2.跳转的地方</span></span>
+<span class="line"><span>&lt;NavLink to=&quot;/detail?id=11&amp;type=car&quot;&gt;商品1&lt;/NavLink&gt;</span></span>
+<span class="line"><span>3.接参数</span></span>
+<span class="line"><span>import { useSearchParams } from &#39;react-router-dom&#39;</span></span>
+<span class="line"><span>  //接收参数二   /detail?id=3&amp;type=cart</span></span>
+<span class="line"><span>    const [searchParams, setSearchParams] = useSearchParams()</span></span>
+<span class="line"><span>    const id = searchParams.get(&quot;id&quot;)</span></span>
+<span class="line"><span>    const type = searchParams.get(&quot;type&quot;)</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="_2-编程式导航" tabindex="-1">2.编程式导航 <a class="header-anchor" href="#_2-编程式导航" aria-label="Permalink to &quot;2.编程式导航&quot;">​</a></h2><h3 id="_1-组件中使用usenavigate进行跳转" tabindex="-1">1.组件中使用useNavigate进行跳转 <a class="header-anchor" href="#_1-组件中使用usenavigate进行跳转" aria-label="Permalink to &quot;1.组件中使用useNavigate进行跳转&quot;">​</a></h3><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>1.引入useNavigate</span></span>
+<span class="line"><span>import { useNavigate } from &quot;react-router-dom&quot;;</span></span>
+<span class="line"><span>2.使用方法</span></span>
+<span class="line"><span>const nav = useNavigate();</span></span>
+<span class="line"><span>3.设置点击事件</span></span>
+<span class="line"><span>&lt;button onClick={change}&gt;登录&lt;/button&gt;</span></span>
+<span class="line"><span>4.跳转</span></span>
+<span class="line"><span>const change = () =&gt; {</span></span>
+<span class="line"><span>    nav(&quot;/login&quot;, {</span></span>
+<span class="line"><span>      state: {</span></span>
+<span class="line"><span>        user: &quot;小明&quot;,</span></span>
+<span class="line"><span>        pw: 123,</span></span>
+<span class="line"><span>      },</span></span>
+<span class="line"><span>    });</span></span>
+<span class="line"><span>  };</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="_2-跳转后的组件接收参数" tabindex="-1">2.跳转后的组件接收参数 <a class="header-anchor" href="#_2-跳转后的组件接收参数" aria-label="Permalink to &quot;2.跳转后的组件接收参数&quot;">​</a></h3><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>1.引入useLocation</span></span>
+<span class="line"><span>import { useLocation } from &quot;react-router-dom&quot;;</span></span>
+<span class="line"><span>2.使用方法</span></span>
+<span class="line"><span>const {state:{user,pw}} = useLocation();</span></span>
+<span class="line"><span>3.模板中使用</span></span>
+<span class="line"><span>&lt;div&gt;Login----{user}---{pw}&lt;/div&gt;;</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language-vue vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">vue</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div>`,11)])])}const m=s(l,[["render",t]]);export{d as __pageData,m as default};

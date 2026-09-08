@@ -1,0 +1,3348 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript | Code · AI · Agent · Life</title>
+    <meta name="description" content="有鹏在折腾的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/website/assets/style.CBfGz4-D.css" as="style">
+    <link rel="preload stylesheet" href="/website/vp-icons.css" as="style">
+    
+    <script type="module" src="/website/assets/app.BQTesUHO.js"></script>
+    <link rel="preload" href="/website/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/website/assets/chunks/theme.CYVAVoqf.js">
+    <link rel="modulepreload" href="/website/assets/chunks/framework.QMC68jD7.js">
+    <link rel="modulepreload" href="/website/assets/chunks/files-loader.DmnR_p8E.js">
+    <link rel="modulepreload" href="/website/assets/tech_React_index.md.BlmTKBOg.lean.js">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="/website/favicon.ico">
+    <link rel="apple-touch-icon" href="/website/favicon.ico">
+    <link rel="mask-icon" href="/website/favicon.ico" color="#3eaf7c">
+    <meta name="msapplication-TileImage" content="/website/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body><!--teleport start anchor--><div class="m-fx" data-v-f25fa346><div class="m-fx-stage" aria-hidden="true" style="" data-v-f25fa346><i class="orb o1" data-v-f25fa346></i><i class="orb o2" data-v-f25fa346></i><i class="orb o3" data-v-f25fa346></i><i class="orb o4" data-v-f25fa346></i><i class="orb o5" data-v-f25fa346></i></div><button class="m-fx-toggle" type="button" aria-pressed="true" title="关闭彩色背景与撒花" data-v-f25fa346><span class="fx-ico" data-v-f25fa346>🎉</span></button></div><!--teleport anchor-->
+    <div id="app"><!--[--><!--teleport start--><!--teleport end--><div class="Layout m-nav-layout" data-v-3b5ac462><!--[--><!--]--><!--[--><span tabindex="-1" data-v-72f87fc7></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-72f87fc7>Skip to content</a><!--]--><!----><header class="VPNav" data-v-3b5ac462 data-v-0258cca9><div class="VPNavBar" data-v-0258cca9 data-v-7a16a9d0><div class="wrapper" data-v-7a16a9d0><div class="container" data-v-7a16a9d0><div class="title" data-v-7a16a9d0><div class="VPNavBarTitle" data-v-7a16a9d0 data-v-1c0488a9><a class="title" href="/website/" data-v-1c0488a9><!--[--><!--]--><!--[--><img class="VPImage logo" src="/website/logo.png" alt data-v-086f85ae><!--]--><span data-v-1c0488a9>Code · AI · Agent · Life</span><!--[--><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--]--></a></div></div><div class="content" data-v-7a16a9d0><div class="content-body" data-v-7a16a9d0><!--[--><!--]--><div class="VPNavBarSearch search" data-v-7a16a9d0><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-7a16a9d0 data-v-efb5d98a><span id="main-nav-aria-label" class="visually-hidden" data-v-efb5d98a> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>主页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/life/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>生活</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/work/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>工作</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/reading/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>读书笔记</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/projects/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>项目经验</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/tech/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>技术栈</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/nav/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>前端导航</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/friends/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>友情链接</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-7a16a9d0 data-v-d86b6ee5><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-d86b6ee5 data-v-99c90d64 data-v-4b4abca3><span class="check" data-v-4b4abca3><span class="icon" data-v-4b4abca3><!--[--><span class="vpi-sun sun" data-v-99c90d64></span><span class="vpi-moon moon" data-v-99c90d64></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-7a16a9d0 data-v-49e5eaa8 data-v-4c55e980><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenyp-01" aria-label="github" target="_blank" rel="noopener" data-v-4c55e980 data-v-608a15d2><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-7a16a9d0 data-v-f13fdc11 data-v-8271439a><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-8271439a><span class="vpi-more-horizontal icon" data-v-8271439a></span></button><div class="menu" data-v-8271439a><div class="VPMenu" data-v-8271439a data-v-31c37511><!----><!--[--><!--[--><!----><div class="group" data-v-f13fdc11><div class="item appearance" data-v-f13fdc11><p class="label" data-v-f13fdc11>主题</p><div class="appearance-action" data-v-f13fdc11><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-f13fdc11 data-v-99c90d64 data-v-4b4abca3><span class="check" data-v-4b4abca3><span class="icon" data-v-4b4abca3><!--[--><span class="vpi-sun sun" data-v-99c90d64></span><span class="vpi-moon moon" data-v-99c90d64></span><!--]--></span></span></button></div></div></div><div class="group" data-v-f13fdc11><div class="item social-links" data-v-f13fdc11><div class="VPSocialLinks social-links-list" data-v-f13fdc11 data-v-4c55e980><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenyp-01" aria-label="github" target="_blank" rel="noopener" data-v-4c55e980 data-v-608a15d2><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-7a16a9d0 data-v-64f3c72c><span class="container" data-v-64f3c72c><span class="top" data-v-64f3c72c></span><span class="middle" data-v-64f3c72c></span><span class="bottom" data-v-64f3c72c></span></span></button></div></div></div></div><div class="divider" data-v-7a16a9d0><div class="divider-line" data-v-7a16a9d0></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-3b5ac462 data-v-3a3529ab><div class="container" data-v-3a3529ab><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-3a3529ab data-v-0638e338><button data-v-0638e338>回到顶部</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-3b5ac462 data-v-ac4c840c><div class="VPDoc" data-v-ac4c840c data-v-aa9d3751><!--[--><!--]--><div class="container" data-v-aa9d3751><!----><div class="content" data-v-aa9d3751><div class="content-container" data-v-aa9d3751><!--[--><!--]--><main class="main" data-v-aa9d3751><div style="position:relative;" class="vp-doc _website_tech_React_" data-v-aa9d3751><div><h1 id="javascript" tabindex="-1">JavaScript <a class="header-anchor" href="#javascript" aria-label="Permalink to &quot;JavaScript&quot;">​</a></h1><p>JavaScript 文档列表，点击任意条目即可进入对应 md 文件阅读。</p><!--[--><h2 id="文件列表" tabindex="-1" data-v-69c8db37>文件列表 <a class="header-anchor" href="#文件列表" aria-hidden="true" data-v-69c8db37></a></h2><div class="m-nav-links" data-v-69c8db37><!--[--><a class="m-nav-link" href="/website/tech/React/01-React的安装-jsx语法" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="01-React的安装-jsx语法" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_01-react的安装-jsx语法" class="title" data-v-4cce99de>01-React的安装-jsx语法</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/02-函数组件和React Hooks" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="02-函数组件和React Hooks" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_02-函数组件和react-hooks" class="title" data-v-4cce99de>02-函数组件和React Hooks</h5></div><p class="desc" data-v-4cce99de>1. （简单了解）类（class）组件的缺点 &amp;ZeroWidthSpace;
+React 的核心是组件。v16.8 版本之前，组件的标准写法是类（class）。
+下面是一个简单的类组件。
+jsximport React, { Component } from &quot;react&quot;;
+
+export default class Button extends Component {
+  constructor() {
+    super();
+    this.state = { buttonText: &quot;Click me, please&quot; };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState(() =&gt; {
+      return { buttonText: &quot;Thanks, been clicked!&quot; };
+    });
+  }
+  render() {
+    const { buttonText } = this.state;
+    return &amp;#x3C;button onClick={this.handleClick}&gt;{buttonText}&amp;#x3C;/button&gt;;
+  }
+}
+123456789101112131415161718
+这个组件类仅仅是一个按钮，但可以看到，它的代码已经很&amp;quot;重&amp;quot;了。真实的 React App 由多个类按照层级，一层层构成，复杂度成倍增长。再加入 Redux，就变得更复杂。
+
+Redux 的作者 总结了class类组件的几个缺点。
+
+大型组件很难拆分和重构，也很难测试。
+业务逻辑分散在组件的各个方法之中，导致重复逻辑或关联逻辑。
+class类组件引入了复杂的编程模式
+
+2. 函数组件 &amp;ZeroWidthSpace;
+React 团队希望，组件不要变成复杂的容器，最好只是数据流的管道。开发者根据需要，组合管道即可。 组件的最佳写法应该是函数，而不是类。
+React 早就支持函数组件，下面就是一个例子。
+function Welcome(props) {
+  return &amp;#x3C;h1&gt;Hello, {props.name}&amp;#x3C;/h1&gt;;
+}
+123
+但是，这种写法有重大限制，必须是纯函数，不能包含状态（state），也不支持生命周期方法，,也没有this, 因此无法取代类。
+
+3. React Hooks &amp;ZeroWidthSpace;
+React Hooks 的设计目的，就是加强版函数组件，完全不使用&amp;quot;类&amp;quot;，就能写出一个全功能的组件。
+Hook 这个单词的意思是&amp;quot;钩子&amp;quot;。
+React Hooks 的意思是，组件尽量写成纯函数，如果需要外部功能和副作用，就用钩子把外部代码&amp;quot;钩&amp;quot;进来。 React Hooks 就是那些钩子。
+4. 函数式组件和类组件的区别 &amp;ZeroWidthSpace;
+React 16.8 版本之前
+
+函数式组件中没有this,不能有自己的state,也不能有生命周期函数
+类组件中可以有this,state,生命周期函数
+
+React 16.8之后
+
+函数式组件加入了Hook, 仍然没有this
+但是函数式组件可以通过新的Hook来实现state和生命周期函数
+
+5. 函数组件中常用Hook &amp;ZeroWidthSpace;
+
+useState
+useEffect
+useRef
+useContext
+
+5.1 useState &amp;ZeroWidthSpace;
+useState用法 &amp;ZeroWidthSpace;
+useState()用于为函数组件引入状态（state）。纯函数不能有状态，所以把状态放在钩子里面。
+jsx//引入钩子函数
+import {useState} from &#39;react&#39;;
+const Test = () =&gt; {
+    // useState的参数为状态初始值
+    // useState的返回值是一个数组
+    // 数组第一个成员是变量，第二个成员是函数，用来更新状态，约定是set前缀加上状态的变量名
+    const [num,setNum] = useState(1)
+    return (
+        &amp;#x3C;div&gt;
+            &amp;#x3C;div&gt;访问num: {num}&amp;#x3C;/div&gt;
+            &amp;#x3C;button onClick={()=&gt;setNum(num+1)}&gt;修改state&amp;#x3C;/button&gt;
+        &amp;#x3C;/div&gt;
+    );
+}
+export default Test
+123456789101112131415
+为什么用钩子函数定义状态时用const?
+重新呈现组件后，将再次执行该函数，从而创建新的作用域，创建新的count变量，该变量与先前的变量无关。
+
+理解setState的运行机制 &amp;ZeroWidthSpace;
+特别提醒 ： setState可以用回调的方式实现
+
+setState指代两种情况：
+
+class组件中改变状态的API
+泛指函数组件中改变状态的方法,比如 const [color,setColor] = useState(&amp;quot;red&amp;quot;)    这里面的setColor就是setState
+
+
+reactimport React, { useState, useEffect } from &#39;react&#39;
+
+export default function Home() {
+    const [count, setCount] = useState(0)
+
+    const changeCount = () =&gt; {
+
+        //1. setState是异步的
+        //2. 频繁改变状态会把改变合并，只执行最后一次
+        //3. 结果 count = 1
+        setCount(count + 1)
+        setCount(count + 1)
+        setCount(count + 1)
+        setCount(count + 1)
+
+
+        // 1. 会把多个回调放入队列，依次执行
+        // 2. 结果 count = 4
+        // setCount(count =&gt; count + 1)
+        // setCount(count =&gt; count + 1)
+        // setCount(count =&gt; count + 1)
+        // setCount(count =&gt; count + 1)
+    }
+
+    return (
+        &amp;#x3C;div&gt;
+            &amp;#x3C;h3&gt;Home&amp;#x3C;/h3&gt;
+            &amp;#x3C;button onClick={changeCount}&gt;改变count的值: {count}&amp;#x3C;/button&gt;
+        &amp;#x3C;/div&gt;
+    )
+}
+123456789101112131415161718192021222324252627282930315.2 useEffect副作用钩子 &amp;ZeroWidthSpace;
+useEffect()用来引入具有副作用的操作，最常见的就是向服务器请求数据。
+useEffect() 可以模拟生命周期函数的效果
+jsximport { useState, useEffect } from &#39;react&#39;;
+const Test = () =&gt; {
+    const [num, setNum] = useState(1)
+    const [msg, setMsg] = useState(&#39;a&#39;)
+    const [list, setList] = useState([])
+
+	//1. 只有个参数
+1234567</p></article></a><a class="m-nav-link" href="/website/tech/React/03-了解React中class组件" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="03-了解React中class组件" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_03-了解react中class组件" class="title" data-v-4cce99de>03-了解React中class组件</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/04-了解react的生命周期" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="04-了解react的生命周期" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_04-了解react的生命周期" class="title" data-v-4cce99de>04-了解react的生命周期</h5></div><p class="desc" data-v-4cce99de>react的生命周期函数 &amp;ZeroWidthSpace;
+1. react所有的生命周期函数 &amp;ZeroWidthSpace;
+https://react.docschina.org/docs/react-component.html
+挂载 &amp;ZeroWidthSpace;
+当组件实例被创建并插入 DOM 中时，其生命周期调用顺序如下：
+
+constructor()
+static getDerivedStateFromProps()
+render()
+componentDidMount()
+
+更新 &amp;ZeroWidthSpace;
+当组件的 props 或 state 发生变化时会触发更新。组件更新的生命周期调用顺序如下：
+
+static getDerivedStateFromProps()
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+
+卸载 &amp;ZeroWidthSpace;
+当组件从 DOM 中移除时会调用如下方法：
+
+componentWillUnmount()
+
+2. 常用的生命周期方法 &amp;ZeroWidthSpace;
+创建阶段 &amp;ZeroWidthSpace;
+constructor &amp;ZeroWidthSpace;
+作用： (1) 获取props      (2) 初始化state
+render &amp;ZeroWidthSpace;
+作用：渲染组件到页面中，无法获取页面中的DOM对象
+componentDidMount() &amp;ZeroWidthSpace;
+（1） 组件已经挂载到页面中
+（2） 可以进行DOM操作，比如：获取到组件内部的DOM对象
+（3） 可以发送请求获取数据
+（4） 可以通过 setState() 修改状态的值
+注意：在这里修改状态会重新渲染
+运行和交互阶段 &amp;ZeroWidthSpace;
+componentDidUpdate(prevProps, prevState) &amp;ZeroWidthSpace;
+作用：组件已经被更新
+参数：旧的属性和状态对象
+卸载阶段 &amp;ZeroWidthSpace;
+componentWillUnmount() &amp;ZeroWidthSpace;
+组件卸载期间，只有一个函数，这个函数也有一个显著的特点：组件一辈子只能执行一次
+使用说明
+只要组件不再被渲染到页面中，那么这个方法就会被调用（ 渲染到页面中 -&amp;gt; 不再渲染到页面中 ）
+作用：在卸载组件的时候，执行清理工作，比如清除定时器
+讲解用案例代码 &amp;ZeroWidthSpace;
+子组件
+jsximport {Component} from &#39;react&#39;
+// 子组件
+export default class Child extends Component {
+    //构造方法
+    constructor() {
+      console.log(&#39;Child-constructor&#39;);
+      super()
+    //   console.log(props);
+      this.state = {
+        color: &#39;black&#39;
+      }
+    }
+    // 组件挂载后
+    componentDidMount(){
+      console.log(&#39;Child-componentDidMount&#39;);
+    }
+    // 是否应该更新组件
+    shouldComponentUpdate(){
+      console.log(&#39;Child-shouldComponentUpdate&#39;);
+      return true
+    }
+    // 组件更新后
+    componentDidUpdate(){
+      console.log(&#39;Child-componentDidUpdate&#39;);
+    }
+    // 组件卸载前
+    componentWillUnmount(){
+      console.log(&#39;Child-componentWillUnmount&#39;);
+    }
+    //组件渲染
+    render() {
+      console.log(&#39;Child-render&#39;);
+      return (
+        &amp;#x3C;div&gt;
+          &amp;#x3C;p&gt;子组件
+1234567891011121314151617181920212223242526272829303132333435</p></article></a><a class="m-nav-link" href="/website/tech/React/04-了解并记忆react的生命周期" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="04-了解并记忆react的生命周期" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_04-了解并记忆react的生命周期" class="title" data-v-4cce99de>04-了解并记忆react的生命周期</h5></div><p class="desc" data-v-4cce99de>react的生命周期函数 &amp;ZeroWidthSpace;
+1. react所有的生命周期函数 &amp;ZeroWidthSpace;
+https://react.docschina.org/docs/react-component.html
+挂载 &amp;ZeroWidthSpace;
+当组件实例被创建并插入 DOM 中时，其生命周期调用顺序如下：
+
+constructor()
+static getDerivedStateFromProps()
+render()
+componentDidMount()
+
+更新 &amp;ZeroWidthSpace;
+当组件的 props 或 state 发生变化时会触发更新。组件更新的生命周期调用顺序如下：
+
+static getDerivedStateFromProps()
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+
+卸载 &amp;ZeroWidthSpace;
+当组件从 DOM 中移除时会调用如下方法：
+
+componentWillUnmount()
+
+2. 常用的生命周期方法 &amp;ZeroWidthSpace;
+创建阶段 &amp;ZeroWidthSpace;
+constructor &amp;ZeroWidthSpace;
+作用： (1) 获取props      (2) 初始化state
+render &amp;ZeroWidthSpace;
+作用：渲染组件到页面中，无法获取页面中的DOM对象
+componentDidMount() &amp;ZeroWidthSpace;
+（1） 组件已经挂载到页面中
+（2） 可以进行DOM操作，比如：获取到组件内部的DOM对象
+（3） 可以发送请求获取数据
+（4） 可以通过 setState() 修改状态的值
+注意：在这里修改状态会重新渲染
+运行和交互阶段 &amp;ZeroWidthSpace;
+componentDidUpdate(prevProps, prevState) &amp;ZeroWidthSpace;
+作用：组件已经被更新
+参数：旧的属性和状态对象
+卸载阶段 &amp;ZeroWidthSpace;
+componentWillUnmount() &amp;ZeroWidthSpace;
+组件卸载期间，只有一个函数，这个函数也有一个显著的特点：组件一辈子只能执行一次
+使用说明
+只要组件不再被渲染到页面中，那么这个方法就会被调用（ 渲染到页面中 -&amp;gt; 不再渲染到页面中 ）
+作用：在卸载组件的时候，执行清理工作，比如清除定时器
+讲解用案例代码 &amp;ZeroWidthSpace;
+子组件
+// 子组件
+class Child extends Component {
+  //构造方法
+  constructor() {
+    console.log(&#39;Child-constructor&#39;);
+    super()
+    this.state = {
+      parentMsg: &#39;父组件的数据&#39;
+    }
+  }
+  // 组件挂载后
+  componentDidMount(){
+    console.log(&#39;Child-componentDidMount&#39;);
+  }
+  // 是否应该更新组件
+  shouldComponentUpdate(){
+    console.log(&#39;Child-shouldComponentUpdate&#39;);
+    return true
+  }
+  // 组件更新后
+  componentDidUpdate(){
+    console.log(&#39;Child-componentDidUpdate&#39;);
+  }
+  // 组件卸载前
+  componentWillUnmount(){
+    console.log(&#39;Child-componentWillUnmount&#39;);
+  }
+  //组件渲染
+  render() {
+    console.log(&#39;Child-render&#39;);
+    return (
+      &amp;#x3C;div&gt;
+        &amp;#x3C;p&gt;子组件
+123456789101112131415161718192021222324252627282930313233</p></article></a><a class="m-nav-link" href="/website/tech/React/05-安装React devtools" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="05-安装React devtools" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_05-安装react-devtools" class="title" data-v-4cce99de>05-安装React devtools</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/06-React路由V6的使用" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="06-React路由V6的使用" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_06-react路由v6的使用" class="title" data-v-4cce99de>06-React路由V6的使用</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/07-Sass&amp;antd-mobileUI组件库实现swiper效果" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="07-Sass&amp;antd-mobileUI组件库实现swiper效果" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_07-sass-antd-mobileui组件库实现swiper效果" class="title" data-v-4cce99de>07-Sass&amp;antd-mobileUI组件库实现swiper效果</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/08-了解-受控组件和非受控组件" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="08-了解-受控组件和非受控组件" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_08-了解-受控组件和非受控组件" class="title" data-v-4cce99de>08-了解-受控组件和非受控组件</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/09-了解-react的纯函数和副作用的理解" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="09-了解-react的纯函数和副作用的理解" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_09-了解-react的纯函数和副作用的理解" class="title" data-v-4cce99de>09-了解-react的纯函数和副作用的理解</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/10-React之性能优化" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="10-React之性能优化" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_10-react之性能优化" class="title" data-v-4cce99de>10-React之性能优化</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/11-只背-不讲-redux状态管理" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="11-只背-不讲-redux状态管理" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_11-只背-不讲-redux状态管理" class="title" data-v-4cce99de>11-只背-不讲-redux状态管理</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/12-redux toolkit状态管理" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="12-redux toolkit状态管理" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_12-redux-toolkit状态管理" class="title" data-v-4cce99de>12-redux toolkit状态管理</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/13-react移动端适配的配置" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="13-react移动端适配的配置" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_13-react移动端适配的配置" class="title" data-v-4cce99de>13-react移动端适配的配置</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/14-老资料参考-后台管理项目开发流程" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="14-老资料参考-后台管理项目开发流程" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_14-老资料参考-后台管理项目开发流程" class="title" data-v-4cce99de>14-老资料参考-后台管理项目开发流程</h5></div><p class="desc" data-v-4cce99de>后台管理项目开发流程 &amp;ZeroWidthSpace;
+1. 相关技术栈 &amp;ZeroWidthSpace;
+
+
+react
+
+
+react-router-dom
+
+
+@reduxjs/toolkit
+
+
+vite
+
+
+antd
+
+
+axios
+
+
+sass
+
+
+normalize.css
+
+
+dayjs
+
+
+xlsx
+
+
+wangeditor
+
+
+lodash
+
+
+2. 创建项目,安装依赖 &amp;ZeroWidthSpace;
+js// 创建项目
+pnpm create vite
+// 安装依赖
+pnpm install
+// 启动项目
+pnpm run dev
+1234563. 配置路径别名和服务器代理 &amp;ZeroWidthSpace;
+
+服务器代理proxy实现开发环境的跨域
+
+
+vite.config.js
+
+jsimport { defineConfig } from &#39;vite&#39;
+import react from &#39;@vitejs/plugin-react&#39;
+import path from &#39;path&#39;
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    //设置别名
+    alias: {
+      &quot;@&quot;: path.resolve(__dirname, &#39;src&#39;)
+    }
+  },
+  server: {
+    port: 8000,
+    //服务器代理
+    proxy: {
+      &quot;/api&quot;: {
+        target: &quot;http://localhost:3000&quot;,
+        changeOrigin: true,
+        rewrite: (path) =&gt; path.replace(/^\/api/, &quot;&quot;),
+      }
+    }
+  }
+})
+1234567891011121314151617181920212223244. 处理css &amp;ZeroWidthSpace;
+
+
+安装sass模块，支持*.scss文件的编译
+
+
+安装 normalize.css ， 实现样式重置
+main.jsx
+jsimport &quot;normalize.css&quot;
+1
+
+5. 配置路由/路由鉴权 &amp;ZeroWidthSpace;
+
+
+安装路由模块
+npm i react-router-dom
+1
+
+App.jsx
+在应用中添加路由
+jsximport React from &#39;react&#39;
+import { BrowserRouter as Router } from &#39;react-router-dom&#39;
+//引入路由组件
+import RenderRoutes from &#39;./router/renderRoutes&#39;
+import &#39;./App.scss&#39;
+import &#39;antd/dist/reset.css&#39;;
+
+export default function App() {
+  return (
+   &amp;#x3C;Router&gt;
+      &amp;#x3C;RenderRoutes&gt;&amp;#x3C;/RenderRoutes&gt;
+   &amp;#x3C;/Router&gt;
+  )
+}
+1234567891011121314
+
+router/renderRoutes.jsx
+基于路由表生成路由组件
+jsximport React from &#39;react&#39;
+import {useRoutes} from &#39;react-router-dom&#39;
+//引入路由表
+import routeList from &#39;./routeList&#39;
+
+export default function index() {
+  //生成路由节点
+  const element = useRoutes(routeList)
+  return element
+}
+12345678910
+
+router/routeList.jsx
+配置路由表及路由懒加载
+jsximport { lazy } from &#39;react&#39;
+import WrapperRouteComponent from &#39;./wrapperRouteComponent&#39;
+import {Navigate} from &#39;react-router-dom&#39;
+
+// 路由懒加载
+// const Layout = lazy(()=&gt;import(&quot;@/pages/layout&quot;))
+import Layout  from &quot;@/pages/layout&quot;
+import Login from &#39;@/pages/Login&#39;
+const NotFound = lazy(()=&gt;import(&quot;@/pages/404&quot;))
+const Console = lazy(()=&gt;import(&quot;@/pages/dashboard/console&quot;))
+const Monitor = lazy(()=&gt;import(&quot;@/pages/dashboard/monitor&quot;))
+const Workplace = lazy(()=&gt;import(&quot;@/pages/dashboard/workplace&quot;))
+const Bar = lazy(()=&gt;import(&quot;@/pages/charts/Bar&quot;))
+const Pie = lazy(()=&gt;import(&quot;@/pages/charts/Pie&quot;))
+const Notice = lazy(()=&gt;import(&quot;@/pages/notice&quot;))
+const AdminClass = lazy(()=&gt;import(&quot;@/pages/student/AdminClass&quot;))
+const AdminStu = lazy(()=&gt;import(&quot;@/pages/student/AdminStu&quot;))
+
+const routeList = [
+    {
+        path: &#39;/&#39;,
+        element: &amp;#x3C;Navigate to=&quot;/dashboard&quot;&gt;&amp;#x3C;/Navigate&gt;
+    },
+    {
+        path: &#39;/dashboard&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Layout/&gt;} title=&quot;管理后台&quot; auth={true}/&gt;,
+        children: [
+            {
+                path: &#39;&#39;,
+                element: &amp;#x3C;Navigate to=&quot;console&quot;&gt;&amp;#x3C;/Navigate&gt;
+            },
+            {
+                path: &#39;console&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Console/&gt;} title=&quot;主控台&quot;/&gt;,
+            },
+            {
+                path: &#39;monitor&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Monitor/&gt;} title=&quot;监控页&quot;/&gt;,
+            },
+            {
+                path: &#39;workplace&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Workplace/&gt;} title=&quot;工作台&quot;/&gt;,
+            },
+        ]
+    },
+    {
+        path: &#39;/charts&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Layout/&gt;} title=&quot;管理后台&quot; auth={true}/&gt;,
+        children: [
+           
+            {
+                path: &#39;bar&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Bar/&gt;} title=&quot;柱状图&quot;/&gt;,
+            },
+            {
+                path: &#39;pie&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Pie/&gt;} title=&quot;饼图&quot;/&gt;,
+            }
+        ]
+    },
+    {
+        path: &#39;/student&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Layout/&gt;} title=&quot;学员信息&quot; auth={true}/&gt;,
+        children: [
+           
+            {
+                path: &#39;adminClass&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;AdminClass/&gt;} title=&quot;班级管理&quot;/&gt;,
+            },
+            {
+                path: &#39;adminStu&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;AdminStu/&gt;} title=&quot;学生管理&quot;/&gt;,
+            }
+        ]
+    },
+    {
+        path: &#39;/notice&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Layout/&gt;} title=&quot;管理后台&quot; auth={true}/&gt;,
+        children: [
+            {
+                path: &#39;&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Notice/&gt;} title=&quot;柱状图&quot;/&gt;,
+            }
+        ]
+    },
+    {
+        path: &#39;/login&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Login/&gt;} title=&quot;react-admin-登录&quot; /&gt;
+    },
+    {
+        path: &#39;/404&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;NotFound/&gt;} title=&quot;404&quot;/&gt;
+    },
+    {
+        path: &#39;*&#39;,
+        element: &amp;#x3C;Navigate to=&quot;/404&quot;&gt;&amp;#x3C;/Navigate&gt;
+    }
+]
+
+export default routeList
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100
+
+router/wrapperRouteComponent.jsx
+统一处理路由拦截
+jsximport { Suspense } from &#39;react&#39;
+import PrivateRoute from &#39;./privateRoute&#39;
+export default function wrapperRouteComponent({ title, auth, ...props }) {
+    title ? document.title = title : &#39;&#39;
+    return (
+        &amp;#x3C;Suspense fallback={&amp;#x3C;div&gt;loading...&amp;#x3C;/div&gt;}&gt;
+            {auth ? &amp;#x3C;PrivateRoute {...props}&gt;&amp;#x3C;/PrivateRoute&gt; : props.element}
+        &amp;#x3C;/Suspense&gt;
+    )
+}
+12345678910
+
+router/privateRoute.jsx
+实现鉴权
+jsximport React from &#39;react&#39;
+import { Navigate } from &#39;react-router-dom&#39;
+
+export default function privateRoute(props) {
+    //判断是否存在token
+    const isLogin = sessionStorage.getItem(&quot;token&quot;)
+    return (
+        isLogin ? props.element : &amp;#x3C;Navigate to=&quot;/login&quot;&gt;&amp;#x3C;/Navigate&gt;
+    )
+}
+12345678910
+
+6. 使用Antd/图标 &amp;ZeroWidthSpace;
+
+
+安装
+npm i antd  @ant-design/icons
+1
+
+在App.jsx中引入css
+// import &#39;antd/dist/reset.css&#39;;
+1
+
+实例: 在组件中使用按钮
+jsximport { SearchOutlined } from &#39;@ant-design/icons&#39;;
+import { Button } from &#39;antd&#39;;
+.....
+
+const Com = ()=&gt;(
+    &amp;#x3C;Button type=&quot;primary&quot; icon={&amp;#x3C;SearchOutlined /&gt;}&gt;
+        Search
+     &amp;#x3C;/Button&gt;
+)
+123456789
+
+7. API请求的封装 &amp;ZeroWidthSpace;
+
+
+api/config.js
+JSimport axios from &quot;axios&quot; //第一步：导入axios
+import { message } from &#39;antd&#39;
+//第二步：创建axios实例
+const service = axios.create({
+    baseURL: &#39;/api&#39;,
+    timeout: 50000//超时时间
+})
+
+// const service2 = axios.create({
+//     baseURL: &#39;/aaa&#39;,
+//     timeout: 50000//超时时间
+// })
+
+//第三步 请求拦截
+
+service.interceptors.request.use((config) =&gt; {
+    // 在发送请求之前做些什么 验证token之类的
+    // console.log(&quot;请求的数据:&quot;, config);
+    if (sessionStorage.token) {
+        // 不再加common
+        config.headers.Authorization = &#39;Bearer &#39; + sessionStorage.token
+    }
+    return config;
+}, (error) =&gt; {
+    return Promise.reject(error)
+}
+)
+
+// //第四步 响应拦截
+service.interceptors.response.use((response) =&gt; {
+
+    return response
+},
+    (error) =&gt; {
+
+        const { code } = error;
+
+        if (code == &quot;ERR_NETWORK&quot;) {
+            //@ts-ignore
+            message.error(&quot;没网&quot;);
+        } else if (code == 401) {
+            //@ts-ignore
+            message.error(&quot;token过期啦,请重新登陆&quot;);
+            sessionStorage.clear()
+            window.location.reload()
+        } else {
+            message.error(error?.response?.data?.msg);
+        }
+        //@ts-ignore
+        // return Promise.reject(error);
+    }
+)
+export default service;
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253
+
+api/http.js
+jsximport axios from &#39;./config&#39;
+
+//用户登录
+// 第一种写法
+// export const login = data =&gt; axios.post(&quot;/login&quot;, data)
+
+
+// 删除班级
+// export function _delClass(params){
+//     return axios({
+//         url: &#39;/classinfo&#39;,
+//         method: &quot;delete&quot;,
+//         params
+//     })
+// }
+
+//错误写法
+// export const  _delClass = (params) =&gt; axios.delete(&#39;/classInfo&#39;,params) 
+// export const  _delClass = (params) =&gt; { axios.delete(&#39;/classInfo&#39;,params) }
+
+//正确写法
+export const _delClass = (params) =&gt; axios.delete(&#39;/classInfo&#39;, { params })
+
+
+
+// 第二种写法
+export function login(data) {
+    return axios({
+        url: &#39;/login&#39;,
+        method: &quot;post&quot;,
+        data
+    })
+}
+
+// 获取首页数据
+export function homeData(){
+    return axios({
+        url: &#39;/homeData&#39;,
+        method: &quot;get&quot;
+    })
+}
+
+//添加班级
+export function addClass(data){
+    return axios({
+        url: &#39;/classinfo&#39;,
+        method: &quot;post&quot;,
+        data
+    })
+}
+//获取班级信息
+export function getClassList(params){
+    return axios({
+        url: &#39;/classinfo&#39;,
+        method: &quot;get&quot;,
+        params
+    })
+}
+
+// 编辑班级
+export function editClass(data){
+    return axios({
+        url: &#39;/classinfo&#39;,
+        method: &quot;put&quot;,
+        data
+    })
+}
+// 删除班级
+// export function _delClass(params){
+//     return axios({
+//         url: &#39;/classinfo&#39;,
+//         method: &quot;delete&quot;,
+//         params
+//     })
+// }
+
+//添加学员信息
+export function addStudent(data){
+    return axios({
+        url: &#39;/stuInfo&#39;,
+        method: &quot;post&quot;,
+        data
+    })
+}
+//获取学员信息
+export function getStudentList(params){
+    return axios({
+        url: &#39;/stuInfo&#39;,
+        method: &quot;get&quot;,
+        params
+    })
+}
+
+// 删除学员
+export function delStudent(params){
+    return axios({
+        url: &#39;/stuInfo&#39;,
+        method: &quot;delete&quot;,
+        params
+    })
+}
+
+// 编辑学员
+export function editStudent(data){
+    return axios({
+        url: &#39;/stuInfo&#39;,
+        method: &quot;put&quot;,
+        data
+    })
+}
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110
+
+8. Antd 表单的使用 &amp;ZeroWidthSpace;
+1. 通过配置项实现规则验证 &amp;ZeroWidthSpace;
+jsx&amp;#x3C;Form.Item
+    label=&quot;Username&quot;
+    name=&quot;username&quot;
+    rules={[
+        { required: true, message: &#39;请输入帐号!&#39; },
+        { pattern: /^\w{3,7}$/, message: &#39;请输入长度为3-7的字符!&#39; }
+    ]}
+    &gt;
+  &amp;#x3C;Input&gt;&amp;#x3C;/Input&gt;
+&amp;#x3C;/Form.Item&gt;
+123456789102. 自定义校验规则 &amp;ZeroWidthSpace;
+jsx//自定义校验规则
+const checkUsername = (rule, value) =&gt; {
+  if (!value) {
+    return Promise.reject(&quot;请选择定时的时间&quot;);
+  } else {
+    return Promise.resolve();
+  }
+}
+
+......
+&amp;#x3C;Form.Item
+  label=&quot;Username&quot;
+  name=&quot;username&quot;
+  rules={[
+    {
+      validator: checkUsername,
+    }
+  ]}
+&gt;
+  &amp;#x3C;Input /&gt;
+&amp;#x3C;/Form.Item&gt;
+1234567891011121314151617181920213. 表单的重置和设置默认值 &amp;ZeroWidthSpace;
+jsximport { Form } from &#39;antd&#39;
+
+const Login = () =&gt; {
+    //获取表单实例
+    const [form] = Form.useForm()
+    
+    //处理逻辑
+    const handle = () =&gt; {
+        form.resetFields()  //重置为默认值
+        form.setFieldsValue({}) //设置表单元素的值
+    }
+    
+    return (
+    	&amp;#x3C;Form form={form}&gt; &amp;#x3C;/Form&gt;
+    )
+}
+123456789101112131415164. 表单数据多行布局 &amp;ZeroWidthSpace;
+描述：
+常规表单，每一 行放置一项表单项，
+特殊布局表单：每一行并列放置两项或多项，多行布局
+
+form 添加 layout=&amp;quot;horizontal&amp;quot;属性
+Form.Item 放在 &amp;lt;Row&amp;gt; 和 &amp;lt;Col&amp;gt; 中布局
+
+9. Antd message组件的使用 &amp;ZeroWidthSpace;
+1. 使用message的静态方法 &amp;ZeroWidthSpace;
+jsimport { message } from &#39;antd&#39;
+...
+message.info(&#39;提示信息&#39;)
+message.success(&#39;提示信息&#39;)
+message.error(&#39;提示信息&#39;)
+message.warning(&#39;提示信息&#39;)
+1234562. Hooks 调用 &amp;ZeroWidthSpace;
+通过 hooks 创建的 contextHolder 必须插入到子元素节点中才会生效，当你不需要上下文信息时请直接调用。
+jsximport { message } from &#39;antd&#39;
+
+const App = () =&gt; {
+    const [messageApi, contextHolder] = message.useMessage();
+    const handler = () =&gt; {
+       messageApi.open({
+        	type: &#39;success&#39;,
+        	content: &#39;成功&#39;,
+        	duration: 1
+      })
+    }
+    
+    return (
+    	&amp;#x3C;&gt;
+        	{ contextHolder }
+        &amp;#x3C;/&gt;
+    )
+}
+123456789101112131415161718
+
+Hooks调用只能在当前页面显示，如果显示完要路由跳转，采用以下promise回调的方式
+jsxmessageApi.open({
+        type: &#39;success&#39;,
+        content: &#39;成功&#39;,
+        duration: 1
+      })
+      .then(()=&gt;{
+        navigate(&#39;/&#39;,{replace: true})
+      })
+12345678
+
+10. 导航菜单的高亮 &amp;ZeroWidthSpace;
+
+
+navMenu.jsx
+jsxexport default function navMenu() {
+    const {pathname} = useLocation()
+    let selectedKeys = pathname  // &#39;/charts/bar&#39;
+    let defaultOpenKeys = &#39;/&#39; + pathname.split(&quot;/&quot;)[1]
+    
+    //default开头的属性只使用组件初始化渲染时的值，组件更新的值无效
+    // console.log(selectedKeys,defaultOpenKeys);
+    //当菜单被选中时
+
+    return (
+        &amp;#x3C;Sider&gt;
+            &amp;#x3C;div className=&quot;logo&quot; /&gt;
+            &amp;#x3C;Menu
+                // 注意： 
+                // selectedKeys设置当前选中项的高亮
+                // defaultOpenKeys设置默认展开的菜单项
+                selectedKeys={[selectedKeys]}
+                defaultOpenKeys={[defaultOpenKeys]}
+                items={items}
+            /&gt;
+        &amp;#x3C;/Sider&gt;
+    )
+}
+1234567891011121314151617181920212223
+
+11. 动态显示图标 &amp;ZeroWidthSpace;
+
+
+Iconfont.jsx
+jsximport React from &#39;react&#39;
+
+import * as Icons from &#39;@ant-design/icons&#39;;
+
+const Iconfont = (props) =&gt; {
+  const { icon } = props
+  const antIcon = Icons
+  return React.createElement(antIcon[icon])
+}
+
+export default Iconfont
+1234567891011
+
+navMenu.jsx
+jsximport Iconfont from &#39;./Iconfont&#39;
+... 
+&amp;#x3C;div style={{ color: &quot;#fff&quot; }}&gt;
+       &amp;#x3C;Iconfont icon=&quot;VideoCameraOutlined&quot;&gt;&amp;#x3C;/Iconfont&gt;
+ &amp;#x3C;/div&gt;
+12345
+
+12. 菜单数据的渲染 &amp;ZeroWidthSpace;
+
+
+itemsData.js
+js
+const items = [
+    {
+        key: &#39;/dashboard&#39;,
+        icon: &quot;UserOutlined&quot;,
+        label: &#39;Dashboard&#39;,
+        children: [
+            {
+                key: &#39;/dashboard/console&#39;,
+                icon: &quot;UserOutlined&quot;,
+                label: &#39;主控台&#39;,
+            },
+            {
+                key: &#39;/dashboard/monitor&#39;,
+                icon: &quot;UserOutlined&quot;,
+                label: &#39;监控页&#39;,
+            },
+            {
+                key: &#39;/dashboard/workplace&#39;,
+                icon: &quot;UserOutlined&quot;,
+                label: &#39;工作台&#39;,
+            }
+        ]
+    },
+    {
+        key: &#39;/notice&#39;,
+        icon: &quot;UserOutlined&quot;,
+        label: &#39;公告信息&#39;,
+    },
+    {
+        key: &#39;/charts&#39;,
+        icon: &quot;UserOutlined&quot;,
+        label: &#39;图表管理&#39;,
+        children: [
+            {
+                key: &#39;/charts/pie&#39;,
+                icon: &quot;UserOutlined&quot;,
+                label: &#39;饼图&#39;,
+            },
+            {
+                key: &#39;/charts/bar&#39;,
+                icon: &quot;UserOutlined&quot;,
+                label: &#39;柱状图&#39;,
+            }
+        ]
+    }
+]
+
+export default items
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849
+
+NavMenu.jsx
+jsx
+...
+import Iconfont from &#39;./Iconfont&#39;
+import itemsData from &#39;./itemsData&#39;
+
+//处理菜单数据
+// 如果不用深拷贝，navMenu保存后，即会报错
+// 原因： 第一次把字符串转为图标后，itemsData原数据也改变图标，再次调用转换，数据类型就不是字符串，而转换要求的数据类型不符
+const handleMenuData = (items)=&gt;{
+    const newItems = JSON.parse(JSON.Stringify(items))
+    return newItems.map(item=&gt;{
+        console.log(item.icon);
+        item.icon = item.icon &amp;#x26;&amp;#x26;  &amp;#x3C;Iconfont icon={item.icon}&gt;&amp;#x3C;/Iconfont&gt;
+        item.children = item.children &amp;#x26;&amp;#x26; item.children.map(smallItem=&gt;{
+            smallItem.icon = smallItem.icon &amp;#x26;&amp;#x26; &amp;#x3C;Iconfont icon={smallItem.icon}&gt;&amp;#x3C;/Iconfont&gt;
+            return smallItem
+        })
+        return item
+    })
+}
+...
+
+export default function navMenu( ) {
+    const [items,setItems] = useState([])
+    ...
+    //保证只在组件初始化时执行一次
+    useEffect(()=&gt;{
+        setItems(handleMenuData(itemsData))
+    },[])
+
+    return (
+            &amp;#x3C;Menu
+                theme=&quot;dark&quot;
+                mode=&quot;inline&quot;
+                defaultSelectedKeys={[&#39;&#39;]}
+                defaultOpenKeys={[&#39;&#39;]}
+                items={items}
+                onSelect={}
+            /&gt;
+    )
+}
+1234567891011121314151617181920212223242526272829303132333435363738394041
+
+13. 面包屑导航 &amp;ZeroWidthSpace;
+jsximport React from &#39;react&#39;
+import { Breadcrumb } from &#39;antd&#39;;
+import { NavLink } from &#39;react-router-dom&#39;
+import { useLocation } from &#39;react-router-dom&#39;;
+import itemsData from &#39;./itemsData&#39;
+import { useEffect,useState } from &#39;react&#39;;
+
+export default function BreadcrumbList() {
+    const { pathname } = useLocation()  // /notice   /charts/pie
+    const [breadCrumbList,setBreadCrumbList] = useState([])
+
+    /**
+     *  breadcrumbList = [
+     *    {
+     *      path: &#39;/dashboard/console&#39;,
+     *      title: &#39;首页&#39;,
+     *    },
+     *  {
+     *      path: &#39;/dashboard&#39;,
+     *      title: &#39;dashboard&#39;,
+     *    },
+     * {
+     *      path: &#39;/dashboard/console&#39;,
+     *      title: &#39;主控台&#39;,
+     *    },
+     * ]
+     */
+
+    //处理数据，获取面包屑导航的数据
+
+    const menuLevel1 = &quot;/&quot; + pathname.split(&quot;/&quot;)[1]  // /notice  /charts
+    const handleBreadCrumbList = () =&gt; {
+        let list = []
+        itemsData.forEach(item =&gt; {
+            if (item.key === menuLevel1) {
+                list.push({
+                    path: item.key,
+                    title: item.label
+                })
+                item.children?.forEach(smallItem=&gt;{
+                    if (smallItem.key === pathname){
+                        list.push({
+                            path: smallItem.key,
+                            title: smallItem.label
+                        })
+                    }
+                })
+            }
+        })
+        setBreadCrumbList(list)
+    }
+    useEffect(()=&gt;{
+        handleBreadCrumbList()
+    },[pathname])
+
+    //渲染面包屑
+    const render = ()=&gt;{
+        return breadCrumbList.map(item=&gt;(
+            &amp;#x3C;Breadcrumb.Item key={item.path}&gt;
+                &amp;#x3C;NavLink to={item.path}&gt;{item.title}&amp;#x3C;/NavLink&gt;
+            &amp;#x3C;/Breadcrumb.Item&gt; 
+        )
+    )}
+    return (
+        &amp;#x3C;Breadcrumb&gt;
+            &amp;#x3C;Breadcrumb.Item&gt;首页&amp;#x3C;/Breadcrumb.Item&gt;
+            {/* &amp;#x3C;Breadcrumb.Item&gt;
+                Dashboard
+            &amp;#x3C;/Breadcrumb.Item&gt;
+            &amp;#x3C;Breadcrumb.Item&gt;
+                &amp;#x3C;NavLink to=&quot;/dashboard/console&quot;&gt;主控台&amp;#x3C;/NavLink&gt;
+            &amp;#x3C;/Breadcrumb.Item&gt; */}
+            {
+                render()
+            }
+        &amp;#x3C;/Breadcrumb&gt;
+    )
+}
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777814 . React.createElement的作用 &amp;ZeroWidthSpace;
+创建新的元素节点
+jsx//***********两种方案完全等价
+//方案一
+{React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+    className: &#39;trigger&#39;,
+    onClick: () =&gt; setCollapsed(!collapsed),
+})}
+
+//方案二
+&amp;#x3C;div&gt;
+    {
+        collapsed 
+            ? 
+            &amp;#x3C;MenuUnfoldOutlined className=&quot;trigger&quot; onClick={() =&gt; setCollapsed(!collapsed)}&gt;&amp;#x3C;/MenuUnfoldOutlined&gt; : 
+            &amp;#x3C;MenuFoldOutlined className=&quot;trigger&quot; onClick={() =&gt; setCollapsed(!collapsed)}&gt;&amp;#x3C;/MenuFoldOutlined&gt;
+    }
+&amp;#x3C;/div&gt;
+1234567891011121314151615 全局化配置 ConfigProvider &amp;ZeroWidthSpace;
+配置主题颜色 &amp;ZeroWidthSpace;
+
+App.jsx
+
+jsximport React from &#39;react&#39;
+import { BrowserRouter as Router } from &#39;react-router-dom&#39;
+import RenderRoutes from &#39;./router/renderRoutes&#39;
+import &#39;./App.scss&#39;
+import &#39;antd/dist/reset.css&#39;;
+//引入全局配置组件
+import { ConfigProvider } from &#39;antd&#39;;
+
+export default function App() {
+  return (
+    //配置主题颜色
+    // 可以自定义多个数据，
+    // colorBgContainer属性会自动作用于文本框，Sider组件，修改属性名则对文本框无效，必须手动使用
+    &amp;#x3C;ConfigProvider theme={{token: {colorBgContainer:&quot;#f00&quot;}}}&gt;
+      &amp;#x3C;Router&gt;
+        &amp;#x3C;RenderRoutes&gt;&amp;#x3C;/RenderRoutes&gt;
+      &amp;#x3C;/Router&gt;
+     &amp;#x3C;/ConfigProvider&gt;
+  )
+}
+1234567891011121314151617181920
+组件中使用主题颜色
+
+jsx//引入theme组件
+import { Layout, theme } from &#39;antd&#39;;
+
+const AdminLayout = () =&gt; {
+  ...
+  //获取主题颜色
+  const {
+    token: { colorBgContainer },
+  } = theme.useToken();
+
+  return (
+    &amp;#x3C;Layout style={{minHeight: &quot;100vh&quot;}} className=&quot;admin-layout&quot;&gt;
+        &amp;#x3C;AdminHeader
+          colorBgContainer={colorBgContainer}
+          collapsed={collapsed}
+          setCollapsed={setCollapsed}
+        &gt;&amp;#x3C;/AdminHeader&gt;
+        &amp;#x3C;Content
+          style={{
+            margin: &#39;24px 16px&#39;,
+            padding: 24,
+            minHeight: 280,
+            background: colorBgContainer,
+          }}
+        &gt;
+        &amp;#x3C;/Content&gt;
+      &amp;#x3C;/Layout&gt;
+    &amp;#x3C;/Layout&gt;
+  );
+};
+123456789101112131415161718192021222324252627282930国际化（表单元素） &amp;ZeroWidthSpace;
+antd 很多组件默认显示英文，如果需要显示中文需要国际化配置
+
+
+安装 day.js
+比如日期选择器组件，
+不安装该模块，只有placeholder自动显示中文，日历面板上的星期和月份依然显示英文
+安装该模块，则都显示中文
+
+
+npm i dayjs
+1
+
+App.jsx
+只需在根组件配置configProvider即可，所有组件中的表单都会实现国际化
+
+
+jsx...
+import { ConfigProvider } from &#39;antd&#39;;
+
+// 注意全局配置主题和国际化
+import zhCN from &#39;antd/locale/zh_CN&#39;;
+import dayjs from &#39;dayjs&#39;;
+import &#39;dayjs/locale/zh-cn&#39;;
+dayjs.locale(&#39;zh-cn&#39;);
+
+export default function App() {
+  return (
+    &amp;#x3C;ConfigProvider theme={{token: {}}} locale={zhCN}&gt;
+      &amp;#x3C;Router&gt;
+        &amp;#x3C;RenderRoutes&gt;&amp;#x3C;/RenderRoutes&gt;
+      &amp;#x3C;/Router&gt;
+   &amp;#x3C;/ConfigProvider&gt;
+  )
+}
+12345678910111213141516171816. Tabs标签页 &amp;ZeroWidthSpace;
+
+确保安装以下依赖
+
+pnpm i @reduxjs/toolkit react-redux
+1
+src/store/tabs.store.js
+
+jsimport { createSlice } from &#39;@reduxjs/toolkit&#39;
+
+const tabsSlice = createSlice({
+    name: &#39;tabs&#39;,
+    initialState: () =&gt; {
+        // 只要刷新,store就会执行初始化操作，此时判断缓存tabsStore是否为null
+        // 如果为null,则使用初始值，如果不为null,则取出缓存数据作为store初始化的值   
+        if (sessionStorage.getItem(&quot;tabsStore&quot;) !== null) {
+            return JSON.parse(sessionStorage.getItem(&quot;tabsStore&quot;))
+        }
+        return {
+            tabsList: [{
+                key: &#39;/dashboard/console&#39;,
+                label: &#39;主控台&#39;,
+                // 页签中不显示删除功能
+                closable: false,
+            }],
+            activeKey: &#39;/dashboard/console&#39;
+        }
+    },
+    reducers: {
+        addTab: (state, { payload }) =&gt; {
+            let isRepeat = state.tabsList.some(item =&gt; item.key === payload.key)
+            if (isRepeat) {
+                state.activeKey = payload.key
+                return;
+            }
+            state.tabsList.push(payload)
+            state.activeKey = payload.key
+            // 需要持久化的数据在改变后更新缓存
+            sessionStorage.setItem(&#39;tabsStore&#39;, JSON.stringify(state))
+        },
+        toggleTab: (state, { payload }) =&gt; {
+            state.activeKey = payload
+            // 需要持久化的数据在改变后更新缓存
+            sessionStorage.setItem(&#39;tabsStore&#39;, JSON.stringify(state))
+        },
+        removeTab: (state, { payload }) =&gt; {
+            // payload:  /notice   /charts/pie
+            let index = state.tabsList.findIndex(item =&gt; item.key === payload)   // index=5  length=6
+            state.tabsList.splice(index, 1)    // length=5
+            // 如果是最后一项并且最后一项就是当前项时，当激活项调整为前一个项目
+            if (index === state.tabsList.length &amp;#x26;&amp;#x26; payload === state.activeKey) {
+                state.activeKey = state.tabsList[index - 1].key
+            }
+            if (state.activeKey === payload) {
+                state.activeKey = state.tabsList[index].key
+            }
+            // 需要持久化的数据在改变后更新缓存
+            sessionStorage.setItem(&#39;tabsStore&#39;, JSON.stringify(state))
+        }
+    }
+})
+
+export const { addTab, toggleTab, removeTab } = tabsSlice.actions
+export default tabsSlice.reducer
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556
+src/store/index.js
+
+jsimport { combineReducers, configureStore } from &quot;@reduxjs/toolkit&quot;;
+import tabsReducer from &#39;./tabs.store&#39;
+
+const rootReducer = combineReducers({
+    tabs: tabsReducer
+})
+const store = configureStore({
+    reducer: rootReducer
+})
+
+export default store
+1234567891011
+src/main.tsx
+
+jsximport React from &#39;react&#39;
+import ReactDOM from &#39;react-dom/client&#39;
+import &quot;normalize.css&quot;
+import App from &#39;./App&#39;
+import store from &#39;./store&#39;
+import { Provider } from &#39;react-redux&#39;
+ReactDOM.createRoot(document.getElementById(&#39;root&#39;)).render(
+  &amp;#x3C;Provider store={store}&gt;
+    &amp;#x3C;App /&gt;
+  &amp;#x3C;/Provider&gt;
+)
+1234567891011
+AdminTabs.jsx
+
+jsximport React from &#39;react&#39;
+import { Tabs } from &#39;antd&#39;
+import { useDispatch, useSelector } from &#39;react-redux&#39;;
+import { toggleTab,removeTab } from &#39;@/store/tabs.store&#39;
+import { useNavigate } from &#39;react-router-dom&#39;;
+import { useEffect,useState } from &#39;react&#39;;
+
+// [{
+//     key: &#39;1&#39;,
+//     label: `Tab 1`,
+//     children: `Content of Tab Pane 1`,
+//   },
+// }
+
+export default function AdminTabs() {
+    const [isCurrent,setIsCurrent] = useState(false)
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const { tabsList, activeKey } = useSelector(state =&gt; state.tabs)
+
+
+    //当切换tab标签时
+    const onChange = (key) =&gt; {
+        navigate(key)
+        dispatch(toggleTab(key))
+    };
+
+    //当删除时
+    const onEdit = (key,action)=&gt;{
+        if (action === &#39;remove&#39;){
+            if (key === activeKey) setIsCurrent(true)
+            dispatch(removeTab(key))
+            // console.log(activeKey);  //访问不到最新的activeKey
+        }
+    }
+    useEffect(()=&gt;{
+        if (isCurrent){
+            navigate(activeKey)
+        }
+    },[activeKey])
+
+    return (
+        &amp;#x3C;Tabs
+            hideAdd
+            activeKey={activeKey}
+            items={tabsList}
+            onChange={onChange}
+            type=&quot;editable-card&quot;
+            onEdit={onEdit}
+        /&gt;
+    )
+}
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515217. Echarts的使用 &amp;ZeroWidthSpace;
+
+安装echarts
+
+npm i echarts
+1
+charts/Bar.jsx
+
+jsximport React, { useState, useEffect, useRef } from &#39;react&#39;
+import * as echarts from &#39;echarts&#39;;
+
+
+let styleObj = {
+  width: &#39;800px&#39;,
+  height: &quot;500px&quot;,
+  border: &quot;1px solid red&quot;
+}
+
+function Bar() {
+  useEffect(() =&gt; {
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById(&quot;box&quot;));
+    let options =
+    {
+      title: {
+        text: &quot;异步数据加载示例&quot;,
+      },
+      tooltip: {},
+      legend: {
+        data: [&quot;销量&quot;],
+      },
+      // 类目
+      xAxis: {
+        data: [&quot;衬衫&quot;, &quot;羊毛衫&quot;, &quot;雪纺衫&quot;, &quot;裤子&quot;, &quot;高跟鞋&quot;, &quot;袜子&quot;],
+      },
+      yAxis: {},
+      series: [
+        {
+          name: &quot;销量&quot;,
+          type: &quot;bar&quot;,
+          data: [],
+        },
+      ],
+    }
+    myChart.setOption(options)
+
+    myChart.showLoading()
+    setTimeout(() =&gt; {
+      myChart.hideLoading()
+      // setData1()
+      // // 绘制图表
+      options.series[0].data = [23, 45, 67, 23, 23, 45]
+      myChart.setOption(options);
+    }, 3000)
+  }, [])
+
+  return (
+    &amp;#x3C;div className=&quot;home&quot;&gt;
+      &amp;#x3C;div className=&quot;box&quot; id=&quot;box&quot; style={styleObj}&gt;&amp;#x3C;/div&gt;
+    &amp;#x3C;/div&gt;
+  )
+}
+
+export default Bar
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555618. Antd中学生管理表格分页的两种方案 &amp;ZeroWidthSpace;
+第一种： 每次请求后台数据时携带page, 拉取指定页的信息，之后无论页码变化、编辑、删除都需要维护page
+第二种： 请求后台不携带page, 一次拉取所有数据，不用维护page,只要提供total和pageSize会自动维护分页
+方案一： 携带page的分页 &amp;ZeroWidthSpace;
+1. AdminClass.jsx--只有该组件不同 &amp;ZeroWidthSpace;
+jsximport React from &#39;react&#39;
+import { Card, Table, Tag, message } from &#39;antd&#39;;
+import &#39;./AdminClass.scss&#39;
+import { _getClassList, _delClass } from &#39;@/api/http&#39;
+import { useEffect } from &#39;react&#39;;
+import { useState } from &#39;react&#39;;
+import day from &#39;dayjs&#39;
+import EditClass from &#39;./EditClass&#39;;
+import SearchClass from &#39;./SearchClass&#39;;
+
+const tagData = [
+  {
+    title: &#39;即将开班&#39;,
+    color: &#39;green&#39;
+  },
+  {
+    title: &#39;已开班&#39;,
+    color: &#39;geekblue&#39;
+  },
+  {
+    title: &#39;已毕业&#39;,
+    color: &#39;volcano&#39;
+  }
+]
+export default function AdminClass() {
+
+  const [classList, setClassList] = useState([])
+  const [total, setTotal] = useState(0)
+  const [page, setPage] = useState(1)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [record, setRecord] = useState({})
+  const [isAddAction, setIsAddAction] = useState(false)
+  const [search, setSearch] = useState({})
+
+  //定义表格的结构
+  const columns = [
+    {
+      title: &#39;id&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;classId&#39;,
+      key: &#39;classId&#39;,
+    },
+    {
+      title: &#39;班级名称&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;className&#39;,
+      key: &#39;className&#39;,
+    },
+    {
+      title: &#39;开班状态&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;classStatus&#39;,
+      key: &#39;classStatus&#39;,
+      render: (text, record, index) =&gt; {
+        // text 0 | 1 | 2
+        return (
+          &amp;#x3C;&gt;
+            &amp;#x3C;Tag color={tagData[text].color}&gt;
+              {tagData[text].title}
+            &amp;#x3C;/Tag&gt;
+          &amp;#x3C;/&gt;
+        )
+      }
+    },
+    {
+      title: &#39;教室&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;classroom&#39;,
+      key: &#39;classroom&#39;,
+    },
+    {
+      title: &#39;班主任&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;ht&#39;,
+      key: &#39;ht&#39;,
+    },
+    {
+      title: &#39;开班时间&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;startDate&#39;,
+      key: &#39;startDate&#39;,
+      render: (text) =&gt; {
+        return day(text).format(&quot;YYYY-MM-DD&quot;)
+        // return text
+      }
+    },
+    {
+      title: &#39;操作&#39;,
+      key: &#39;action&#39;,
+      render: (text, record, index) =&gt; {
+        return (
+          &amp;#x3C;&gt;
+            &amp;#x3C;button onClick={() =&gt; onEdit(record)}&gt;编辑&amp;#x3C;/button&gt;
+            &amp;#x3C;button onClick={() =&gt; onDelete(record.classId)}&gt;删除&amp;#x3C;/button&gt;
+          &amp;#x3C;/&gt;
+        )
+      }
+    }
+  ]
+
+  //获取数据
+  const getData = async () =&gt; {
+    let res = await _getClassList({
+      //***************************************************1. 需要携带page
+      page,
+      ...search
+    })
+    let { code, list, total } = res.data
+    if (code === 0) {
+      setClassList(list)
+      setTotal(total)
+    } else {
+      setClassList([])
+      setTotal(0)
+    }
+  }
+
+  //初始化获取数据
+  useEffect(() =&gt; {
+    getData()
+      //***************************************************2. 需要监听page
+  }, [page, isAddAction])
+
+  //切换页码
+  const onChange = (page) =&gt; {
+    setPage(page)
+  }
+
+  //添加班级
+  const addClass = () =&gt; {
+    setRecord({})
+    setIsModalOpen(true)
+  }
+
+  //编辑班级
+  const onEdit = (record) =&gt; {
+    setIsModalOpen(true)
+    setRecord(record)
+  }
+
+  //判断当前删除的是否为最后一页唯一的一条
+  const isEnd = () =&gt; {
+    // 13 
+    return total === (page - 1) * 4 + 1
+  }
+  //删除班级
+  const onDelete = async (classId) =&gt; {
+    let res = await _delClass({
+      classId
+    })
+    console.log(res);
+    let { code } = res.data
+    if (code === 0) {
+      message.success(&quot;删除成功&quot;)
+      if (isEnd() &amp;#x26;&amp;#x26; total !== 1) {
+        //***************************************************3. 删除成功后维护page值
+        setPage(page - 1)
+      } else {
+        setIsAddAction(!isAddAction)
+      }
+
+    } else {
+      message.error(&quot;删除失败&quot;)
+    }
+  }
+
+  return (
+    &amp;#x3C;&gt;
+      {/* 班级搜索功能 */}
+      &amp;#x3C;SearchClass
+        setPage={setPage}
+        setSearch={setSearch}
+      &gt;&amp;#x3C;/SearchClass&gt;
+
+      {/* 班级列表 */}
+      &amp;#x3C;Card title=&quot;班级管理&quot; extra={&amp;#x3C;button onClick={addClass}&gt;添加班级&amp;#x3C;/button&gt;}&gt;
+        &amp;#x3C;Table
+          columns={columns}
+          dataSource={classList}
+          rowKey={(record) =&gt; record.classId}
+          pagination={{
+            total,
+            pageSize: 4,
+            onChange,
+            current: page
+          }}
+        /&gt;
+        {
+          isModalOpen ?
+            &amp;#x3C;EditClass
+              isModalOpen={isModalOpen}
+              setIsModalOpen={setIsModalOpen}
+              setPage={setPage}
+              record={record}
+              setIsAddAction={setIsAddAction}
+              isAddAction={isAddAction}
+            &gt;&amp;#x3C;/EditClass&gt;
+            :
+            null
+        }
+
+      &amp;#x3C;/Card&gt;
+    &amp;#x3C;/&gt;
+
+  )
+}
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798991001011021031041051061071081091101111121131141151161171181191201211221231241251261271281291301311321331341351361371381391401411421431441451461471481491501511521531541551561571581591601611621631641651661671681691701711721731741751761771781791801811821831841851861871881891901911921931941951961971981992002012022032042052062. EditClass.jsx &amp;ZeroWidthSpace;
+jsximport React from &#39;react&#39;
+import {
+    Modal,
+    Form,
+    Input,
+    Radio,
+    Select,
+    DatePicker,
+} from &#39;antd&#39;;
+import { _addClass, _editClass } from &#39;@/api/http&#39;
+import { message } from &#39;antd&#39;;
+import day from &#39;dayjs&#39;
+
+//定义教室列表
+const classroomList = [&#39;嵖岈山&#39;, &#39;桐柏山&#39;, &#39;鸡公山&#39;, &#39;嵩山&#39;, &#39;神农山&#39;, &#39;洞庭湖&#39;, &#39;千岛湖&#39;]
+//定义班主任列表
+const htList = [&#39;王趁红&#39;, &#39;汪淼&#39;, &#39;史强&#39;, &#39;叶文洁&#39;, &#39;高启强&#39;]
+
+export default function EditClass(props) {
+    let { isModalOpen, setIsModalOpen, setPage, record, setIsAddAction, isAddAction } = props
+    const [form] = Form.useForm()
+
+    const handleOk = () =&gt; {
+        form.submit()
+    };
+
+    //当关闭或取消
+    const handleCancel = () =&gt; {
+        form.resetFields()
+        setIsModalOpen(false);
+    };
+
+
+    //当表单提交并验证成功时
+    const onFinish = async (values) =&gt; {
+        values.startDate = day(values.startDate).format(&quot;YYYY-MM-DD&quot;)
+        if (isRecordEmpty()) {
+            //
+1234567891011121314151617181920212223242526272829303132333435363738</p></article></a><a class="m-nav-link" href="/website/tech/React/15-最新版-后台管理项目开发流程" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="15-最新版-后台管理项目开发流程" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_15-最新版-后台管理项目开发流程" class="title" data-v-4cce99de>15-最新版-后台管理项目开发流程</h5></div><p class="desc" data-v-4cce99de>后台管理项目开发流程 &amp;ZeroWidthSpace;
+1. 相关技术栈 &amp;ZeroWidthSpace;
+
+
+react
+
+
+react-router-dom
+
+
+@reduxjs/toolkit
+
+
+vite
+
+
+antd
+
+
+axios
+
+
+sass
+
+
+normalize.css
+
+
+dayjs
+
+
+xlsx
+
+
+wangeditor
+
+
+lodash
+
+
+2. 创建项目,安装依赖 &amp;ZeroWidthSpace;
+js// 创建项目
+pnpm create vite
+// 安装依赖
+pnpm install
+// 启动项目
+pnpm run dev
+1234563. 配置路径别名和服务器代理 &amp;ZeroWidthSpace;
+
+服务器代理proxy实现开发环境的跨域
+
+
+vite.config.js
+
+jsimport { defineConfig } from &#39;vite&#39;
+import react from &#39;@vitejs/plugin-react&#39;
+import path from &#39;path&#39;
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    //设置别名
+    alias: {
+      &quot;@&quot;: path.resolve(__dirname, &#39;src&#39;),
+      &quot;com&quot;: path.resolve(__dirname, &#39;src/components&#39;)
+    }
+  },
+  server: {
+    port: 8000,
+    //服务器代理
+    proxy: {
+      &quot;/api&quot;: {
+        target: &quot;http://localhost:3000&quot;,
+        changeOrigin: true,
+        rewrite: (path) =&gt; path.replace(/^\/api/, &quot;&quot;),
+      }
+    }
+  }
+})
+123456789101112131415161718192021222324254. 处理css &amp;ZeroWidthSpace;
+
+
+安装sass模块，支持*.scss文件的编译
+pnpm i sass
+1
+
+安装 normalize.css ， 实现样式重置
+main.jsx
+jsimport &quot;normalize.css&quot;
+1
+
+5. 配置路由/路由鉴权 &amp;ZeroWidthSpace;
+
+
+安装路由模块
+npm i react-router-dom
+1
+
+App.jsx
+在应用中添加路由
+jsximport React from &#39;react&#39;
+import { BrowserRouter as Router } from &#39;react-router-dom&#39;
+//引入路由组件
+import RenderRoutes from &#39;./router/renderRoutes&#39;
+import &#39;./App.scss&#39;
+import &#39;antd/dist/reset.css&#39;;
+
+export default function App() {
+  return (
+   &amp;#x3C;Router&gt;
+      &amp;#x3C;RenderRoutes&gt;&amp;#x3C;/RenderRoutes&gt;
+   &amp;#x3C;/Router&gt;
+  )
+}
+1234567891011121314
+
+router/renderRoutes.jsx
+基于路由表生成路由组件
+jsximport React from &#39;react&#39;
+import {useRoutes} from &#39;react-router-dom&#39;
+//引入路由表
+import routeList from &#39;./routeList&#39;
+
+export default function index() {
+  //生成路由节点
+  const element = useRoutes(routeList)
+  return element
+}
+12345678910
+
+router/routeList.jsx
+配置路由表及路由懒加载
+jsximport { lazy } from &#39;react&#39;
+import WrapperRouteComponent from &#39;./wrapperRouteComponent&#39;
+import {Navigate} from &#39;react-router-dom&#39;
+
+// 路由懒加载
+// const Layout = lazy(()=&gt;import(&quot;@/pages/layout&quot;))
+import Layout  from &quot;@/pages/layout&quot;
+import Login from &#39;@/pages/Login&#39;
+const NotFound = lazy(()=&gt;import(&quot;@/pages/404&quot;))
+const Console = lazy(()=&gt;import(&quot;@/pages/dashboard/console&quot;))
+const Monitor = lazy(()=&gt;import(&quot;@/pages/dashboard/monitor&quot;))
+const Workplace = lazy(()=&gt;import(&quot;@/pages/dashboard/workplace&quot;))
+const Bar = lazy(()=&gt;import(&quot;@/pages/charts/Bar&quot;))
+const Pie = lazy(()=&gt;import(&quot;@/pages/charts/Pie&quot;))
+const Notice = lazy(()=&gt;import(&quot;@/pages/notice&quot;))
+const AdminClass = lazy(()=&gt;import(&quot;@/pages/student/AdminClass&quot;))
+const AdminStu = lazy(()=&gt;import(&quot;@/pages/student/AdminStu&quot;))
+
+const routeList = [
+    {
+        path: &#39;/&#39;,
+        element: &amp;#x3C;Navigate to=&quot;/dashboard&quot;&gt;&amp;#x3C;/Navigate&gt;
+    },
+    {
+        path: &#39;/dashboard&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Layout/&gt;} title=&quot;管理后台&quot; auth={true}/&gt;,
+        children: [
+            {
+                path: &#39;&#39;,
+                element: &amp;#x3C;Navigate to=&quot;console&quot;&gt;&amp;#x3C;/Navigate&gt;
+            },
+            {
+                path: &#39;console&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Console/&gt;} title=&quot;主控台&quot;/&gt;,
+            },
+            {
+                path: &#39;monitor&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Monitor/&gt;} title=&quot;监控页&quot;/&gt;,
+            },
+            {
+                path: &#39;workplace&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Workplace/&gt;} title=&quot;工作台&quot;/&gt;,
+            },
+        ]
+    },
+    {
+        path: &#39;/charts&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Layout/&gt;} title=&quot;管理后台&quot; auth={true}/&gt;,
+        children: [
+           
+            {
+                path: &#39;bar&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Bar/&gt;} title=&quot;柱状图&quot;/&gt;,
+            },
+            {
+                path: &#39;pie&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Pie/&gt;} title=&quot;饼图&quot;/&gt;,
+            }
+        ]
+    },
+    {
+        path: &#39;/student&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Layout/&gt;} title=&quot;学员信息&quot; auth={true}/&gt;,
+        children: [
+           
+            {
+                path: &#39;adminClass&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;AdminClass/&gt;} title=&quot;班级管理&quot;/&gt;,
+            },
+            {
+                path: &#39;adminStu&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;AdminStu/&gt;} title=&quot;学生管理&quot;/&gt;,
+            }
+        ]
+    },
+    {
+        path: &#39;/notice&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Layout/&gt;} title=&quot;管理后台&quot; auth={true}/&gt;,
+        children: [
+            {
+                path: &#39;&#39;,
+                element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Notice/&gt;} title=&quot;柱状图&quot;/&gt;,
+            }
+        ]
+    },
+    {
+        path: &#39;/login&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Login/&gt;} title=&quot;react-admin-登录&quot; /&gt;
+    },
+    {
+        path: &#39;/404&#39;,
+        element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;NotFound/&gt;} title=&quot;404&quot;/&gt;
+    },
+    {
+        path: &#39;*&#39;,
+        element: &amp;#x3C;Navigate to=&quot;/404&quot;&gt;&amp;#x3C;/Navigate&gt;
+    }
+]
+
+export default routeList
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100
+
+router/wrapperRouteComponent.jsx
+统一处理路由拦截
+jsximport { Suspense } from &#39;react&#39;
+import PrivateRoute from &#39;./privateRoute&#39;
+export default function wrapperRouteComponent({ title, auth, ...props }) {
+    title ? document.title = title : &#39;&#39;
+    return (
+        &amp;#x3C;Suspense fallback={&amp;#x3C;div&gt;loading...&amp;#x3C;/div&gt;}&gt;
+            {auth ? &amp;#x3C;PrivateRoute {...props}&gt;&amp;#x3C;/PrivateRoute&gt; : props.element}
+        &amp;#x3C;/Suspense&gt;
+    )
+}
+12345678910
+
+router/privateRoute.jsx
+实现鉴权
+jsximport React from &#39;react&#39;
+import { Navigate } from &#39;react-router-dom&#39;
+
+export default function privateRoute(props) {
+    //判断是否存在token
+    const isLogin = sessionStorage.getItem(&quot;token&quot;)
+    return (
+        isLogin ? props.element : &amp;#x3C;Navigate to=&quot;/login&quot;&gt;&amp;#x3C;/Navigate&gt;
+    )
+}
+12345678910
+
+6. 使用Antd和Antd的图标 &amp;ZeroWidthSpace;
+
+
+安装
+npm i antd  @ant-design/icons
+1注意： 使用时不需要引入css，会自动实现样式
+
+
+实例: 在组件中使用按钮
+jsximport { SearchOutlined } from &#39;@ant-design/icons&#39;;
+import { Button } from &#39;antd&#39;;
+.....
+
+const Com = ()=&gt;(
+    &amp;#x3C;Button type=&quot;primary&quot; icon={&amp;#x3C;SearchOutlined /&gt;}&gt;
+        Search
+     &amp;#x3C;/Button&gt;
+)
+123456789
+
+7. API请求的封装 &amp;ZeroWidthSpace;
+
+
+api/config.js
+JSimport axios from &quot;axios&quot; //第一步：导入axios
+
+//第二步：创建axios实例
+const service = axios.create({
+    baseURL: &#39;/api&#39;,
+    timeout: 50000//超时时间
+})
+
+// const service2 = axios.create({
+//     baseURL: &#39;/aaa&#39;,
+//     timeout: 50000//超时时间
+// })
+
+//第三步 请求拦截
+
+service.interceptors.request.use((config) =&gt; {
+    // 在发送请求之前做些什么 验证token之类的
+    // console.log(&quot;请求的数据:&quot;, config);
+    if (sessionStorage.token) {
+        // 不再加common
+        config.headers.Authorization = &#39;Bearer &#39; + sessionStorage.token
+    }
+    return config;
+}, (error) =&gt; {
+    return Promise.reject(error)
+}
+)
+
+// //第四步 响应拦截
+service.interceptors.response.use((response) =&gt; {
+
+    return response
+},
+    (error) =&gt; {
+
+        const { code } = error;
+
+        if (code == &quot;ERR_NETWORK&quot;) {
+            //@ts-ignore
+            message.error(&quot;没网&quot;);
+        } else if (code == 401) {
+            //@ts-ignore
+            message.error(&quot;token过期啦,请重新登陆&quot;);
+            sessionStorage.clear()
+            window.location.reload()
+        } else {
+            message.error(error?.response?.data?.msg);
+        }
+        //@ts-ignore
+        // return Promise.reject(error);
+    }
+)
+export default service;
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253
+
+api/http.js
+jsximport axios from &#39;./config&#39;
+
+//用户登录
+// 第一种写法
+// export const login = data =&gt; axios.post(&quot;/login&quot;, data)
+
+
+// 删除班级
+// export function _delClass(params){
+//     return axios({
+//         url: &#39;/classinfo&#39;,
+//         method: &quot;delete&quot;,
+//         params
+//     })
+// }
+
+//错误写法
+// export const  _delClass = (params) =&gt; axios.delete(&#39;/classInfo&#39;,params) 
+// export const  _delClass = (params) =&gt; { axios.delete(&#39;/classInfo&#39;,params) }
+
+//正确写法
+export const _delClass = (params) =&gt; axios.delete(&#39;/classInfo&#39;, { params })
+
+
+
+// 第二种写法
+export function login(data) {
+    return axios({
+        url: &#39;/login&#39;,
+        method: &quot;post&quot;,
+        data
+    })
+}
+
+// 获取首页数据
+export function homeData(){
+    return axios({
+        url: &#39;/homeData&#39;,
+        method: &quot;get&quot;
+    })
+}
+
+//添加班级
+export function addClass(data){
+    return axios({
+        url: &#39;/classinfo&#39;,
+        method: &quot;post&quot;,
+        data
+    })
+}
+//获取班级信息
+export function getClassList(params){
+    return axios({
+        url: &#39;/classinfo&#39;,
+        method: &quot;get&quot;,
+        params
+    })
+}
+
+// 编辑班级
+export function editClass(data){
+    return axios({
+        url: &#39;/classinfo&#39;,
+        method: &quot;put&quot;,
+        data
+    })
+}
+// 删除班级
+// export function _delClass(params){
+//     return axios({
+//         url: &#39;/classinfo&#39;,
+//         method: &quot;delete&quot;,
+//         params
+//     })
+// }
+
+//添加学员信息
+export function addStudent(data){
+    return axios({
+        url: &#39;/stuInfo&#39;,
+        method: &quot;post&quot;,
+        data
+    })
+}
+//获取学员信息
+export function getStudentList(params){
+    return axios({
+        url: &#39;/stuInfo&#39;,
+        method: &quot;get&quot;,
+        params
+    })
+}
+
+// 删除学员
+export function delStudent(params){
+    return axios({
+        url: &#39;/stuInfo&#39;,
+        method: &quot;delete&quot;,
+        params
+    })
+}
+
+// 编辑学员
+export function editStudent(data){
+    return axios({
+        url: &#39;/stuInfo&#39;,
+        method: &quot;put&quot;,
+        data
+    })
+}
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110
+
+8. Antd 表单的使用 &amp;ZeroWidthSpace;
+1. 通过配置项实现规则验证 &amp;ZeroWidthSpace;
+jsx&amp;#x3C;Form.Item
+    label=&quot;Username&quot;
+    name=&quot;username&quot;
+    rules={[
+        { required: true, message: &#39;请输入帐号!&#39; },
+        { pattern: /^\w{3,7}$/, message: &#39;请输入长度为3-7的字符!&#39; }
+    ]}
+    &gt;
+  &amp;#x3C;Input&gt;&amp;#x3C;/Input&gt;
+&amp;#x3C;/Form.Item&gt;
+123456789102. 自定义校验规则 &amp;ZeroWidthSpace;
+jsx//自定义校验规则
+const checkUsername = (rule, value) =&gt; {
+  if (!value) {
+    return Promise.reject(&quot;请选择定时的时间&quot;);
+  } else {
+    return Promise.resolve();
+  }
+}
+
+......
+&amp;#x3C;Form.Item
+  label=&quot;Username&quot;
+  name=&quot;username&quot;
+  rules={[
+    {
+      validator: checkUsername,
+    }
+  ]}
+&gt;
+  &amp;#x3C;Input /&gt;
+&amp;#x3C;/Form.Item&gt;
+1234567891011121314151617181920213. 表单的重置和设置默认值 &amp;ZeroWidthSpace;
+jsximport { Form } from &#39;antd&#39;
+
+const Login = () =&gt; {
+    //获取表单实例
+    const [form] = Form.useForm()
+    
+    //处理逻辑
+    const handle = () =&gt; {
+        form.resetFields()  //重置为默认值
+        form.setFieldsValue({}) //设置表单元素的值
+    }
+    
+    return (
+    	&amp;#x3C;Form form={form}&gt; &amp;#x3C;/Form&gt;
+    )
+}
+123456789101112131415164. 表单数据多行布局 &amp;ZeroWidthSpace;
+描述：
+常规表单，每一 行放置一项表单项，
+特殊布局表单：每一行并列放置两项或多项，多行布局
+
+form 添加 layout=&amp;quot;horizontal&amp;quot;属性
+Form.Item 放在 &amp;lt;Row&amp;gt; 和 &amp;lt;Col&amp;gt; 中布局
+
+9. Antd message组件的使用 &amp;ZeroWidthSpace;
+1. 使用message的静态方法 &amp;ZeroWidthSpace;
+jsimport { message } from &#39;antd&#39;
+...
+message.info(&#39;提示信息&#39;)
+message.success(&#39;提示信息&#39;)
+message.error(&#39;提示信息&#39;)
+message.warning(&#39;提示信息&#39;)
+1234562. Hooks 调用 &amp;ZeroWidthSpace;
+通过 hooks 创建的 contextHolder 必须插入到子元素节点中才会生效，当你不需要上下文信息时请直接调用。
+jsximport { message } from &#39;antd&#39;
+
+const App = () =&gt; {
+    const [messageApi, contextHolder] = message.useMessage();
+    const handler = () =&gt; {
+       messageApi.open({
+        	type: &#39;success&#39;,
+        	content: &#39;成功&#39;,
+        	duration: 1
+      })
+    }
+    
+    return (
+    	&amp;#x3C;&gt;
+        	{ contextHolder }
+        &amp;#x3C;/&gt;
+    )
+}
+123456789101112131415161718
+
+Hooks调用只能在当前页面显示，如果显示完要路由跳转，采用以下promise回调的方式
+jsxmessageApi.open({
+        type: &#39;success&#39;,
+        content: &#39;成功&#39;,
+        duration: 1
+      })
+      .then(()=&gt;{
+        navigate(&#39;/&#39;,{replace: true})
+      })
+12345678
+
+10. 导航菜单的高亮 &amp;ZeroWidthSpace;
+1. 菜单数据 &amp;ZeroWidthSpace;
+src/router/routesData.jsx
+jsx export default  [
+    {
+      key: &quot;/dashboard&quot;,
+      icon: &#39;UserOutlined&#39;,
+      label: &quot;Dashboard&quot;,
+      children: [
+        {
+          key: &quot;/dashboard/console&quot;,
+          icon: &#39;UserOutlined&#39;,
+          label: &quot;主控台&quot;,
+        },
+        {
+          key: &quot;/dashboard/monitor&quot;,
+          icon: &#39;UserOutlined&#39;,
+          label: &quot;监控页&quot;,
+        }
+      ]
+    },
+    {
+      key: &quot;/upload&quot;,
+      icon: &#39;UserOutlined&#39;,
+      label: &quot;图片上传&quot;
+    },
+    {
+      key: &quot;/charts&quot;,
+      icon: &#39;UserOutlined&#39;,
+      label: &quot;图表管理&quot;,
+      children: [
+        {
+          key: &quot;/charts/bar&quot;,
+          icon: &#39;UserOutlined&#39;,
+          label: &quot;柱状图&quot;,
+        },
+        {
+          key: &quot;/charts/pie&quot;,
+          icon: &#39;UserOutlined&#39;,
+          label: &quot;饼图&quot;
+        }
+      ]
+    },
+  ]
+12345678910111213141516171819202122232425262728293031323334353637383940412. 导航菜单页面 &amp;ZeroWidthSpace;
+AdminMenu.jsx
+jsxexport default function navMenu() {
+    const {pathname} = useLocation()
+    let selectedKeys = pathname  // &#39;/charts/bar&#39;
+    let defaultOpenKeys = &#39;/&#39; + pathname.split(&quot;/&quot;)[1]
+    
+    //default开头的属性只使用组件初始化渲染时的值，组件更新的值无效
+    // console.log(selectedKeys,defaultOpenKeys);
+    //当菜单被选中时
+
+    return (
+        &amp;#x3C;Sider&gt;
+            &amp;#x3C;div className=&quot;logo&quot; /&gt;
+            &amp;#x3C;Menu
+                // 注意： 
+                // selectedKeys设置当前选中项的高亮
+                // defaultOpenKeys设置默认展开的菜单项
+                selectedKeys={[selectedKeys]}
+                defaultOpenKeys={[defaultOpenKeys]}
+                items={items}
+            /&gt;
+        &amp;#x3C;/Sider&gt;
+    )
+}
+123456789101112131415161718192021222311. 动态显示图标 &amp;ZeroWidthSpace;
+
+
+Iconfont.jsx
+jsximport React from &#39;react&#39;
+
+import * as Icons from &#39;@ant-design/icons&#39;;
+
+const Iconfont = (props) =&gt; {
+  const { icon } = props
+  const antIcon = Icons
+  return React.createElement(antIcon[icon])
+}
+
+export default Iconfont
+1234567891011
+
+navMenu.jsx
+jsximport Iconfont from &#39;./Iconfont&#39;
+... 
+&amp;#x3C;div style={{ color: &quot;#fff&quot; }}&gt;
+       &amp;#x3C;Iconfont icon=&quot;VideoCameraOutlined&quot;&gt;&amp;#x3C;/Iconfont&gt;
+ &amp;#x3C;/div&gt;
+12345
+
+12. 处理导航菜单中的图标 &amp;ZeroWidthSpace;
+1. 菜单数据 &amp;ZeroWidthSpace;
+js export default  [
+    {
+      key: &quot;/dashboard&quot;,
+      icon: &#39;UserOutlined&#39;,
+      label: &quot;Dashboard&quot;,
+      children: [
+        {
+          key: &quot;/dashboard/console&quot;,
+          icon: &#39;UserOutlined&#39;,
+          label: &quot;主控台&quot;,
+        },
+        {
+          key: &quot;/dashboard/monitor&quot;,
+          icon: &#39;UserOutlined&#39;,
+          label: &quot;监控页&quot;,
+        }
+      ]
+    },
+    {
+      key: &quot;/upload&quot;,
+      icon: &#39;UserOutlined&#39;,
+      label: &quot;图片上传&quot;
+    },
+    {
+      key: &quot;/charts&quot;,
+      icon: &#39;UserOutlined&#39;,
+      label: &quot;图表管理&quot;,
+      children: [
+        {
+          key: &quot;/charts/bar&quot;,
+          icon: &#39;UserOutlined&#39;,
+          label: &quot;柱状图&quot;,
+        },
+        {
+          key: &quot;/charts/pie&quot;,
+          icon: &#39;UserOutlined&#39;,
+          label: &quot;饼图&quot;
+        }
+      ]
+    },
+  ]
+12345678910111213141516171819202122232425262728293031323334353637383940412. 图标处理 &amp;ZeroWidthSpace;
+AdminMemu.jsx
+jsximport React from &quot;react&quot;;
+import {
+  LaptopOutlined,
+  NotificationOutlined,
+  UserOutlined,
+} from &quot;@ant-design/icons&quot;;
+import { Layout, Menu, theme } from &quot;antd&quot;;
+import { useNavigate } from &quot;react-router-dom&quot;;
+import routesData from &quot;@/router/routesData&quot;;
+import Iconfont from &quot;com/Iconfont&quot;;
+import { useEffect } from &quot;react&quot;;
+import { useState } from &quot;react&quot;;
+import { useLocation } from &quot;react-router-dom&quot;;
+const { Sider } = Layout;
+
+export default function AdminMenu() {
+  const nav = useNavigate();
+  const {pathname} = useLocation()  // &#39;/dashboard/console&#39;
+  const openKey = &quot;/&quot; + pathname.split(&quot;/&quot;)[1]
+  const [items,setItems] = useState([])
+  // const str = &#39;NotificationOutlined&#39;
+  //当单击菜单时
+  const onClick = (e) =&gt; {
+    nav(e.key);
+  };
+
+  // 初始化处理路由数据,
+  // 因为路由数据中图标是字符串，传给menu之后不能展示为图标，而是直接显示了图标字符串
+  // 处理的目的是把图标字符串正常显示为图标
+  useEffect(() =&gt; {
+     let list = routesData.map(subMenu=&gt;{
+        let childrenList = []
+        if (subMenu.children){
+          childrenList = subMenu.children.map(menu=&gt;{
+            return {
+              ...menu,
+              icon: &amp;#x3C;Iconfont icon={menu.icon}&gt;&amp;#x3C;/Iconfont&gt;
+            }
+          })
+        }else{
+          // 比如图片上传没有二级菜单，不设为undefined,则会显示右侧的箭头
+          childrenList = undefined
+        }
+        return {
+          ...subMenu,
+          icon: &amp;#x3C;Iconfont icon={subMenu.icon}&gt;&amp;#x3C;/Iconfont&gt;,
+          children: childrenList
+        }
+     })
+     setItems(list)
+  }, []);
+
+
+  return (
+    &amp;#x3C;Sider width={200} style={{ color: &quot;#fff&quot; }}&gt;
+      {/* 图标 &amp;#x3C;Iconfont icon={str}&gt;&amp;#x3C;/Iconfont&gt; */}
+      &amp;#x3C;Menu
+        mode=&quot;inline&quot;
+        selectedKeys={[pathname]}
+        defaultOpenKeys={[openKey]}
+        style={{
+          height: &quot;calc(100vh - 64px)&quot;,
+          borderRight: 0,
+          backgroundColor: &quot;#191a23&quot;,
+          color: &quot;#fff&quot;,
+        }}
+        items={items}
+        onClick={onClick}
+      /&gt;
+    &amp;#x3C;/Sider&gt;
+  );
+}
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717213. 面包屑导航 &amp;ZeroWidthSpace;
+jsximport React from &quot;react&quot;;
+import { Breadcrumb } from &quot;antd&quot;;
+import { useLocation } from &quot;react-router-dom&quot;;
+import routesData from &quot;@/router/routesData&quot;;
+import { useState } from &quot;react&quot;;
+import { useEffect } from &quot;react&quot;;
+import { useDispatch } from &quot;react-redux&quot;;
+import { addTab } from &quot;@/store/tabs.store&quot;;
+
+// const items = [
+//     {
+//         title: &#39;主页&#39;
+//     },
+//     {
+//         title: &#39;学生管理&#39;
+//     },
+//     {
+//         title: &#39;添加学生&#39;
+//     }
+// ]
+
+export default function AdminBreadcrumb() {
+  const dispath = useDispatch();
+  const [items, setItems] = useState([]);
+  const { pathname } = useLocation();
+  // console.log(pathname);  // /charts/bar   /upload
+  const pathList = pathname.split(&quot;/&quot;); // [&#39;&#39;,&#39;charts&#39;,&#39;bar&#39;]   [&#39;&#39;,&#39;upload&#39;]
+
+  useEffect(() =&gt; {
+    let level1 = &quot;/&quot; + pathList[1];
+
+    //处理面包屑数据
+    let list = [
+      {
+        title: &quot;首页&quot;,
+      },
+    ];
+    routesData.forEach((subMenu) =&gt; {
+      if (level1 === subMenu.key) {
+        list.push({
+          title: subMenu.label,
+          path: subMenu.key,
+        });
+        //判断是否有二级菜单
+        if (subMenu.children) {
+          subMenu.children.forEach((menu) =&gt; {
+            if (pathname === menu.key) {
+              list.push({
+                title: menu.label,
+                path: menu.key,
+              });
+            }
+          });
+        }
+      }
+    });
+
+    //把当前的标题和路径传入store
+    dispath(addTab(list[list.length - 1]));   // {title:&#39;&#39;,path:&#39;&#39;}
+    setItems(list);
+  }, [pathname]);
+  return &amp;#x3C;Breadcrumb style={{ margin: &quot;16px 0&quot; }} items={items}&gt;&amp;#x3C;/Breadcrumb&gt;;
+}
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626314 . React.createElement的作用 &amp;ZeroWidthSpace;
+创建新的元素节点
+jsx//***********两种方案完全等价
+//方案一
+{React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+    className: &#39;trigger&#39;,
+    onClick: () =&gt; setCollapsed(!collapsed),
+})}
+
+//方案二
+&amp;#x3C;div&gt;
+    {
+        collapsed 
+            ? 
+            &amp;#x3C;MenuUnfoldOutlined className=&quot;trigger&quot; onClick={() =&gt; setCollapsed(!collapsed)}&gt;&amp;#x3C;/MenuUnfoldOutlined&gt; : 
+            &amp;#x3C;MenuFoldOutlined className=&quot;trigger&quot; onClick={() =&gt; setCollapsed(!collapsed)}&gt;&amp;#x3C;/MenuFoldOutlined&gt;
+    }
+&amp;#x3C;/div&gt;
+1234567891011121314151615 全局化配置 ConfigProvider &amp;ZeroWidthSpace;
+配置主题颜色 &amp;ZeroWidthSpace;
+
+App.jsx
+
+jsximport React from &#39;react&#39;
+import { BrowserRouter as Router } from &#39;react-router-dom&#39;
+import RenderRoutes from &#39;./router/renderRoutes&#39;
+import &#39;./App.scss&#39;
+import &#39;antd/dist/reset.css&#39;;
+//引入全局配置组件
+import { ConfigProvider } from &#39;antd&#39;;
+
+export default function App() {
+  return (
+    //配置主题颜色
+    // colorBgContainer属性会自动作用于文本框，Sider组件，修改属性名则对文本框无效
+    // 其余组件需要手动使用
+    &amp;#x3C;ConfigProvider theme={{token: {colorBgContainer:&quot;#f00&quot;}}}&gt;
+      &amp;#x3C;Router&gt;
+        &amp;#x3C;RenderRoutes&gt;&amp;#x3C;/RenderRoutes&gt;
+      &amp;#x3C;/Router&gt;
+     &amp;#x3C;/ConfigProvider&gt;
+  )
+}
+1234567891011121314151617181920
+组件中使用主题颜色
+
+jsx//引入theme组件
+import { Layout, theme } from &#39;antd&#39;;
+
+const AdminLayout = () =&gt; {
+  ...
+  //获取主题颜色
+  // 打印theme.useToken()可以看到更多默认配置，configProvider相当于修改了默认配置
+  const {
+    token: { colorBgContainer },
+  } = theme.useToken();
+
+  return (
+    &amp;#x3C;Layout style={{minHeight: &quot;100vh&quot;}} className=&quot;admin-layout&quot;&gt;
+        &amp;#x3C;AdminHeader
+          colorBgContainer={colorBgContainer}
+          collapsed={collapsed}
+          setCollapsed={setCollapsed}
+        &gt;&amp;#x3C;/AdminHeader&gt;
+        &amp;#x3C;Content
+          style={{
+            margin: &#39;24px 16px&#39;,
+            padding: 24,
+            minHeight: 280,
+            background: colorBgContainer,
+          }}
+        &gt;
+        &amp;#x3C;/Content&gt;
+      &amp;#x3C;/Layout&gt;
+    &amp;#x3C;/Layout&gt;
+  );
+};
+12345678910111213141516171819202122232425262728293031国际化（表单元素） &amp;ZeroWidthSpace;
+antd 很多组件默认显示英文，如果需要显示中文需要国际化配置
+
+
+安装 day.js
+比如日期选择器组件，
+不安装该模块，只有placeholder自动显示中文，日历面板上的星期和月份依然显示英文
+安装该模块，则都显示中文
+
+
+npm i dayjs
+1
+
+App.jsx
+只需在根组件配置configProvider即可，所有组件中的表单都会实现国际化
+
+
+jsx...
+import { ConfigProvider } from &#39;antd&#39;;
+
+// 注意全局配置主题和国际化
+import zhCN from &#39;antd/locale/zh_CN&#39;;
+import dayjs from &#39;dayjs&#39;;
+import &#39;dayjs/locale/zh-cn&#39;;
+dayjs.locale(&#39;zh-cn&#39;);
+
+export default function App() {
+  return (
+    &amp;#x3C;ConfigProvider theme={{token: {}}} locale={zhCN}&gt;
+      &amp;#x3C;Router&gt;
+        &amp;#x3C;RenderRoutes&gt;&amp;#x3C;/RenderRoutes&gt;
+      &amp;#x3C;/Router&gt;
+   &amp;#x3C;/ConfigProvider&gt;
+  )
+}
+12345678910111213141516171816. Tabs标签页 &amp;ZeroWidthSpace;
+
+确保安装以下依赖
+
+pnpm i @reduxjs/toolkit react-redux
+11. 定义Tab所需store数据 &amp;ZeroWidthSpace;
+定义store数据： tabList和activeIndex
+1src/store/tabs.store.js
+jsimport { createSlice } from &quot;@reduxjs/toolkit&quot;;
+
+const tabsSlice = createSlice({
+  name: &quot;tabs&quot;,
+  initialState: {
+    tabList: [], // [{title,path},{}]
+    activeIndex: 0,
+  },
+  reducers: {
+    // payload = { title: &#39;&#39;, path: &#39;&#39;}
+    addTab: (state, { payload }) =&gt; {
+      if (payload.path === &quot;/dashboard&quot;) return;
+      // 查看是否重复
+      let curIndex = state.tabList.findIndex((item) =&gt; item.path === payload.path);
+      console.log(curIndex);
+      if (curIndex !== -1) {
+        //如果重复
+        state.activeIndex = curIndex
+      } else {
+        //不重复
+        state.tabList = [...state.tabList, payload];
+        state.activeIndex = state.tabList.length - 1;
+      }
+    },
+    delTab: (state,{payload})=&gt;{
+      let maxIndex = state.tabList.length - 1
+      let curIndex = state.tabList.findIndex((item) =&gt; item.path === payload.path);
+      state.tabList.splice(curIndex,1)
+      //删除项索引小于当前项
+      if (curIndex &amp;#x3C; state.activeIndex){
+        state.activeIndex--
+        return;
+      }
+      //删除项就是当前项，且不是最后一项
+      if (curIndex === state.activeIndex &amp;#x26;&amp;#x26; curIndex !== maxIndex){
+        return;
+      }
+      //删除最后一项
+      if (curIndex === maxIndex){
+          state.activeIndex = maxIndex - 1;
+      }
+    }
+  },
+});
+
+export const { addTab,delTab } = tabsSlice.actions;
+export default tabsSlice.reducer;
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546472. 创建store &amp;ZeroWidthSpace;
+src/store/index.js
+jsimport { combineReducers, configureStore } from &#39;@reduxjs/toolkit&#39;
+import tabsReducer from &#39;./tabs.store&#39;
+
+const rootReducer = combineReducers({
+    tabs: tabsReducer,
+})
+
+const store = configureStore({
+    reducer: rootReducer
+})
+export default store
+12345678910113. 全局注入store &amp;ZeroWidthSpace;
+src/main.tsx
+jsximport React from &#39;react&#39;
+import ReactDOM from &#39;react-dom/client&#39;
+import &quot;normalize.css&quot;
+import App from &#39;./App&#39;
+import store from &#39;./store&#39;
+import { Provider } from &#39;react-redux&#39;
+ReactDOM.createRoot(document.getElementById(&#39;root&#39;)).render(
+  &amp;#x3C;Provider store={store}&gt;
+    &amp;#x3C;App /&gt;
+  &amp;#x3C;/Provider&gt;
+)
+12345678910114. 在面包屑中处理addTab &amp;ZeroWidthSpace;
+AdminBreadcrumb.jsx
+jsximport React from &quot;react&quot;;
+import { Breadcrumb } from &quot;antd&quot;;
+import { useLocation } from &quot;react-router-dom&quot;;
+import routesData from &quot;@/router/routesData&quot;;
+import { useState } from &quot;react&quot;;
+import { useEffect } from &quot;react&quot;;
+import { useDispatch } from &quot;react-redux&quot;;
+import { addTab } from &quot;@/store/tabs.store&quot;;
+
+// const items = [
+//     {
+//         title: &#39;主页&#39;
+//     },
+//     {
+//         title: &#39;学生管理&#39;
+//     },
+//     {
+//         title: &#39;添加学生&#39;
+//     }
+// ]
+const items = [
+  {
+    title: &quot;主页&quot;,
+  },
+  {
+    title: &quot;学生管理&quot;,
+  },
+  {
+    title: &quot;添加学生&quot;,
+  },
+];
+export default function AdminBreadcrumb() {
+  const dispath = useDispatch();
+  const [items, setItems] = useState([]);
+  const { pathname } = useLocation();
+  // console.log(pathname);  // /charts/bar   /upload
+  const pathList = pathname.split(&quot;/&quot;); // [&#39;&#39;,&#39;charts&#39;,&#39;bar&#39;]   [&#39;&#39;,&#39;upload&#39;]
+
+  useEffect(() =&gt; {
+    let level1 = &quot;/&quot; + pathList[1];
+
+    //处理面包屑数据
+    let list = [
+      {
+        title: &quot;首页&quot;,
+      },
+    ];
+    routesData.forEach((subMenu) =&gt; {
+      if (level1 === subMenu.key) {
+        list.push({
+          title: subMenu.label,
+          path: subMenu.key,
+        });
+        //判断是否有二级菜单
+        if (subMenu.children) {
+          subMenu.children.forEach((menu) =&gt; {
+            if (pathname === menu.key) {
+              list.push({
+                title: menu.label,
+                path: menu.key,
+              });
+            }
+          });
+        }
+      }
+    });
+
+    //把当前的标题和路径传入store
+    dispath(addTab(list[list.length - 1]));   // {title:&#39;&#39;,path:&#39;&#39;}
+    setItems(list);
+  }, [pathname]);
+  return &amp;#x3C;Breadcrumb style={{ margin: &quot;16px 0&quot; }} items={items}&gt;&amp;#x3C;/Breadcrumb&gt;;
+}
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172735.标签页处理 &amp;ZeroWidthSpace;
+AdminTabs.jsx
+jsximport React from &quot;react&quot;;
+import { Tag } from &quot;antd&quot;;
+import { useSelector } from &quot;react-redux&quot;;
+import { useState } from &quot;react&quot;;
+import &quot;./AdminTabs.scss&quot;;
+import { delTab } from &quot;@/store/tabs.store&quot;;
+import { useDispatch } from &quot;react-redux&quot;;
+import { useNavigate } from &quot;react-router-dom&quot;;
+import { useEffect } from &quot;react&quot;;
+
+export default function AdminTabs() {
+  const dispatch = useDispatch();
+  const [delStatus,setDelStatus] = useState(false)
+  const nav = useNavigate();
+  const { tabList, activeIndex } = useSelector((state) =&gt; state.tabs);
+
+  //   当单击时
+  const onClick = (item) =&gt; {
+    nav(item.path);
+  };
+
+  //当关闭的
+  const onClose = (item, index) =&gt; {
+    //因为dispatch是异步操作
+    dispatch(delTab(item));
+    //如果删除的是当前高亮的项目，需要跳转
+    // console.log(tabList);  // 此时访问tabList时，tabList还没有更新
+    if (activeIndex == index) {
+        // nav(tabList[activeIndex].path)
+        setDelStatus(true);
+    }
+  };
+  
+  //监听tabList的变化
+  useEffect(() =&gt; {
+    // 1. tabList发生了变化  2. 删除是当前的
+    console.log(tabList);
+    if (delStatus) {
+      nav(tabList[activeIndex].path);
+    }
+  }, [tabList]);
+
+  const render = () =&gt; {
+    return tabList.map((item, index) =&gt; {
+      return (
+        &amp;#x3C;Tag
+          closeIcon
+          onClose={() =&gt; onClose(item, index)}
+          key={item.path}
+          className={activeIndex === index ? &quot;active&quot; : &quot;&quot;}
+          onClick={() =&gt; onClick(item)}
+        &gt;
+          {item.title}
+        &amp;#x3C;/Tag&gt;
+      );
+    });
+  };
+
+  return &amp;#x3C;div className=&quot;tabs&quot;&gt;{render()}&amp;#x3C;/div&gt;;
+}
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606. 刷新后数据持久化 &amp;ZeroWidthSpace;
+更新后的tabs.store.jsx
+jsximport { createSlice } from &quot;@reduxjs/toolkit&quot;;
+
+const tabsSlice = createSlice({
+  name: &quot;tabs&quot;,
+  initialState: () =&gt; {
+    // 只要刷新,store就会执行初始化操作，此时判断缓存tabsStore是否为null
+    // 如果为null,则使用初始值，如果不为null,则取出缓存数据作为store初始化的值
+    if (sessionStorage.getItem(&quot;tabList&quot;) !== null) {
+      return {
+        tabList: JSON.parse(sessionStorage.getItem(&quot;tabList&quot;)),
+        activeIndex: sessionStorage.getItem(&quot;activeIndex&quot;)
+      }
+    }
+    return {
+      tabList: [
+        {
+          title: &quot;主控台&quot;,
+          path: &quot;/dashboard/console&quot;,
+        },
+      ], // [{title,path},{}]
+      activeIndex: 0,
+    };
+  },
+  reducers: {
+      
+    //添加新的标签
+    // payload = { title: &#39;&#39;, path: &#39;&#39;}
+    addTab: (state, { payload }) =&gt; {
+      if (payload.path === &quot;/dashboard&quot;) return;
+      // 查看是否重复
+      let curIndex = state.tabList.findIndex(
+        (item) =&gt; item.path === payload.path
+      );
+      console.log(curIndex);
+      if (curIndex !== -1) {
+        //如果重复
+        state.activeIndex = curIndex;
+      } else {
+        //不重复
+        state.tabList = [...state.tabList, payload];
+        state.activeIndex = state.tabList.length - 1;
+      }
+      sessionStorage.setItem(&quot;tabList&quot;, JSON.stringify(state.tabList));
+      sessionStorage.setItem(&quot;activeIndex&quot;, state.activeIndex);
+    },
+      
+    //删除标签
+    delTab: (state, { payload }) =&gt; {
+      let maxIndex = state.tabList.length - 1;
+      let curIndex = state.tabList.findIndex(
+        (item) =&gt; item.path === payload.path
+      );
+      state.tabList.splice(curIndex, 1);
+      //删除项索引小于当前项
+      if (curIndex &amp;#x3C; state.activeIndex) {
+        state.activeIndex--;
+      }
+      //删除最后一项
+      if (curIndex === maxIndex) {
+        state.activeIndex = maxIndex - 1;
+      }
+      sessionStorage.setItem(&quot;tabList&quot;, JSON.stringify(state.tabList));
+      sessionStorage.setItem(&quot;activeIndex&quot;, state.activeIndex);
+    },
+  },
+});
+
+export const { addTab, delTab } = tabsSlice.actions;
+export default tabsSlice.reducer;
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686917. Echarts图表的使用 &amp;ZeroWidthSpace;
+
+安装echarts
+
+npm i echarts
+1
+charts/Bar.jsx
+
+jsximport React, { useEffect } from &quot;react&quot;;
+import * as echarts from &quot;echarts&quot;;
+import axios from &quot;axios&quot;;
+import { useState } from &quot;react&quot;;
+
+let styleObj = {
+  width: &quot;800px&quot;,
+  height: &quot;500px&quot;,
+  border: &quot;1px solid red&quot;,
+};
+
+function Bar() {
+  //初始化options
+  const options = {
+    title: {
+      text: &quot;异步数据加载示例&quot;,
+    },
+    tooltip: {},
+    legend: {
+      data: [&quot;销量&quot;],
+    },
+    // 类目
+    xAxis: {
+      data: [&quot;衬衫&quot;, &quot;羊毛衫&quot;, &quot;雪纺衫&quot;, &quot;裤子&quot;, &quot;高跟鞋&quot;, &quot;袜子&quot;],
+    },
+    yAxis: {},
+    series: [
+      {
+        name: &quot;销量&quot;,
+        type: &quot;bar&quot;,
+        data: [],
+      },
+    ],
+  };
+
+  let myChart;
+  //拉取数据
+  const getData = async () =&gt; {
+    // let res = await axios.get(&quot;http://localhost:3000/chartData&quot;);
+    let res = {
+        data: {
+            code: 0,
+            list: [23,45,67,8,9,6]
+        }
+    }
+    let { code, list } = res.data;
+    if (code === 0) {
+      options.series[0].data = list;
+      myChart.setOption(options);
+      myChart.hideLoading();
+    }
+  };
+
+  useEffect(() =&gt; {
+    // 基于准备好的dom，初始化echarts实例
+    myChart = echarts.init(document.getElementById(&quot;box&quot;));
+    myChart.setOption(options);
+    myChart.showLoading();
+    getData();
+  }, []);
+
+  return (
+    &amp;#x3C;div className=&quot;home&quot;&gt;
+      &amp;#x3C;div className=&quot;box&quot; id=&quot;box&quot; style={styleObj}&gt;&amp;#x3C;/div&gt;
+    &amp;#x3C;/div&gt;
+  );
+}
+
+export default Bar;
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686918. Antd中学生管理表格分页的两种方案 &amp;ZeroWidthSpace;
+第一种： 每次请求后台数据时携带page, 拉取指定页的信息，之后无论页码变化、编辑、删除都需要维护page
+第二种： 请求后台不携带page, 一次拉取所有数据，不用维护page,只要提供total和pageSize会自动维护分页
+方案一： 携带page的分页 &amp;ZeroWidthSpace;
+1. AdminClass.jsx--只有该组件不同 &amp;ZeroWidthSpace;
+jsximport React from &#39;react&#39;
+import { Card, Table, Tag, message } from &#39;antd&#39;;
+import &#39;./AdminClass.scss&#39;
+import { _getClassList, _delClass } from &#39;@/api/http&#39;
+import { useEffect } from &#39;react&#39;;
+import { useState } from &#39;react&#39;;
+import day from &#39;dayjs&#39;
+import EditClass from &#39;./EditClass&#39;;
+import SearchClass from &#39;./SearchClass&#39;;
+
+const tagData = [
+  {
+    title: &#39;即将开班&#39;,
+    color: &#39;green&#39;
+  },
+  {
+    title: &#39;已开班&#39;,
+    color: &#39;geekblue&#39;
+  },
+  {
+    title: &#39;已毕业&#39;,
+    color: &#39;volcano&#39;
+  }
+]
+export default function AdminClass() {
+
+  const [classList, setClassList] = useState([])
+  const [total, setTotal] = useState(0)
+  const [page, setPage] = useState(1)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [record, setRecord] = useState({})
+  const [isAddAction, setIsAddAction] = useState(false)
+  const [search, setSearch] = useState({})
+
+  //定义表格的结构
+  const columns = [
+    {
+      title: &#39;id&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;classId&#39;,
+      key: &#39;classId&#39;,
+    },
+    {
+      title: &#39;班级名称&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;className&#39;,
+      key: &#39;className&#39;,
+    },
+    {
+      title: &#39;开班状态&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;classStatus&#39;,
+      key: &#39;classStatus&#39;,
+      render: (text, record, index) =&gt; {
+        // text 0 | 1 | 2
+        return (
+          &amp;#x3C;&gt;
+            &amp;#x3C;Tag color={tagData[text].color}&gt;
+              {tagData[text].title}
+            &amp;#x3C;/Tag&gt;
+          &amp;#x3C;/&gt;
+        )
+      }
+    },
+    {
+      title: &#39;教室&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;classroom&#39;,
+      key: &#39;classroom&#39;,
+    },
+    {
+      title: &#39;班主任&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;ht&#39;,
+      key: &#39;ht&#39;,
+    },
+    {
+      title: &#39;开班时间&#39;,
+      // 必须和对应的字段匹配
+      dataIndex: &#39;startDate&#39;,
+      key: &#39;startDate&#39;,
+      render: (text) =&gt; {
+        return day(text).format(&quot;YYYY-MM-DD&quot;)
+        // return text
+      }
+    },
+    {
+      title: &#39;操作&#39;,
+      key: &#39;action&#39;,
+      render: (text, record, index) =&gt; {
+        return (
+          &amp;#x3C;&gt;
+            &amp;#x3C;button onClick={() =&gt; onEdit(record)}&gt;编辑&amp;#x3C;/button&gt;
+            &amp;#x3C;button onClick={() =&gt; onDelete(record.classId)}&gt;删除&amp;#x3C;/button&gt;
+          &amp;#x3C;/&gt;
+        )
+      }
+    }
+  ]
+
+  //获取数据
+  const getData = async () =&gt; {
+    let res = await _getClassList({
+      //***************************************************1. 需要携带page
+      page,
+      ...search
+    })
+    let { code, list, total } = res.data
+    if (code === 0) {
+      setClassList(list)
+      setTotal(total)
+    } else {
+      setClassList([])
+      setTotal(0)
+    }
+  }
+
+  //初始化获取数据
+  useEffect(() =&gt; {
+    getData()
+      //***************************************************2. 需要监听page
+  }, [page, isAddAction])
+
+  //切换页码
+  const onChange = (page) =&gt; {
+    setPage(page)
+  }
+
+  //添加班级
+  const addClass = () =&gt; {
+    setRecord({})
+    setIsModalOpen(true)
+  }
+
+  //编辑班级
+  const onEdit = (record) =&gt; {
+    setIsModalOpen(true)
+    setRecord(record)
+  }
+
+  //判断当前删除的是否为最后一页唯一的一条
+  const isEnd = () =&gt; {
+    // 13 
+    return total === (page - 1) * 4 + 1
+  }
+  //删除班级
+  const onDelete = async (classId) =&gt; {
+    let res = await _delClass({
+      classId
+    })
+    console.log(res);
+    let { code } = res.data
+    if (code === 0) {
+      message.success(&quot;删除成功&quot;)
+      if (isEnd() &amp;#x26;&amp;#x26; total !== 1) {
+        //***************************************************3. 删除成功后维护page值
+        setPage(page - 1)
+      } else {
+        setIsAddAction(!isAddAction)
+      }
+
+    } else {
+      message.error(&quot;删除失败&quot;)
+    }
+  }
+
+  return (
+    &amp;#x3C;&gt;
+      {/* 班级搜索功能 */}
+      &amp;#x3C;SearchClass
+        setPage={setPage}
+        setSearch={setSearch}
+      &gt;&amp;#x3C;/SearchClass&gt;
+
+      {/* 班级列表 */}
+      &amp;#x3C;Card title=&quot;班级管理&quot; extra={&amp;#x3C;button onClick={addClass}&gt;添加班级&amp;#x3C;/button&gt;}&gt;
+        &amp;#x3C;Table
+          columns={columns}
+          dataSource={classList}
+          rowKey={(record) =&gt; record.classId}
+          pagination={{
+            total,
+            pageSize: 4,
+            onChange,
+            current: page
+          }}
+        /&gt;
+        {
+          isModalOpen ?
+            &amp;#x3C;EditClass
+              isModalOpen={isModalOpen}
+              setIsModalOpen={setIsModalOpen}
+              setPage={setPage}
+              record={record}
+              setIsAddAction={setIsAddAction}
+              isAddAction={isAddAction}
+            &gt;&amp;#x3C;/EditClass&gt;
+            :
+            null
+        }
+
+      &amp;#x3C;/Card&gt;
+    &amp;#x3C;/&gt;
+
+  )
+}
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798991001011021031041051061071081091101111121131141151161171181191201211221231241251261271281291301311321331341351361371381391401411421431441451461471481491501511521531541551561571581591601611621631641651661671681691701711721731741751761771781791801811821831841851861871881891901911921931941951961971981992002012022032042052062. EditClass.jsx &amp;ZeroWidthSpace;
+jsximport React from &#39;react&#39;
+import {
+    Modal,
+    Form,
+    Input,
+    Radio,
+    Select,
+    DatePicker,
+} from &#39;antd&#39;;
+import { _addClass, _editClass } from &#39;@/api/http&#39;
+import { message } from &#39;antd&#39;;
+import day from &#39;dayjs&#39;
+
+//定义教室列表
+const classroomList = [&#39;嵖岈山&#39;, &#39;桐柏山&#39;, &#39;鸡公山&#39;, &#39;嵩山&#39;, &#39;神农山&#39;, &#39;洞庭湖&#39;, &#39;千岛湖&#39;]
+//定义班主任列表
+const htList = [&#39;王趁红&#39;, &#39;汪淼&#39;, &#39;史强&#39;, &#39;叶文洁&#39;, &#39;高启强&#39;]
+
+export default function EditClass(props) {
+    let { isModalOpen, setIsModalOpen, setPage, record, setIsAddAction, isAddAction } = props
+    const [form] = Form.useForm()
+
+    const handleOk = () =&gt; {
+        form.submit()
+    };
+
+    //当关闭或取消
+    const handleCancel = () =&gt; {
+        form.resetFields()
+        setIsModalOpen(false);
+    };
+
+
+    //当表单提交并验证成功时
+    const onFinish = async (values) =&gt; {
+        values.startDate = day(values.startDate).format(&quot;YYYY-MM-DD&quot;)
+        if (isRecordEmpty()) {
+            //
+1234567891011121314151617181920212223242526272829303132333435363738</p></article></a><a class="m-nav-link" href="/website/tech/React/16-富文本编辑器wangEditor的使用" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="16-富文本编辑器wangEditor的使用" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_16-富文本编辑器wangeditor的使用" class="title" data-v-4cce99de>16-富文本编辑器wangEditor的使用</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/17-Excel导入导出" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="17-Excel导入导出" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_17-excel导入导出" class="title" data-v-4cce99de>17-Excel导入导出</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/React/18-权限管理之动态添加路由" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="18-权限管理之动态添加路由" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_18-权限管理之动态添加路由" class="title" data-v-4cce99de>18-权限管理之动态添加路由</h5></div><p class="desc" data-v-4cce99de>中后台项目权限管理 &amp;ZeroWidthSpace;
+一.路由权限管理的流程 &amp;ZeroWidthSpace;
+1. 定义角色 &amp;ZeroWidthSpace;
+根据项目需求，可在项目中实现角色管理
+管理员拥有更高级的权限，普通用户只能访问部分页面或执行特定操作。具体的权限定义可以在后端或前端进行管理，在数据库或配置文件中存储角色和权限的映射关系。
+比如： 教培行业的项目
+
+超级管理员（Super Admin）: 超级管理员是系统的最高权限角色，拥有对系统的完全控制权。他们的职责包括管理和配置整个系统的功能、权限和设置，创建和管理其他管理员账号，监控系统的运行状况和安全性，处理系统级别的问题和决策。
+机构管理员（Institution Admin）: 机构管理员是教育机构或培训机构内部的管理员角色。他们管理和运营特定机构的教育资源、课程设置和学生信息。其职责包括创建和管理教师账号、设置教师权限、创建和管理课程、课程安排和学生管理、监督教学质量和教务运营等。
+教师（Teacher）: 教师是教育机构中的教学人员，在后台项目中具有特定的权限和功能。他们可以创建和管理自己的课程、布置作业、评估学生作业和表现，与学生和家长进行沟通，查看和管理学生的学习进度和成绩等。
+学生（Student）: 学生是教育机构中的学习者，他们在后台项目中可以查看自己的课程内容、作业要求和成绩，与教师和家长进行交流，获取学习资源和支持等。
+家长（Parent）: 家长在教育机构中扮演重要的角色，他们可以通过后台项目查看和监控自己孩子的学习进展、作业完成情况、学习资源和成绩报告，与教师进行沟通和讨论，参与学校或教育机构的相关事务。
+
+角色表 &amp;ZeroWidthSpace;
+菜单权限 &amp;ZeroWidthSpace;
+不同的角色，拥有不同的访问菜单的权限
+用户表 &amp;ZeroWidthSpace;
+用户角色 &amp;ZeroWidthSpace;
+2. 前端路由配置 &amp;ZeroWidthSpace;
+配置静态路由 &amp;ZeroWidthSpace;
+jsx//静态路由
+const staticList = [
+  {
+    path: &quot;/&quot;,
+    element: &amp;#x3C;Navigate to=&quot;/dashboard&quot;&gt;&amp;#x3C;/Navigate&gt;,
+  },
+  {
+    path: &quot;/login&quot;,
+    element: &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;Login /&gt;} title=&quot;登录&quot; /&gt;,
+  },
+];
+
+// 如何没有匹配到路由，进行404处理
+const otherList = [
+  {
+    path: &quot;/404&quot;,
+    element: (
+      &amp;#x3C;WrapperRouteComponent element={&amp;#x3C;NotFound /&gt;} title=&quot;404&quot; auth={true} /&gt;
+    ),
+  },
+  //如果所有路由都没有匹配到，则进入该路由，重定向到404
+  {
+    path: &quot;*&quot;,
+    element: &amp;#x3C;Navigate to=&quot;/404&quot;&gt;&amp;#x3C;/Navigate&gt;,
+  },
+];
+
+export default function index() {
+  // 动态拉取store中路由数据，但初始化时为[]
+  const { routesData } = useSelector((state) =&gt; state.tabs);
+    
+  const [routeList, setRouteList] = useState([...staticList,...otherList]);
+    
+  // ******************************************监听动态路由变化，来生成动态路由
+12345678910111213141516171819202122232425262728293031323334</p></article></a><a class="m-nav-link" href="/website/tech/React/react路由跳转" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="react路由跳转" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="react路由跳转" class="title" data-v-4cce99de>react路由跳转</h5></div><p class="desc" data-v-4cce99de>1.声明式导航的两种方式 &amp;ZeroWidthSpace;
+1.两种传参方式 - 第1种 &amp;ZeroWidthSpace;
+1.在路由上设置
+ &amp;#x3C;Route path=&quot;/detail/:id/:type&quot; element={&amp;#x3C;Detail&gt;&amp;#x3C;/Detail&gt;}&gt;&amp;#x3C;/Route&gt;
+2.跳转的地方设置
+  &amp;#x3C;NavLink to=&quot;/detail/12/car&quot;&gt;商品2&amp;#x3C;/NavLink&gt;
+3.接受参数
+ //接收参数一  /detail/3/car
+import { useParams } from &#39;react-router-dom&#39;
+    // const {id,type} = useParams()
+123456782.两种传参方式 - 第2种 &amp;ZeroWidthSpace;
+1.路由配置上面什么也不需要加
+&amp;#x3C;Route path=&quot;/detail&quot; element={&amp;#x3C;Detail&gt;&amp;#x3C;/Detail&gt;}&gt;&amp;#x3C;/Route&gt;
+2.跳转的地方
+&amp;#x3C;NavLink to=&quot;/detail?id=11&amp;#x26;type=car&quot;&gt;商品1&amp;#x3C;/NavLink&gt;
+3.接参数
+import { useSearchParams } from &#39;react-router-dom&#39;
+  //接收参数二   /detail?id=3&amp;#x26;type=cart
+    const [searchParams, setSearchParams] = useSearchParams()
+    const id = searchParams.get(&quot;id&quot;)
+    const type = searchParams.get(&quot;type&quot;)
+123456789102.编程式导航 &amp;ZeroWidthSpace;
+1.组件中使用useNavigate进行跳转 &amp;ZeroWidthSpace;
+1.引入useNavigate
+import { useNavigate } from &quot;react-router-dom&quot;;
+2.使用方法
+const nav = useNavigate();
+3.设置点击事件
+&amp;#x3C;button onClick={change}&gt;登录&amp;#x3C;/button&gt;
+4.跳转
+const change = () =&gt; {
+    nav(&quot;/login&quot;, {
+      state: {
+        user: &quot;小明&quot;,
+        pw: 123,
+      },
+    });
+  };
+1234567891011121314152.跳转后的组件接收参数 &amp;ZeroWidthSpace;
+1.引入useLocation
+import { useLocation } from &quot;react-router-dom&quot;;
+2.使用方法
+const {state:{user,pw}} = useLocation();
+3.模板中使用
+&amp;#x3C;div&gt;Login
+123456</p></article></a><a class="m-nav-link" href="/website/tech/React/闭包，防抖，深拷贝，数组去重" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="闭包，防抖，深拷贝，数组去重" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="闭包-防抖-深拷贝-数组去重" class="title" data-v-4cce99de>闭包，防抖，深拷贝，数组去重</h5></div><!----></article></a><!--]--></div><!--]--></div></div></main><footer class="VPDocFooter" data-v-aa9d3751 data-v-11e93384><!--[--><!--]--><div class="edit-info" data-v-11e93384><!----><div class="last-updated" data-v-11e93384><p class="VPLastUpdated" data-v-11e93384 data-v-46396952>最后更新于: <time datetime="2026-04-27T06:37:32.000Z" data-v-46396952></time></p></div></div><!----></footer><!--[--><!--[--><!--[--><!--]--><!--]--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-3b5ac462 data-v-285d3ca7><div class="container" data-v-285d3ca7><!----><!----></div></footer><!--[--><!--]--></div><!--]--></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"friends_index.md\":\"BCAkJ_YP\",\"index.md\":\"Dazr8Gld\",\"life_index.md\":\"Dq17JTE5\",\"life_posts_2026-04-26-普普通通的一天.md\":\"gnWzxfCi\",\"nav_index.md\":\"DKlmWesK\",\"projects_index.md\":\"DaDZzGEF\",\"reading_index.md\":\"X4gfrZbm\",\"tech_git_01-git使用总结.md\":\"6SJwVME4\",\"tech_git_02-团队协作的流程.md\":\"Bx5jmW6x\",\"tech_git_gitee.md\":\"D6V2Xxkm\",\"tech_git_git笔记.md\":\"SU-cO5gp\",\"tech_git_index.md\":\"Dd4ZTmqj\",\"tech_html_1.canvas绘图.md\":\"TGt2uima\",\"tech_html_2.svg矢量图.md\":\"CoXNaqry\",\"tech_html_3.地理定位-webgl版本.md\":\"IiCOFLS7\",\"tech_html_index.md\":\"CzENsegK\",\"tech_index.md\":\"5vtQAA18\",\"tech_javascript_00-重点知识总结.md\":\"BI9coLq5\",\"tech_javascript_01-javascript基础-变量声明-打印-数据类型.md\":\"BmAPecvS\",\"tech_javascript_02-运算符.md\":\"CHx2ordS\",\"tech_javascript_03-分支结构-循环结构.md\":\"CyufXYis\",\"tech_javascript_04. 函数.md\":\"BkkY2gSW\",\"tech_javascript_05-数组和对象.md\":\"B3XoU7qJ\",\"tech_javascript_06-内置对象.md\":\"DFoNRmSo\",\"tech_javascript_07_dom操作.md\":\"DN_f1j4C\",\"tech_javascript_08_获取元素常见的尺寸.md\":\"CgWk0FQC\",\"tech_javascript_09_定时器.md\":\"DSvea0gU\",\"tech_javascript_10-js中的事件.md\":\"Di_Nwzq-\",\"tech_javascript_11-dom节点的操作.md\":\"DxVpzP8Q\",\"tech_javascript_12-图片懒加载的原理和代码实现.md\":\"DECtuk5B\",\"tech_javascript_13-ajax.md\":\"DeggBbnu\",\"tech_javascript_14-json-server的使用.md\":\"D_d3PYcr\",\"tech_javascript_15-深拷贝.md\":\"Bs53OrPg\",\"tech_javascript_15-用charles抓包数据.md\":\"ByqGza6t\",\"tech_javascript_16-正则表达式.md\":\"B_FhdsiW\",\"tech_javascript_17.bom对象.md\":\"TeYK53i2\",\"tech_javascript_18.三种本地存储.md\":\"Cd2Plihn\",\"tech_javascript_19.闭包.md\":\"C5lo-tMo\",\"tech_javascript_20-构造函数和原型链.md\":\"B-IaANk9\",\"tech_javascript_21-this指向_js面向对象开发.md\":\"COJHtSEa\",\"tech_javascript_22-防抖_节流_回流_重绘.md\":\"whZFLUNd\",\"tech_javascript_es6课件.md\":\"DNnZHy_O\",\"tech_javascript_index.md\":\"QEb298w4\",\"tech_javascript_自己整理的笔记.md\":\"DtBKg8iK\",\"tech_node_01-nodejs基础（已看）.md\":\"vmCjScpk\",\"tech_node_02-nodejs的模块.md\":\"P3JtWf-_\",\"tech_node_03-express框架的使用.md\":\"oHL5_ND4\",\"tech_node_04-nodejs数据库访问.md\":\"BCoqR5Be\",\"tech_node_05-express的中间件和文件上传.md\":\"CtDkO8JV\",\"tech_node_06-结合express实现购物车逻辑前后端.md\":\"CqQPveje\",\"tech_node_07-登录注册和token的使用.md\":\"Dd0erGD6\",\"tech_node_08-websocket.md\":\"EQmwZBry\",\"tech_node_09-ejs和pug.md\":\"BWipSc9y\",\"tech_node_index.md\":\"WqX1isoA\",\"tech_node_nvm的使用.md\":\"C-iyqHPS\",\"tech_python_index.md\":\"CsucMkR7\",\"tech_python_python学习路线.md\":\"v2otwVxl\",\"tech_python_python的基础知识.md\":\"Ctgm3QzA\",\"tech_react_01-react的安装-jsx语法.md\":\"Bf6ZC8Fv\",\"tech_react_02-函数组件和react hooks.md\":\"d-88MskI\",\"tech_react_03-了解react中class组件.md\":\"D6oxcRgt\",\"tech_react_04-了解react的生命周期.md\":\"CR5Qk3mB\",\"tech_react_04-了解并记忆react的生命周期.md\":\"BOhGuB69\",\"tech_react_05-安装react devtools.md\":\"DOmE9zy_\",\"tech_react_06-react路由v6的使用.md\":\"CLYo-ji3\",\"tech_react_07-sass_antd-mobileui组件库实现swiper效果.md\":\"BccI-ibA\",\"tech_react_08-了解-受控组件和非受控组件.md\":\"DWI3kEs_\",\"tech_react_09-了解-react的纯函数和副作用的理解.md\":\"-mrZqUnA\",\"tech_react_10-react之性能优化.md\":\"D1ta4qPq\",\"tech_react_11-只背-不讲-redux状态管理.md\":\"C45mBK72\",\"tech_react_12-redux toolkit状态管理.md\":\"DdmjXEbq\",\"tech_react_13-react移动端适配的配置.md\":\"BbwcP3U4\",\"tech_react_14-老资料参考-后台管理项目开发流程.md\":\"hW-aQs3m\",\"tech_react_15-最新版-后台管理项目开发流程.md\":\"DbW_y4Ml\",\"tech_react_16-富文本编辑器wangeditor的使用.md\":\"DDqwAVi7\",\"tech_react_17-excel导入导出.md\":\"DYoEG3sf\",\"tech_react_18-权限管理之动态添加路由.md\":\"C11QliPv\",\"tech_react_index.md\":\"BlmTKBOg\",\"tech_react_react路由跳转.md\":\"DCsLkDXE\",\"tech_react_闭包，防抖，深拷贝，数组去重.md\":\"CWkbhWkH\",\"tech_typescript_01-typescript基础.md\":\"8xgfx6RS\",\"tech_typescript_02-typescript进阶.md\":\"b7jl3HgG\",\"tech_typescript_03-中后台项目-vue3_ts_vite_pinia-elment-plus.md\":\"iAaSFdrK\",\"tech_typescript_index.md\":\"DwwAjwVl\",\"tech_typescript_typescript应用.md\":\"DkxfXGno\",\"tech_typescript_typescript进阶.md\":\"Bz0UbLk0\",\"tech_typescript_装饰器.md\":\"_HWRgEyP\",\"tech_uniapp_1.uniapp框架.md\":\"BqlLVRvk\",\"tech_uniapp_2.uniapp中状态管理.md\":\"BLS2wVlg\",\"tech_uniapp_3.uview-plus的使用.md\":\"xVijVL7o\",\"tech_uniapp_4.app打包.md\":\"BBMzLdi6\",\"tech_uniapp_index.md\":\"DdJ5Wkfx\",\"tech_vue_01_vue模板语法-指令.md\":\"Bqol8skg\",\"tech_vue_02-响应式系统-method-computed-watch.md\":\"BBQkxMx3\",\"tech_vue_03_了解class和style的动态绑定.md\":\"BTjKEdI5\",\"tech_vue_04_vue3生命周期函数.md\":\"CKPqdCo_\",\"tech_vue_05_了解表单的输入绑定.md\":\"D5l0EB11\",\"tech_vue_06_vue项目搭建-单页面应用.md\":\"BaxaKW8q\",\"tech_vue_07_组件.md\":\"BsimXp7o\",\"tech_vue_07_组件1.md\":\"DYQpEooG\",\"tech_vue_09-vue3项目开发中注意事项.md\":\"BnM4vzrb\",\"tech_vue_10-组件2.md\":\"BLwK0HPF\",\"tech_vue_11-内置组件.md\":\"BxlTMYff\",\"tech_vue_12-vue3组合式api.md\":\"wOk9gYV6\",\"tech_vue_12-深拷贝.md\":\"Do6HNCKk\",\"tech_vue_13_vue3路由(1).md\":\"BSz42-Yn\",\"tech_vue_14_vue3路由(2).md\":\"7j__rtkc\",\"tech_vue_15_vuex状态管理.md\":\"DvRgzWZ_\",\"tech_vue_16_富文本编辑器wangeditor的使用.md\":\"xCXlwhUv\",\"tech_vue_17_vue3_excel导入导出.md\":\"BEzN8DQh\",\"tech_vue_17_vue3_vuex_js_el-plus_vite.md\":\"B3OHOJx7\",\"tech_vue_18-深拷贝.md\":\"Bsxd1bPv\",\"tech_vue_index.md\":\"C2lctmU7\",\"tech_前端工程化_docker_docker使用文档.md\":\"upz6z7rD\",\"tech_前端工程化_docker_docker静态二进制文件.md\":\"C8AvbbLw\",\"tech_前端工程化_docker_本地部署x86测试.md\":\"Dv0HaqrA\",\"tech_前端工程化_docker使用文档.md\":\"Dbte_6Rz\",\"tech_前端工程化_docker静态二进制文件.md\":\"DWkPxx9j\",\"tech_前端工程化_index.md\":\"DDiwPi6F\",\"tech_前端工程化_mack的使用文档.md\":\"BsArwKoE\",\"tech_前端工程化_nginx-clearn.md\":\"DcR6s1U3\",\"tech_前端工程化_nginx-create.md\":\"CEjE6u-7\",\"tech_前端工程化_nginx_nginx-clearn.md\":\"C-G5Cv2Z\",\"tech_前端工程化_nginx_nginx-create.md\":\"BFOylkQZ\",\"tech_前端工程化_nginx_nginx使用文档.md\":\"BrgW9Ch-\",\"tech_前端工程化_nginx_trzsz.md\":\"tUaQ1wt1\",\"tech_前端工程化_nginx使用文档.md\":\"BjYAIzBr\",\"tech_前端工程化_trzsz.md\":\"CbKml2yi\",\"tech_前端工程化_本地部署x86测试.md\":\"CErBV9Hi\",\"tech_前端微服务_index.md\":\"CLtDQJ4g\",\"tech_前端微服务_乾坤.md\":\"CV2BKHny\",\"tech_前端微服务_乾坤微服务.md\":\"Dzw1GRk-\",\"tech_小程序_01.微信小程序基础.md\":\"BXvmd14q\",\"tech_小程序_02.wxml组件和模板语法.md\":\"DlgQfP_Z\",\"tech_小程序_03.生命周期和页面逻辑.md\":\"DKYEIfCd\",\"tech_小程序_04.组件化开发.md\":\"Cbyql5E3\",\"tech_小程序_05.小程序的发布和配置.md\":\"mZQ4-U1x\",\"tech_小程序_06.常用api.md\":\"Dg35AY_l\",\"tech_小程序_07.小程序中安装sass.md\":\"B65rfaOL\",\"tech_小程序_08.小程序中使用vant.md\":\"DZDBWVJ4\",\"tech_小程序_09.自定义tabbar.md\":\"DRZVOAOI\",\"tech_小程序_10.常用组件.md\":\"BvqtIg_o\",\"tech_小程序_11.线上图标字体的处理.md\":\"CgFGKySU\",\"tech_小程序_12.wxs的使用.md\":\"jREBzV9X\",\"tech_小程序_13.微信小程序登录流程.md\":\"jDJkrDjs\",\"tech_小程序_14.api封装.md\":\"DyT1yWdA\",\"tech_小程序_15.微信授权.md\":\"DsEJ1tVm\",\"tech_小程序_16.小程序分包.md\":\"CctgohJg\",\"tech_小程序_17.微信支付.md\":\"CuR6mQ_F\",\"tech_小程序_18.webview组件.md\":\"CfRIqCE4\",\"tech_小程序_19.自定义导航栏.md\":\"DYIXWWxb\",\"tech_小程序_index.md\":\"C_l3dyrz\",\"tech_数据可视化_1.数据可视化-echarts.md\":\"BZnQ_C2k\",\"tech_数据可视化_2.可视化大屏.md\":\"CWLHrMJO\",\"tech_数据可视化_index.md\":\"BcvkrHS4\",\"tech_计算机网络_httphttps 协议.md\":\"CJvNSEMm\",\"tech_计算机网络_icmp重定向.md\":\"CS5bt5av\",\"tech_计算机网络_index.md\":\"jJu8Cw7j\",\"tech_计算机网络_ip地址、端口和协议.md\":\"DVV4qRW5\",\"tech_计算机网络_restful api开发规范.md\":\"DHxR7PB4\",\"tech_计算机网络_服务器防火墙开关.md\":\"CZKovu2V\",\"tech_计算机网络_计算机网络基础.md\":\"DPYAsH88\",\"work_index.md\":\"0Catce0a\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"Code · AI · Agent · Life\",\"description\":\"有鹏在折腾的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等\",\"base\":\"/website/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"i18nRouting\":false,\"logo\":\"/logo.png\",\"nav\":[{\"text\":\"主页\",\"link\":\"/\"},{\"text\":\"生活\",\"link\":\"/life/\"},{\"text\":\"工作\",\"link\":\"/work/\"},{\"text\":\"读书笔记\",\"link\":\"/reading/\"},{\"text\":\"项目经验\",\"link\":\"/projects/\"},{\"text\":\"技术栈\",\"link\":\"/tech/\"},{\"text\":\"前端导航\",\"link\":\"/nav/\"},{\"text\":\"友情链接\",\"link\":\"/friends/\"}],\"sidebar\":{},\"aside\":\"left\",\"outline\":{\"level\":\"deep\",\"label\":\"目录\"},\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/chenyp-01\"}],\"footer\":{},\"lastUpdated\":{\"text\":\"最后更新于\",\"formatOptions\":{\"dateStyle\":\"short\",\"timeStyle\":\"medium\"}},\"docFooter\":{\"prev\":\"上一篇\",\"next\":\"下一篇\"},\"returnToTopLabel\":\"回到顶部\",\"sidebarMenuLabel\":\"菜单\",\"darkModeSwitchLabel\":\"主题\",\"lightModeSwitchTitle\":\"切换到浅色模式\",\"darkModeSwitchTitle\":\"切换到深色模式\"},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":true}");</script>
+    
+  </body>
+</html>

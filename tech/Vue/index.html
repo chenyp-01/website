@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript | Code · AI · Agent · Life</title>
+    <meta name="description" content="有鹏在折腾的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/website/assets/style.CBfGz4-D.css" as="style">
+    <link rel="preload stylesheet" href="/website/vp-icons.css" as="style">
+    
+    <script type="module" src="/website/assets/app.BQTesUHO.js"></script>
+    <link rel="preload" href="/website/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/website/assets/chunks/theme.CYVAVoqf.js">
+    <link rel="modulepreload" href="/website/assets/chunks/framework.QMC68jD7.js">
+    <link rel="modulepreload" href="/website/assets/chunks/files-loader.DmnR_p8E.js">
+    <link rel="modulepreload" href="/website/assets/tech_Vue_index.md.C2lctmU7.lean.js">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="/website/favicon.ico">
+    <link rel="apple-touch-icon" href="/website/favicon.ico">
+    <link rel="mask-icon" href="/website/favicon.ico" color="#3eaf7c">
+    <meta name="msapplication-TileImage" content="/website/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body><!--teleport start anchor--><div class="m-fx" data-v-f25fa346><div class="m-fx-stage" aria-hidden="true" style="" data-v-f25fa346><i class="orb o1" data-v-f25fa346></i><i class="orb o2" data-v-f25fa346></i><i class="orb o3" data-v-f25fa346></i><i class="orb o4" data-v-f25fa346></i><i class="orb o5" data-v-f25fa346></i></div><button class="m-fx-toggle" type="button" aria-pressed="true" title="关闭彩色背景与撒花" data-v-f25fa346><span class="fx-ico" data-v-f25fa346>🎉</span></button></div><!--teleport anchor-->
+    <div id="app"><!--[--><!--teleport start--><!--teleport end--><div class="Layout m-nav-layout" data-v-3b5ac462><!--[--><!--]--><!--[--><span tabindex="-1" data-v-72f87fc7></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-72f87fc7>Skip to content</a><!--]--><!----><header class="VPNav" data-v-3b5ac462 data-v-0258cca9><div class="VPNavBar" data-v-0258cca9 data-v-7a16a9d0><div class="wrapper" data-v-7a16a9d0><div class="container" data-v-7a16a9d0><div class="title" data-v-7a16a9d0><div class="VPNavBarTitle" data-v-7a16a9d0 data-v-1c0488a9><a class="title" href="/website/" data-v-1c0488a9><!--[--><!--]--><!--[--><img class="VPImage logo" src="/website/logo.png" alt data-v-086f85ae><!--]--><span data-v-1c0488a9>Code · AI · Agent · Life</span><!--[--><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--]--></a></div></div><div class="content" data-v-7a16a9d0><div class="content-body" data-v-7a16a9d0><!--[--><!--]--><div class="VPNavBarSearch search" data-v-7a16a9d0><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-7a16a9d0 data-v-efb5d98a><span id="main-nav-aria-label" class="visually-hidden" data-v-efb5d98a> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>主页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/life/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>生活</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/work/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>工作</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/reading/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>读书笔记</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/projects/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>项目经验</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/tech/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>技术栈</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/nav/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>前端导航</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/friends/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>友情链接</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-7a16a9d0 data-v-d86b6ee5><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-d86b6ee5 data-v-99c90d64 data-v-4b4abca3><span class="check" data-v-4b4abca3><span class="icon" data-v-4b4abca3><!--[--><span class="vpi-sun sun" data-v-99c90d64></span><span class="vpi-moon moon" data-v-99c90d64></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-7a16a9d0 data-v-49e5eaa8 data-v-4c55e980><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenyp-01" aria-label="github" target="_blank" rel="noopener" data-v-4c55e980 data-v-608a15d2><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-7a16a9d0 data-v-f13fdc11 data-v-8271439a><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-8271439a><span class="vpi-more-horizontal icon" data-v-8271439a></span></button><div class="menu" data-v-8271439a><div class="VPMenu" data-v-8271439a data-v-31c37511><!----><!--[--><!--[--><!----><div class="group" data-v-f13fdc11><div class="item appearance" data-v-f13fdc11><p class="label" data-v-f13fdc11>主题</p><div class="appearance-action" data-v-f13fdc11><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-f13fdc11 data-v-99c90d64 data-v-4b4abca3><span class="check" data-v-4b4abca3><span class="icon" data-v-4b4abca3><!--[--><span class="vpi-sun sun" data-v-99c90d64></span><span class="vpi-moon moon" data-v-99c90d64></span><!--]--></span></span></button></div></div></div><div class="group" data-v-f13fdc11><div class="item social-links" data-v-f13fdc11><div class="VPSocialLinks social-links-list" data-v-f13fdc11 data-v-4c55e980><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenyp-01" aria-label="github" target="_blank" rel="noopener" data-v-4c55e980 data-v-608a15d2><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-7a16a9d0 data-v-64f3c72c><span class="container" data-v-64f3c72c><span class="top" data-v-64f3c72c></span><span class="middle" data-v-64f3c72c></span><span class="bottom" data-v-64f3c72c></span></span></button></div></div></div></div><div class="divider" data-v-7a16a9d0><div class="divider-line" data-v-7a16a9d0></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-3b5ac462 data-v-3a3529ab><div class="container" data-v-3a3529ab><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-3a3529ab data-v-0638e338><button data-v-0638e338>回到顶部</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-3b5ac462 data-v-ac4c840c><div class="VPDoc" data-v-ac4c840c data-v-aa9d3751><!--[--><!--]--><div class="container" data-v-aa9d3751><!----><div class="content" data-v-aa9d3751><div class="content-container" data-v-aa9d3751><!--[--><!--]--><main class="main" data-v-aa9d3751><div style="position:relative;" class="vp-doc _website_tech_Vue_" data-v-aa9d3751><div><h1 id="javascript" tabindex="-1">JavaScript <a class="header-anchor" href="#javascript" aria-label="Permalink to &quot;JavaScript&quot;">​</a></h1><p>JavaScript 文档列表，点击任意条目即可进入对应 md 文件阅读。</p><!--[--><h2 id="文件列表" tabindex="-1" data-v-69c8db37>文件列表 <a class="header-anchor" href="#文件列表" aria-hidden="true" data-v-69c8db37></a></h2><div class="m-nav-links" data-v-69c8db37><!--[--><a class="m-nav-link" href="/website/tech/Vue/01_vue模板语法-指令" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="01_vue模板语法-指令" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_01-vue模板语法-指令" class="title" data-v-4cce99de>01_vue模板语法-指令</h5></div><p class="desc" data-v-4cce99de>1. 了解三大前端框架 &amp;ZeroWidthSpace;
+目前前端有三个非常流行的框架，分别是angularjs,reactjs,vuejs。而这三个当中，Vue作为最后推出的框架（2014年），借鉴了前辈angular和react的特点（如VirtualDOM、双向数据绑定、diff算法、响应式属性、组件化开发等）并做了相关优化，使其使用起来更加方便，更容易上手。
+Vue的开发者尤雨溪是中国人，框架本身提供了大量丰富的中文文档，这也为Vue的发展和使用带来巨大的优势
+2.  什么是 Vue？ &amp;ZeroWidthSpace;
+vue3官网： https://cn.vuejs.org/
+Vue (发音为 /vjuː/，类似 view) 是一款用于构建用户界面的 JavaScript 框架。它基于标准 HTML、CSS 和 JavaScript 构建，并提供了一套声明式的、组件化的编程模型，帮助你高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任。
+３.创建一个 Vue 应用 &amp;ZeroWidthSpace;
+vue3 &amp;ZeroWidthSpace;
+
+每个 Vue 应用都是通过 createApp 函数创建一个新的 应用实例
+应用实例必须在调用了 .mount() 方法后才会渲染出来。该方法接收一个“容器”参数，可以是一个实际的 DOM 元素或是一个 CSS 选择器字符串
+
+html&amp;#x3C;!-- 根组件模板 --&gt;
+&amp;#x3C;div id=&quot;app&quot;&gt;
+    &amp;#x3C;button @click=&quot;count++&quot;&gt;{{ count }}&amp;#x3C;/button&gt;
+&amp;#x3C;/div&gt;
+1234html&amp;#x3C;script src=&quot;./js/vue3.js&quot;&gt;&amp;#x3C;/script&gt;
+&amp;#x3C;script&gt;
+    const { createApp } = Vue
+    // 创建应用实例
+    const app = createApp({
+        data() {
+            return {
+                count: 0
+            }
+        }
+    })
+    //mount()挂载应用
+	app.mount(&#39;#app&#39;)
+&amp;#x3C;/script&gt;
+1234567891011121314vue2 &amp;ZeroWidthSpace;
+html  &amp;#x3C;!-- 根组件模板 --&gt;
+  &amp;#x3C;div id=&quot;app&quot;&gt;
+      &amp;#x3C;button @click=&quot;count++&quot;&gt;{{ count }}&amp;#x3C;/button&gt;
+  &amp;#x3C;/div&gt;
+1234html&amp;#x3C;script src=&quot;./js/vue2.js&quot;&gt;&amp;#x3C;/script&gt;
+&amp;#x3C;script&gt;
+  // new Vue生成应用实例
+  const app = new Vue({
+      data() {
+          return {
+              count: 0
+          }
+      }
+  })
+  //$mount() 挂载应用
+  app.$mount(&#39;#app&#39;)
+&amp;#x3C;/script&gt;
+123456789101112134. 快速生成vue文件模板 &amp;ZeroWidthSpace;
+
+
+vscode -&amp;gt; 文件 -&amp;gt; 首选项 -&amp;gt;配置用户代码片段 -&amp;gt; html.json
+
+
+粘入代码：
+json{
+	&quot;Html5-Vue&quot;: {
+			&quot;prefix&quot;: &quot;vue&quot;,
+			&quot;body&quot;: [
+				&quot;&amp;#x3C;!DOCTYPE html&gt;&quot;,
+				&quot;&amp;#x3C;html lang=\&quot;en\&quot;&gt;&quot;,
+				&quot;&quot;,
+				&quot;&amp;#x3C;head&gt;&quot;,
+				&quot;\t&amp;#x3C;meta charset=\&quot;UTF-8\&quot;&gt;&quot;,
+				&quot;\t&amp;#x3C;meta http-equiv=\&quot;X-UA-Compatible\&quot; content=\&quot;IE=edge\&quot;&gt;&quot;,
+				&quot;\t&amp;#x3C;meta name=\&quot;viewport\&quot; content=\&quot;width=device-width, initial-scale=1.0\&quot;&gt;&quot;,
+				&quot;\t&amp;#x3C;title&gt;Document&amp;#x3C;/title&gt;&quot;,
+				&quot;&amp;#x3C;/head&gt;&quot;,
+				&quot;&quot;,
+				&quot;&amp;#x3C;body&gt;&quot;,
+				&quot;\t&amp;#x3C;div id=\&quot;app\&quot;&gt; &quot;,
+				&quot;\t\t$0&quot;,
+				&quot;\t&amp;#x3C;/div&gt;&quot;,
+				&quot;&quot;,
+				&quot;\t&amp;#x3C;script src=\&quot;./js/vue3.js\&quot;&gt;&amp;#x3C;/script&gt;&quot;,
+				&quot;\t&amp;#x3C;script&gt;&quot;,
+				&quot;\t\tconst { createApp } = Vue&quot;,
+				&quot;\t\tconst app = createApp({&quot;,
+				&quot;\t\t\tdata() {&quot;,
+				&quot;\t\t\t\treturn{&quot;,
+				&quot;\t\t\t\t\t&quot;,
+				&quot;\t\t\t\t}&quot;,
+				&quot;\t\t\t},&quot;,
+				&quot;\t\t\t//方法集合&quot;,
+				&quot;\t\t\tmethods: {\n&quot;,
+				&quot;\t\t\t}&quot;,
+				&quot;\t\t})&quot;,
+				&quot;\t\tapp.mount(\&quot;#app\&quot;)&quot;,
+				&quot;\t&amp;#x3C;/script&gt;&quot;,
+				&quot;&amp;#x3C;/body&gt;&quot;,
+				&quot;&quot;,	
+				&quot;&amp;#x3C;/html&gt;&quot;
+			],
+			&quot;description&quot;: &quot;快速创建在 html5 编写的 vue 模板&quot;
+		}
+	}
+1234567891011121314151617181920212223242526272829303132333435363738394041
+
+新建html文件， 输入vue, 回车即可
+
+
+5.模板语法 &amp;ZeroWidthSpace;
+Vue 使用一种基于 HTML 的模板语法，使我们能够声明式地将其组件实例的数据绑定到呈现的 DOM 上。
+在底层机制中，Vue 会将模板编译成高度优化的 JavaScript 代码。结合响应式系统，当应用状态变更时，Vue 能够智能地推导出需要重新渲染的组件的最少数量，并应用最少的 DOM 操作。
+6. 文本插值-模板语法 &amp;ZeroWidthSpace;
+最基本的数据绑定形式是文本插值，它使用的是“Mustache”语法 (即双大括号)：
+&amp;#x3C;span&gt;Message: {{ msg }}&amp;#x3C;/span&gt;
+1双大括号标签会被替换为相应组件实例中 msg 属性的值。同时每次 msg 属性更改时它也会同步更新。
+文本插值也可以是js表达式
+js{{ number + 1 }}
+
+{{ ok ? &#39;YES&#39; : &#39;NO&#39; }}
+
+{{ message.split(&#39;&#39;).reverse().join(&#39;&#39;) }}
+123457. vue指令-模板语法 &amp;ZeroWidthSpace;
+
+
+指令是带有 v- 前缀的特殊 attribute（属性）
+
+
+指令 attribute 的期望值为一个 JavaScript 表达式
+
+
+一个指令的任务是在其表达式的值变化时响应式地更新 DOM
+
+
+某些指令会需要一个“参数”，在指令名后通过一个冒号隔开做标识, 比如 v-bind:src
+
+
+7.1 v-html &amp;ZeroWidthSpace;
+可以解析html标签
+html&amp;#x3C;h1 v-html=&quot;msg&quot;&gt;&amp;#x3C;/h1&gt;
+&amp;#x3C;h1 v-html=&quot;msg + &#39;world&#39;&quot;&gt;&amp;#x3C;/h1&gt;
+12可以在绑定的表达式中使用一个组件暴露的方法
+html&amp;#x3C;!-- 模板 --&gt;
+&amp;#x3C;div id=&quot;app&quot;&gt;
+    &amp;#x3C;p v-html=&quot;total(2)&quot;&gt;&amp;#x3C;/p&gt;
+&amp;#x3C;/div&gt;
+1234jsconst { createApp } = Vue
+const app = createApp({
+    data() {
+        return {
+            price: 100
+        }
+    },
+    methods: {
+        total(num){
+            return this.price * num
+        }
+    }
+})
+app.mount(&#39;#app&#39;)
+12345678910111213147.2 v-bind &amp;ZeroWidthSpace;
+绑定动态属性
+html&amp;#x3C;h1 title=&quot;msg&quot;&gt;1111&amp;#x3C;/h1&gt;
+&amp;#x3C;h1 v-bind:title=&quot;msg&quot;&gt;2222&amp;#x3C;/h1&gt;
+&amp;#x3C;h1 :title=&quot;msg&quot;&gt;2222&amp;#x3C;/h1&gt;
+&amp;#x3C;img :src=&quot;图片地址&quot;/&gt;
+12347.3 v-on &amp;ZeroWidthSpace;
+事件绑定 &amp;ZeroWidthSpace;
+html&amp;#x3C;div id=&quot;app&quot;&gt; 
+    &amp;#x3C;p&gt;&amp;#x3C;button v-on:click=&quot;fun1&quot;&gt;没有参数1&amp;#x3C;/button&gt;&amp;#x3C;/p&gt;
+    &amp;#x3C;p&gt;&amp;#x3C;button @click=&quot;fun1&quot;&gt;没有参数2&amp;#x3C;/button&gt;&amp;#x3C;/p&gt;
+    &amp;#x3C;p&gt;&amp;#x3C;button @click=&quot;fun2(&#39;red&#39;)&quot;&gt;有参数&amp;#x3C;/button&gt;&amp;#x3C;/p&gt;
+    &amp;#x3C;p&gt;&amp;#x3C;button @click=&quot;fun3&quot;&gt;获取事件对象&amp;#x3C;/button&gt;&amp;#x3C;/p&gt;
+    &amp;#x3C;p&gt;&amp;#x3C;button @click=&quot;fun4(10,$event)&quot;&gt;有参数+获取事件对象&amp;#x3C;/button&gt;&amp;#x3C;/p&gt;
+&amp;#x3C;/div&gt;
+1234567javascript const { createApp } = Vue
+ const app = createApp({
+     data() {
+         return{
+
+         }
+     },
+     //方法集合
+     methods: {
+         //没有参数
+         fun1(){
+             console.log(&#39;fun1&#39;);
+         },
+         //有参数
+         fun2(color){
+             console.log(color);
+         },
+         //获取事件对象
+         fun3(e){
+             console.log(e);
+         },
+         //事件对象+参数 , 特别注意，调用时最后一个参数为$event
+         fun4(age,e){
+             console.log(age);
+             console.log(e);
+         }
+     }
+ })
+ app.mount(&quot;#app&quot;)
+1234567891011121314151617181920212223242526272829事件绑定修饰符 &amp;ZeroWidthSpace;
+html&amp;#x3C;!-- 单击事件将停止传递 --&gt;
+&amp;#x3C;a @click.stop=&quot;doThis&quot;&gt;&amp;#x3C;/a&gt;
+
+&amp;#x3C;!-- 提交事件将不再重新加载页面 --&gt;
+&amp;#x3C;form @submit.prevent=&quot;onSubmit&quot;&gt;&amp;#x3C;/form&gt;
+
+&amp;#x3C;!-- 修饰语可以使用链式书写 --&gt;
+&amp;#x3C;a @click.stop.prevent=&quot;doThat&quot;&gt;&amp;#x3C;/a&gt;
+
+&amp;#x3C;!-- 也可以只有修饰符 --&gt;
+&amp;#x3C;form @submit.prevent&gt;&amp;#x3C;/form&gt;
+1234567891011按键修饰符 &amp;ZeroWidthSpace;
+html&amp;#x3C;!-- 仅在 `key` 为 `Enter` 时调用 `submit` --&gt;
+&amp;#x3C;input @keyup.enter=&quot;submit&quot; /&gt;
+12Vue 为一些常用的按键提供了别名：
+
+.enter
+.tab
+.delete (捕获“Delete”和“Backspace”两个按键)
+.esc
+.space
+.up
+.down
+.left
+.right
+
+7.4 v-if v-else-if v-else &amp;ZeroWidthSpace;
+条件渲染指令
+v-if 指令用于条件性地渲染一块内容。这块内容只会在指令的表达式返回真值时才被渲染。
+v-if和v-else之间不能有其它内容
+html&amp;#x3C;p v-if=&quot;count &gt; 80&quot;&gt;红色&amp;#x3C;/p&gt;
+&amp;#x3C;p v-else-if=&quot;count &gt; 60&quot;&gt;蓝色&amp;#x3C;/p&gt;
+&amp;#x3C;p v-else&gt;绿色&amp;#x3C;/p&gt;
+123js&amp;#x3C;div v-if=&quot;type === &#39;A&#39;&quot;&gt;
+  A
+&amp;#x3C;/div&gt;
+&amp;#x3C;div v-else-if=&quot;type === &#39;B&#39;&quot;&gt;
+  B
+&amp;#x3C;/div&gt;
+&amp;#x3C;div v-else-if=&quot;type === &#39;C&#39;&quot;&gt;
+  C
+&amp;#x3C;/div&gt;
+&amp;#x3C;div v-else&gt;
+  Not A/B/C
+&amp;#x3C;/div&gt;
+123456789101112和 v-else 类似，一个使用 v-else-if 的元素必须紧跟在一个 v-if 或一个 v-else-if 元素后面
+&amp;lt;template&amp;gt; 上的 v-if &amp;ZeroWidthSpace;
+因为 v-if 是一个指令，他必须依附于某个元素。但如果我们想要切换不止一个元素呢？在这种情况下我们可以在一个 &amp;lt;template&amp;gt; 元素上使用 v-if，这只是一个不可见的包装器元素，最后渲染的结果并不会包含这个 &amp;lt;template&amp;gt; 元素。
+html&amp;#x3C;template v-if=&quot;ok&quot;&gt;
+  &amp;#x3C;h1&gt;Title&amp;#x3C;/h1&gt;
+  &amp;#x3C;p&gt;Paragraph 1&amp;#x3C;/p&gt;
+  &amp;#x3C;p&gt;Paragraph 2&amp;#x3C;/p&gt;
+&amp;#x3C;/template&gt;
+123457.5 v-show &amp;ZeroWidthSpace;
+条件渲染指令
+如果表达式为真，则显示该元素，如果为假，则隐藏该元素（dom存在）
+html&amp;#x3C;p v-show=&quot;0&quot;&gt;红色&amp;#x3C;/p&gt;
+1不同之处在于 v-show 会在 DOM 渲染中保留该元素；v-show 仅切换了该元素上名为 display 的 CSS 属性。
+v-show 不支持在 &amp;lt;template&amp;gt; 元素上使用，也不能和 v-else 搭配使用
+v-if vs. v-show (面试题 ) &amp;ZeroWidthSpace;
+v-if 是“真实的”按条件渲染，因为它确保了在切换时，条件区块内的事件监听器和子组件都会被销毁与重建。
+v-if 也是惰性的：如果在初次渲染时条件值为 false，则不会做任何事。条件区块只有当条件首次变为 true 时才被渲染。
+相比之下，v-show 简单许多，元素无论初始条件如何，始终会被渲染，只有 CSS display 属性会被切换。
+总的来说，v-if 有更高的切换开销，而 v-show 有更高的初始渲染开销。因此，如果需要频繁切换，则使用 v-show 较好；如果在运行时绑定条件很少改变，则 v-if 会更合适。
+7.6 v-for &amp;ZeroWidthSpace;
+列表渲染指令
+javascriptdata（）{
+    return {
+        arr: [&#39;Amy&#39;, &#39;Rose&#39;, &#39;Black&#39;],
+        person: {
+            name: &#39;Rose&#39;,
+            age: 34,
+            class: &#39;H5&#39;
+        }
+    }
+}
+12345678910遍历数组 &amp;ZeroWidthSpace;
+html&amp;#x3C;li v-for=&quot;item in arr&quot;&gt;{{item}}&amp;#x3C;/li&gt;
+&amp;#x3C;li v-for=&quot;item of arr&quot;&gt;{{item}}&amp;#x3C;/li&gt; --&gt;
+&amp;#x3C;li v-for=&quot;(item,index) in arr&quot;&gt;{{item}}
+123</p></article></a><a class="m-nav-link" href="/website/tech/Vue/02-响应式系统-method-computed-watch" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="02-响应式系统-method-computed-watch" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_02-响应式系统-method-computed-watch" class="title" data-v-4cce99de>02-响应式系统-method-computed-watch</h5></div><p class="desc" data-v-4cce99de>1. 响应式系统 &amp;ZeroWidthSpace;
+声明响应式状态 &amp;ZeroWidthSpace;
+
+
+选用选项式 API 时，会用 data 选项来声明组件的响应式状态。此选项的值应为返回一个对象的函数
+
+
+Vue 将在创建新组件实例的时候调用此函数，并将函数返回的对象用响应式系统进行包装
+
+
+此对象的所有顶层属性都会被代理到组件实例 (即方法和生命周期钩子中的 this) 上
+
+
+这些实例上的属性仅在实例首次创建时被添加，因此你需要确保它们都出现在 data 函数返回的对象上。若所需的值还未准备好，在必要时也可以使用 null、undefined 或者其他一些值占位。
+
+
+虽然也可以不在 data 上定义，直接向组件实例添加新属性，但这个属性将无法触发响应式更新
+
+
+Vue 在组件实例上暴露的内置 API 使用 $ 作为前缀。它同时也为内部属性保留 _ 前缀。因此，你应该避免在顶层 data 上使用任何以这些字符作前缀的属性
+
+
+原始数据类型 &amp;ZeroWidthSpace;
+html&amp;#x3C;!-- 模板 --&gt;
+&amp;#x3C;div id=&quot;app&quot;&gt;
+    &amp;#x3C;p&gt;age
+123</p></article></a><a class="m-nav-link" href="/website/tech/Vue/03_了解class和style的动态绑定" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="03_了解class和style的动态绑定" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_03-了解class和style的动态绑定" class="title" data-v-4cce99de>03_了解class和style的动态绑定</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Vue/04_vue3生命周期函数" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="04_vue3生命周期函数" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_04-vue3生命周期函数" class="title" data-v-4cce99de>04_vue3生命周期函数</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Vue/05_了解表单的输入绑定" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="05_了解表单的输入绑定" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_05-了解表单的输入绑定" class="title" data-v-4cce99de>05_了解表单的输入绑定</h5></div><p class="desc" data-v-4cce99de>1. 表单的输入绑定 &amp;ZeroWidthSpace;
+html&amp;#x3C;!DOCTYPE html&gt;
+&amp;#x3C;html lang=&quot;en&quot;&gt;
+  &amp;#x3C;head&gt;
+    &amp;#x3C;meta charset=&quot;UTF-8&quot; /&gt;
+    &amp;#x3C;title&gt;Document&amp;#x3C;/title&gt;
+  &amp;#x3C;/head&gt;
+
+  &amp;#x3C;body&gt;
+    &amp;#x3C;div id=&quot;app&quot;&gt;
+      &amp;#x3C;!-- 单行文本框 --&gt;
+      &amp;#x3C;p&gt;
+        单行文本框：&amp;#x3C;input
+          type=&quot;text&quot;
+          placeholder=&quot;请输入信息&quot;
+          v-model=&quot;msg1&quot;
+        /&gt;
+        结果是：{{msg1}}
+      &amp;#x3C;/p&gt;
+      &amp;#x3C;br /&gt;
+      &amp;#x3C;!-- 多行文本框 --&gt;
+      &amp;#x3C;p&gt;
+        多行文本框： &amp;#x3C;textarea v-model=&quot;msg2&quot;&gt;&amp;#x3C;/textarea&gt;
+        结果是:{{msg2}}
+      &amp;#x3C;/p&gt;
+      &amp;#x3C;br /&gt;
+      &amp;#x3C;!-- 单个复选框，绑定到布尔值： --&gt;
+      &amp;#x3C;!-- 复选框不要绑定click,应该绑定@change事件 --&gt;
+      &amp;#x3C;p&gt;
+        单个复选框：
+        &amp;#x3C;input type=&quot;checkbox&quot; id=&quot;checkbox1&quot; v-model=&quot;msg3&quot; /&gt;
+        &amp;#x3C;label for=&quot;checkbox1&quot;&gt;结果是：{{msg3}}&amp;#x3C;/label&gt;
+      &amp;#x3C;/p&gt;
+      &amp;#x3C;br /&gt;
+
+      &amp;#x3C;!-- 多个复选框，绑定到同一个数组： --&gt;
+      &amp;#x3C;div id=&quot;example-3&quot;&gt;
+        多个复选框：
+        &amp;#x3C;input type=&quot;checkbox&quot; id=&quot;jack&quot; value=&quot;Jack&quot; v-model=&quot;list&quot; /&gt;
+        &amp;#x3C;label for=&quot;jack&quot;&gt;Jack&amp;#x3C;/label&gt;
+        &amp;#x3C;input type=&quot;checkbox&quot; id=&quot;john&quot; value=&quot;John&quot; v-model=&quot;list&quot; /&gt;
+        &amp;#x3C;label for=&quot;john&quot;&gt;John&amp;#x3C;/label&gt;
+        &amp;#x3C;input type=&quot;checkbox&quot; id=&quot;mike&quot; value=&quot;Mike&quot; v-model=&quot;list&quot; /&gt;
+        &amp;#x3C;label for=&quot;mike&quot;&gt;Mike&amp;#x3C;/label&gt;
+12345678910111213141516171819202122232425262728293031323334353637383940414243</p></article></a><a class="m-nav-link" href="/website/tech/Vue/06_vue项目搭建-单页面应用" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="06_vue项目搭建-单页面应用" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_06-vue项目搭建-单页面应用" class="title" data-v-4cce99de>06_vue项目搭建-单页面应用</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Vue/07_组件" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="07_组件" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_07-组件" class="title" data-v-4cce99de>07_组件</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Vue/07_组件1" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="07_组件1" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_07-组件1" class="title" data-v-4cce99de>07_组件1</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Vue/09-vue3项目开发中注意事项" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="09-vue3项目开发中注意事项" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_09-vue3项目开发中注意事项" class="title" data-v-4cce99de>09-vue3项目开发中注意事项</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Vue/10-组件2" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="10-组件2" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_10-组件2" class="title" data-v-4cce99de>10-组件2</h5></div><p class="desc" data-v-4cce99de>1. 组件 v-model &amp;ZeroWidthSpace;
+vue3 &amp;ZeroWidthSpace;
+v-model 可以在组件上使用以实现双向绑定，实际是子组件更改父组件数据的语法糖
+核心语法
+vue&amp;#x3C;!-- 父组件 --&gt;
+&amp;#x3C;ChildA v-model:msg=&quot;msg&quot;/&gt;
+&amp;#x3C;!-- 子组件： 特别注意自定义事件必须以update开头，冒号后是要绑定的数据 --&gt;
+&amp;#x3C;button @click=&quot;$emit(&#39;update:msg&#39;,&#39;msg的新值&#39;)&quot;&gt;change&amp;#x3C;/button&gt;
+1234父组件 &amp;ZeroWidthSpace;
+vue&amp;#x3C;script&gt;
+import ChildA from &#39;./components/ChildA.vue&#39;;
+    export default {
+    data() {
+        return {
+          msg: &#39;old&#39;
+        };
+    },
+    components: { ChildA }
+}
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+   &amp;#x3C;div class=&quot;app&quot;&gt;
+      父组件
+      &amp;#x3C;hr&gt;
+      &amp;#x3C;!-- v-model等价于下面的代码 --&gt;
+      &amp;#x3C;!-- &amp;#x3C;ChildA :msg=&quot;msg&quot; @update:msg=&quot;val=&gt;msg=val&quot;/&gt; --&gt;
+
+      &amp;#x3C;!-- v-model 组件双向数据绑定 --&gt;
+      &amp;#x3C;ChildA v-model:msg=&quot;msg&quot;/&gt;
+   &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+1234567891011121314151617181920212223子组件 &amp;ZeroWidthSpace;
+vue&amp;#x3C;script&gt;
+export default {
+    //父组件的传值
+    props: [&#39;msg&#39;]
+}
+
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;com-a&quot;&gt;
+        &amp;#x3C;p&gt;msg:{{ msg}}&amp;#x3C;/p&gt;
+        &amp;#x3C;!-- 发送自定义事件，更改父组件的值 --&gt;
+        &amp;#x3C;p&gt;&amp;#x3C;button @click=&quot;$emit(&#39;update:msg&#39;,&#39;newvalue&#39;)&quot;&gt;change&amp;#x3C;/button&gt;&amp;#x3C;/p&gt;
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+123456789101112131415vue2 &amp;ZeroWidthSpace;
+vue2不支持组件v-model指令, 用.sync修饰符实现，但vue3废弃了sync修饰符
+实现相同效果的方法
+父组件 &amp;ZeroWidthSpace;
+vue// 正常父传子： 
+&amp;#x3C;com1 :msg=&quot;num&quot;&gt;&amp;#x3C;/com1&gt;
+ 
+// 加上sync之后父传子： 
+&amp;#x3C;com1 :msg.sync=&quot;num&quot;&gt;&amp;#x3C;/com1&gt; 
+ 
+// 它等价于
+&amp;#x3C;com1 :msg=&quot;num&quot; @update:msg=&quot;val=&gt;num=val&quot;&gt;&amp;#x3C;/com1&gt; 
+ 
+// 相当于多了一个事件监听，事件名是update:a，回调函数中，会把接收到的值赋值给属性绑定的数据项中。
+12345678910子组件 &amp;ZeroWidthSpace;
+vue&amp;#x3C;button @click=&quot;$emit(&#39;update:msg&#39;,&#39;newvalue&#39;)&quot;&gt;change&amp;#x3C;/button&gt;
+12. 透传 Attributes &amp;ZeroWidthSpace;
+
+vue3和vue2相同
+
+透传 attribute”指的是传递给一个组件，却没有被该组件声明为 props 或 emits 的 attribute 或者 v-on 事件监听器。最常见的例子就是 class、style 和 id
+父组件 &amp;ZeroWidthSpace;
+vue&amp;#x3C;script&gt;
+import Child from &#39;./components/Child.vue&#39;;
+export default {
+  data() {
+    return {
+      msg: &#39;old&#39;
+    };
+  },
+  components: { Child },
+  methods: {
+    onClick() {
+      console.log(&#39;click&#39;);
+    }
+  }
+}
+
+&amp;#x3C;/script&gt;
+
+
+&amp;#x3C;template&gt;
+  &amp;#x3C;div class=&quot;app&quot;&gt;
+    父组件
+    &amp;#x3C;hr&gt;
+    &amp;#x3C;!-- 
+      子组件没有用props或emit声明的属性会成为透传attribute
+      可通过查看元素查看透传属性
+     --&gt;
+    &amp;#x3C;Child num1=&quot;1&quot; :num2=&quot;2&quot; msg1=&quot;hello&quot; :msg2=&quot;&#39;world&#39;&quot; @click=&quot;onClick&quot; /&gt;
+  &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+123456789101112131415161718192021222324252627282930子组件 &amp;ZeroWidthSpace;
+vue&amp;#x3C;script&gt;
+export default {
+    props: [&#39;msg1&#39;],
+    created(){
+        // 访问透传attribute
+        console.log(this.$attrs);
+        console.log(this.$attrs.msg2);
+    }
+}
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;com-a&quot;&gt;
+        &amp;#x3C;p&gt;msg:{{ msg1}}&amp;#x3C;/p&gt;
+        &amp;#x3C;!-- 直接访问透传attribute --&gt;
+        &amp;#x3C;p&gt;msg2:{{ $attrs.msg2}}&amp;#x3C;/p&gt;
+        &amp;#x3C;!-- 父组件和子组件的click事件处理程序都会触发 --&gt;
+        &amp;#x3C;p&gt;&amp;#x3C;button @click=&quot;console.log(2)&quot;&gt;change&amp;#x3C;/button&gt;&amp;#x3C;/p&gt;
+        &amp;#x3C;!-- 阻止冒泡，只触发子组件事件 --&gt;
+        &amp;#x3C;p&gt;&amp;#x3C;button @click.stop=&quot;console.log(2)&quot;&gt;change&amp;#x3C;/button&gt;&amp;#x3C;/p&gt;
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+123456789101112131415161718192021223. 插槽 Slots （重要） &amp;ZeroWidthSpace;
+Vue3 &amp;ZeroWidthSpace;
+1. 插槽的作用 &amp;ZeroWidthSpace;
+在某些场景中，我们可能想要为子组件传递一些模板片段，让子组件在它们的组件中渲染这些片段
+2. 默认插槽 &amp;ZeroWidthSpace;
+&amp;lt;slot&amp;gt; 元素是一个插槽出口 (slot outlet)，标示了父元素提供的插槽内容 (slot content) 将在哪里被渲染
+父组件
+vue&amp;#x3C;script&gt;
+import Child from &#39;./Child.vue&#39;;
+export default {
+    data() {
+        return {};
+    },
+    components: { Child }
+}
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;parent&quot;&gt;
+        &amp;#x3C;h3&gt;父组件&amp;#x3C;/h3&gt;
+        &amp;#x3C;hr&gt;
+        &amp;#x3C;h3&gt;子组件&amp;#x3C;/h3&gt;
+        &amp;#x3C;Child&gt;
+            &amp;#x3C;!-- 插槽的内容 --&gt;
+            &amp;#x3C;em&gt;子组件插槽的内容&amp;#x3C;/em&gt;
+        &amp;#x3C;/Child&gt;
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+
+&amp;#x3C;style lang=&quot;scss&quot; scoped&gt;&amp;#x3C;/style&gt;
+1234567891011121314151617181920212223子组件
+vue&amp;#x3C;template&gt;
+   &amp;#x3C;div class=&quot;child&quot;&gt;
+       &amp;#x3C;p&gt;child-title&amp;#x3C;/p&gt;
+     	 &amp;#x3C;!-- 插槽的出口 --&gt;
+       &amp;#x3C;slot&gt;&amp;#x3C;/slot&gt;
+   &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+12345673. 具名插槽 &amp;ZeroWidthSpace;
+v-slot指令 定义具名插槽的内容
+v-slot 有对应的简写 #，因此 &amp;lt;template v-slot:header&amp;gt; 可以简写为 &amp;lt;template #header&amp;gt;。其意思就是“将这部分模板片段传入子组件的 header 插槽中”
+父组件
+vue&amp;#x3C;script&gt;
+import Child from &#39;./Child.vue&#39;;
+export default {
+    data() {
+        return {};
+    },
+    components: { Child }
+}
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;parent&quot;&gt;
+        &amp;#x3C;h3&gt;父组件&amp;#x3C;/h3&gt;
+        &amp;#x3C;hr&gt;
+        &amp;#x3C;h3&gt;子组件&amp;#x3C;/h3&gt;
+        &amp;#x3C;Child&gt;
+            &amp;#x3C;template v-slot:header&gt;
+                header 插槽的内容
+            &amp;#x3C;/template&gt;
+            &amp;#x3C;template #footer&gt;
+                footer 插槽的内容
+            &amp;#x3C;/template&gt;
+
+            &amp;#x3C;!-- 没有放在template的为默认内容 --&gt;
+            &amp;#x3C;!-- 默认插槽的内容 --&gt;
+
+
+            &amp;#x3C;template v-slot:default&gt;
+                默认插槽的内容
+            &amp;#x3C;/template&gt;
+
+            &amp;#x3C;!-- 简写 --&gt;
+            &amp;#x3C;!-- &amp;#x3C;template #default&gt;
+                默认插槽的内容
+            &amp;#x3C;/template&gt; --&gt;
+        &amp;#x3C;/Child&gt;
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+1234567891011121314151617181920212223242526272829303132333435363738子组件
+vue&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;container&quot;&gt;
+        &amp;#x3C;header&gt;
+            &amp;#x3C;slot name=&quot;header&quot;&gt;&amp;#x3C;/slot&gt;
+        &amp;#x3C;/header&gt;
+        &amp;#x3C;main&gt;
+            &amp;#x3C;slot&gt;&amp;#x3C;/slot&gt;
+        &amp;#x3C;/main&gt;
+        &amp;#x3C;footer&gt;
+            &amp;#x3C;slot name=&quot;footer&quot;&gt;&amp;#x3C;/slot&gt;
+        &amp;#x3C;/footer&gt;
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+
+&amp;#x3C;style lang=&quot;scss&quot; scoped&gt;
+header {
+    border: 1px solid rgb(222, 67, 67);
+}
+footer{
+    border: 1px solid rgb(30, 186, 118);
+}
+main {
+    border: 1px solid rgb(53, 20, 184);
+}
+&amp;#x3C;/style&gt;
+123456789101112131415161718192021222324254. 作用域插槽 &amp;ZeroWidthSpace;
+插槽内容可以访问到父组件的数据作用域，因为插槽内容本身是在父组件模板中定义的。
+在某些场景下插槽的内容可能想要同时使用父组件域内和子组件域内的数据。
+作用域插槽： 可以把子组件内部数据传递给对应模板的插槽
+作用域插槽的作用： 在插槽对应的模板中可访问子组件内部的数据
+示例：
+vue&amp;#x3C;slot name=&quot;header&quot; :text=&quot;text&quot; :count=&quot;count&quot;&gt;&amp;#x3C;/slot&gt;
+1默认插槽接收数据
+vue&amp;#x3C;template&gt;
+  &amp;#x3C;MyComponent v-slot=&quot;slotProps&quot;&gt;
+    {{ slotProps.text }} {{ slotProps.count }}
+  &amp;#x3C;/MyComponent&gt;
+&amp;#x3C;/template&gt;
+
+或者
+
+&amp;#x3C;template&gt;
+  &amp;#x3C;MyComponent v-slot=&quot;{ text, count }&quot;&gt;
+    {{ text }} {{ count }}
+  &amp;#x3C;/MyComponent&gt;
+&amp;#x3C;/template&gt;
+12345678910111213具名插槽接收数据
+vue&amp;#x3C;template&gt;
+  &amp;#x3C;MyComponent&gt;
+    &amp;#x3C;template #header=&quot;headerProps&quot;&gt;
+      {{ headerProps }}
+    &amp;#x3C;/template&gt;
+  
+    &amp;#x3C;template #default=&quot;defaultProps&quot;&gt;
+      {{ defaultProps }}
+    &amp;#x3C;/template&gt;
+  
+    &amp;#x3C;template #footer=&quot;footerProps&quot;&gt;
+      {{ footerProps }}
+    &amp;#x3C;/template&gt;
+  &amp;#x3C;/MyComponent&gt;
+&amp;#x3C;/template&gt;
+1234567891011121314155.模态框模板 &amp;ZeroWidthSpace;
+
+
+
+
+vue&amp;#x3C;script&gt;
+export default {
+}
+
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;card&quot;&gt;
+        &amp;#x3C;div class=&quot;title&quot;&gt;
+            &amp;#x3C;div class=&quot;left&quot;&gt;标题&amp;#x3C;/div&gt;
+            &amp;#x3C;div class=&quot;right&quot;&gt;right&amp;#x3C;/div&gt;
+        &amp;#x3C;/div&gt;
+        &amp;#x3C;div class=&quot;content&quot;&gt;内容&amp;#x3C;/div&gt;
+        &amp;#x3C;div class=&quot;footer&quot;&gt;
+            &amp;#x3C;button&gt;保  存&amp;#x3C;/button&gt;
+            &amp;#x3C;button&gt;取  消&amp;#x3C;/button&gt;
+        &amp;#x3C;/div&gt;
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+
+&amp;#x3C;style lang=&quot;scss&quot; scoped&gt;
+.card {
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    // border: 1px solid #000;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        background-color: rgb(244, 242, 242);
+        border-radius: 5px 5px 0 0;
+        border: 1px solid rgb(105, 103, 103);
+        box-sizing: border-box;
+    }
+    .content {
+        height: 200px;
+        border-left: 1px solid rgb(105, 103, 103);
+        border-right: 1px solid rgb(105, 103, 103);
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 80px;
+        border: 1px solid rgb(105, 103, 103);
+        border-top: none;
+        // background-color: rgb(113, 31, 31);
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(24, 215, 245);
+        }
+    }
+}
+&amp;#x3C;/style&gt;
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656. 封装模态框组件 &amp;ZeroWidthSpace;
+父组件
+vue&amp;#x3C;script&gt;
+import ComA from &#39;./components/ComA.vue&#39;;
+    export default {
+    data() {
+        return {
+          msg: &#39;old&#39;,
+          list: [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]
+        };
+    },
+    components: { ComA },
+    methods: {
+      add(){
+        console.log(&#39;fu-add&#39;);
+      }
+    }
+}
+
+&amp;#x3C;/script&gt;
+
+
+&amp;#x3C;template&gt;
+   &amp;#x3C;div class=&quot;app&quot;&gt;
+      父组件
+      &amp;#x3C;hr&gt;
+      &amp;#x3C;ComA title=&quot;分账角色管理&quot;&gt;
+      &amp;#x3C;!-- &amp;#x3C;ComA title=&quot;分账角色管理&quot; width=&quot;300&quot;&gt; --&gt;
+        &amp;#x3C;!-- &amp;#x3C;template v-slot:extra=&quot;data&quot;&gt; --&gt;
+        &amp;#x3C;template #extra=&quot;data&quot;&gt;
+          &amp;#x3C;div class=&quot;right&quot;&gt;
+            &amp;#x3C;button @click=&quot;add&quot;&gt;添加
+123456789101112131415161718192021222324252627282930</p></article></a><a class="m-nav-link" href="/website/tech/Vue/11-内置组件" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="11-内置组件" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_11-内置组件" class="title" data-v-4cce99de>11-内置组件</h5></div><p class="desc" data-v-4cce99de>1. 动态组件 &amp;ZeroWidthSpace;
+语法 &amp;ZeroWidthSpace;
+有些场景会需要在两个组件间来回切换，比如 Tab 界面，可通过 &amp;lt;component&amp;gt; 动态组件实现
+vue&amp;#x3C;!-- Home为组件名 --&gt;
+&amp;#x3C;component is=&quot;Home&quot;&gt;&amp;#x3C;/component&gt;
+&amp;#x3C;component :is=&quot;&#39;Home&#39;&quot;&gt;&amp;#x3C;/component&gt;
+&amp;#x3C;!-- currentTab 改变时组件也改变 --&gt;
+&amp;#x3C;component :is=&quot;currentTab&quot;&gt;&amp;#x3C;/component&gt;
+12345案例 &amp;ZeroWidthSpace;
+Home.vue
+vue&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;tab&quot;&gt;
+        Home component
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+12345Posts.vue
+vue&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;tab&quot;&gt;
+        Posts component
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+12345Archive.vue
+vue&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;tab&quot;&gt;
+        Archive component
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+12345App.vue
+vue&amp;#x3C;script&gt;
+import Home from &#39;./Home.vue&#39;
+import Posts from &#39;./Posts.vue&#39;
+import Archive from &#39;./Archive.vue&#39;
+  
+export default {
+  components: {
+    Home,
+    Posts,
+    Archive
+  },
+  data() {
+    return {
+      currentTab: &#39;Home&#39;,
+      tabs: [&#39;Home&#39;, &#39;Posts&#39;, &#39;Archive&#39;]
+    }
+  }
+}
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+  &amp;#x3C;div class=&quot;demo&quot;&gt;
+    &amp;#x3C;button
+       v-for=&quot;tab in tabs&quot;
+       :key=&quot;tab&quot;
+       :class=&quot;[&#39;tab-button&#39;, { active: currentTab === tab }]&quot;
+       @click=&quot;currentTab = tab&quot;
+     &gt;
+      {{ tab }}
+    &amp;#x3C;/button&gt;
+	  &amp;#x3C;component :is=&quot;currentTab&quot; class=&quot;tab&quot;&gt;&amp;#x3C;/component&gt;
+  &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+
+&amp;#x3C;style&gt;
+.demo {
+  font-family: sans-serif;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 20px 30px;
+  margin-top: 1em;
+  margin-bottom: 40px;
+  user-select: none;
+  overflow-x: auto;
+}
+
+.tab-button {
+  padding: 6px 10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #f0f0f0;
+  margin-bottom: -1px;
+  margin-right: -1px;
+}
+.tab-button:hover {
+  background: #e0e0e0;
+}
+.tab-button.active {
+  background: #e0e0e0;
+}
+.tab {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+&amp;#x3C;/style&gt;
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566672. Transition组件 &amp;ZeroWidthSpace;
+Vue 提供了两个内置组件，可以帮助你制作基于状态变化的过渡和动画：
+Transition 组件 &amp;ZeroWidthSpace;
+认识Transition组件 &amp;ZeroWidthSpace;
+Transition 是一个内置组件，这意味着它在任意别的组件中都可以被使用，无需注册。它可以将进入和离开动画应用到通过默认插槽传递给它的元素或组件上。进入或离开可以由以下的条件之一触发：
+
+由 v-if 所触发的切换
+由 v-show 所触发的切换
+由特殊元素 &amp;lt;component&amp;gt; 切换的动态组件
+改变特殊的 key 属性
+
+基础用法 &amp;ZeroWidthSpace;
+vue&amp;#x3C;button @click=&quot;show = !show&quot;&gt;Toggle&amp;#x3C;/button&gt;
+&amp;#x3C;Transition name=&quot;fade&quot;&gt;
+  &amp;#x3C;p v-if=&quot;show&quot;&gt;hello&amp;#x3C;/p&gt;
+&amp;#x3C;/Transition&gt;
+1234css.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+123456789TIP
+&amp;lt;Transition&amp;gt; 仅支持单个元素或组件作为其插槽内容。如果内容是一个组件，这个组件必须仅有一个根元素。
+当一个 &amp;lt;Transition&amp;gt; 组件中的元素被插入或移除时，会发生下面这些事情：
+Vue 会自动检测目标元素是否应用了 CSS 过渡或动画。如果是，则一些 CSS 过渡 class 会在适当的时机被添加和移除。
+CSS过渡class &amp;ZeroWidthSpace;
+
+CSS的animation &amp;ZeroWidthSpace;
+vue&amp;#x3C;Transition name=&quot;bounce&quot;&gt;
+  &amp;#x3C;p v-if=&quot;show&quot; style=&quot;text-align: center;&quot;&gt;
+    Hello here is some bouncy text!
+  &amp;#x3C;/p&gt;
+&amp;#x3C;/Transition&gt;
+12345css.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+1234567891011121314151617可复用过渡效果 &amp;ZeroWidthSpace;
+得益于 Vue 的组件系统，过渡效果是可以被封装复用的。要创建一个可被复用的过渡，我们需要为 &amp;lt;Transition&amp;gt; 组件创建一个包装组件，并向内传入插槽内容
+vue&amp;#x3C;!-- MyTransition.vue --&gt;
+&amp;#x3C;script&gt;
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+  &amp;#x3C;!-- 包装内置的 Transition 组件 --&gt;
+  &amp;#x3C;Transition
+    name=&quot;my-transition&quot;
+    &amp;#x3C;slot&gt;&amp;#x3C;/slot&gt; &amp;#x3C;!-- 向内传递插槽内容 --&gt;
+  &amp;#x3C;/Transition&gt;
+&amp;#x3C;/template&gt;
+
+&amp;#x3C;style&gt;
+/*
+  必要的 CSS...
+  注意：避免在这里使用 &amp;#x3C;style scoped&gt;
+  因为那不会应用到插槽内容上
+*/
+&amp;#x3C;/style&gt;
+12345678910111213141516171819使用自定义过渡组件
+vue&amp;#x3C;MyTransition&gt;
+  &amp;#x3C;div v-if=&quot;show&quot;&gt;Hello&amp;#x3C;/div&gt;
+&amp;#x3C;/MyTransition&gt;
+123出现时过渡 &amp;ZeroWidthSpace;
+如果你想在某个节点初次渲染时应用一个过渡效果，你可以添加 appear prop：
+vue&amp;#x3C;Transition appear&gt;
+  
+&amp;#x3C;/Transition&gt;
+123过渡模式 &amp;ZeroWidthSpace;
+先执行离开动画，然后在其完成之后再执行元素的进入动画
+vue&amp;#x3C;Transition mode=&quot;out-in&quot;&gt;
+  
+&amp;#x3C;/Transition&gt;
+123组件间过渡 &amp;ZeroWidthSpace;
+&amp;lt;Transition&amp;gt; 也可以作用于动态组件之间的切换
+vue&amp;#x3C;Transition name=&quot;fade&quot; mode=&quot;out-in&quot;&gt;
+  &amp;#x3C;component :is=&quot;activeComponent&quot;&gt;&amp;#x3C;/component&gt;
+&amp;#x3C;/Transition&gt;
+123动态过渡 &amp;ZeroWidthSpace;
+vue&amp;#x3C;Transition :name=&quot;transitionName&quot;&gt;
+  
+&amp;#x3C;/Transition&gt;
+123TransitionGroup 组件 &amp;ZeroWidthSpace;
+会在一个 v-for 列表中的元素或组件被插入，移动，或移除时应用动画。
+vue
+&amp;#x3C;script&gt;
+import { shuffle } from &#39;lodash&#39;
+
+const getInitialItems = () =&gt; [1, 2, 3, 4, 5]
+let id = getInitialItems().length + 1
+
+export default {
+  data() {
+    return {
+      items: getInitialItems()
+    }
+  },
+  methods: {
+    insert() {
+      const i = Math.round(Math.random() * this.items.length)
+      this.items.splice(i, 0, id++)
+    },
+    reset() {
+      this.items = getInitialItems()
+    },
+    shuffle() {
+      this.items = shuffle(this.items)
+    },
+    remove(item) {
+      const i = this.items.indexOf(item)
+      if (i &gt; -1) {
+        this.items.splice(i, 1)
+      }
+    }
+  }
+}
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+  &amp;#x3C;button @click=&quot;insert&quot;&gt;insert at random index&amp;#x3C;/button&gt;
+  &amp;#x3C;button @click=&quot;reset&quot;&gt;reset&amp;#x3C;/button&gt;
+  &amp;#x3C;button @click=&quot;shuffle&quot;&gt;shuffle&amp;#x3C;/button&gt;
+
+  &amp;#x3C;TransitionGroup tag=&quot;ul&quot; name=&quot;fade&quot; class=&quot;container&quot;&gt;
+    &amp;#x3C;div v-for=&quot;item in items&quot; class=&quot;item&quot; :key=&quot;item&quot;&gt;
+      {{ item }}
+      &amp;#x3C;button @click=&quot;remove(item)&quot;&gt;x&amp;#x3C;/button&gt;
+    &amp;#x3C;/div&gt;
+  &amp;#x3C;/TransitionGroup&gt;
+&amp;#x3C;/template&gt;
+
+&amp;#x3C;style&gt;
+.container {
+  position: relative;
+  padding: 0;
+}
+
+.item {
+  width: 100%;
+  height: 30px;
+  background-color: #f3f3f3;
+  border: 1px solid #666;
+  box-sizing: border-box;
+}
+
+/* 1. 声明过渡效果 */
+.fade-move,
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+/* 2. 声明进入和离开的状态 */
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: scaleY(0.01) translate(30px, 0);
+}
+
+/* 3. 确保离开的项目被移除出了布局流
+      以便正确地计算移动时的动画效果。 */
+.fade-leave-active {
+  position: absolute;
+}
+&amp;#x3C;/style&gt;
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081Vue2和Vue3的区别 &amp;ZeroWidthSpace;
+Vue2
+css/* vue2的类名没有from和to */
+.fade-enter,
+.fade-leave{
+  opacity: 0;
+}
+12345Vue3
+css/* vue3需要添加from和to*/
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+123453. KeepAlive组件 （重要） &amp;ZeroWidthSpace;
+&amp;lt;KeepAlive&amp;gt; 是一个内置组件，它的功能是在多个组件间动态切换时缓存被移除的组件实例。
+案例 &amp;ZeroWidthSpace;
+vue&amp;#x3C;!-- 非活跃的组件将会被缓存！ --&gt;
+&amp;#x3C;KeepAlive&gt;
+  &amp;#x3C;component :is=&quot;activeComponent&quot; /&gt;
+&amp;#x3C;/KeepAlive&gt;
+1234包含/排除 &amp;ZeroWidthSpace;
+
+include和exclude中的标识符为组件定义中的name选项的值
+
+vue&amp;#x3C;!-- 以英文逗号分隔的字符串 --&gt;
+
+&amp;#x3C;!-- 包含 --&gt;
+&amp;#x3C;KeepAlive include=&quot;a,b&quot;&gt;
+  &amp;#x3C;component :is=&quot;view&quot; /&gt;
+&amp;#x3C;/KeepAlive&gt;
+
+&amp;#x3C;!-- 排除 --&gt;
+&amp;#x3C;KeepAlive exclude=&quot;a,b&quot;&gt;
+  &amp;#x3C;component :is=&quot;view&quot; /&gt;
+&amp;#x3C;/KeepAlive&gt;
+
+&amp;#x3C;!-- 正则表达式 (需使用 `v-bind`) --&gt;
+&amp;#x3C;KeepAlive :include=&quot;/a|b/&quot;&gt;
+  &amp;#x3C;component :is=&quot;view&quot; /&gt;
+&amp;#x3C;/KeepAlive&gt;
+
+&amp;#x3C;!-- 数组 (需使用 `v-bind`) --&gt;
+&amp;#x3C;KeepAlive :include=&quot;[&#39;a&#39;, &#39;b&#39;]&quot;&gt;
+  &amp;#x3C;component :is=&quot;view&quot; /&gt;
+&amp;#x3C;/KeepAlive&gt;
+123456789101112131415161718192021最大缓存实例数 &amp;ZeroWidthSpace;
+如果缓存的实例数量即将超过指定的那个最大数量，则最久没有被访问的缓存实例将被销毁，以便为新的实例腾出空间。
+vue&amp;#x3C;KeepAlive :max=&quot;10&quot;&gt;
+  &amp;#x3C;component :is=&quot;activeComponent&quot; /&gt;
+&amp;#x3C;/KeepAlive&gt;
+123缓存实例的生命周期 &amp;ZeroWidthSpace;
+一个持续存在的组件可以通过 activated 和 deactivated 选项来注册相应的两个状态的生命周期钩子
+javascriptexport default {
+  activated() {
+    // 在首次挂载、
+    // 以及每次从缓存中被重新插入的时候调用
+  },
+  deactivated() {
+    // 在从 DOM 上移除、进入缓存
+    // 以及组件卸载时调用
+  }
+}
+12345678910这两个钩子不仅适用于 &amp;lt;KeepAlive&amp;gt; 缓存的根组件，也适用于缓存树中的后代组件
+4. Teleport组件 &amp;ZeroWidthSpace;
+** vue2没有Teleport组件
+&amp;lt;Teleport&amp;gt; 是一个内置组件，它可以将一个组件内部的一部分模板“传送”到该组件的 DOM 结构外层的位置去。
+应用场景 &amp;ZeroWidthSpace;
+有时我们可能会遇到这样的场景：一个组件模板的一部分在逻辑上从属于该组件，但从整个应用视图的角度来看，它在 DOM 中应该被渲染在整个 Vue 应用外部的其他地方。
+这类场景最常见的例子就是全屏的模态框。理想情况下，我们希望触发模态框的按钮和模态框本身是在同一个组件中，因为它们都与组件的开关状态有关。但这意味着该模态框将与按钮一起渲染在应用 DOM 结构里很深的地方。这会导致该模态框的 CSS 布局代码很难写。
+全屏模态框案例 &amp;ZeroWidthSpace;
+Parent.vue
+vue&amp;#x3C;script&gt;
+import Modal from &#39;./Modal.vue&#39;
+
+export default {
+  components: {
+    Modal
+  },
+  data() {
+    return {
+      showModal: false
+    }
+  }
+}
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+  &amp;#x3C;div class=&quot;top&quot;&gt;
+    &amp;#x3C;button id=&quot;show-modal&quot; @click=&quot;showModal = true&quot;&gt;Show Modal&amp;#x3C;/button&gt;
+    &amp;#x3C;Teleport to=&quot;body&quot;&gt;
+    &amp;#x3C;!-- 使用这个 modal 组件，传入 prop --&gt;
+    &amp;#x3C;modal :show=&quot;showModal&quot; @close=&quot;showModal = false&quot;&gt;
+      &amp;#x3C;template #header&gt;
+        &amp;#x3C;h3&gt;custom header&amp;#x3C;/h3&gt;
+      &amp;#x3C;/template&gt;
+    &amp;#x3C;/modal&gt;
+    &amp;#x3C;/Teleport&gt;
+  &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+
+&amp;#x3C;style lang=&quot;scss&quot; scoped&gt;
+.top {
+  /*
+1234567891011121314151617181920212223242526272829303132</p></article></a><a class="m-nav-link" href="/website/tech/Vue/12-Vue3组合式API" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="12-Vue3组合式API" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_12-vue3组合式api" class="title" data-v-4cce99de>12-Vue3组合式API</h5></div><p class="desc" data-v-4cce99de>Vue3的特点 &amp;ZeroWidthSpace;
+
+在响应式系统中用ES6的Proxy对象替代ES5的obj.defineProperty方法
+使用组合式API
+重写了虚拟DOM(算法)
+提高了首次渲染及更新的速度
+摇树策略
+打包的体积变小了
+
+Vue3两种风格API &amp;ZeroWidthSpace;
+
+Vue3 的组件可以按两种不同的风格书写：选项式 API 和组合式 API
+只有Vue3有组合式API
+选项式API和组合式API,只是在API上有所区别，所有模板语法都是相同的
+
+**比如： **
+模板中的所有指令 v-html / v-on /v-bind / v-if / v-show / v-for / v-model 等使用都没有区别
+模板中所有内置组件的使用都没有区别
+选项式API &amp;ZeroWidthSpace;
+使用选项式 API，我们可以用包含多个选项的对象来描述组件的逻辑，例如 data、methods 和 mounted。选项所定义的属性都会暴露在函数内部的 this 上，它会指向当前的组件实例。
+vue&amp;#x3C;script&gt;
+export default {
+  // data() 返回的属性将会成为响应式的状态
+  // 并且暴露在 `this` 上
+  data() {
+    return {
+      count: 0
+    }
+  },
+
+  // methods 是一些用来更改状态与触发更新的函数
+  // 它们可以在模板中作为事件处理器绑定
+  methods: {
+    increment() {
+      this.count++
+    }
+  },
+
+  // 生命周期钩子会在组件生命周期的各个不同阶段被调用
+  // 例如这个函数就会在组件挂载完成后被调用
+  mounted() {
+    console.log(`The initial count is ${this.count}.`)
+  }
+}
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+  &amp;#x3C;button @click=&quot;increment&quot;&gt;Count is: {{ count }}&amp;#x3C;/button&gt;
+&amp;#x3C;/template&gt;
+1234567891011121314151617181920212223242526272829组合式API &amp;ZeroWidthSpace;
+组合式 API 的核心思想是直接在函数作用域内定义响应式状态变量，并将从多个函数中得到的状态组合起来处理复杂问题。这种形式更加自由，也需要你对 Vue 的响应式系统有更深的理解才能高效使用。相应的，它的灵活性也使得组织和重用逻辑的模式变得更加强大。
+下面是使用了组合式 API 与 &amp;lt;script setup&amp;gt; 改造后和上面的模板完全一样的组件
+
+只做简单了解，具体语法会在后面讲
+
+vue&amp;#x3C;script setup&gt;
+import { ref, onMounted } from &#39;vue&#39;
+
+// 响应式状态
+const count = ref(0)
+
+// 用来修改状态、触发更新的函数
+function increment() {
+  count.value++
+}
+
+// 生命周期钩子
+onMounted(() =&gt; {
+  console.log(`The initial count is ${count.value}.`)
+})
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+  &amp;#x3C;button @click=&quot;increment&quot;&gt;Count is: {{ count }}&amp;#x3C;/button&gt;
+&amp;#x3C;/template&gt;
+1234567891011121314151617181920响应式基础 &amp;ZeroWidthSpace;
+reactive()函数 &amp;ZeroWidthSpace;
+要在组件模板中使用响应式状态，需要在 setup() 函数中定义并返回。
+使用 reactive() 函数创建一个响应式对象或数组
+也可以在同一个作用域下定义更新响应式状态的函数，并将他们作为方法与状态一起暴露出去：
+javascriptimport { reactive } from &#39;vue&#39;
+
+export default {
+  // `setup` 是一个专门用于组合式 API 的特殊钩子函数
+  //  setup中没有this
+  setup() {
+    const state = reactive({
+      count: 0,
+      num: 12,
+      nested: { count: 0 },
+      arr: [&#39;foo&#39;, &#39;bar&#39;]
+    })
+
+    function increment() {
+      // state.count++
+      state.arr.push(&#39;third&#39;)
+    }
+
+    // 暴露 state 到模板
+    // 不要忘记同时暴露 increment 函数
+    return {
+      state,
+      increment
+    }
+  }
+}
+1234567891011121314151617181920212223242526vue&amp;#x3C;button @click=&quot;increment&quot;&gt;
+  {{ state.count }}
+12</p></article></a><a class="m-nav-link" href="/website/tech/Vue/12-深拷贝" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="12-深拷贝" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_12-深拷贝" class="title" data-v-4cce99de>12-深拷贝</h5></div><p class="desc" data-v-4cce99de>深拷贝 &amp;ZeroWidthSpace;
+什么是深拷贝 &amp;ZeroWidthSpace;
+在Javascript中，对象的复制有两种方式： 浅拷贝和深拷贝。
+浅拷贝只拷贝内存地址，拷贝后的对象和原始对象引用同一个地址，所以修改拷贝后的对象会影响到原始对象。
+深拷贝是指将一个对象完全复制到另一个对象中，包括对象的所有属性和方法。与浅拷贝不同，深拷贝会递归地复制对象的所有属性和方法，直到所有属性和方法都被复制完毕。因此，深拷贝可以保证复制后的对象与原始对象完全独立，互不影响。
+如何实现深拷贝 &amp;ZeroWidthSpace;
+1. 使用扩展运算符 &amp;ZeroWidthSpace;
+只能实现第一层的深拷贝，不能实现深层级对象的深拷贝
+javascript//
+1</p></article></a><a class="m-nav-link" href="/website/tech/Vue/13_vue3路由(1)" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="13_vue3路由(1)" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_13-vue3路由-1" class="title" data-v-4cce99de>13_vue3路由(1)</h5></div><p class="desc" data-v-4cce99de>什么是前端路由 &amp;ZeroWidthSpace;
+
+路由是根据不同的 url 地址展示不同的内容或页面
+以前路由都是后台做的，通过用户请求的url导航到具体的html页面，前端路由就是通过配置js文件，把这个工作拿到前端来做
+
+安装 &amp;ZeroWidthSpace;
+认识Vue Router &amp;ZeroWidthSpace;
+Vue Router 是 Vue.js 的官方路由。它与 Vue.js 核心深度集成，让用 Vue.js 构建单页应用变得轻而易举。
+官网： https://router.vuejs.org/zh/
+用 Vue.js + Vue Router 创建单页应用
+下载vue-router.js &amp;ZeroWidthSpace;
+vue-router3.x是针对Vue2.x版本
+vue-router4.x是针对Vue3.x版本
+javascriptnpm install vue-router@4
+1基础路由配置 &amp;ZeroWidthSpace;
+Vue3 &amp;ZeroWidthSpace;
+src/router/index.js
+javascriptimport {createRouter,createWebHashHistory} from &#39;vue-router&#39;
+// 1. 定义路由组件.
+// 也可以从其他文件导入
+import Home from &#39;../views/Home.vue&#39;
+import About from &#39;../views/About.vue&#39;
+
+// 2. 定义一些路由
+// 每个路由都需要映射到一个组件。
+// 我们后面再讨论嵌套路由。
+const routes = [
+  { path: &#39;/&#39;, component: Home },
+  { path: &#39;/about&#39;, component: About },
+]
+
+// 3. 创建路由实例并传递 `routes` 配置
+// 你可以在这里输入更多的配置，但我们在这里
+// 暂时保持简单
+const router = createRouter({
+  // 4. 内部提供了 history 模式的实现。为了简单起见，我们在这里使用 hash 模式。
+  history: createWebHashHistory(),
+  routes, // `routes: routes` 的缩写
+})
+
+//4. 导出router
+export default router
+12345678910111213141516171819202122232425main.js
+javascriptimport { createApp } from &#39;vue&#39;
+//
+12</p></article></a><a class="m-nav-link" href="/website/tech/Vue/14_vue3路由(2)" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="14_vue3路由(2)" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_14-vue3路由-2" class="title" data-v-4cce99de>14_vue3路由(2)</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Vue/15_vuex状态管理" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="15_vuex状态管理" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_15-vuex状态管理" class="title" data-v-4cce99de>15_vuex状态管理</h5></div><p class="desc" data-v-4cce99de>Vuex 是什么？ &amp;ZeroWidthSpace;
+官网： https://vuex.vuejs.org/zh/Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的共享状态，并以相应的规则保证状态以一种可预测的方式发生变化。
+什么时候使用Vuex &amp;ZeroWidthSpace;
+如果应用比较简单，就不需要使用Vuex，直接使用父子组件传值及其它传值方式即可，使用Vuex就要额外的引入vuex的框架，可能是繁琐冗余的如果需要构建一个中大型单页应用，就可以使用vuex更好地在组件外部管理状态
+安装 &amp;ZeroWidthSpace;
+javascriptnpm install vuex@next --save
+1Vuex的五个核心概念 &amp;ZeroWidthSpace;
+1. state &amp;ZeroWidthSpace;
+存储公共数据
+配置store &amp;ZeroWidthSpace;
+src/store/index.js
+javascriptimport { createStore } from &#39;vuex&#39;
+
+// 创建一个新的 store 实例
+const store = createStore({
+  state () {
+    return {
+      count: 0
+    }
+  }
+})
+export default store
+1234567891011全局注入store &amp;ZeroWidthSpace;
+main.js
+javascriptimport { createApp } from &#39;vue&#39;
+import router from &#39;./router&#39;
+//
+123</p></article></a><a class="m-nav-link" href="/website/tech/Vue/16_富文本编辑器wangEditor的使用" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="16_富文本编辑器wangEditor的使用" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_16-富文本编辑器wangeditor的使用" class="title" data-v-4cce99de>16_富文本编辑器wangEditor的使用</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Vue/17_Vue3+Vuex+Js+El-Plus+vite" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="17_Vue3+Vuex+Js+El-Plus+vite" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_17-vue3-vuex-js-el-plus-vite" class="title" data-v-4cce99de>17_Vue3+Vuex+Js+El-Plus+vite</h5></div><p class="desc" data-v-4cce99de>1.初始化项目 &amp;ZeroWidthSpace;
+typescript//创建项目
+pnpm create vite my-vue3
+
+//进目录
+cd my-vue3
+
+//安装依赖
+pnpm i
+
+//启动
+npm run dev
+12345678910112.配置路径别名和跨域 &amp;ZeroWidthSpace;
+vite.config.ts通过配置服务器代理，实现跨域
+javascriptimport { defineConfig } from &#39;vite&#39;
+import vue from &#39;@vitejs/plugin-vue&#39;
+import path from &#39;path&#39;
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [vue()],
+  resolve: {
+    //设置别名
+    alias: {
+      &quot;@&quot;: path.resolve(__dirname, &#39;src&#39;)
+    }
+  },
+  server: {
+    // 配置服务器代理，实现跨域
+    proxy: {
+      //所有以 &#39;/api&#39;为前缀的接口都转向http://localhost:3001
+      &quot;/api&quot;: {
+        target: &quot;http://localhost:3001&quot;,
+        changeOrigin: true,
+        //去掉接口中的 &#39;/api&#39;以便和后端接口匹配
+        rewrite: (path) =&gt; path.replace(/^\/api/, &quot;&quot;),
+      },
+    },
+  },
+})
+1234567891011121314151617181920212223242526vue&amp;#x3C;!--
+import axios from &#39;./config&#39;
+
+// 添加新闻
+// export function _addNews(data) {
+//     return axios({
+//         url: &#39;/news&#39;,
+//         method: &quot;post&quot;,
+//         data
+//     })
+// }
+
+export const _addNews = data =&gt; axios.post(&quot;/news&quot;, data)
+  --&gt;
+12345678910111213143.安装依赖包 &amp;ZeroWidthSpace;
+javascript&quot;dependencies&quot;: {
+     &quot;@element-plus/icons-vue&quot;: &quot;^2.1.0&quot;,
+    &quot;axios&quot;: &quot;^1.4.0&quot;,
+    &quot;dayjs&quot;: &quot;^1.11.9&quot;,
+    &quot;element-plus&quot;: &quot;^2.3.7&quot;,
+    &quot;lodash&quot;: &quot;^4.17.21&quot;,
+    &quot;sass&quot;: &quot;^1.63.6&quot;,
+    &quot;vue&quot;: &quot;^3.3.4&quot;,
+    &quot;vue-router&quot;: &quot;^4.2.4&quot;,
+    &quot;vuex&quot;: &quot;^4.1.0&quot;
+  },
+12345678910114.配置路由 &amp;ZeroWidthSpace;
+创建基础组件 &amp;ZeroWidthSpace;
+
+src/pages/notFound/index.vue  404页面
+src/pages/login/index.vue  登录页面
+src/pages/layout/index.vue  管理页面
+
+src/router/index.js &amp;ZeroWidthSpace;
+配置路由， 设置路由拦截
+javascriptimport { createRouter, createWebHashHistory } from &#39;vue-router&#39;
+
+const routes = [
+    {
+        path: &#39;/&#39;,
+        name: &#39;admin&#39;,
+        component: () =&gt; import(&#39;@/pages/layout/index.vue&#39;)
+    },
+    {
+        path: &#39;/login&#39;,
+        name: &#39;login&#39;,
+        component: () =&gt; import(&#39;@/pages/login/index.vue&#39;)
+    },
+    { 
+        path: &#39;/:pathMatch(.*)*&#39;, 
+        name: &#39;NotFound&#39;, 
+        component: () =&gt; import(&#39;@/pages/notFound/index.vue&#39;) 
+    }
+]
+
+const router = createRouter({
+    history: createWebHashHistory(),
+    routes, // `routes: routes` 的缩写
+})
+
+export default router
+1234567891011121314151617181920212223242526main.js引入路由 &amp;ZeroWidthSpace;
+javascriptimport { createApp } from &#39;vue&#39;
+import App from &#39;./App.vue&#39;
+import router from &#39;./router&#39;
+createApp(App).use(router).mount(&#39;#app&#39;)
+1234App.vue定义路由出口 &amp;ZeroWidthSpace;
+vue&amp;#x3C;template&gt;
+  &amp;#x3C;RouterView&gt;&amp;#x3C;/RouterView&gt;
+&amp;#x3C;/template&gt;
+123添加路由拦截 &amp;ZeroWidthSpace;
+src/router/index.js
+javascript...
+//路由拦截
+router.beforeEach((to, from) =&gt; {
+    //如果进入的不是/login,同时token不存在，则重定向到/login进行登录
+    if (to.fullPath !== &#39;/login&#39; &amp;#x26;&amp;#x26; !localStorage.getItem(&quot;token&quot;)) return &quot;/login&quot;
+})
+...
+12345675.API封装 &amp;ZeroWidthSpace;
+api/config.js &amp;ZeroWidthSpace;
+
+配置请求url, 超时时间
+配置请求拦截器，以便携带token信息
+配置相应拦截器，集中处理错误
+
+javascriptimport axios from &#39;axios&#39;
+
+const instance = axios.create({
+  // baseURL: &#39;http://localhost:5000&#39;,
+  baseURL: &#39;/api&#39;,
+  timeout: 5000
+});
+
+//添加请求拦截器，会在发起请求之前执行相应的需求
+instance.interceptors.request.use(function (config) {
+  let token = sessionStorage.getItem(&quot;token&quot;)
+  if (token) {
+    config.headers[&#39;Authorization&#39;] = &#39;Bearer &#39; + token;
+  }
+  return config;
+}, function (error) {
+  // Do something with request error
+  return Promise.reject(error);
+});
+
+//添加响应拦截器，会在返回数据后先执行相应的需求
+instance.interceptors.response.use(function (response) {
+  // console.log(&#39;res&#39;,response);
+  let { code } = response.data
+  if (code === 401) {
+    //token失效
+    // sessionStorage.clear()
+    // window.location.reload() //页面刷新 
+  }
+  return response;
+}, function (error) {
+  console.log(&#39;res-err&#39;, error);
+  // let {code} = error
+  // if (code === &#39;ERR_NETWORK&#39;){
+  //   alert(&#39;网络错误&#39;)
+  // }
+  return Promise.reject(error);
+});
+export default instance
+123456789101112131415161718192021222324252627282930313233343536373839举例：接口第一种写法 &amp;ZeroWidthSpace;
+api/news.js
+javascriptimport axios from &#39;./config&#39;
+
+// 添加新闻
+export function _addNews(data) {
+    return axios({
+        url: &#39;/news&#39;,
+        method: &quot;post&quot;,
+        data
+    })
+}
+
+//获取新闻列表
+export function _getNews(params){
+    return axios({
+        url: &#39;/news&#39;,
+        method: &quot;get&quot;,
+        params
+    })
+}
+//获取指定newsId的新闻
+export function _getOneNews(newsId){
+    return axios({
+        // 注意前后端在接口上的传参方式
+        url: `/news/${newsId}`,
+        method: &quot;get&quot;,
+    })
+}
+
+// 编辑新闻
+export function _editNews(data){
+    return axios({
+        url: &#39;/news&#39;,
+        method: &quot;put&quot;,
+        data
+    })
+}
+// 删除新闻
+export function _delNews(params){
+    return axios({
+        url: &#39;/news&#39;,
+        method: &quot;delete&quot;,
+        params
+    })
+}
+1234567891011121314151617181920212223242526272829303132333435363738394041424344举例：接口第二种写法 &amp;ZeroWidthSpace;
+api/news.js
+javascriptimport axios from &#39;./config&#39;
+
+// 添加新闻
+// export function _addNews(data) {
+//     return axios({
+//         url: &#39;/news&#39;,
+//         method: &quot;post&quot;,
+//         data
+//     })
+// }
+
+export const _addNews = data =&gt; axios.post(&quot;/news&quot;, data)
+
+
+//获取新闻列表
+// export function _getNews(params) {
+//     return axios({
+//         url: &#39;/news&#39;,
+//         method: &quot;get&quot;,
+//         params
+//     })
+// }
+
+export const _getNews = params =&gt; axios.get(&quot;/news&quot;, { params })
+
+//获取指定newsId的新闻
+export function _getOneNews(newsId) {
+    return axios({
+        // 注意前后端在接口上的传参方式
+        url: `/news/${newsId}`,
+        method: &quot;get&quot;,
+    })
+}
+
+// 编辑新闻
+export function _editNews(data) {
+    return axios({
+        url: &#39;/news&#39;,
+        method: &quot;put&quot;,
+        data
+    })
+}
+// 删除新闻
+export function _delNews(params) {
+    return axios({
+        url: &#39;/news&#39;,
+        method: &quot;delete&quot;,
+        params
+    })
+}
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950接口在组件中使用 &amp;ZeroWidthSpace;
+javascriptimport { _addNews } from &#39;@/api/news.js&quot;
+
+const addNews = async ()=&gt;{
+  let res = await _addNews(请求参数)
+}
+12345vue&amp;#x3C;!--
+...
+//全局引入element-plus
+import ElementPlus from &#39;element-plus&#39;
+import &#39;element-plus/dist/index.css&#39;
+import &#39;normalize.css&#39;
+//全局引入图标
+import * as ElementPlusIconsVue from &#39;@element-plus/icons-vue&#39;
+
+//注册element-plus
+app.use(ElementPlus)
+//注册图标
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+    app.component(key, component)
+}
+app.mount(&#39;#app&#39;)
+--&gt;
+12345678910111213141516176. 使用element-plus &amp;ZeroWidthSpace;
+element-plus官网:     https://element-plus.gitee.io/zh-CN/
+1.安装 &amp;ZeroWidthSpace;
+pnpm install normalize.css
+pnpm install element-plus
+pnpm install @element-plus/icons-vue
+1232. 在main.ts中引入 &amp;ZeroWidthSpace;
+tsx...
+//全局引入element-plus
+import ElementPlus from &#39;element-plus&#39;
+import &#39;element-plus/dist/index.css&#39;
+import &#39;normalize.css&#39;
+//全局引入图标
+import * as ElementPlusIconsVue from &#39;@element-plus/icons-vue&#39;
+
+//注册element-plus
+app.use(ElementPlus)
+//注册图标
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+    app.component(key, component)
+}
+app.mount(&#39;#app&#39;)
+1234567891011121314153. element-plus中图标的使用 &amp;ZeroWidthSpace;
+vue&amp;#x3C;script setup&gt;
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;admin&quot;&gt;
+        &amp;#x3C;!-- 编辑图标 --&gt;
+        &amp;#x3C;el-icon :size=&quot;20&quot;&gt;
+            &amp;#x3C;Edit /&gt;
+        &amp;#x3C;/el-icon&gt;
+        &amp;#x3C;el-row&gt;
+            &amp;#x3C;!-- 在按钮上显示编辑图标 --&gt;
+            &amp;#x3C;el-button circle type=&quot;primary&quot;&gt;
+                &amp;#x3C;el-icon &gt;
+                    &amp;#x3C;Edit /&gt;
+                &amp;#x3C;/el-icon&gt;
+            &amp;#x3C;/el-button&gt;
+        &amp;#x3C;/el-row&gt;
+    &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+123456789101112131415161718194. 使用动态图标 &amp;ZeroWidthSpace;
+vue&amp;#x3C;script setup&gt;
+
+//定义数据
+const icons = ref([&#39;edit&#39;,&#39;CirclePlus&#39;,&#39;Clock&#39;,&#39;Position&#39;])
+
+
+const props = defineProps({
+  item: Object,
+  index: Number
+})
+
+console.log(&#39;index&#39;,props.index);
+
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;card&quot;&gt;
+        &amp;#x3C;p &gt;图标：
+            &amp;#x3C;!-- &amp;#x3C;el-icon&gt;
+                &amp;#x3C;Edit /&gt;
+            &amp;#x3C;/el-icon&gt; --&gt;
+            &amp;#x3C;!-- 通过component动态组件实现 --&gt;
+            &amp;#x3C;component :is=&quot;icons[index]&quot;&gt;&amp;#x3C;/component&gt;
+        &amp;#x3C;/p&gt;
+        &amp;#x3C;p&gt;{{ item.title }}
+12345678910111213141516171819202122232425</p></article></a><a class="m-nav-link" href="/website/tech/Vue/17_vue3+Excel导入导出" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="17_vue3+Excel导入导出" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_17-vue3-excel导入导出" class="title" data-v-4cce99de>17_vue3+Excel导入导出</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Vue/18-深拷贝" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="18-深拷贝" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_18-深拷贝" class="title" data-v-4cce99de>18-深拷贝</h5></div><p class="desc" data-v-4cce99de>深拷贝 &amp;ZeroWidthSpace;
+什么是深拷贝 &amp;ZeroWidthSpace;
+在Javascript中，对象的复制有两种方式： 浅拷贝和深拷贝。
+浅拷贝只拷贝内存地址，拷贝后的对象和原始对象引用同一个地址，所以修改拷贝后的对象会影响到原始对象。
+深拷贝是指将一个对象完全复制到另一个对象中，包括对象的所有属性和方法。与浅拷贝不同，深拷贝会递归地复制对象的所有属性和方法，直到所有属性和方法都被复制完毕。因此，深拷贝可以保证复制后的对象与原始对象完全独立，互不影响。
+如何实现深拷贝 &amp;ZeroWidthSpace;
+1. 使用扩展运算符 &amp;ZeroWidthSpace;
+只能实现第一层的深拷贝，不能实现深层级对象的深拷贝
+javascript//
+1</p></article></a><!--]--></div><!--]--></div></div></main><footer class="VPDocFooter" data-v-aa9d3751 data-v-11e93384><!--[--><!--]--><div class="edit-info" data-v-11e93384><!----><div class="last-updated" data-v-11e93384><p class="VPLastUpdated" data-v-11e93384 data-v-46396952>最后更新于: <time datetime="2026-04-27T06:37:32.000Z" data-v-46396952></time></p></div></div><!----></footer><!--[--><!--[--><!--[--><!--]--><!--]--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-3b5ac462 data-v-285d3ca7><div class="container" data-v-285d3ca7><!----><!----></div></footer><!--[--><!--]--></div><!--]--></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"friends_index.md\":\"BCAkJ_YP\",\"index.md\":\"Dazr8Gld\",\"life_index.md\":\"Dq17JTE5\",\"life_posts_2026-04-26-普普通通的一天.md\":\"gnWzxfCi\",\"nav_index.md\":\"DKlmWesK\",\"projects_index.md\":\"DaDZzGEF\",\"reading_index.md\":\"X4gfrZbm\",\"tech_git_01-git使用总结.md\":\"6SJwVME4\",\"tech_git_02-团队协作的流程.md\":\"Bx5jmW6x\",\"tech_git_gitee.md\":\"D6V2Xxkm\",\"tech_git_git笔记.md\":\"SU-cO5gp\",\"tech_git_index.md\":\"Dd4ZTmqj\",\"tech_html_1.canvas绘图.md\":\"TGt2uima\",\"tech_html_2.svg矢量图.md\":\"CoXNaqry\",\"tech_html_3.地理定位-webgl版本.md\":\"IiCOFLS7\",\"tech_html_index.md\":\"CzENsegK\",\"tech_index.md\":\"5vtQAA18\",\"tech_javascript_00-重点知识总结.md\":\"BI9coLq5\",\"tech_javascript_01-javascript基础-变量声明-打印-数据类型.md\":\"BmAPecvS\",\"tech_javascript_02-运算符.md\":\"CHx2ordS\",\"tech_javascript_03-分支结构-循环结构.md\":\"CyufXYis\",\"tech_javascript_04. 函数.md\":\"BkkY2gSW\",\"tech_javascript_05-数组和对象.md\":\"B3XoU7qJ\",\"tech_javascript_06-内置对象.md\":\"DFoNRmSo\",\"tech_javascript_07_dom操作.md\":\"DN_f1j4C\",\"tech_javascript_08_获取元素常见的尺寸.md\":\"CgWk0FQC\",\"tech_javascript_09_定时器.md\":\"DSvea0gU\",\"tech_javascript_10-js中的事件.md\":\"Di_Nwzq-\",\"tech_javascript_11-dom节点的操作.md\":\"DxVpzP8Q\",\"tech_javascript_12-图片懒加载的原理和代码实现.md\":\"DECtuk5B\",\"tech_javascript_13-ajax.md\":\"DeggBbnu\",\"tech_javascript_14-json-server的使用.md\":\"D_d3PYcr\",\"tech_javascript_15-深拷贝.md\":\"Bs53OrPg\",\"tech_javascript_15-用charles抓包数据.md\":\"ByqGza6t\",\"tech_javascript_16-正则表达式.md\":\"B_FhdsiW\",\"tech_javascript_17.bom对象.md\":\"TeYK53i2\",\"tech_javascript_18.三种本地存储.md\":\"Cd2Plihn\",\"tech_javascript_19.闭包.md\":\"C5lo-tMo\",\"tech_javascript_20-构造函数和原型链.md\":\"B-IaANk9\",\"tech_javascript_21-this指向_js面向对象开发.md\":\"COJHtSEa\",\"tech_javascript_22-防抖_节流_回流_重绘.md\":\"whZFLUNd\",\"tech_javascript_es6课件.md\":\"DNnZHy_O\",\"tech_javascript_index.md\":\"QEb298w4\",\"tech_javascript_自己整理的笔记.md\":\"DtBKg8iK\",\"tech_node_01-nodejs基础（已看）.md\":\"vmCjScpk\",\"tech_node_02-nodejs的模块.md\":\"P3JtWf-_\",\"tech_node_03-express框架的使用.md\":\"oHL5_ND4\",\"tech_node_04-nodejs数据库访问.md\":\"BCoqR5Be\",\"tech_node_05-express的中间件和文件上传.md\":\"CtDkO8JV\",\"tech_node_06-结合express实现购物车逻辑前后端.md\":\"CqQPveje\",\"tech_node_07-登录注册和token的使用.md\":\"Dd0erGD6\",\"tech_node_08-websocket.md\":\"EQmwZBry\",\"tech_node_09-ejs和pug.md\":\"BWipSc9y\",\"tech_node_index.md\":\"WqX1isoA\",\"tech_node_nvm的使用.md\":\"C-iyqHPS\",\"tech_python_index.md\":\"CsucMkR7\",\"tech_python_python学习路线.md\":\"v2otwVxl\",\"tech_python_python的基础知识.md\":\"Ctgm3QzA\",\"tech_react_01-react的安装-jsx语法.md\":\"Bf6ZC8Fv\",\"tech_react_02-函数组件和react hooks.md\":\"d-88MskI\",\"tech_react_03-了解react中class组件.md\":\"D6oxcRgt\",\"tech_react_04-了解react的生命周期.md\":\"CR5Qk3mB\",\"tech_react_04-了解并记忆react的生命周期.md\":\"BOhGuB69\",\"tech_react_05-安装react devtools.md\":\"DOmE9zy_\",\"tech_react_06-react路由v6的使用.md\":\"CLYo-ji3\",\"tech_react_07-sass_antd-mobileui组件库实现swiper效果.md\":\"BccI-ibA\",\"tech_react_08-了解-受控组件和非受控组件.md\":\"DWI3kEs_\",\"tech_react_09-了解-react的纯函数和副作用的理解.md\":\"-mrZqUnA\",\"tech_react_10-react之性能优化.md\":\"D1ta4qPq\",\"tech_react_11-只背-不讲-redux状态管理.md\":\"C45mBK72\",\"tech_react_12-redux toolkit状态管理.md\":\"DdmjXEbq\",\"tech_react_13-react移动端适配的配置.md\":\"BbwcP3U4\",\"tech_react_14-老资料参考-后台管理项目开发流程.md\":\"hW-aQs3m\",\"tech_react_15-最新版-后台管理项目开发流程.md\":\"DbW_y4Ml\",\"tech_react_16-富文本编辑器wangeditor的使用.md\":\"DDqwAVi7\",\"tech_react_17-excel导入导出.md\":\"DYoEG3sf\",\"tech_react_18-权限管理之动态添加路由.md\":\"C11QliPv\",\"tech_react_index.md\":\"BlmTKBOg\",\"tech_react_react路由跳转.md\":\"DCsLkDXE\",\"tech_react_闭包，防抖，深拷贝，数组去重.md\":\"CWkbhWkH\",\"tech_typescript_01-typescript基础.md\":\"8xgfx6RS\",\"tech_typescript_02-typescript进阶.md\":\"b7jl3HgG\",\"tech_typescript_03-中后台项目-vue3_ts_vite_pinia-elment-plus.md\":\"iAaSFdrK\",\"tech_typescript_index.md\":\"DwwAjwVl\",\"tech_typescript_typescript应用.md\":\"DkxfXGno\",\"tech_typescript_typescript进阶.md\":\"Bz0UbLk0\",\"tech_typescript_装饰器.md\":\"_HWRgEyP\",\"tech_uniapp_1.uniapp框架.md\":\"BqlLVRvk\",\"tech_uniapp_2.uniapp中状态管理.md\":\"BLS2wVlg\",\"tech_uniapp_3.uview-plus的使用.md\":\"xVijVL7o\",\"tech_uniapp_4.app打包.md\":\"BBMzLdi6\",\"tech_uniapp_index.md\":\"DdJ5Wkfx\",\"tech_vue_01_vue模板语法-指令.md\":\"Bqol8skg\",\"tech_vue_02-响应式系统-method-computed-watch.md\":\"BBQkxMx3\",\"tech_vue_03_了解class和style的动态绑定.md\":\"BTjKEdI5\",\"tech_vue_04_vue3生命周期函数.md\":\"CKPqdCo_\",\"tech_vue_05_了解表单的输入绑定.md\":\"D5l0EB11\",\"tech_vue_06_vue项目搭建-单页面应用.md\":\"BaxaKW8q\",\"tech_vue_07_组件.md\":\"BsimXp7o\",\"tech_vue_07_组件1.md\":\"DYQpEooG\",\"tech_vue_09-vue3项目开发中注意事项.md\":\"BnM4vzrb\",\"tech_vue_10-组件2.md\":\"BLwK0HPF\",\"tech_vue_11-内置组件.md\":\"BxlTMYff\",\"tech_vue_12-vue3组合式api.md\":\"wOk9gYV6\",\"tech_vue_12-深拷贝.md\":\"Do6HNCKk\",\"tech_vue_13_vue3路由(1).md\":\"BSz42-Yn\",\"tech_vue_14_vue3路由(2).md\":\"7j__rtkc\",\"tech_vue_15_vuex状态管理.md\":\"DvRgzWZ_\",\"tech_vue_16_富文本编辑器wangeditor的使用.md\":\"xCXlwhUv\",\"tech_vue_17_vue3_excel导入导出.md\":\"BEzN8DQh\",\"tech_vue_17_vue3_vuex_js_el-plus_vite.md\":\"B3OHOJx7\",\"tech_vue_18-深拷贝.md\":\"Bsxd1bPv\",\"tech_vue_index.md\":\"C2lctmU7\",\"tech_前端工程化_docker_docker使用文档.md\":\"upz6z7rD\",\"tech_前端工程化_docker_docker静态二进制文件.md\":\"C8AvbbLw\",\"tech_前端工程化_docker_本地部署x86测试.md\":\"Dv0HaqrA\",\"tech_前端工程化_docker使用文档.md\":\"Dbte_6Rz\",\"tech_前端工程化_docker静态二进制文件.md\":\"DWkPxx9j\",\"tech_前端工程化_index.md\":\"DDiwPi6F\",\"tech_前端工程化_mack的使用文档.md\":\"BsArwKoE\",\"tech_前端工程化_nginx-clearn.md\":\"DcR6s1U3\",\"tech_前端工程化_nginx-create.md\":\"CEjE6u-7\",\"tech_前端工程化_nginx_nginx-clearn.md\":\"C-G5Cv2Z\",\"tech_前端工程化_nginx_nginx-create.md\":\"BFOylkQZ\",\"tech_前端工程化_nginx_nginx使用文档.md\":\"BrgW9Ch-\",\"tech_前端工程化_nginx_trzsz.md\":\"tUaQ1wt1\",\"tech_前端工程化_nginx使用文档.md\":\"BjYAIzBr\",\"tech_前端工程化_trzsz.md\":\"CbKml2yi\",\"tech_前端工程化_本地部署x86测试.md\":\"CErBV9Hi\",\"tech_前端微服务_index.md\":\"CLtDQJ4g\",\"tech_前端微服务_乾坤.md\":\"CV2BKHny\",\"tech_前端微服务_乾坤微服务.md\":\"Dzw1GRk-\",\"tech_小程序_01.微信小程序基础.md\":\"BXvmd14q\",\"tech_小程序_02.wxml组件和模板语法.md\":\"DlgQfP_Z\",\"tech_小程序_03.生命周期和页面逻辑.md\":\"DKYEIfCd\",\"tech_小程序_04.组件化开发.md\":\"Cbyql5E3\",\"tech_小程序_05.小程序的发布和配置.md\":\"mZQ4-U1x\",\"tech_小程序_06.常用api.md\":\"Dg35AY_l\",\"tech_小程序_07.小程序中安装sass.md\":\"B65rfaOL\",\"tech_小程序_08.小程序中使用vant.md\":\"DZDBWVJ4\",\"tech_小程序_09.自定义tabbar.md\":\"DRZVOAOI\",\"tech_小程序_10.常用组件.md\":\"BvqtIg_o\",\"tech_小程序_11.线上图标字体的处理.md\":\"CgFGKySU\",\"tech_小程序_12.wxs的使用.md\":\"jREBzV9X\",\"tech_小程序_13.微信小程序登录流程.md\":\"jDJkrDjs\",\"tech_小程序_14.api封装.md\":\"DyT1yWdA\",\"tech_小程序_15.微信授权.md\":\"DsEJ1tVm\",\"tech_小程序_16.小程序分包.md\":\"CctgohJg\",\"tech_小程序_17.微信支付.md\":\"CuR6mQ_F\",\"tech_小程序_18.webview组件.md\":\"CfRIqCE4\",\"tech_小程序_19.自定义导航栏.md\":\"DYIXWWxb\",\"tech_小程序_index.md\":\"C_l3dyrz\",\"tech_数据可视化_1.数据可视化-echarts.md\":\"BZnQ_C2k\",\"tech_数据可视化_2.可视化大屏.md\":\"CWLHrMJO\",\"tech_数据可视化_index.md\":\"BcvkrHS4\",\"tech_计算机网络_httphttps 协议.md\":\"CJvNSEMm\",\"tech_计算机网络_icmp重定向.md\":\"CS5bt5av\",\"tech_计算机网络_index.md\":\"jJu8Cw7j\",\"tech_计算机网络_ip地址、端口和协议.md\":\"DVV4qRW5\",\"tech_计算机网络_restful api开发规范.md\":\"DHxR7PB4\",\"tech_计算机网络_服务器防火墙开关.md\":\"CZKovu2V\",\"tech_计算机网络_计算机网络基础.md\":\"DPYAsH88\",\"work_index.md\":\"0Catce0a\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"Code · AI · Agent · Life\",\"description\":\"有鹏在折腾的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等\",\"base\":\"/website/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"i18nRouting\":false,\"logo\":\"/logo.png\",\"nav\":[{\"text\":\"主页\",\"link\":\"/\"},{\"text\":\"生活\",\"link\":\"/life/\"},{\"text\":\"工作\",\"link\":\"/work/\"},{\"text\":\"读书笔记\",\"link\":\"/reading/\"},{\"text\":\"项目经验\",\"link\":\"/projects/\"},{\"text\":\"技术栈\",\"link\":\"/tech/\"},{\"text\":\"前端导航\",\"link\":\"/nav/\"},{\"text\":\"友情链接\",\"link\":\"/friends/\"}],\"sidebar\":{},\"aside\":\"left\",\"outline\":{\"level\":\"deep\",\"label\":\"目录\"},\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/chenyp-01\"}],\"footer\":{},\"lastUpdated\":{\"text\":\"最后更新于\",\"formatOptions\":{\"dateStyle\":\"short\",\"timeStyle\":\"medium\"}},\"docFooter\":{\"prev\":\"上一篇\",\"next\":\"下一篇\"},\"returnToTopLabel\":\"回到顶部\",\"sidebarMenuLabel\":\"菜单\",\"darkModeSwitchLabel\":\"主题\",\"lightModeSwitchTitle\":\"切换到浅色模式\",\"darkModeSwitchTitle\":\"切换到深色模式\"},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":true}");</script>
+    
+  </body>
+</html>

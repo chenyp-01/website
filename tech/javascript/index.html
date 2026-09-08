@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript | Code · AI · Agent · Life</title>
+    <meta name="description" content="有鹏在折腾的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/website/assets/style.CBfGz4-D.css" as="style">
+    <link rel="preload stylesheet" href="/website/vp-icons.css" as="style">
+    
+    <script type="module" src="/website/assets/app.BQTesUHO.js"></script>
+    <link rel="preload" href="/website/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/website/assets/chunks/theme.CYVAVoqf.js">
+    <link rel="modulepreload" href="/website/assets/chunks/framework.QMC68jD7.js">
+    <link rel="modulepreload" href="/website/assets/chunks/files-loader.DmnR_p8E.js">
+    <link rel="modulepreload" href="/website/assets/tech_javascript_index.md.QEb298w4.lean.js">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="/website/favicon.ico">
+    <link rel="apple-touch-icon" href="/website/favicon.ico">
+    <link rel="mask-icon" href="/website/favicon.ico" color="#3eaf7c">
+    <meta name="msapplication-TileImage" content="/website/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body><!--teleport start anchor--><div class="m-fx" data-v-f25fa346><div class="m-fx-stage" aria-hidden="true" style="" data-v-f25fa346><i class="orb o1" data-v-f25fa346></i><i class="orb o2" data-v-f25fa346></i><i class="orb o3" data-v-f25fa346></i><i class="orb o4" data-v-f25fa346></i><i class="orb o5" data-v-f25fa346></i></div><button class="m-fx-toggle" type="button" aria-pressed="true" title="关闭彩色背景与撒花" data-v-f25fa346><span class="fx-ico" data-v-f25fa346>🎉</span></button></div><!--teleport anchor-->
+    <div id="app"><!--[--><!--teleport start--><!--teleport end--><div class="Layout m-nav-layout" data-v-3b5ac462><!--[--><!--]--><!--[--><span tabindex="-1" data-v-72f87fc7></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-72f87fc7>Skip to content</a><!--]--><!----><header class="VPNav" data-v-3b5ac462 data-v-0258cca9><div class="VPNavBar" data-v-0258cca9 data-v-7a16a9d0><div class="wrapper" data-v-7a16a9d0><div class="container" data-v-7a16a9d0><div class="title" data-v-7a16a9d0><div class="VPNavBarTitle" data-v-7a16a9d0 data-v-1c0488a9><a class="title" href="/website/" data-v-1c0488a9><!--[--><!--]--><!--[--><img class="VPImage logo" src="/website/logo.png" alt data-v-086f85ae><!--]--><span data-v-1c0488a9>Code · AI · Agent · Life</span><!--[--><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--]--></a></div></div><div class="content" data-v-7a16a9d0><div class="content-body" data-v-7a16a9d0><!--[--><!--]--><div class="VPNavBarSearch search" data-v-7a16a9d0><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-7a16a9d0 data-v-efb5d98a><span id="main-nav-aria-label" class="visually-hidden" data-v-efb5d98a> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>主页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/life/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>生活</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/work/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>工作</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/reading/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>读书笔记</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/projects/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>项目经验</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/tech/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>技术栈</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/nav/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>前端导航</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/friends/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>友情链接</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-7a16a9d0 data-v-d86b6ee5><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-d86b6ee5 data-v-99c90d64 data-v-4b4abca3><span class="check" data-v-4b4abca3><span class="icon" data-v-4b4abca3><!--[--><span class="vpi-sun sun" data-v-99c90d64></span><span class="vpi-moon moon" data-v-99c90d64></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-7a16a9d0 data-v-49e5eaa8 data-v-4c55e980><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenyp-01" aria-label="github" target="_blank" rel="noopener" data-v-4c55e980 data-v-608a15d2><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-7a16a9d0 data-v-f13fdc11 data-v-8271439a><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-8271439a><span class="vpi-more-horizontal icon" data-v-8271439a></span></button><div class="menu" data-v-8271439a><div class="VPMenu" data-v-8271439a data-v-31c37511><!----><!--[--><!--[--><!----><div class="group" data-v-f13fdc11><div class="item appearance" data-v-f13fdc11><p class="label" data-v-f13fdc11>主题</p><div class="appearance-action" data-v-f13fdc11><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-f13fdc11 data-v-99c90d64 data-v-4b4abca3><span class="check" data-v-4b4abca3><span class="icon" data-v-4b4abca3><!--[--><span class="vpi-sun sun" data-v-99c90d64></span><span class="vpi-moon moon" data-v-99c90d64></span><!--]--></span></span></button></div></div></div><div class="group" data-v-f13fdc11><div class="item social-links" data-v-f13fdc11><div class="VPSocialLinks social-links-list" data-v-f13fdc11 data-v-4c55e980><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenyp-01" aria-label="github" target="_blank" rel="noopener" data-v-4c55e980 data-v-608a15d2><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-7a16a9d0 data-v-64f3c72c><span class="container" data-v-64f3c72c><span class="top" data-v-64f3c72c></span><span class="middle" data-v-64f3c72c></span><span class="bottom" data-v-64f3c72c></span></span></button></div></div></div></div><div class="divider" data-v-7a16a9d0><div class="divider-line" data-v-7a16a9d0></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-3b5ac462 data-v-3a3529ab><div class="container" data-v-3a3529ab><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-3a3529ab data-v-0638e338><button data-v-0638e338>回到顶部</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-3b5ac462 data-v-ac4c840c><div class="VPDoc" data-v-ac4c840c data-v-aa9d3751><!--[--><!--]--><div class="container" data-v-aa9d3751><!----><div class="content" data-v-aa9d3751><div class="content-container" data-v-aa9d3751><!--[--><!--]--><main class="main" data-v-aa9d3751><div style="position:relative;" class="vp-doc _website_tech_javascript_" data-v-aa9d3751><div><h1 id="javascript" tabindex="-1">JavaScript <a class="header-anchor" href="#javascript" aria-label="Permalink to &quot;JavaScript&quot;">​</a></h1><p>JavaScript 文档列表，点击任意条目即可进入对应 md 文件阅读。</p><!--[--><h2 id="文件列表" tabindex="-1" data-v-69c8db37>文件列表 <a class="header-anchor" href="#文件列表" aria-hidden="true" data-v-69c8db37></a></h2><div class="m-nav-links" data-v-69c8db37><!--[--><a class="m-nav-link" href="/website/tech/javascript/00-重点知识总结" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="00-重点知识总结" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_00-重点知识总结" class="title" data-v-4cce99de>00-重点知识总结</h5></div><p class="desc" data-v-4cce99de>1. js语法基础 &amp;ZeroWidthSpace;
+1.1 运算符 &amp;ZeroWidthSpace;
+1. 算术运算符 &amp;ZeroWidthSpace;
+​ + - * / % ++ --
+js+: 只要一个操作数是字符串，则执行拼接运算，只有两个操作数都是数值型，才执行加法运算
+&#39;a&#39; * 8  -&gt;  NaN
+&#39;8&#39; * &#39;7&#39; -&gt; 56
+60 % 7 -&gt; 4
+var num = 9; num++
+123452. 比较运算符 &amp;ZeroWidthSpace;
+​ &amp;gt; &amp;gt; = &amp;lt; &amp;lt;= ==（等于） != ===(全等) !==
+js运算结果一定是布尔值
+if (score &gt; 60 &amp;#x26;&amp;#x26; score &amp;#x3C;=75){}
+== 和 === 区别：  7==&#39;7&#39; -&gt; true   7===&#39;7&#39; -&gt;false
+1233. 逻辑运算符 &amp;ZeroWidthSpace;
+******​ &amp;amp;&amp;amp; || ！
+js运算结果一定是布尔值
+&amp;#x26;&amp;#x26;：
+||：
+！(一元运算符)：  !true -&gt; false   !false -&gt; true
+12344. 赋值运算符 &amp;ZeroWidthSpace;
+​ = += -= *= /= %=
+jsvar num = 13
+num %= 4  -&gt; num = num % 4  -&gt; num = 1
+125. 运算符优先级 &amp;ZeroWidthSpace;
+js算术 &gt; 比较 &gt; 逻辑  &gt; 赋值
+var score = 60
+var result = !(score + 3 &gt; 60 &amp;#x26;&amp;#x26; score &amp;#x3C;=75)  -&gt; false
+1231.2 数据类型 &amp;ZeroWidthSpace;
+1. 总结js的数据类型 &amp;ZeroWidthSpace;
+
+
+js数据类型分两大类
+
+
+typeof运算符： 检测数据类型
+
+
+js    1. 基本数据类型5个 (简单数据类型)  string ,number,boolean,undefined, null
+        typeof &#39;aa&#39;   // string
+        typeof 11      // number
+        typeof true    //boolean
+        typeof undefined  //undefined
+        typeof null      // object(非常特殊)
+
+    2. 引用数据类型2个 (对象数据类型)  数组和对象
+        (1) 数组
+            var arr = [&#39;23&#39;,45, true]
+            console.log(arr[1])
+
+            typeof arr   // object
+
+        (2) 对象
+            var obj = {
+                name: &#39;Mike&#39;,
+                age: 23
+            }
+            console.log(obj.age)
+            console.log(obj[&quot;age&quot;])
+
+            typeof obj   // object
+12345678910111213141516171819202122232. 类型转换 &amp;ZeroWidthSpace;
+
+类型转换工具
+Number()
+parseInt()
+parseFloat()
+
+js//
+1</p></article></a><a class="m-nav-link" href="/website/tech/javascript/01-JavaScript基础-变量声明-打印-数据类型" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="01-JavaScript基础-变量声明-打印-数据类型" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_01-javascript基础-变量声明-打印-数据类型" class="title" data-v-4cce99de>01-JavaScript基础-变量声明-打印-数据类型</h5></div><p class="desc" data-v-4cce99de>1 JavaScript的使用方式 &amp;ZeroWidthSpace;
+1.1 JavaScript的引入方式 &amp;ZeroWidthSpace;
+1.1.1 JS代码直接写在script标签中 &amp;ZeroWidthSpace;
+javascript&amp;#x3C;script&gt;console.log(&#39;Hello World!&#39;);&amp;#x3C;/script&gt;
+11.1.2 JS代码单独存放在JS文件中 &amp;ZeroWidthSpace;
+使用单独的JavaScript文件，可以将HTML和JavaScript代码解耦，但是在做练习的时候建议使用1.1提供的方法。正常项目时应该单独存放在不同的文件中。
+js/index.js
+javascript// JavaScript代码应该存放在这个位置
+console.log(&#39;Hello World&#39;)
+12index.html
+html&amp;#x3C;!DOCTYPE html&gt;
+&amp;#x3C;html lang=&quot;en&quot;&gt;
+  &amp;#x3C;head&gt;
+    &amp;#x3C;meta charset=&quot;UTF-8&quot; /&gt;
+    &amp;#x3C;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &amp;#x3C;title&gt;Document&amp;#x3C;/title&gt;
+  &amp;#x3C;/head&gt;
+  &amp;#x3C;body&gt;
+    &amp;#x3C;!-- script标签最好添加到body闭合标签之前 --&gt;
+    &amp;#x3C;script src=&quot;./js/index.js&quot;&gt;&amp;#x3C;/script&gt;
+  &amp;#x3C;/body&gt;
+&amp;#x3C;/html&gt;
+1234567891011121.2 JavaScript注释方式 &amp;ZeroWidthSpace;
+1.2.1 单行注释 &amp;ZeroWidthSpace;
+javascript// 单行注释
+11.2.2 多行注释 &amp;ZeroWidthSpace;
+javascript/*
+	多行注释
+  多行注释
+  多行注释
+*/
+12345javascript// console.log(&#39;hello&#39;);// 这行代码不会被编译
+/*
+	console.log(&#39;world&#39;);//这块代码不会被编译
+*/
+
+console.log(&#39;你好世界&#39;) // 这里在控制台打印  你好世界
+123456</p></article></a><a class="m-nav-link" href="/website/tech/javascript/02-运算符" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="02-运算符" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_02-运算符" class="title" data-v-4cce99de>02-运算符</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/03-分支结构-循环结构" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="03-分支结构-循环结构" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_03-分支结构-循环结构" class="title" data-v-4cce99de>03-分支结构-循环结构</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/04. 函数" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="04. 函数" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_04-函数" class="title" data-v-4cce99de>04. 函数</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/05-数组和对象" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="05-数组和对象" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_05-数组和对象" class="title" data-v-4cce99de>05-数组和对象</h5></div><p class="desc" data-v-4cce99de>数组 &amp;ZeroWidthSpace;
+1 为什么使用数组 &amp;ZeroWidthSpace;
+之前我们说过变量 ，但是变量一次只能使用一个值 ，在实际工作中 ，我们在制作网页的过程中 ，接收来自后台返回的数据可不能是一个一个的 ，那样会不会太麻烦了 ，事实上后台返回给我们的数据都是一组一组或者一对象的形式包含很多组数据 .
+当我们需要表示一组数据，或者叫做一次性定义很多相似的数字或变量时，就需要使用数组，如：表示一个班级学生的成绩， 一年十二个月的销售数据等等。
+2 数组的概念 &amp;ZeroWidthSpace;
+数组就是一组数据的集合。其中的每个数据被称作元素，在数组中可以存放任意类型的元素。数组是一种将一组数据存储在单个变量名下的方式。
+2.1 数组的声明 &amp;ZeroWidthSpace;
+三种声明方式：
+1、通过new运算符创建数组
+javascriptvar arr = new Array(10, 20, true, &#39;hello&#39;)
+12、省略new运算符创建数组
+javascriptvar arr = Array(10, 20, true, &#39;hello&#39;)
+13、直接通过常量赋值 （JS一般使用中括号[]表示数组）
+javascriptvar arr = [10, 20, true, &quot;hello”];
+1【注】下面两种方法，传入参数只有一个，并且是数字的时候，这个数字表示声明的数组的长度。
+javascriptvar arr = new Array(10)
+var arr = Array(10)
+122.2 数组的长度 &amp;ZeroWidthSpace;
+比喻：带同学们去外地玩，订房间。
+订了多少个房间，就是数组的长度。
+每一个房间对应的是数组的一个数据，像这样的数据叫做数组元素。
+数组的元素个数 arr.length
+2.3 数组的下标 &amp;ZeroWidthSpace;
+每个房间都有编号。
+数组中的数据是按次序排列的。每个值的位置都有编号（从0开始）。房间号就对应数组的下标。
+下标又叫做索引，即元素的序号，从0开始，下标最大取值是：数组的长度 length - 1。下标可以是表达式或变量。
+2.4 访问数组的元素 &amp;ZeroWidthSpace;
+去某个房间找谁玩，通过房间号查找。访问数组元素，通过下标去访问。
+javascriptarr[0] //表示数组的第一个元素，0是下标，也叫索引
+arr[1] //表示数组的第二个元素，1是下标
+122.5 随机数 &amp;ZeroWidthSpace;
+javascriptMath.random() //随机 [0,1)
+//随机0~9的整数
+parseInt(Math.random() * 10)
+123通过循环给数组每个元素赋随机数。
+javascriptfor (var i = 0; i &amp;#x3C; 10; i++) {
+  arr[i] = Math.random()
+}
+1232.6 数组的遍历 &amp;ZeroWidthSpace;
+普通for循环 &amp;ZeroWidthSpace;
+javascriptfor (var i = 0; i &amp;#x3C; 5; i++) {
+  document.write(arr[i])
+}
+123for...in循环 &amp;ZeroWidthSpace;
+for...in 语句用于遍历数组或者对象的属性（对数组或者对象的属性进行循环操作）
+for in得到数组的下标
+javascriptfor (var i in arr) {
+  document.write(arr[i])
+}
+123区别： &amp;ZeroWidthSpace;
+for in不需要每次都判断。
+3 数组的方法 &amp;ZeroWidthSpace;
+push &amp;ZeroWidthSpace;
+格式：数组.push(参数1, 参数2...);
+功能：给数组的末尾添加元素。
+返回值：插完元素以后数组的长度。
+pop &amp;ZeroWidthSpace;
+格式：数组.pop()
+参数：没有参数
+返回值：取下一个元素
+功能：从数组末尾取下一个元素
+shift() &amp;ZeroWidthSpace;
+格式：数组.shift()
+参数：没有参数
+功能：从数组的头部取下一个元素
+返回值：取下的元素
+unshift() &amp;ZeroWidthSpace;
+格式：数组.unshift(参数1, 参数2...)
+功能：从数组的头部插入元素
+返回值：插完元素以后数组的长度。
+concat() &amp;ZeroWidthSpace;
+格式：数组.concat(数组，数组...)
+功能：
+1.拷贝原数组，生成原数组
+2.合并数组。
+返回值：返回新数组，原数组不会改变。
+【注】传入的如果为数组，将数组的元素单独拆分出来，合并到新数组中。
+slice() &amp;ZeroWidthSpace;
+功能：获取当前数组的指定区域元素[start,end)(含头不含尾)，生成新数组。
+格式：数组.slice(start,end)
+返回值：新数组，原数组不会发生改变。
+splice() &amp;ZeroWidthSpace;
+格式：数组.splice(start,length,数据1...)
+参数：
+​ start 开始截取的位置
+​ length 截取的长度
+​ 第三个参数开始：在start位置开始，插入新元素。
+功能：可对数组中的元素进行新增，修改，删除;
+join() &amp;ZeroWidthSpace;
+格式：数组.join(字符串)
+功能：将数组中的元素，用传入的拼接符，拼接成一个字符串
+返回值：拼接好的字符串。
+reverse() &amp;ZeroWidthSpace;
+该方法用来反转数组（前边的去后边，后边的去前边）
+该方法会直接修改原数组
+javascriptvar arr = [true, &#39;hello&#39;, 100]
+arr.reverse()
+alert(arr)
+123sort &amp;ZeroWidthSpace;
+功能：数组中的元素进行排序格式：数组.sort() 默认从小到大排序，按照Unicode编码进行排序参数：一个函数，代表要怎么去进行排序（固定用法）
+javascriptvar arr = [1, 10, 20, 15, 25, 5]
+arr.sort(function (value1, value2) {
+  return value1 - value2
+})
+1234indexOf() &amp;ZeroWidthSpace;
+​ 格式：数组.index(item, start); 参数： item 任意的数据 start 下标 可以不传入，默认是0 功能：在数组中查找第一次出现item元素下标，从start开始去查找 返回值： -1 没有查找到 &amp;gt;=0 查找到的元素的下标。
+forEach() &amp;ZeroWidthSpace;
+javascriptvar arr = [2, 3, 4, 5, 6, 7]
+arr.forEach(function (item, index, arr) {
+  //三个参数分别代表 item 当期遍历到的元素 index 当前遍历到的下标 arr 数组本身
+})
+12344 排序方法 &amp;ZeroWidthSpace;
+4.1 冒泡排序 &amp;ZeroWidthSpace;
+规则：从左到右，数组中相邻的两个元素进行比较，将较大的放到后面。
+规律：冒泡排序每一轮排序，都可以找出一个较大的数，放在正确的位置。
+比较的轮数 = 数组长度 - 1;
+每一轮比较的次数 = 数组长度 - 当前的轮数
+javascriptvar arr = [9, 8, 7, 6, 5, 4] //从小到大
+for (vari = 0; i &amp;#x3C; arr.length - 1; i++) {
+  //每一轮比较的次数
+  for (var j = 0; j &amp;#x3C; arr.length - (i + 1); j++) {
+    if (arr[j] &gt; arr[j + 1]) {
+      //交换两个数位置
+      var tmp = arr[j]
+      arr[j] = arr[j + 1]
+      arr[j + 1] = tmp
+    }
+  }
+}
+1234567891011124.2 选择排序 （只需要看懂即可） &amp;ZeroWidthSpace;
+类似：打擂台
+规则：选出一个位置，这个位置上的数，和后面所有的数进行比较，如果比较出大小就交换两个数位置。
+规律：每一轮都能选出一个最小的数，放在正确的位置。
+比较的轮数 = 数组长度 - 1;
+每一轮比较的次数 = 数组长度 - 当前的轮数
+javascriptvar arr = [9, 8, 7, 6, 5, 4]
+for (var i = 0; i &amp;#x3C; arr.length - 1; i++) {
+  //被比较的数的下标
+  for (var j = i + 1; j &amp;#x3C; arr.length; j++) {
+    if (arr[i] &gt; arr[j]) {
+      var tmp = arr[i]
+      arr[i] = arr[j]
+      arr[j] = tmp
+    }
+  }
+}
+alert(arr)
+1234567891011125 二维数组 &amp;ZeroWidthSpace;
+数组中的元素为数组时，被称为二维数组。
+6 练习 &amp;ZeroWidthSpace;
+1、将一个字符串数组输出为|分割的形式，比如“千古|宿敌|素颜”。使用两种方式实现。
+const arr = [&quot;千古&quot;, &quot;宿敌&quot;, &quot;素颜&quot;];
+const result = arr.join(&quot;|&quot;);
+console.log(result);
+1232、将一个字符串数组的元素的顺序进行反转，使用两种种方式实现。提示：第i个和第length-i-1个进行交换。
+方法1
+const arr = [&quot;千古&quot;, &quot;宿敌&quot;, &quot;素颜&quot;];
+arr.reverse();
+console.log(arr); // 输出: [ &#39;素颜&#39;, &#39;宿敌&#39;, &#39;千古&#39; ]
+方法2
+const arr = [&quot;千古&quot;, &quot;宿敌&quot;, &quot;素颜&quot;];
+for (let i = 0, j = arr.length - 1; i &amp;#x3C; j; i++, j--) {
+    [arr[i], arr[j]] = [arr[j], arr[i]]; // 交换元素
+}
+console.log(arr); // 输出: [ &#39;素颜&#39;, &#39;宿敌&#39;, &#39;千古&#39; ]
+123456789103、针对工资的数组[1500,1200,2000,2100,1800]，把工资超过2000的删除。
+const arr = [1500, 1200, 2000, 2100, 1800];
+console.log(arr.filter((item) =&gt; item &amp;#x3C; 2000));
+124、给你一个数组，去掉一个数组中的重复元素。
+javascript//创建一个新数组，循环遍历，只要新数组中有老数组的值，就不用再添加了。
+var arr = [1, 2, 3, 4, 5, 2, 3, 4]
+var newArr = []
+for (var i = 0; i &amp;#x3C; array.length; i++) {
+  //开闭原则
+  var bool = true
+  //每次都要判断新数组中是否有旧数组中的值。
+  for (var j = 0; j &amp;#x3C; newArr.length; j++) {
+    if (array[i] === newArr[j]) {
+      bool = false
+    }
+  }
+  if (bool) {
+    newArr[newArr.length] = array[i]
+  }
+}
+123456789101112131415165、有一个从小到大排好序的数组。现输入一个数，要求按原来的规律将它插入数组中[2,3,4,56,67,98] //63 2,3,4,56,63,67,98
+javascriptvar arr = [2, 3, 4, 56, 67, 98]
+var num = 63
+for (var i = 0; i &amp;#x3C; arr.length; i++) {
+  if (arr[i] &gt; num) {
+    arr.splice(i, 0, num)
+    break
+  }
+}
+12345678对象 &amp;ZeroWidthSpace;
+1 引用类型 &amp;ZeroWidthSpace;
+JS中数据类型String，Number，Boolean，Null，Undefined
+以上这五种类型属于基本数据类型，以后我们看到的值只要不是上边的5种，全都是对象。
+基本数据类型都是单一的值
+javascript&quot;hello&quot; 123 true
+1值和值之间没有任何的联系。
+在JS中来表示一个人的信息，如果使用基本数据类型的数据，我们所创建的变量都是独立，不能成为一个整体。
+例子：飞机安检时，都需要将个人物品放置在一个小盒子里。
+2 什么是对象 &amp;ZeroWidthSpace;
+2.1 现实生活中的对象 &amp;ZeroWidthSpace;
+万物皆对象，对象是一个具体的事物，是一种看得见、摸得着的东西。一个具体的事物就会有行为和特征。举例： 一部车，一个手机
+手机的属性：颜色、重量、屏幕尺寸。
+手机的方法：打电话、发短信、看视频、听音乐。
+2.2 JavaScript中的对象 &amp;ZeroWidthSpace;
+JavaScript中的对象其实就是生活中具体事物的一个抽象。
+JavaScript的对象是无序属性的集合。
+​ 其属性可以包含基本值、对象或函数。对象就是一组没有顺序的值。我们可以把JavaScript中的对象想象成键值对，其中值可以是数据和函数。
+对象的行为和特征
+​ 特征</p></article></a><a class="m-nav-link" href="/website/tech/javascript/06-内置对象" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="06-内置对象" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_06-内置对象" class="title" data-v-4cce99de>06-内置对象</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/07_DOM操作" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="07_DOM操作" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_07-dom操作" class="title" data-v-4cce99de>07_DOM操作</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/08_获取元素常见的尺寸" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="08_获取元素常见的尺寸" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_08-获取元素常见的尺寸" class="title" data-v-4cce99de>08_获取元素常见的尺寸</h5></div><p class="desc" data-v-4cce99de>1. 获取元素常见的尺寸 &amp;ZeroWidthSpace;
+我们在网页上通常要获取到元素的尺寸，可以从样式入手，用getComputedStyle获取。但是因为带的有单位，并且获取时不方便。所以我们可以使用其他操作
+常见尺寸获取 &amp;ZeroWidthSpace;
+clientWidth / clientHeight &amp;ZeroWidthSpace;
+元素padding + width / padding + height
+offsetWidth / offsetHeight &amp;ZeroWidthSpace;
+获取元素的border + padding + width / border + padding + height
+能够最精确的获取到元素所占的空间
+
+注意结果和实际不符，差1px, 是因为win10系统， 在&amp;quot;设置&amp;quot;-&amp;quot;屏幕&amp;quot;-&amp;quot;缩放&amp;quot;中设置为推荐比例即可
+
+offsetLeft / offsetTop &amp;ZeroWidthSpace;
+元素距离其offsetParent的边框内部的距离
+offsetParent &amp;ZeroWidthSpace;
+绝对定位元素的祖先元素中，最近哪个元素有定位属性，这个元素就是它的offsetParent
+scrollWidth / scrollHeight &amp;ZeroWidthSpace;
+整体内容高度包含padding值，不包含border，内容溢出才会有所改变，不溢出，则和clientWidth / clientHeight一样。前者不常用。
+document.documentElement.clientHeight 窗口高度
+document.documentElement.scrollHeight 页面高度（没有滚动条时和窗口高度相同，有滚动条时大于窗口高度）
+scrollLeft / scrollTop 可读可写 &amp;ZeroWidthSpace;
+
+
+element.scrollTop 元素滚动条偏移值
+
+
+document.documentElement.scrollTop : 窗口滚动条的偏移值
+
+
+display:none 和 visibility:hidden的区别 &amp;ZeroWidthSpace;
+前者消失，无法用js获取其尺寸，后者不可见，还占位，但不会遮盖其他元素。js可以正常获取对应的尺寸。
+getBoundingClientRect()方法 &amp;ZeroWidthSpace;
+
+
+Element.getBoundingClientRect() 方法返回元素的大小及其相对于视口的位置
+拥有left, top, right, bottom, x, y, width, 和 height这几个以像素为单位的只读属性用于描述整个边框。除了width 和 height 以外的属性是相对于视图窗口的左上角来计算的。
+由于兼容性问题，尽量仅使用 left, top, right, 和 bottom.属性是最安全的
+
+
+document.documentElement.getBoundingClientRect() 方法返回视口相关的数据
+
+
+2. 楼层导航案例中涉及的知识点 &amp;ZeroWidthSpace;
+2.1 如何把伪数组转换为真数组 &amp;ZeroWidthSpace;
+jslet contentList = document.querySelectorAll(&#39;.main .content&#39;)
+//报错，因为contentList是伪数组，不能使用map方法
+let arr = contentList.map()
+123解决方案： 使用ES6语法的展开运算符 &amp;quot;...&amp;quot;
+jslet contentList = document.querySelectorAll(&#39;.main .content&#39;)
+// 等价于把contentList中的每个dom对象取出来，存入一个新数组中   [dom1,dom2,dom3,dom4]
+listHeight = [...contentList].map((item) =&gt; item.offsetTop)
+1232.2 如何给同一个事件绑定多个事件处理程序 &amp;ZeroWidthSpace;
+注意： 如果用addEventListener给同一dom相同事件多次绑定相同的处理程序，则事件发生时，事件处理程序会执行多次。
+js//只能执行最后一个
+dom.onclick = function () {}
+dom.onclick = function () {}
+123js// 可以执行所有
+window.addEventListener(&#39;scroll&#39;, function () {
+  console.log(1)
+})
+window.addEventListener(&#39;scroll&#39;, function () {
+  console.log(2)
+})
+12345672.3 offsetTop 在循环中带来的性能问题 &amp;ZeroWidthSpace;
+在一个循环中反复取得一个元素的offsetTop值,事实上,在此代码中该元素的offsetTop值并不会变更,所以会存在不必要的性能损耗
+解决方案：
+提前在循环外部获取offetTop的值，不要把获取的过程放在循环内部
+2.4 比较操作DOM和操作数组的性能问题 &amp;ZeroWidthSpace;
+性能优化要注意的一点： 尽量减少dom操作的次数
+js//性能优化要注意的一点： 尽量减少dom操作的次数
+
+// 频繁使用dom操作实现1-10000数字的显示
+// console.time(&quot;操作DOM&quot;)
+// let box = document.querySelector(&quot;.box&quot;)
+// for (let i = 1; i &amp;#x3C;= 10000; i++){
+//     box.innerHTML +=  i + &#39; &#39;
+// }
+// console.timeEnd(&quot;操作DOM&quot;)
+123456789</p></article></a><a class="m-nav-link" href="/website/tech/javascript/09_定时器" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="09_定时器" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_09-定时器" class="title" data-v-4cce99de>09_定时器</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/10-js中的事件" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="10-js中的事件" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_10-js中的事件" class="title" data-v-4cce99de>10-js中的事件</h5></div><p class="desc" data-v-4cce99de>js中的事件 &amp;ZeroWidthSpace;
+DOM中的事件是一个很重要的东西，它可以让用户和浏览器之间进行交互，以此来实现人机交互效果。
+DOM事件 &amp;ZeroWidthSpace;
+DOM事件分为DOM0级事件和DOM2级事件。DOM0级其实不存在，我们把DOM最初的版本叫0级。在DOM2级的时候更新了一种新的事件绑定的方式，所以才有了所谓DOM0级和DOM2级事件。
+DOM事件在过去使用的过程中，语法很简单。
+绑定事件 &amp;ZeroWidthSpace;
+DOM0级事件绑定：
+jsDOM.on事件名 = function () {}
+
+// 该方法绑定时无法同时给同一个元素绑定多个相同的事件
+DOM.onclick = function () {}
+DOM.onclick = function () {} // 这个会覆盖上面的
+12345DOM2级事件绑定:
+js//isCapture在讲事件冒泡的环节再介绍
+// isCapture是布尔值，默认值是false
+DOM.addEventListener(&#39;事件名&#39;, 事件句柄, isCapture)
+
+// 一般这么写
+DOM.addEventListener(&#39;事件名&#39;, function () {}, false)
+123456移除事件 &amp;ZeroWidthSpace;
+DOM0级事件移除
+jsDOM.onclick = null
+1DOM2级事件移除
+jsDOM.removeEventListener(&#39;事件名&#39;, 事件句柄, isCapture)
+1举例
+jsfunction handler() {}
+
+DOM.addEventListener(&#39;事件名&#39;, handler, false)
+DOM.removeEventListener(&#39;事件名&#39;, handler, false)
+
+DOM.addEventListener(&#39;事件名&#39;, handler, true)
+DOM.removeEventListener(&#39;事件名&#39;, handler, true)
+1234567常用事件类型 &amp;ZeroWidthSpace;
+1. 窗口事件 &amp;ZeroWidthSpace;
+js// 当一个文档及其依赖的资源结束加载时触发
+window.onload = function () {}
+//当初始html文档完全加载并解析之后触发，无需等待样式、图片等结束
+window.addEventListener(&#39;DOMContentLoaded&#39;, function () {})
+// 监听窗口的滚动，当窗口滚动时触发
+window.onscroll
+// 监听窗口尺寸的改变，当窗口大小调整时触发
+window.onresize
+123456782. 鼠标事件 （只适用于PC端） &amp;ZeroWidthSpace;
+jsdom.onclick
+dom.ondblclick 双击事件
+dom.onmouseover
+dom.onmouseout
+dom.onmouseenter
+dom.onmouseleave
+dom.onmousedown 鼠标按下的时候触发的事件
+dom.onmouseup 鼠标弹起触发的事件
+dom.onmousemove 鼠标移动
+1234567893. 键盘事件 &amp;ZeroWidthSpace;
+jsonkeydown 键盘按键被按下发生的事件
+
+onkeyup 键盘按键被松开发生的事件
+
+onkeypress 键盘按键按下并松开发生的事件 （主键区）
+
+oninput 事件在用户输入时触发
+12345674. 与表单相关的事件 &amp;ZeroWidthSpace;
+jsonchange
+onfocus
+onblur
+1235. 移动端事件 （只适用于移动端） &amp;ZeroWidthSpace;
+jsontouchstart 触摸开始
+ontouchmove 触摸后移动
+ontouchend 触摸结束
+onclick  单击
+1234jslet box = document.querySelector(&#39;.box&#39;)
+// box.ontouchstart = function(){
+//     console.log(&#39;ontouchstart&#39;)
+// }
+box.addEventListener(&#39;touchstart&#39;, function (e) {
+  //获取手指的位置
+  // console.log(e.touches[0].clientX)
+  console.log(&#39;ontouchstart1&#39;)
+})
+123456789移动端点击事件延迟 &amp;ZeroWidthSpace;
+
+延迟原因
+
+
+移动端浏览器在派发点击事件的时候，通常会出现300ms左右的延迟。
+原因: 移动端的双击会缩放导致click判断延迟。
+这是为了检查用户是否在做双击。为了能够立即响应用户的点击事件，才有了FastClick
+
+
+
+解决方案： 简单了解
+参考 ： https://www.likecs.com/show-307492379.html
+
+
+常用解决方案： 引入fastclick.js
+js&amp;#x3C;script src=&quot;./js/fastclick.js&quot;&gt;&amp;#x3C;/script&gt;
+1jsif (&#39;addEventListener&#39; in document) {
+  document.addEventListener(
+    &#39;DOMContentLoaded&#39;,
+    function () {
+      FastClick.attach(document.body)
+    },
+    false,
+  )
+}
+123456789
+
+事件流 &amp;ZeroWidthSpace;
+事件流决定在哪个阶段执行事件
+DOM2级事件标准事件流 &amp;ZeroWidthSpace;
+在标准的事件流中，先捕获，到达事件源(目标)元素，再冒泡。具体是在捕获阶段执行事件还是在冒泡阶段执行事件，需要看第三个参数是true还是false
+js// *******第三个参数默认值为false，一般用事件冒泡
+// 在冒泡阶段执行事件
+DOM.addEventListener(&#39;事件&#39;, function () {}, false)
+// 在捕获阶段执行事件
+DOM.addEventListener(&#39;事件&#39;, function () {}, true)
+12345什么是事件冒泡 (面试题) &amp;ZeroWidthSpace;
+在标准的事件流中，当我们触发一个元素的事件时，会经历三个阶段：
+
+捕获阶段，从document沿着DOM树向下捕获， 直到找到这个目标元素为止，
+目标阶段： 如果目标元素绑定的有该事件，则执行
+冒泡阶段： 之后从这个元素沿着DOM树向上冒泡，有相同事件的元素会执行对应元素上的事件，没有则继续冒泡，直到到document结束
+
+事件委托（事件代理） &amp;ZeroWidthSpace;</p></article></a><a class="m-nav-link" href="/website/tech/javascript/11-DOM节点的操作" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="11-DOM节点的操作" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_11-dom节点的操作" class="title" data-v-4cce99de>11-DOM节点的操作</h5></div><p class="desc" data-v-4cce99de>DOM节点的操作 &amp;ZeroWidthSpace;
+1. 简单了解节点的概念 &amp;ZeroWidthSpace;
+一个HTML文件可以看作是所有元素组成的一个节点树，各元素节点之间有级别的划分
+
+
+HTML文档根据节点作用，分为标签（元素）节点、文本节点、属性节点（不再提）和注释节点。
+js//简单了解
+1</p></article></a><a class="m-nav-link" href="/website/tech/javascript/12-图片懒加载的原理和代码实现" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="12-图片懒加载的原理和代码实现" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_12-图片懒加载的原理和代码实现" class="title" data-v-4cce99de>12-图片懒加载的原理和代码实现</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/13-AJAX" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="13-AJAX" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_13-ajax" class="title" data-v-4cce99de>13-AJAX</h5></div><p class="desc" data-v-4cce99de>AJAX &amp;ZeroWidthSpace;
+1. JSON数据 &amp;ZeroWidthSpace;
+JSON（JavaScript Object Notation, JS对象简谱）是一种轻量级的数据交换格式。它基于 ECMAScript（European Computer Manufacturers Association, 欧洲计算机协会制定的js规范）的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。JSON可以简单理解为JS中的数组和对象的集合
+js{&quot;name&quot;: &quot;张三&quot;}
+1js;[{ name: &#39;张三&#39; }, { name: &#39;李四&#39; }]
+1
+JSON本质是一个字符串，对象中的属性应该添加引号，而且必须是双引号。
+
+在JS中使用JSON时会涉及到两个概念：json对象和json字符串
+js//符合json规则的字符串即为json字符串
+&quot;{\&quot;name\&quot;: \&quot;张三\&quot;}&quot;
+12jsJSON.parse(JSON字符串) // 得到的就是一个对象
+JSON.stringify(JSON对象) // 得到的就是一个字符串
+122. 网络服务 &amp;ZeroWidthSpace;
+在我们进行ajax请求时，需要请求网络上的url。这里有几个概念
+
+method 请求方法
+
+GET、POST、PUT、DELETE、Patch (RestFul风格的API)
+
+URL地址
+
+我们要请求的地址，www.baidu.com就是个URL地址
+
+请求参数
+
+我们通过传递不同的参数，获得到不同的资源。具体参数的作用是什么，我们还需要和后台沟通。
+
+以上的三个东西，都是由后台提供好的文档，我们只需要在ajax特定的地方填入特定的内容即可。
+
+3. 什么是ajax &amp;ZeroWidthSpace;
+
+
+Ajax即Asynchronous Javascript And XML（异步JavaScript和XML）
+async 异步 sync 同步
+
+
+使用Ajax技术网页应用能够快速地将增量更新呈现在用户界面上，而不需要重载（刷新）整个页面，这使得程序能够更快地回应用户的操作。
+
+
+ajax最早是通过XMLHttpRequest对象生成的，后来在ES6提出了Fetch进行请求。但是一般我们使用ajax时，不会自己封装Ajax，会直接使用现成的ajax库——axios。
+
+
+4. ajax请求的实现 &amp;ZeroWidthSpace;
+想要发起ajax请求有很多方法，原生xhr或者fetch都可以，我们先了解xhr
+4.1 通过xhr对象实现ajax请求 &amp;ZeroWidthSpace;
+js// 新建xhr对象的实例，通过xhr的方法和属性实现服务器端数据的请求
+let xhr = new XMLHttpRequest()
+
+xhr.onload = function () {
+  // 我们请求到的结果，就是xhr.responseText
+  console.log(xhr.responseText)
+}
+
+xhr.open(
+  &#39;get&#39;,
+  &#39;https://sspai.com/api/v1/article/tag/special/page/get?limit=10&amp;#x26;offset=0&amp;#x26;created_at=1681804179&amp;#x26;tag=效率技巧&amp;#x26;search_type=1&#39;,
+)
+xhr.send()
+12345678910111213我们获取到的responseText是一个JSON字符串，使用时需要将其转换为JSON对象。
+jsJSON.parse(xhr.response)
+1查看请求结果 &amp;ZeroWidthSpace;
+
+请求成功后，可以在F12中的网络（network）里筛选出所有的ajax请求。然后下方就是所有的ajax请求列表
+
+标头 &amp;ZeroWidthSpace;
+点击请求的列表项, 可以显示标头请求中的请求头以及响应头信息，在这里只需要查看常规里的三个信息，就可以判断这个请求是否成功
+
+请求url
+请求方法
+HTTP状态码 200
+
+负载(payload) &amp;ZeroWidthSpace;
+有的浏览器显示，有的不显示
+指的是我们携带的参数。用来判断我们的参数是否传递正确
+预览 &amp;ZeroWidthSpace;
+就是请求的结果
+4.2 通过Fetch实现 &amp;ZeroWidthSpace;
+ES6中出现的替代xhr对象进行异步请求的一个对象。它默认是基于promise（以后讲）解决异步操作。fetch的用法很简单
+jsfetch(&#39;请求地址?参数&#39;, options)
+  .then((res) =&gt; res.json()) // 把请求到的结果转换为JSON对象 在我们接下来的例子中，这一步是完全固定的
+  .then((data) =&gt; {
+    // data就是我们请求到的结果
+  })
+12345Fetch实现GET请求 &amp;ZeroWidthSpace;
+jsfetch(
+  &#39;https://sspai.com/api/v1/article/tag/special/page/get?limit=10&amp;#x26;offset=0&amp;#x26;created_at=1681804179&amp;#x26;tag=%E6%95%88%E7%8E%87%E6%8A%80%E5%B7%A7&amp;#x26;search_type=1&#39;,
+)
+  .then((res) =&gt; res.json())
+  .then((res) =&gt; {
+    console.log(res)
+  })
+1234567Fetch实现POST请求 （现在先不要练） &amp;ZeroWidthSpace;
+jsfetch(&#39;http://localhost:3000/list&#39;, {
+  method: &#39;POST&#39;,
+  //请求头： contentType: 发送信息至服务器时内容编码类型，简单说告诉服务器请求类型的数据。
+  headers: {
+    &#39;Content-Type&#39;: &#39;application/json&#39;,
+  },
+  body: JSON.stringify({
+    name: &#39;Hubot&#39;,
+    login: &#39;hubot&#39;,
+  }),
+}).then((res) =&gt; {
+  console.log(res)
+})
+123456789101112134.3 通过axios库实现数据请求 &amp;ZeroWidthSpace;
+这是一个库！！！http请求库，使用时需要我们引入才能够使用。
+GET请求: 查询数据 &amp;ZeroWidthSpace;
+jsaxios
+  .get(url, {
+    params: {
+      参数名: 参数值,
+      参数名2: 参数值2,
+    },
+  })
+  .then((res) =&gt; {
+    // res.data就是对应的结果
+  })
+12345678910POST请求：添加数据 &amp;ZeroWidthSpace;
+jsaxios
+  .post(url, {
+    参数名1: 参数值1,
+    参数名2: 参数值2,
+  })
+  .then((res) =&gt; {
+    // res.data就是我们的结果
+  })
+12345678PUT请求: 修改全部数据 &amp;ZeroWidthSpace;
+JSaxios.put(url, {
+  参数名1: 参数值1,
+  参数名2: 参数值2
+}).then(res =&gt; {
+  // res.data就是我们的结果
+
+})
+1234567DELETE请求： 删除数据 &amp;ZeroWidthSpace;
+jsaxios
+  .delete(url, {
+    params: {
+      参数名: 参数值,
+      参数名2: 参数值2,
+    },
+  })
+  .then((res) =&gt; {
+    // res.data就是对应的结果
+  })
+123456789105. 了解接口文档 &amp;ZeroWidthSpace;
+我们和后台进行合作开发需要接口文档的支持。后台开发接口，前端调用接口。
+根据少数派的请求后台会提供下面的接口文档。
+5.1 获取文章列表接口 &amp;ZeroWidthSpace;
+请求地址 &amp;ZeroWidthSpace;
+https://sspai.com/api/v1/article/index/page/get
+请求方法 &amp;ZeroWidthSpace;
+GET
+请求参数 &amp;ZeroWidthSpace;
+?offset=10
+| 参数名 | 参数值         | 描述信息 |
+|</p></article></a><a class="m-nav-link" href="/website/tech/javascript/14-json-server的使用" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="14-json-server的使用" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_14-json-server的使用" class="title" data-v-4cce99de>14-json-server的使用</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/15-深拷贝" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="15-深拷贝" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_15-深拷贝" class="title" data-v-4cce99de>15-深拷贝</h5></div><p class="desc" data-v-4cce99de>深拷贝 &amp;ZeroWidthSpace;
+什么是深拷贝 &amp;ZeroWidthSpace;
+在Javascript中，对象的复制有两种方式： 浅拷贝和深拷贝。
+浅拷贝只拷贝内存地址，拷贝后的对象和原始对象引用同一个地址，所以修改拷贝后的对象会影响到原始对象。
+深拷贝是指将一个对象完全复制到另一个对象中，包括对象的所有属性和方法。与浅拷贝不同，深拷贝会递归地复制对象的所有属性和方法，直到所有属性和方法都被复制完毕。因此，深拷贝可以保证复制后的对象与原始对象完全独立，互不影响。
+如何实现深拷贝 &amp;ZeroWidthSpace;
+1. 使用扩展运算符 &amp;ZeroWidthSpace;
+只能实现第一层的深拷贝，不能实现深层级对象的深拷贝
+javascript//
+1</p></article></a><a class="m-nav-link" href="/website/tech/javascript/15-用charles抓包数据" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="15-用charles抓包数据" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_15-用charles抓包数据" class="title" data-v-4cce99de>15-用charles抓包数据</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/16-正则表达式" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="16-正则表达式" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_16-正则表达式" class="title" data-v-4cce99de>16-正则表达式</h5></div><p class="desc" data-v-4cce99de>正则表达式 &amp;ZeroWidthSpace;
+1. 正则表达式 &amp;ZeroWidthSpace;
+英文： Regular Expression
+
+正则表达式是具有特殊语法的字符串，用来表示指定字符或者字符串在另一个字符串中出现的情况。
+作用：正则表达式可用于所有文本搜索和文本替换的操作。
+
+2. 正则表达式的定义 &amp;ZeroWidthSpace;
+2.1 基于RegExp 对象的构造函数写法 &amp;ZeroWidthSpace;
+语法：new RegExp(pattern,attributes)
+
+pattern:是一个字符串，指定了正则表达式的模式
+attributes:修饰符，用以说明高级匹配模式的规则（可选参数，并且可以组合使用）
+g 执行一个全局匹配，简而言之，即找到所有的匹配，而不是在找到第一个之后就停止（global）
+i 执行不区分大小写的匹配 （ignore）
+
+jsvar str = &#39;welcome&#39;
+var re = new RegExp(&#39;a&#39;, &#39;i&#39;) //只会匹配字符串中出现的第一个字母a(不区分大小写)
+// test检索字符串中是否有指定的值。返回 true 或 false
+console.log(re.test(str))
+12342.2 字面量写法 &amp;ZeroWidthSpace;
+语法：/pattern/attribute
+
+参数: 参考创建RegExp对象里面的参
+
+jsvar re
+re = /a/ //只会匹配字符串中出现的第一个小写字母a
+re = /a/g //匹配字符串中出现的所有小写字母a
+re = /a/i //只会匹配字符串中出现的第一个大写A或者小写a
+re = /a/gi //只匹配字符串中出现的所有大写A或者小写a
+12345
+正则构造函数和字面量的区别： 在构造函数生成的正则中， 转义字符\ 要写两个， 而字面量中是一个
+
+###　3. 正则表达式的执行
+3.1 正则表达式对象的方法 &amp;ZeroWidthSpace;
+
+
+test方法
+检索字符串中是否有指定的值。返回 true 或 false。（用的最多）
+js// 语法： 正则.test( 要匹配的字符串 )
+let patt1 = /aBc/i //表示包含&#39;aBc&#39;字符串，并且忽略大小写
+let patt2 = new RegExp(&#39;ac&#39;, &#39;i&#39;) //表示包含&#39;ac&#39;字符串，并且忽略大小写
+let str = &#39;ddfabcfjdkabc&#39;
+let result1 = patt1.test(str)
+let result2 = patt2.test(str)
+console.log(&#39;result1&#39;, result1) //true
+console.log(&#39;result2&#39;, result2) //false
+12345678
+
+3.2 String 对象中支持正则表达式的方法 &amp;ZeroWidthSpace;
+
+
+string.match()
+找到一个或多个正则表达式的匹配（用的最多）
+js// match方法: 找到一个或多个正则表达式的匹配
+
+// 非全局匹配：  只找到符合条件的第一个
+// 全局匹配： 查找到所有符合条件的记录，并存入数组
+
+// 查找所有&quot;a数字b&quot;的字符串，统计个数
+let user = &#39;a1baaa2b    a6b&#39;
+// //查找到符合条件的第一个子字符串
+let result = user.match(/a[0-9]b/g)
+console.log(result)
+console.log(result[0])
+console.log(result.length)
+123456789101112
+讲完分组后可以再来看match最完整的用法
+
+如果正则不是全局匹配，并且没有分组(), 那么结果为数组，数组中只有一个元素，即正则匹配到的字符串
+
+​ 2. 如果正则不是全局匹配，但是有分组(),那么结果为数组，数组中第一个元素是整个正则匹配的部分，而数组中其它元素是反向引用的字符串
+​ 3. 如果正则是全局匹配，则结果为数组，存储所有正则匹配到的字符串，但不再存储反向引用的内容
+
+
+
+string.replace()
+替换与正则表达式匹配的子串（用的最多）
+注意：字符串的replace方法的第一个参数可以传入普通字符串还可以传入正则表达式
+js// replace方法 : 替换与正则表达式匹配的子串
+var user = &#39;i am Alice is my friealicend,Alice ... Alice,alice&#39;
+
+var result = user.replace(/Alice/, &#39;Rose&#39;)
+// var result = user.replace(/Alice/g,&#39;Rose&#39;)
+// var result = user.replace(/Alice/gi,&#39;Rose&#39;)
+
+console.log(result)
+12345678
+
+4. 正则表达式语法 &amp;ZeroWidthSpace;
+宽度 &amp;ZeroWidthSpace;
+正则表达式中一个字符是一个宽度，会和字符串中的对应的符合条件的字符尽心匹配，如：
+jslet reg = /a/
+let str = &#39;sva&#39;
+// reg就会匹配到a
+
+let reg = /aa/
+let str = &#39;svab&#39;
+// 这个不能匹配
+1234567如果我们要匹配的内容是一个范围 &amp;ZeroWidthSpace;
+使用[]表示一个范围，宽度为1
+jslet reg = /[abcdefghjklmnopqrstuvwxyz]/ // 虽然有26个字母，但是只匹配一个宽度
+let reg = /[a-z]/ // 如果是连贯的字母，就可以写a-xxx 如a-c表示 abc
+let reg = /[a-zA-Z]/
+let reg = /[a-cA-C_0-4]/
+1234####　如果表示不包含[]中的内容
+js;/[^a-c]/ // 不包含a-c
+1以什么开始 以什么结束 &amp;ZeroWidthSpace;
+为了确保我们匹配到的字符是一个完整没有其他不符合要求的字符，一般我们需要设置开始和结束的标志
+jslet reg = /^规则/
+let reg = /规则$/
+let reg = /^规则$/
+123将匹配宽度增加 &amp;ZeroWidthSpace;
+在我们进行匹配时，有很多时候会出现相同匹配情况，我们可以设置匹配宽度 {m, n}例如：
+QQ号是5-11位
+jslet qqReg = /^[1-9][0-9]{4,10}$/
+1数量可以有以下写法
+js{m, n} // m - n位
+{m} // 固定m位
+{m,} // 大于等于m位
+123\ 转义符 &amp;ZeroWidthSpace;
+我们正则表达式中，有些字符有自己的功能，我们就需要通过转义符来实现另外一种功能，例如
+
+d表示字母d，\d表示数字
+w表示字母w，\w表示 字母，数字，下划线
+\表示转义，\\表示普通的符号\
+
+字符大写 &amp;ZeroWidthSpace;
+如果一个元字符中字母大写，则一般表示小写的反义结果，例如
+\d表示数字 \D 表示非数字
+* + ? &amp;ZeroWidthSpace;
+
+* 表示 0次或者多次
++表示1次或者多次
+? 表示0次或者1次
+
+. 点字符 &amp;ZeroWidthSpace;
+.是除换行符外的任意字符
+如果我们想要匹配标点符号.我们需要\.
+\b \B &amp;ZeroWidthSpace;
+表示单词的边界，一般你用不上，例如，我想匹配我的className
+js&amp;#x3C;div class=&quot;box box1 box2&quot;&gt;&amp;#x3C;/div&gt;
+1\B表示非单词边界
+\d \D &amp;ZeroWidthSpace;
+\d等同于[0-9] 表示数字
+\D等同于[^0-9] 非数字
+\n \s \S \r &amp;ZeroWidthSpace;
+\n换行符 \r回车符 \t制表符
+\s空白符 \n \r \t \v都是空白符， 空格也是空白符
+
+了解一下
+\v 代表垂直制表符(Vertical Tab)。它是一种控制字符,用于控制打印机将打印头移动到下一个垂直制表位。在打印输出和文本显示中,垂直制表符会使打印机或者显示器将文本输出位置移动到下一个垂直制表位。
+
+\S表示非空白符
+\w \W &amp;ZeroWidthSpace;
+\w字母数字下划线 等同于 [a-zA-Z0-9_]
+\W表示非数字字母下划线[^a-zA-Z0-9_]
+\数字 &amp;ZeroWidthSpace;
+我们如果在正则表达式中有括号，会产生一个分组
+\1表示引用正则中第一个左括号的内容, 其实访问的就是$1中存储的字符串
+jslet reg = /(\d)\1/g // 等同于 \d前面匹配内容的引用
+let str = &#39;112234&#39; // 11 22
+
+let reg = /(\d)\1([a-z])\d\2/g // 等同于 \d前面匹配内容的引用
+let str = &#39;fffffff33a1a
+12345</p></article></a><a class="m-nav-link" href="/website/tech/javascript/17.BOM对象" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="17.BOM对象" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_17-bom对象" class="title" data-v-4cce99de>17.BOM对象</h5></div><p class="desc" data-v-4cce99de>什么是BOM对象 &amp;ZeroWidthSpace;
+js = ECMAScript （ES）+ BOM + DOM
+BOM（Browser Object Model）浏览器对象模型
+BOM 使 JavaScript 有能力与浏览器“对话”
+BOM尚无正式标准,但是浏览器已经（几乎）实现了 JavaScript 交互性方面的相同方法和属性（window）
+window对象 &amp;ZeroWidthSpace;
+
+表示浏览器窗口，所有浏览器都支持 window 对象
+所有 JavaScript 全局对象、全局函数以及全局变量均自动成为 window 对象的成员
+全局变量是 window 对象的属性
+全局函数是 window 对象的方法
+window对象是BOM模型中的顶层对象，因此所有BOM模型中的对象都是该对象的子对象
+HTML DOM 的 document 也是 window 对象的属性之一
+
+window对象的一部分方法 &amp;ZeroWidthSpace;
+
+alert()
+prompt()
+setInterval()
+setTimeout()
+scrollTo()
+
+window对象的子对象 &amp;ZeroWidthSpace;
+document对象 &amp;ZeroWidthSpace;
+文档对象
+dom操作的部分即为document对象的功能
+location对象 &amp;ZeroWidthSpace;
+location 对象用于获得当前页面的地址 (URL)，或把浏览器重定向到新的页面
+jswindow.location = &#39;https://www.qtummatrix.com/&#39;
+1属性 (了解) &amp;ZeroWidthSpace;
+| 属性名 | 说明                           |
+|</p></article></a><a class="m-nav-link" href="/website/tech/javascript/18.三种本地存储" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="18.三种本地存储" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_18-三种本地存储" class="title" data-v-4cce99de>18.三种本地存储</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/19.闭包" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="19.闭包" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_19-闭包" class="title" data-v-4cce99de>19.闭包</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/20-构造函数和原型链" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="20-构造函数和原型链" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_20-构造函数和原型链" class="title" data-v-4cce99de>20-构造函数和原型链</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/21-this指向&amp;js面向对象开发" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="21-this指向&amp;js面向对象开发" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_21-this指向-js面向对象开发" class="title" data-v-4cce99de>21-this指向&amp;js面向对象开发</h5></div><p class="desc" data-v-4cce99de>1. this指向 （高频面试题） &amp;ZeroWidthSpace;
+在 JavaScript 中,this 的指向是由函数的调用方式决定的,它指向调用函数的对象。this 的指向问题是 JavaScript 中非常重要但也常常令人困惑的一个概念。
+一般来说,this 指向有以下几种情况:
+1.1 全局环境中this &amp;ZeroWidthSpace;
+在全局函数中,this 指向全局对象 window
+jsfunction foo() {
+  console.log(this) //window
+}
+foo() // Window {...}
+12341.2 对象方法中this &amp;ZeroWidthSpace;
+在对象方法中,this 指向拥有该方法的对象
+jslet obj = {
+  name: &#39;obj&#39;,
+  func: function () {
+    console.log(this) //obj
+  },
+}
+obj.func() // obj
+12345671.3 构造函数中this &amp;ZeroWidthSpace;
+在构造函数中,或者原型方法中,this指向实例化对象
+jsfunction Foo() {
+  this.name = &#39;foo&#39;
+  this.say = function () {
+    console.log(this) // f
+  }
+}
+
+Foo.prototype.run = function () {
+  console.log(this) //f
+}
+let f = new Foo()
+f.say()
+console.log(f.name) // foo
+f.run()
+12345678910111213141.4. 事件绑定中this &amp;ZeroWidthSpace;
+事件绑定中的this: 指向绑定事件的对象
+jsdom.onclick = function () {
+  console.log(this) // dom对象
+}
+1231.5 定时器中this &amp;ZeroWidthSpace;
+定时器中的this, 指向window
+js...
+setTimeout(function(){
+    console.log(this)
+},1000)
+12341.6 箭头函数中this &amp;ZeroWidthSpace;
+箭头函数没有自己的 this,它会继承外层代码块的 this 值
+jslet obj = {
+  name: &#39;obj&#39;,
+  func: () =&gt; {
+    console.log(this.name)
+  },
+}
+obj.func() // undefined
+// 此处的this继承自全局对象window
+123456781.7 call / apply / bind手动绑定this &amp;ZeroWidthSpace;
+这三个方法可以手动绑定 this 的指向
+jsfunction foo() {
+  console.log(this)
+}
+
+let obj = {
+  name: &#39;obj&#39;,
+}
+
+foo.call(obj) // {name: &quot;obj&quot;}
+foo.apply(obj) // {name: &quot;obj&quot;}
+12345678910
+
+call和apply的区别
+call和apply的相同点： 1. 调用函数 2. 改变this
+不同点：传参的方式， call是一个一个传，而apply必须以数组的形式传
+
+
+jslet search = document.querySelector(&#39;.search&#39;)
+
+function add(x, y, z) {
+  console.log(arguments) //接收所有参数，伪数组
+  let result = x + y + z
+  this.innerHTML = result //希望this指向search
+}
+//如果有传参，则第一个参数为this指向，后面才是真正的参数
+add.call(search, 5, 7, 8)
+add.apply(search, [5, 7, 8, 7])
+12345678910
+
+bind方法
+bind并没有调用foo, 而是foo调用bind方法，bind方法的返回值是新函数，而新函数中的this被改变
+bind返回的新函数和foo一样，只是this指向不同
+
+
+jsfunction foo() {
+  console.log(1, this)
+}
+
+let obj = {
+  name: &#39;obj&#39;,
+}
+foo.bind(obj)() // {name: &quot;obj&quot;}
+12345678所以综上,this 的指向是根据函数调用方式的不同而产生变化的,这也是 JavaScript 中一个容易令人混淆的地方。理解 this 指向的不同情况,可以让我们在编程中游刃有余,避免出现错误。
+2. 面向对象和面向过程的区别 &amp;ZeroWidthSpace;
+
+面向对象和面向过程是软件开发的两种方法或思想
+面向过程是一件事“该怎么做“
+面向对象是一件事“该让谁来做”，然后那个“谁”就是对象，他要怎么做是他自己的事，我们只需指挥对象即可
+面向对象可以把程序中的关键模块都视为对象，而模块拥有属性及方法。这样我们如果把一些属性及方法封装起来，日后使用将非常方便，也可以避免繁琐重复的工作。
+
+JS// 面向过程 ：
+function eat(dog, food) {
+}
+eat(&#39;小黄&#39;, &#39;shi&#39;);
+1234js// 面向对象：
+function Dog() {
+  this.eat = function (food) {}
+}
+let dog = new Dog()
+dog.eat(&#39;shi&#39;)
+1234563. 面向对象的三个基本特征（三大特性） &amp;ZeroWidthSpace;</p></article></a><a class="m-nav-link" href="/website/tech/javascript/22-防抖&amp;节流&amp;回流&amp;重绘" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="22-防抖&amp;节流&amp;回流&amp;重绘" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_22-防抖-节流-回流-重绘" class="title" data-v-4cce99de>22-防抖&amp;节流&amp;回流&amp;重绘</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/javascript/ES6课件" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="ES6课件" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="es6课件" class="title" data-v-4cce99de>ES6课件</h5></div><p class="desc" data-v-4cce99de>认识ES6 &amp;ZeroWidthSpace;
+参考网址：《ES6 入门教程》: https://es6.ruanyifeng.com/  作者： 阮一峰
+
+ECMAScript 6.0（简称 ES6）是 JavaScript 语言的下一代标准，已经在 2015 年 6 月正式发布了
+提到 ES6 的地方，一般是指 ES2015 标准，但有时也是泛指“下一代 JavaScript 语言”：ES2015、ES2016、ES2017等
+最新ES2021即ES12
+
+1. 数组的扩展 &amp;ZeroWidthSpace;
+扩展运算符 &amp;ZeroWidthSpace;
+扩展运算符（spread）是三个点（...）
+javascriptconsole.log(...[1, 2, 3])
+// 1 2 3
+
+console.log(1, ...[2, 3, 4], 5)
+// 1 2 3 4 5
+12345扩展运算符应用 &amp;ZeroWidthSpace;
+
+扩展运算符取代apply方法的一个实际的例子，应用Math.max方法，简化求出一个数组最大元素的写法。
+
+javascript// apply方法实现
+let max = Math.max.apply(null, [1,2,3,4,5])
+
+// 扩展运算符实现
+let max = Math.max(...[1,2,3,4,5])
+12345
+复制数组
+
+javascriptconst a1 = [1, 2];
+const a2 = [...a1];
+12
+合并数组
+
+javascriptconst arr1 = [&#39;a&#39;, &#39;b&#39;];
+const arr2 = [&#39;c&#39;];
+const arr3 = [&#39;d&#39;, &#39;e&#39;];
+let newArr = [...arr1, ...arr2, ...arr3];
+1234
+与解构赋值结合使用
+
+扩展运算符可以与解构赋值结合起来，用于生成数组。
+javascriptconst [first, ...rest] = [1, 2, 3, 4, 5];
+1数组的迭代 &amp;ZeroWidthSpace;
+
+以下遍历（迭代）方法回调的两个形参分别为项目值和索引
+都需要return
+
+
+map()
+
+返回一个由回调函数的返回值组成的新数组。
+javascriptlet newArr = [1,2,3,4].map((item, index) =&gt; {return item * index})
+1
+filter()
+
+将所有在过滤函数中返回 true 的数组元素放进一个新数组中并返回。
+javascriptlet res = [10,4,5,2,1].filter((item, index) =&gt; {return item &gt;= 5})
+1
+some()
+
+如果数组中至少有一个元素满足测试函数，则返回 true，否则返回 false
+javascriptlet res = [5,6,7,8,9].some((item, index) =&gt; {return item &gt; 8})
+1
+every()
+
+如果数组中的每个元素都满足测试函数，则返回 true，否则返回 false。
+javascriptlet res = [5,6,7,8,9].every((item, index) =&gt; {return item &gt; 8})
+1
+reduce()
+
+从左到右为每个数组元素执行一次回调函数，并把上次回调函数的返回值放在一个暂存器中传给下次回调函数，并返回最后一次回调函数的返回值。
+javascript// 没有指定初始值
+let sum = [1,2,3,4,5].reduce((accumulator, currentValue,index) =&gt; {return accumulator + currentValue})
+// 15
+// 指定初始值
+let sum = [1,2,3,4,5].reduce((accumulator, currentValue,index) =&gt; {return accumulator + currentValue}, 10)
+// 25
+123456
+find() --ES6
+
+找到第一个满足测试函数的元素并返回那个元素的值，如果找不到，则返回 undefined。
+javascript[1, 4, -5, 10].find((n) =&gt; n &amp;#x3C; 0)
+// -5
+12
+findIndex() --ES6
+
+数组实例的findIndex方法的用法与find方法非常类似，返回第一个符合条件的数组成员的位置，如果所有成员都不符合条件，则返回-1
+javascript[1, 5, 10, 15].findIndex(function(value, index, arr) {
+  return value &gt; 9;
+}) // 2
+123数组新增方法 &amp;ZeroWidthSpace;
+
+Array.from()
+
+Array.from方法用于将两类对象转为真正的数组：类似数组的对象和可遍历的对象
+javascriptlet arrayLike = {
+    &#39;0&#39;: &#39;a&#39;,
+    &#39;1&#39;: &#39;b&#39;,
+    &#39;2&#39;: &#39;c&#39;,
+    length: 3
+};
+
+let arr2 = Array.from(arrayLike); // [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+12345678
+Array.of()
+
+Array.of方法用于将一组值，转换为数组。
+javascriptArray.of(3, 11, 8) // [3,11,8]
+Array.of(3) // [3]
+Array.of(3).length // 1
+123
+Array.includes()
+
+Array.prototype.includes方法返回一个布尔值，表示某个数组是否包含给定的值
+javascript[1, 2, 3].includes(2)     // true
+[1, 2, 3].includes(4)     // falses
+[1, 2, NaN].includes(NaN) // true
+1232. let: 声明块级作用域 &amp;ZeroWidthSpace;
+
+不存在声明提前的问题
+在同一个块中，不能重复声明
+通过let可获取正确的索引
+
+js    let arr = []
+    for (let i = 0; i &amp;#x3C; 6; i++){
+        arr[i] = function(){
+            console.log(i)
+        }
+    }
+    arr[3]()
+12345673. const: 声明常量 &amp;ZeroWidthSpace;
+
+const也是块级作用域
+声明的同时要赋值,不允许赋新值，不允许重复
+如果 const 保存的是数组/对象/函数等 空间的地址时, 只能保证 所保存的地址不变, 地址中的值, 仍可改变.
+
+
+什么是暂时性死区？
+ES6 规定，如果区块中存在 let 和 const 命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。总之，在代码块内，使用let命令声明变量之前，该变量都是不可用的。这在语法上，称为“暂时性死区”，也就是说使用let声明的变量都是先声明再使用 ，不存在变量提升问题
+
+4. 箭头函数 &amp;ZeroWidthSpace;
+箭头函数的基本语法：()=&amp;gt;{}
+jslet fun = ()=&gt;{}
+let fun = (x,y) =&gt; {}
+let fun = x =&gt; {}  //如果只有一个参数,()可以省
+let fun = (x,y) =&gt; console.log(x+y)  // 如果只有一条语句,{}可以省
+let fun = (x,y) =&gt; 3  // 如果只有一条return语句,return可以省略
+let fun = (x,y) =&gt; ({  // return对象
+        name: 1,
+        age: 2
+    })
+arr.forEach(()=&gt;{})
+setInterval(()=&gt;{},1000)
+1234567891011箭头函数的this指向 &amp;ZeroWidthSpace;
+箭头函数自身没有this,它内部的this是定义箭头函数所在环境的this
+jsbox.onclick = function(){
+    // console.log(this);
+    let i  = 0
+    setInterval(()=&gt;{
+        this.innerHTML = i;  //this是box
+        i++
+    },1000)
+}
+123456785. 对象字面量的简写 &amp;ZeroWidthSpace;
+jslet color = &#39;red&#39;,
+    age = 18;
+
+let obj = {
+    color,
+    age,
+    run(){
+        console.log(&#39;run&#39;)
+    }
+}
+123456789106. 类和继承 （重要） &amp;ZeroWidthSpace;
+定义父类
+jsclass Animal {
+    constructor(color){
+        this.type = &#39;animal&#39;;
+        this.eye = true;
+        this.color = color;
+    }
+    sound(){
+        console.log(&#39;sound&#39;)
+    }
+}
+
+var ani = new Animal(&#39;red&#39;)
+123456789101112定义子类
+jsclass Cat extends Animal{
+    constructor(nickname,age,color){
+        super(color);
+        this.nickname = nickname;
+        this.age = age;
+    }
+    eat(){
+        console.log(&#39;eat&#39;)
+    }
+}
+var cat = new Cat(&#39;小猫咪&#39;,5,&#39;white&#39;)
+cat.sound()
+1234567891011127. 模板字符串 &amp;ZeroWidthSpace;
+js    let color = &#39;red&#39;;
+    let str = `this is ${color}`
+128. 解构赋值 &amp;ZeroWidthSpace;
+ES6 允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）
+1. 数组的解构 &amp;ZeroWidthSpace;
+从数组中提取值，按照对应位置，对变量赋值
+本质上，这种写法属于“模式匹配”，只要等号两边的模式相同，左边的变量就会被赋予对应的值
+完全解构 &amp;ZeroWidthSpace;
+javascriptlet [a, b, c] = [1, 2, 3];
+a // 1    
+b // 2    
+c // 3
+
+let [foo, [[bar], baz]] = [1, [[2], 3]];
+foo // 1   
+bar // 2   
+baz // 3
+
+let [ , , foo] = [1, 2, 3]
+foo // 3
+123456789101112如果解构不成功，变量的值就等于undefined。
+javascriptlet [foo] = [];
+foo //  undefined
+let [bar, foo] = [1];
+bar // 1    
+foo // undefined
+12345不完全解构 &amp;ZeroWidthSpace;
+不完全解构，即等号左边的模式，只匹配一部分的等号右边的数组。这种情况下，解构依然可以成功。
+javascriptlet [x, y] = [1, 2, 3];
+x // 1
+y // 2
+
+let [a, [b], d] = [1, [2, 3], 4];
+a // 1
+b // 2
+d // 4
+12345678默认值 &amp;ZeroWidthSpace;
+解构赋值允许指定默认值。
+javascriptlet [foo = true] = [];
+foo // true
+
+let [x, y = &#39;b&#39;] = [&#39;a&#39;]; // x=&#39;a&#39;, y=&#39;b&#39;
+let [x, y = &#39;b&#39;] = [&#39;a&#39;, undefined]; // x=&#39;a&#39;, y=&#39;b&#39;
+12345默认值可以引用解构赋值的其他变量，但该变量必须已经声明
+javascriptlet [x = 1, y = x] = [];     // x=1; y=1
+let [x = 1, y = x] = [2];    // x=2; y=2
+let [x = 1, y = x] = [1, 2]; // x=1; y=2
+let [x = y, y = 1] = [];     // ReferenceError: y is not defined
+//报错原因是因为x用y做默认值时，y还没有声明
+123452. 对象的解构 &amp;ZeroWidthSpace;
+对象的解构与数组有一个重要的不同。数组的元素是按次序排列的，变量的取值由它的位置决定；而对象的属性没有次序，变量必须与属性同名，才能取到正确的值
+对象解构 &amp;ZeroWidthSpace;
+javascriptlet { bar, foo } = { foo: &#39;aaa&#39;, bar: &#39;bbb&#39; };
+foo // &quot;aaa&quot;
+bar // &quot;bbb&quot;
+
+let { baz } = { foo: &#39;aaa&#39;, bar: &#39;bbb&#39; };
+baz // undefined
+123456变量名重命名 &amp;ZeroWidthSpace;
+如果变量名与属性名不一致，必须写成下面
+对象的解构赋值的内部机制，是先找到同名属性，然后再赋给对应的变量。真正被赋值的是后者，而不是前者。
+javascriptlet { foo: baz } = { foo: &#39;aaa&#39;, bar: &#39;bbb&#39; };
+baz // &quot;aaa&quot;
+
+let obj = { first: &#39;hello&#39;, last: &#39;world&#39; };
+let { first: f, last: l } = obj;
+f // &#39;hello&#39;
+l // &#39;world&#39;
+1234567默认值 &amp;ZeroWidthSpace;
+对象的解构也可以指定默认值。
+javascriptvar {x = 3} = {};
+x // 3
+
+var {x, y = 5} = {x: 1};
+x // 1
+y // 5
+
+var {x: y = 3} = {};
+y // 3
+
+var {x: y = 3} = {x: 5};
+y // 5
+1234567891011123. 字符串解构 &amp;ZeroWidthSpace;
+字符串也可以解构赋值。这是因为此时，字符串被转换成了一个类似数组的对象
+javascriptconst [a, b, c, d, e] = &#39;hello&#39;;
+a // &quot;h&quot;
+b // &quot;e&quot;
+c // &quot;l&quot;
+d // &quot;l&quot;
+e // &quot;o&quot;
+1234564. 函数参数解构 &amp;ZeroWidthSpace;
+函数的参数也可以使用解构赋值。
+javascriptfunction add([x, y]){
+  return x + y;
+}
+
+add([1, 2]);
+123459. 展开运算符... &amp;ZeroWidthSpace;
+把数组或对象中的值打散，一个一个罗列
+常见案例 &amp;ZeroWidthSpace;
+
+向函数传参
+
+jslet arr = [34, 56, 78];
+
+function total(Ch, En, Math) {
+    return Ch + En + Math;
+}
+let result = total(...arr)
+123456
+把伪数组转为数组
+
+jslet divList = document.querySelectorAll(&quot;div&quot;);
+
+//伪数组可以调用 forEach,不能调用其它数组的遍历方法
+divList.forEach((el)=&gt;{
+    console.log(el);
+})
+
+var arr = [...divList].map((el)=&gt;{
+    return el.innerHTML
+})
+console.log(arr);
+1234567891011
+合并数组
+
+jslet arr1 = [1,2,3]
+let arr2 = [4,5]
+let arr3 = [...arr1,...arr2]
+123
+展开对象
+
+jslet option = {
+    el: &#39;#app&#39;,
+    autoplay: true
+}
+let custom = {
+    speed: 300,
+    duration: 1000,
+    ...option
+}
+console.log(custom)
+1234567891010. 默认参数 &amp;ZeroWidthSpace;
+jsfunction draw(radius=100){
+    console.log(radius);
+}
+draw(30)
+
+// 默认(default)参数必须设置在最后
+function draw(y,x=2,z=20){
+    console.log(x,y,z);
+}
+
+draw(1)
+draw(1,3)
+12345678910111211. 剩余参数 &amp;ZeroWidthSpace;
+js// 函数中的arguments是伪数组，...args是真数组
+function total(...args){
+    console.log(args);
+    console.log(args instanceof Array);  //true
+}
+total(23,45)
+12345612. Symbol数据类型-了解 &amp;ZeroWidthSpace;
+获取唯一的不会重复的变量，是ES6新增的基本数据类型
+js// Symbol的应用场景
+
+//第三方的库中定义了一个对象(对用户来讲是隐蔽的)
+
+let obj = {
+    name: &#39;23&#39;,
+    count() {
+        console.log(&#39;count&#39;);
+    }
+}
+
+// 对对象的功能进行扩展：希望用一个一定不会和对象已有属性重复的属性名
+
+let count = Symbol();
+
+obj[count] = function(){
+    console.log(&#39;数量&#39;);
+}
+
+obj.count()  // count
+obj[count]();  //数量
+
+//Reflect.ownKeys():  返回一个包含所有自身属性（不包含继承属性）的数组
+console.log(Reflect.ownKeys(obj))
+12345678910111213141516171819202122232413. Set类型的数据-了解 &amp;ZeroWidthSpace;
+是ES6中新增的集合的数据类型，用来存放数组。但是，数组的元素不允许重复
+不能通过索引获取值
+数组去重
+jsvar arr = [1,2,3,2,5,1]
+var result = [...new Set(arr)]
+console.log(result);
+123Set常用的API
+js1. add
+2. delete
+3. has
+4. clear
+1234jsvar set1 = new Set([]);
+    set1.add(&#39;a&#39;);
+    set1.add(&#39;b&#39;);
+    set1.add(&#39;c&#39;);
+    set1.add(&#39;b&#39;);
+
+    set1.delete(&quot;b&quot;)
+    set1.clear();
+
+    console.log(set1);
+    console.log(set1.has(&quot;d&quot;));
+1234567891011Set的遍历
+js var set2 = new Set([2,5,7,9])
+ set2.forEach((item)=&gt;{
+ 	console.log(item);
+ })
+
+for (let val of set2){
+	console.log(val);
+}
+1234567814. for...of语句 &amp;ZeroWidthSpace;
+
+for: （1）需要明确遍历次数  (2)不能遍历对象，可以遍历对象以外的集合 array,伪数组 （3）可以使用break和continue
+forEach: (1) 可以遍历对象以外的集合 （数组，Set, NodeList</p></article></a><a class="m-nav-link" href="/website/tech/javascript/自己整理的笔记" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="自己整理的笔记" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="自己整理的笔记" class="title" data-v-4cce99de>自己整理的笔记</h5></div><p class="desc" data-v-4cce99de>1.dom的基础语法
+1.1查找 HTML 元素 &amp;ZeroWidthSpace;
+js//通过id查询
+document.getElementById(id)	通过元素 id 来查找元素。
+12js//通过类名查询
+document.getElementsByClassName(name)	通过类名来查找元素。
+12js//通过标签查找
+document.getElementsByTagName(name)	通过标签名来查找元素。
+12js//通过选择器查找一个元素
+document.querySelector(CSS选择器)	通过CSS选择器选择一个元素。
+12js//通过css选择多个元素
+document.querySelectorAll(CSS选择器)	通过CSS选择器选择多个元素。
+12js//查看获取对象的属性
+console.log([对象])
+121.2获取html的值 &amp;ZeroWidthSpace;
+js//元素节点.innerText	获取 HTML 元素的内容。
+1js//元素节点.innerHTML	获取 HTML 元素的内容和标签。
+1js//元素节点.属性	获取 HTML 元素的属性值。
+1js//元素节点.getAttribute(attribute)	获取 HTML 元素的属性值。
+1js//元素节点.style.样式	获取 HTML 元素的行内样式值。
+1js//获取多个元素的时候，获取的是集合，伪数组，不能给集合添加内容
+//使用循环可以一次给集合添加内容，伪数组可以使用forEach
+121.2.1 访问元素的原生属性 &amp;ZeroWidthSpace;
+js//&amp;#x3C;div class=&quot;a1&quot; id=&quot;a2&quot;&gt;&amp;#x3C;/div&gt;
+//获取dom对象的原生属性
+let div = document.queryselector(&#39;div&#39;)
+console.log(div.className) //打印出div的class属性
+console.log(div.id)
+12345js//通过访问图片的src改变img的照片显示
+// &amp;#x3C;img src=&quot;./o1.ipg&quot; alt=&quot;&quot; /&gt;
+let img = document.queryselector(&#39;img&#39;)
+img.src = &#39;./02.jpg&#39;
+1234//给图片设置点击事件进行切换img的src的路径
+img addEventListener(&#39;click&#39;,function(){
+  img.src = &#39;./02.jpg&#39;
+})
+12341.2.2 设置元素的自定义属性 &amp;ZeroWidthSpace;
+js//设置dom对象的自定义属性的三种方法  方法一：
+//  &amp;#x3C;div class=&quot;box&quot;&gt;&amp;#x3C;/div&gt;
+box.setAttribute(&#39;color&#39;, &#39;red&#39;) //创建自定义属性
+console.log(box.getAttribute(&#39;color&#39;)) //访问自定义属性
+box.removeAttribute(&#39;color&#39;) //删除自定义属性
+console.log(box.getAttribute(&#39;color&#39;)) //打印结果为空
+123456js//  方法二
+//&amp;#x3C;div class=&quot;box&quot; data-color=&quot;blue&quot;&gt;1111&amp;#x3C;/div&gt;
+//  直接在标签的选择器位置加上 date-属性 = &#39;&#39;   添加自定义属性
+let box = document.querySelector(&#39;.box&#39;)
+console.log(box.dataset.color) //访问自定义属性
+12345js//方法三
+let box = document.querySelector(&#39;.box&#39;)
+box.type = &#39; color&#39; //给dom添加属性，
+console.log([box]) //查看属性释放添加上属性
+console.log(box.type) //访问属性
+123451.2.3设置dom元素的样式 &amp;ZeroWidthSpace;
+1.css样式的属性值一定是字符串
+2.复合属性例如background-color在js中要用驼峰命名 backgroundColor
+3.dom.style.属性名只能获取行内样式
+4.实际开发往往先设置行内样式，再根据业务逻辑获取样式的值
+1234html&amp;#x3C;div class=&quot;box&quot;&gt;22222&amp;#x3C;/div&gt;
+1jslet box = document.querySelector(&#39;.box&#39;)
+box.style.width = &#39;400px&#39; //设置元素的样式
+console.log(box.style.width) //得到的属性值是字符串
+//如果使用Number直接进行转化，会得到NAN
+//例如：console.log(Number(box.style.width))
+console.log(parseInt(box.style.width)) //字符串转换为Number
+1234561.3 判断是不是数组 &amp;ZeroWidthSpace;
+js//方法一  使用 instanceof方法检测
+const arr = [1, 2, 3, 4, 56]
+//通过instanceof 方法判断是否arr是不是数组，如果是返回ture,如果不是返回flase
+const isArr = arr instanceof Array
+console.log(isArr)
+12345js//方法二  使用数组的方法 Array.isArray(需要检测的数组)
+//如果是返回ture,如果不是返回flase
+const arr = [1, 2, 3, 4, 56]
+const newArr = Array.isArray(arr)
+console.log(newArr2)
+123451.4 控制集合中的dom元素 &amp;ZeroWidthSpace;
+js//集合是一个伪数组，可以使用for循环和forEach循环
+//
+12</p></article></a><!--]--></div><!--]--></div></div></main><footer class="VPDocFooter" data-v-aa9d3751 data-v-11e93384><!--[--><!--]--><div class="edit-info" data-v-11e93384><!----><div class="last-updated" data-v-11e93384><p class="VPLastUpdated" data-v-11e93384 data-v-46396952>最后更新于: <time datetime="2026-04-27T05:37:07.000Z" data-v-46396952></time></p></div></div><!----></footer><!--[--><!--[--><!--[--><!--]--><!--]--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-3b5ac462 data-v-285d3ca7><div class="container" data-v-285d3ca7><!----><!----></div></footer><!--[--><!--]--></div><!--]--></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"friends_index.md\":\"BCAkJ_YP\",\"index.md\":\"Dazr8Gld\",\"life_index.md\":\"Dq17JTE5\",\"life_posts_2026-04-26-普普通通的一天.md\":\"gnWzxfCi\",\"nav_index.md\":\"DKlmWesK\",\"projects_index.md\":\"DaDZzGEF\",\"reading_index.md\":\"X4gfrZbm\",\"tech_git_01-git使用总结.md\":\"6SJwVME4\",\"tech_git_02-团队协作的流程.md\":\"Bx5jmW6x\",\"tech_git_gitee.md\":\"D6V2Xxkm\",\"tech_git_git笔记.md\":\"SU-cO5gp\",\"tech_git_index.md\":\"Dd4ZTmqj\",\"tech_html_1.canvas绘图.md\":\"TGt2uima\",\"tech_html_2.svg矢量图.md\":\"CoXNaqry\",\"tech_html_3.地理定位-webgl版本.md\":\"IiCOFLS7\",\"tech_html_index.md\":\"CzENsegK\",\"tech_index.md\":\"5vtQAA18\",\"tech_javascript_00-重点知识总结.md\":\"BI9coLq5\",\"tech_javascript_01-javascript基础-变量声明-打印-数据类型.md\":\"BmAPecvS\",\"tech_javascript_02-运算符.md\":\"CHx2ordS\",\"tech_javascript_03-分支结构-循环结构.md\":\"CyufXYis\",\"tech_javascript_04. 函数.md\":\"BkkY2gSW\",\"tech_javascript_05-数组和对象.md\":\"B3XoU7qJ\",\"tech_javascript_06-内置对象.md\":\"DFoNRmSo\",\"tech_javascript_07_dom操作.md\":\"DN_f1j4C\",\"tech_javascript_08_获取元素常见的尺寸.md\":\"CgWk0FQC\",\"tech_javascript_09_定时器.md\":\"DSvea0gU\",\"tech_javascript_10-js中的事件.md\":\"Di_Nwzq-\",\"tech_javascript_11-dom节点的操作.md\":\"DxVpzP8Q\",\"tech_javascript_12-图片懒加载的原理和代码实现.md\":\"DECtuk5B\",\"tech_javascript_13-ajax.md\":\"DeggBbnu\",\"tech_javascript_14-json-server的使用.md\":\"D_d3PYcr\",\"tech_javascript_15-深拷贝.md\":\"Bs53OrPg\",\"tech_javascript_15-用charles抓包数据.md\":\"ByqGza6t\",\"tech_javascript_16-正则表达式.md\":\"B_FhdsiW\",\"tech_javascript_17.bom对象.md\":\"TeYK53i2\",\"tech_javascript_18.三种本地存储.md\":\"Cd2Plihn\",\"tech_javascript_19.闭包.md\":\"C5lo-tMo\",\"tech_javascript_20-构造函数和原型链.md\":\"B-IaANk9\",\"tech_javascript_21-this指向_js面向对象开发.md\":\"COJHtSEa\",\"tech_javascript_22-防抖_节流_回流_重绘.md\":\"whZFLUNd\",\"tech_javascript_es6课件.md\":\"DNnZHy_O\",\"tech_javascript_index.md\":\"QEb298w4\",\"tech_javascript_自己整理的笔记.md\":\"DtBKg8iK\",\"tech_node_01-nodejs基础（已看）.md\":\"vmCjScpk\",\"tech_node_02-nodejs的模块.md\":\"P3JtWf-_\",\"tech_node_03-express框架的使用.md\":\"oHL5_ND4\",\"tech_node_04-nodejs数据库访问.md\":\"BCoqR5Be\",\"tech_node_05-express的中间件和文件上传.md\":\"CtDkO8JV\",\"tech_node_06-结合express实现购物车逻辑前后端.md\":\"CqQPveje\",\"tech_node_07-登录注册和token的使用.md\":\"Dd0erGD6\",\"tech_node_08-websocket.md\":\"EQmwZBry\",\"tech_node_09-ejs和pug.md\":\"BWipSc9y\",\"tech_node_index.md\":\"WqX1isoA\",\"tech_node_nvm的使用.md\":\"C-iyqHPS\",\"tech_python_index.md\":\"CsucMkR7\",\"tech_python_python学习路线.md\":\"v2otwVxl\",\"tech_python_python的基础知识.md\":\"Ctgm3QzA\",\"tech_react_01-react的安装-jsx语法.md\":\"Bf6ZC8Fv\",\"tech_react_02-函数组件和react hooks.md\":\"d-88MskI\",\"tech_react_03-了解react中class组件.md\":\"D6oxcRgt\",\"tech_react_04-了解react的生命周期.md\":\"CR5Qk3mB\",\"tech_react_04-了解并记忆react的生命周期.md\":\"BOhGuB69\",\"tech_react_05-安装react devtools.md\":\"DOmE9zy_\",\"tech_react_06-react路由v6的使用.md\":\"CLYo-ji3\",\"tech_react_07-sass_antd-mobileui组件库实现swiper效果.md\":\"BccI-ibA\",\"tech_react_08-了解-受控组件和非受控组件.md\":\"DWI3kEs_\",\"tech_react_09-了解-react的纯函数和副作用的理解.md\":\"-mrZqUnA\",\"tech_react_10-react之性能优化.md\":\"D1ta4qPq\",\"tech_react_11-只背-不讲-redux状态管理.md\":\"C45mBK72\",\"tech_react_12-redux toolkit状态管理.md\":\"DdmjXEbq\",\"tech_react_13-react移动端适配的配置.md\":\"BbwcP3U4\",\"tech_react_14-老资料参考-后台管理项目开发流程.md\":\"hW-aQs3m\",\"tech_react_15-最新版-后台管理项目开发流程.md\":\"DbW_y4Ml\",\"tech_react_16-富文本编辑器wangeditor的使用.md\":\"DDqwAVi7\",\"tech_react_17-excel导入导出.md\":\"DYoEG3sf\",\"tech_react_18-权限管理之动态添加路由.md\":\"C11QliPv\",\"tech_react_index.md\":\"BlmTKBOg\",\"tech_react_react路由跳转.md\":\"DCsLkDXE\",\"tech_react_闭包，防抖，深拷贝，数组去重.md\":\"CWkbhWkH\",\"tech_typescript_01-typescript基础.md\":\"8xgfx6RS\",\"tech_typescript_02-typescript进阶.md\":\"b7jl3HgG\",\"tech_typescript_03-中后台项目-vue3_ts_vite_pinia-elment-plus.md\":\"iAaSFdrK\",\"tech_typescript_index.md\":\"DwwAjwVl\",\"tech_typescript_typescript应用.md\":\"DkxfXGno\",\"tech_typescript_typescript进阶.md\":\"Bz0UbLk0\",\"tech_typescript_装饰器.md\":\"_HWRgEyP\",\"tech_uniapp_1.uniapp框架.md\":\"BqlLVRvk\",\"tech_uniapp_2.uniapp中状态管理.md\":\"BLS2wVlg\",\"tech_uniapp_3.uview-plus的使用.md\":\"xVijVL7o\",\"tech_uniapp_4.app打包.md\":\"BBMzLdi6\",\"tech_uniapp_index.md\":\"DdJ5Wkfx\",\"tech_vue_01_vue模板语法-指令.md\":\"Bqol8skg\",\"tech_vue_02-响应式系统-method-computed-watch.md\":\"BBQkxMx3\",\"tech_vue_03_了解class和style的动态绑定.md\":\"BTjKEdI5\",\"tech_vue_04_vue3生命周期函数.md\":\"CKPqdCo_\",\"tech_vue_05_了解表单的输入绑定.md\":\"D5l0EB11\",\"tech_vue_06_vue项目搭建-单页面应用.md\":\"BaxaKW8q\",\"tech_vue_07_组件.md\":\"BsimXp7o\",\"tech_vue_07_组件1.md\":\"DYQpEooG\",\"tech_vue_09-vue3项目开发中注意事项.md\":\"BnM4vzrb\",\"tech_vue_10-组件2.md\":\"BLwK0HPF\",\"tech_vue_11-内置组件.md\":\"BxlTMYff\",\"tech_vue_12-vue3组合式api.md\":\"wOk9gYV6\",\"tech_vue_12-深拷贝.md\":\"Do6HNCKk\",\"tech_vue_13_vue3路由(1).md\":\"BSz42-Yn\",\"tech_vue_14_vue3路由(2).md\":\"7j__rtkc\",\"tech_vue_15_vuex状态管理.md\":\"DvRgzWZ_\",\"tech_vue_16_富文本编辑器wangeditor的使用.md\":\"xCXlwhUv\",\"tech_vue_17_vue3_excel导入导出.md\":\"BEzN8DQh\",\"tech_vue_17_vue3_vuex_js_el-plus_vite.md\":\"B3OHOJx7\",\"tech_vue_18-深拷贝.md\":\"Bsxd1bPv\",\"tech_vue_index.md\":\"C2lctmU7\",\"tech_前端工程化_docker_docker使用文档.md\":\"upz6z7rD\",\"tech_前端工程化_docker_docker静态二进制文件.md\":\"C8AvbbLw\",\"tech_前端工程化_docker_本地部署x86测试.md\":\"Dv0HaqrA\",\"tech_前端工程化_docker使用文档.md\":\"Dbte_6Rz\",\"tech_前端工程化_docker静态二进制文件.md\":\"DWkPxx9j\",\"tech_前端工程化_index.md\":\"DDiwPi6F\",\"tech_前端工程化_mack的使用文档.md\":\"BsArwKoE\",\"tech_前端工程化_nginx-clearn.md\":\"DcR6s1U3\",\"tech_前端工程化_nginx-create.md\":\"CEjE6u-7\",\"tech_前端工程化_nginx_nginx-clearn.md\":\"C-G5Cv2Z\",\"tech_前端工程化_nginx_nginx-create.md\":\"BFOylkQZ\",\"tech_前端工程化_nginx_nginx使用文档.md\":\"BrgW9Ch-\",\"tech_前端工程化_nginx_trzsz.md\":\"tUaQ1wt1\",\"tech_前端工程化_nginx使用文档.md\":\"BjYAIzBr\",\"tech_前端工程化_trzsz.md\":\"CbKml2yi\",\"tech_前端工程化_本地部署x86测试.md\":\"CErBV9Hi\",\"tech_前端微服务_index.md\":\"CLtDQJ4g\",\"tech_前端微服务_乾坤.md\":\"CV2BKHny\",\"tech_前端微服务_乾坤微服务.md\":\"Dzw1GRk-\",\"tech_小程序_01.微信小程序基础.md\":\"BXvmd14q\",\"tech_小程序_02.wxml组件和模板语法.md\":\"DlgQfP_Z\",\"tech_小程序_03.生命周期和页面逻辑.md\":\"DKYEIfCd\",\"tech_小程序_04.组件化开发.md\":\"Cbyql5E3\",\"tech_小程序_05.小程序的发布和配置.md\":\"mZQ4-U1x\",\"tech_小程序_06.常用api.md\":\"Dg35AY_l\",\"tech_小程序_07.小程序中安装sass.md\":\"B65rfaOL\",\"tech_小程序_08.小程序中使用vant.md\":\"DZDBWVJ4\",\"tech_小程序_09.自定义tabbar.md\":\"DRZVOAOI\",\"tech_小程序_10.常用组件.md\":\"BvqtIg_o\",\"tech_小程序_11.线上图标字体的处理.md\":\"CgFGKySU\",\"tech_小程序_12.wxs的使用.md\":\"jREBzV9X\",\"tech_小程序_13.微信小程序登录流程.md\":\"jDJkrDjs\",\"tech_小程序_14.api封装.md\":\"DyT1yWdA\",\"tech_小程序_15.微信授权.md\":\"DsEJ1tVm\",\"tech_小程序_16.小程序分包.md\":\"CctgohJg\",\"tech_小程序_17.微信支付.md\":\"CuR6mQ_F\",\"tech_小程序_18.webview组件.md\":\"CfRIqCE4\",\"tech_小程序_19.自定义导航栏.md\":\"DYIXWWxb\",\"tech_小程序_index.md\":\"C_l3dyrz\",\"tech_数据可视化_1.数据可视化-echarts.md\":\"BZnQ_C2k\",\"tech_数据可视化_2.可视化大屏.md\":\"CWLHrMJO\",\"tech_数据可视化_index.md\":\"BcvkrHS4\",\"tech_计算机网络_httphttps 协议.md\":\"CJvNSEMm\",\"tech_计算机网络_icmp重定向.md\":\"CS5bt5av\",\"tech_计算机网络_index.md\":\"jJu8Cw7j\",\"tech_计算机网络_ip地址、端口和协议.md\":\"DVV4qRW5\",\"tech_计算机网络_restful api开发规范.md\":\"DHxR7PB4\",\"tech_计算机网络_服务器防火墙开关.md\":\"CZKovu2V\",\"tech_计算机网络_计算机网络基础.md\":\"DPYAsH88\",\"work_index.md\":\"0Catce0a\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"Code · AI · Agent · Life\",\"description\":\"有鹏在折腾的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等\",\"base\":\"/website/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"i18nRouting\":false,\"logo\":\"/logo.png\",\"nav\":[{\"text\":\"主页\",\"link\":\"/\"},{\"text\":\"生活\",\"link\":\"/life/\"},{\"text\":\"工作\",\"link\":\"/work/\"},{\"text\":\"读书笔记\",\"link\":\"/reading/\"},{\"text\":\"项目经验\",\"link\":\"/projects/\"},{\"text\":\"技术栈\",\"link\":\"/tech/\"},{\"text\":\"前端导航\",\"link\":\"/nav/\"},{\"text\":\"友情链接\",\"link\":\"/friends/\"}],\"sidebar\":{},\"aside\":\"left\",\"outline\":{\"level\":\"deep\",\"label\":\"目录\"},\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/chenyp-01\"}],\"footer\":{},\"lastUpdated\":{\"text\":\"最后更新于\",\"formatOptions\":{\"dateStyle\":\"short\",\"timeStyle\":\"medium\"}},\"docFooter\":{\"prev\":\"上一篇\",\"next\":\"下一篇\"},\"returnToTopLabel\":\"回到顶部\",\"sidebarMenuLabel\":\"菜单\",\"darkModeSwitchLabel\":\"主题\",\"lightModeSwitchTitle\":\"切换到浅色模式\",\"darkModeSwitchTitle\":\"切换到深色模式\"},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":true}");</script>
+    
+  </body>
+</html>

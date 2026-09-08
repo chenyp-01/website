@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript | Code · AI · Agent · Life</title>
+    <meta name="description" content="有鹏在折腾的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/website/assets/style.CBfGz4-D.css" as="style">
+    <link rel="preload stylesheet" href="/website/vp-icons.css" as="style">
+    
+    <script type="module" src="/website/assets/app.BQTesUHO.js"></script>
+    <link rel="preload" href="/website/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/website/assets/chunks/theme.CYVAVoqf.js">
+    <link rel="modulepreload" href="/website/assets/chunks/framework.QMC68jD7.js">
+    <link rel="modulepreload" href="/website/assets/chunks/files-loader.DmnR_p8E.js">
+    <link rel="modulepreload" href="/website/assets/tech_Typescript_index.md.DwwAjwVl.lean.js">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="/website/favicon.ico">
+    <link rel="apple-touch-icon" href="/website/favicon.ico">
+    <link rel="mask-icon" href="/website/favicon.ico" color="#3eaf7c">
+    <meta name="msapplication-TileImage" content="/website/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body><!--teleport start anchor--><div class="m-fx" data-v-f25fa346><div class="m-fx-stage" aria-hidden="true" style="" data-v-f25fa346><i class="orb o1" data-v-f25fa346></i><i class="orb o2" data-v-f25fa346></i><i class="orb o3" data-v-f25fa346></i><i class="orb o4" data-v-f25fa346></i><i class="orb o5" data-v-f25fa346></i></div><button class="m-fx-toggle" type="button" aria-pressed="true" title="关闭彩色背景与撒花" data-v-f25fa346><span class="fx-ico" data-v-f25fa346>🎉</span></button></div><!--teleport anchor-->
+    <div id="app"><!--[--><!--teleport start--><!--teleport end--><div class="Layout m-nav-layout" data-v-3b5ac462><!--[--><!--]--><!--[--><span tabindex="-1" data-v-72f87fc7></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-72f87fc7>Skip to content</a><!--]--><!----><header class="VPNav" data-v-3b5ac462 data-v-0258cca9><div class="VPNavBar" data-v-0258cca9 data-v-7a16a9d0><div class="wrapper" data-v-7a16a9d0><div class="container" data-v-7a16a9d0><div class="title" data-v-7a16a9d0><div class="VPNavBarTitle" data-v-7a16a9d0 data-v-1c0488a9><a class="title" href="/website/" data-v-1c0488a9><!--[--><!--]--><!--[--><img class="VPImage logo" src="/website/logo.png" alt data-v-086f85ae><!--]--><span data-v-1c0488a9>Code · AI · Agent · Life</span><!--[--><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--]--></a></div></div><div class="content" data-v-7a16a9d0><div class="content-body" data-v-7a16a9d0><!--[--><!--]--><div class="VPNavBarSearch search" data-v-7a16a9d0><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-7a16a9d0 data-v-efb5d98a><span id="main-nav-aria-label" class="visually-hidden" data-v-efb5d98a> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>主页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/life/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>生活</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/work/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>工作</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/reading/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>读书笔记</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/projects/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>项目经验</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/tech/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>技术栈</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/nav/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>前端导航</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/website/friends/" tabindex="0" data-v-efb5d98a data-v-efe34889><!--[--><span data-v-efe34889>友情链接</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-7a16a9d0 data-v-d86b6ee5><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-d86b6ee5 data-v-99c90d64 data-v-4b4abca3><span class="check" data-v-4b4abca3><span class="icon" data-v-4b4abca3><!--[--><span class="vpi-sun sun" data-v-99c90d64></span><span class="vpi-moon moon" data-v-99c90d64></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-7a16a9d0 data-v-49e5eaa8 data-v-4c55e980><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenyp-01" aria-label="github" target="_blank" rel="noopener" data-v-4c55e980 data-v-608a15d2><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-7a16a9d0 data-v-f13fdc11 data-v-8271439a><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-8271439a><span class="vpi-more-horizontal icon" data-v-8271439a></span></button><div class="menu" data-v-8271439a><div class="VPMenu" data-v-8271439a data-v-31c37511><!----><!--[--><!--[--><!----><div class="group" data-v-f13fdc11><div class="item appearance" data-v-f13fdc11><p class="label" data-v-f13fdc11>主题</p><div class="appearance-action" data-v-f13fdc11><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-f13fdc11 data-v-99c90d64 data-v-4b4abca3><span class="check" data-v-4b4abca3><span class="icon" data-v-4b4abca3><!--[--><span class="vpi-sun sun" data-v-99c90d64></span><span class="vpi-moon moon" data-v-99c90d64></span><!--]--></span></span></button></div></div></div><div class="group" data-v-f13fdc11><div class="item social-links" data-v-f13fdc11><div class="VPSocialLinks social-links-list" data-v-f13fdc11 data-v-4c55e980><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenyp-01" aria-label="github" target="_blank" rel="noopener" data-v-4c55e980 data-v-608a15d2><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-7a16a9d0 data-v-64f3c72c><span class="container" data-v-64f3c72c><span class="top" data-v-64f3c72c></span><span class="middle" data-v-64f3c72c></span><span class="bottom" data-v-64f3c72c></span></span></button></div></div></div></div><div class="divider" data-v-7a16a9d0><div class="divider-line" data-v-7a16a9d0></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-3b5ac462 data-v-3a3529ab><div class="container" data-v-3a3529ab><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-3a3529ab data-v-0638e338><button data-v-0638e338>回到顶部</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-3b5ac462 data-v-ac4c840c><div class="VPDoc" data-v-ac4c840c data-v-aa9d3751><!--[--><!--]--><div class="container" data-v-aa9d3751><!----><div class="content" data-v-aa9d3751><div class="content-container" data-v-aa9d3751><!--[--><!--]--><main class="main" data-v-aa9d3751><div style="position:relative;" class="vp-doc _website_tech_Typescript_" data-v-aa9d3751><div><h1 id="javascript" tabindex="-1">JavaScript <a class="header-anchor" href="#javascript" aria-label="Permalink to &quot;JavaScript&quot;">​</a></h1><p>JavaScript 文档列表，点击任意条目即可进入对应 md 文件阅读。</p><!--[--><h2 id="文件列表" tabindex="-1" data-v-69c8db37>文件列表 <a class="header-anchor" href="#文件列表" aria-hidden="true" data-v-69c8db37></a></h2><div class="m-nav-links" data-v-69c8db37><!--[--><a class="m-nav-link" href="/website/tech/Typescript/01-TypeScript基础" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="01-TypeScript基础" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_01-typescript基础" class="title" data-v-4cce99de>01-TypeScript基础</h5></div><p class="desc" data-v-4cce99de>1. 什么是TypeScript &amp;ZeroWidthSpace;
+TypeScript入门教程： http://ts.xcatliu.com/basics/
+
+
+TypeScript是一种添加了类型系统的 JavaScript，适用于任何规模的项目
+TypeScript 是静态类型
+
+
+动态类型是指在运行时才会进行类型检查
+静态类型是指编译阶段就能确定每个变量的类型
+
+2.安装、编译 &amp;ZeroWidthSpace;
+使用typescript编译 &amp;ZeroWidthSpace;
+npm install -g typescript
+1创建tsconfig.json &amp;ZeroWidthSpace;
+参考： https://www.jianshu.com/p/c616c4f475cd
+
+该文件一定保存在项目根目录，是编译ts文件的编译选项
+
+当我们项目下面有一个 tsconfig.json 文件的时候，他就不会在检查其他文件的 ts 文件了，而是直接把 tsconfig.json 所在文件夹来当作根目录，我们可以通过 tsconfig.json 来配置 ts 的编译器行为
+javascripttsc -h  //查看帮助信息
+tsc --init //在根目录生成tsconfig.json
+12修改tsconfig.json &amp;ZeroWidthSpace;
+案例: 不允许传入null, 不允许使用any类型
+typescript// 在我们定义 属性类型 初始值的时候 允许给他赋值为 null
+let productName: string = null    // ok
+
+interface Product {
+    title: string,
+    price: number
+}
+
+function printProcutPrice(p: Product) {
+    console.log(p.price)
+}
+
+printProcutPrice(null)    // ok
+12345678910111213以上代码原本可以正常编译，但做下面修改后会报错tsconfig.json
+json{
+    &quot;compilerOptions&quot;: {
+        &quot;strictNullChecks&quot;: true,       // 严格检查 null，现在上面的的代码就会报错了
+        &quot;noImplicitAny&quot;: true           // 不允许使用隐式类型 any
+    }
+}
+123456json// 编译后文件所在目录
+&quot;outDir&quot;: &quot;./dist&quot;,
+//是否移除注释
+&quot;removeComments&quot;: true
+1234执行编译 &amp;ZeroWidthSpace;
+即使编译出错也会生成js文件
+
+使用ts-node直接编译并执行，
+
+npm i ts-node -g
+npm i @types/node -g
+
+//运行
+ts-node hello.ts
+123453.原始数据类型 &amp;ZeroWidthSpace;
+tsx
+{
+  // 字符串
+  let str: string = &quot;5&quot;
+
+  //数值
+  let num: number = 6
+
+  //布尔值
+
+  let flag: boolean = true
+
+  // null
+
+  let userInfo: null;
+
+  //undefined
+
+  let data: undefined;  
+}
+12345678910111213141516171819204. any和unknown类型 &amp;ZeroWidthSpace;
+1.任意值 any类型 &amp;ZeroWidthSpace;
+
+任意值（Any）用来表示允许赋值为任意类型。
+在任意值上访问任何属性都是允许的
+变量如果在声明的时候，未指定其类型，那么它会被识别为任意值类型
+
+tsxlet a: any = 1
+a = &quot;b&quot;
+console.log(a.a)  //undefined
+1232.unknown类型 &amp;ZeroWidthSpace;
+unknown 类型是 TS3 新增的类型，这个类型与 any 类型类似，可以设置任何的类型值，随后可以更改类型。如果事先不检查类型，使用any类型，调用了不存在的方法，编译时不会报错，代码运行时才会发现错误但是使用unknown 类型不一样，如果不进行类型判断，执行相关操作编译器就会报错test.ts
+typescriptlet val: any = 22;
+val = &quot;string value&quot;;
+val = new Array();
+val.doesnotexist(33);  //编译不报错，运行时才报错
+console.log(val);
+12345上述的错误，大家可能不会犯，但是项目大时，参与的人多时，就很难避免这样类似的问题，因此unknown 类型出现了。
+typescriptlet val: unknown = 22;
+val = &quot;string value&quot;;
+val = new Array();
+val.push(33);   // 编译报错
+console.log(val);
+12345解决方案: 先判断类型
+typescriptlet val: unknown = 22;
+val = &quot;string value&quot;;
+val = new Array();
+if (val instanceof Array) {
+    val.push(33);
+}
+console.log(val);
+1234567虽然有些麻烦，但是相比 any 类型说，更加安全，在代码编译期间，就能帮我们发现由于类型造成的问题，因此在大多的场景，建议使用 unknown 类型替代 any。
+5. 类型推论 &amp;ZeroWidthSpace;
+TypeScript 会在没有明确的指定类型的时候推测出一个类型，这就是类型推论
+tsxlet a = &quot;7&quot;
+a = 8 //报错
+12如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 any 类型而完全不被类型检查
+tsxlet a;
+a = 7
+a = &#39;c&#39;
+1236. 联合类型 &amp;ZeroWidthSpace;
+联合类型（Union Types）表示取值可以为多种类型中的一种。当 TypeScript 不确定一个联合类型的变量到底是哪个类型的时候，我们只能访问此联合类型的所有类型里共有的属性或方法下方代码编译报错：
+tsx// something.toString() 是共有方法，可以访问 ，不会报错
+function getLength(something: string | number): number {
+  return something.length; // 报错
+}
+1234联合类型的变量在被赋值的时候，会根据类型推论的规则推断出一个类型
+tsxlet myFavoriteNumber: string | number;
+myFavoriteNumber = &#39;seven&#39;;
+console.log(myFavoriteNumber.length); // 5
+myFavoriteNumber = 7;
+console.log(myFavoriteNumber.length); // 编译时报错
+123457. 对象的类型——接口 &amp;ZeroWidthSpace;
+在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。
+接口类型 &amp;ZeroWidthSpace;
+用于对「对象的形状（Shape）」进行描述。
+
+赋值的时候，变量的形状必须和接口的形状保持一致
+定义的变量比接口少了一些属性是不允许的
+多一些属性也是不允许的
+
+tsx{
+  interface Cat{
+    nickname: string,
+    age:number
+  }
+
+  let cat : Cat = {
+    nickname: &#39;a&#39;,
+    age: 7
+  }
+}
+1234567891011可选属性 &amp;ZeroWidthSpace;
+tsxinterface Cat{
+  nickname: string,
+  age:number,
+  skin?: string
+}
+12345只读属性 &amp;ZeroWidthSpace;
+希望对象中的一些字段只能在创建的时候被赋值，那么可以用 readonly 定义只读属性：只读的约束存在于第一次给对象赋值的时候，而不是第一次给只读属性赋值的时候
+tsxinterface Person {
+  readonly id: number;
+  name: string;
+  age?: number;
+}
+
+let tom: Person = {
+  id: 89757,
+  name: &#39;Tom&#39;,
+  gender: &#39;male&#39;
+};
+
+tom.id = 9527;
+123456789101112138. 数组类型 &amp;ZeroWidthSpace;
+在 TypeScript 中，数组类型有多种定义方式，比较灵活。
+使用「类型 + 方括号」来表示数组 &amp;ZeroWidthSpace;
+数组的项中不允许出现其他的类型
+tsxlet fibonacci: number[] = [1, 1, 2, 3, 5];
+1数组泛型 &amp;ZeroWidthSpace;
+{
+   let userList : Array&amp;#x3C;string&gt; = [&#39;a&#39;,&#39;b&#39;]
+}
+123用接口表示数组 &amp;ZeroWidthSpace;
+tsx{
+  interface IUser {
+    [index:number]: string
+  }
+  let userList :IUser  = [&#39;a&#39;,&#39;b&#39;]  // userList[0]
+}
+123456any 在数组中的应用 &amp;ZeroWidthSpace;
+一个比较常见的做法是，用 any 表示数组中允许出现任意类型
+tsx{
+  let num: any[] = [1,&#39;a&#39;]
+}
+1239.函数的类型 &amp;ZeroWidthSpace;
+一个函数有输入和输出，要在 TypeScript 中对其进行约束
+1. 函数声明 &amp;ZeroWidthSpace;
+需要把输入和输出都考虑到，其中函数声明的类型定义较简单
+tsx{
+  // 没有返回值
+  function fun1(x: string, y: number): void {
+    console.log(x + y)
+  }
+  fun1(&#39;1&#39;, 2)
+
+  // 有返回值
+  function fun2(x: string, y: number): string {
+    return x + y
+  }
+  fun2(&#39;1&#39;, 2)
+}
+12345678910111213
+输入多余的（或者少于要求的）参数，是不被允许的
+
+2. 函数表达式(简单了解) &amp;ZeroWidthSpace;
+tsx{
+  //myFun1通过类型推断为右边函数的类型
+  let myFun1 = function(x: string,y:number):string {
+    return x + y
+  }
+
+  //手动定义myFun2的函数类型
+  let myFun2 : (x: string,y:number) =&gt; string = function(x: string,y:number):string {
+    return x + y
+  }
+}
+1234567891011
+在 TypeScript 的类型定义中，=&amp;gt; 用来表示函数的定义，左边是输入类型，需要用括号括起来，右边是输出类型。
+
+3. 用接口定义函数的形状 &amp;ZeroWidthSpace;
+tsxinterface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+  return source.search(subString) !== -1;
+}
+123456784. 可选参数 &amp;ZeroWidthSpace;
+与接口中的可选属性类似，我们用 ? 表示可选的参数
+tsx{
+  let myFun = function(x: string,y?:number):string{
+    return x + y
+  }
+  myFun(&#39;1&#39;)
+}
+123456
+可选参数必须接在必需参数后面
+
+5. 参数默认值 &amp;ZeroWidthSpace;
+tsxfunction buildName(firstName: string, lastName: string = &#39;Cat&#39;) {
+  return firstName + &#39; &#39; + lastName;
+}
+1236. 函数重载 &amp;ZeroWidthSpace;
+我们重复定义了多次函数 reverse，前几次都是函数定义，最后一次是函数实现
+tsx{
+  function reverse(x: number): number;
+  function reverse(x: string): string;
+  function reverse(x: number | string): number | string | void {
+    if (typeof x === &#39;number&#39;) {
+      return Number(x.toString().split(&#39;&#39;).reverse().join(&#39;&#39;));
+    } else if (typeof x === &#39;string&#39;) {
+      return x.split(&#39;&#39;).reverse().join(&#39;&#39;);
+    }
+  }
+}
+123456789101110. 类型断言 &amp;ZeroWidthSpace;
+类型断言（Type Assertion）可以用来手动指定一个值的类型。
+tsx{
+  interface Cat{
+    name: string,
+    run(): void
+  }
+  interface Fish{
+    name: string,
+    swim(): void
+  }
+
+  function getName(animal: Cat | Fish){
+
+    //报错，因为只能访问Cat和Fish的共同属性
+    if (typeof animal.swim === &#39;function&#39;){
+      return true
+    }
+  }
+}
+123456789101112131415161718而有时候，我们确实需要在还不确定类型的时候就访问其中一个类型特有的属性或方法此时可以使用类型断言，将 animal 断言成 Fish
+tsxinterface Cat {
+  name: string,
+  run(): void
+}
+
+interface Fish {
+  name: string,
+  swim(): void
+}
+
+const getAnimalName = function (animal: Cat | Fish): string {
+  if (typeof (animal as Cat).run === &#39;function&#39;) {
+    // animal.run() //报错
+    (animal as Cat).run()
+  } else {
+    (animal as Fish).swim()
+  }
+  return animal.name
+}
+
+let cat: Cat = {
+  name: &#39;lucy&#39;,
+  run() {
+    console.log(&#39;run&#39;);
+  }
+}
+let fish: Fish = {
+  name: &#39;nancy&#39;,
+  swim() {
+    console.log(&#39;swim&#39;);
+  }
+}
+
+// let catname:string = getAnimalName(cat)
+let animalname: string = getAnimalName(fish)
+123456789101112131415161718192021222324252627282930313233343511. 内置对象 &amp;ZeroWidthSpace;
+tsx//
+1</p></article></a><a class="m-nav-link" href="/website/tech/Typescript/02-TypeScript进阶" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="02-TypeScript进阶" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_02-typescript进阶" class="title" data-v-4cce99de>02-TypeScript进阶</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Typescript/03-中后台项目-vue3+ts+vite+pinia-elment-plus" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="03-中后台项目-vue3+ts+vite+pinia-elment-plus" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="_03-中后台项目-vue3-ts-vite-pinia-elment-plus" class="title" data-v-4cce99de>03-中后台项目-vue3+ts+vite+pinia-elment-plus</h5></div><p class="desc" data-v-4cce99de>vue3+ts+pinia+vite+element-plus &amp;ZeroWidthSpace;
+1. 技术栈介绍 &amp;ZeroWidthSpace;
+本次创建项目需要接触到5个东西：Vue3、TypeScript、vite、pinia，element-plus 咱们来逐一解释。
+
+作为前端常用三大框架（Vue、React、Angular）之一，Vue在2020年9月18日正式发布了Vue3.0，简称Vue3
+JavaScript我们都知道，而Typescript则是JavaScript的超集，即可编译成JavaScript，相当于是在JavaScript上面加了类型约束
+vite是一种新型前端构建工具，同样出自尤大之手。使用webpack的可以看看vite，突出一个字：快
+pinia可作为vue3项目的数据存储共享，不仅API更加简洁，而且可配合ts使用，更好的实现类型推导
+
+2. 安装pnpm &amp;ZeroWidthSpace;
+同一个包 pnpm 只会安装一次，磁盘中只有一个地方写入，后面再次使用都会直接使用
+javascript//安装pnpm
+npm i pnpm -g
+
+//切换国内镜像
+pnpm config set registry https://registry.npmmirror.com/
+
+//安装依赖
+pnpm install 包名 
+
+//全局安装
+pnpm install 包名 -g
+1234567891011
+如果安装依赖出错：
+ERR_PNPM_REGISTRIES_MISMATCH  This modules directory was created using the following registries configuration: {&amp;quot;default&amp;quot;:&amp;quot;https://registry.npmjs.org/&amp;quot;}. The current configuration is {&amp;quot;default&amp;quot;:&amp;quot;https://registry.npmmirror.com/&amp;quot;}. To recreate the modules directory using the new settings, run &amp;quot;pnpm install&amp;quot;.
+
+
+解决方案:
+pnpm install
+pnpm install pnpm -g
+
+3. 创建项目 &amp;ZeroWidthSpace;
+javascript// 创建项目 my-vue3
+pnpm create vite my-vue3 --template vue-ts 
+// 进入项目目录
+cd my-vue3
+12344. 安装依赖包 &amp;ZeroWidthSpace;
+javascript// 安装依赖包
+pnpm install
+125. 运行项目 &amp;ZeroWidthSpace;
+javascript// 运行项目
+pnpm run dev
+126. 安装vscode插件volar &amp;ZeroWidthSpace;
+
+vue 对应的volar
+ts 对应的volar
+
+7. vite.config.ts配置路径别名和服务器代理 &amp;ZeroWidthSpace;
+1.配置 vite.config.ts &amp;ZeroWidthSpace;
+注意： 配置完后，1. path找不到模块  2. @路径别名无效  3. 个别同学还会出现其它错误 解决文案在最后
+tsximport { defineConfig } from &#39;vite&#39;
+import vue from &#39;@vitejs/plugin-vue&#39;
+import * as path from &#39;path&#39;
+import { resolve } from &#39;path&#39;
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [vue()],
+  resolve: {
+    //设置别名
+    alias: {
+      &quot;@&quot;:path.resolve(__dirname,&#39;src&#39;)
+    }
+  },
+    server: {
+    proxy: {
+      &quot;/api&quot;: {
+        target: &quot;http://localhost:3001&quot;,
+        changeOrigin: true,
+        rewrite: (path) =&gt; path.replace(/^\/api/, &quot;&quot;),
+      },
+    },
+  },
+})
+12345678910111213141516171819202122232.报错解决方案 &amp;ZeroWidthSpace;
+1.找不到模块“path”或其相应的类型声明 &amp;ZeroWidthSpace;
+解决方案
+javascript//安装node的类型声明文件包
+pnpm add @types/node -D
+122.路径别名@无效的情况 &amp;ZeroWidthSpace;
+解决方案：修改tsconfig.json
+json{
+  &quot;compilerOptions&quot;: {
+   // ......
+    //************************************************baseUrl和paths都需要配置--开始
+    // 解析非相对模块名的基准目录
+    &quot;baseUrl&quot;: &quot;./&quot;,
+    // 模块名到基于 baseUrl的路径映射的列表。ts文件中使用@
+    &quot;paths&quot;: {
+      &quot;@&quot;: [&quot;src&quot;],
+      &quot;@/*&quot;: [&quot;src/*&quot;]
+    }
+    //************************************************baseUrl和paths都需要配置--结束
+  },
+  &quot;include&quot;: [&quot;src/**/*.ts&quot;, &quot;src/**/*.d.ts&quot;, &quot;src/**/*.tsx&quot;, &quot;src/**/*.vue&quot;],
+  &quot;references&quot;: [{ &quot;path&quot;: &quot;./tsconfig.node.json&quot; }]
+}
+123456789101112131415163.引入vue文件找不到 &amp;ZeroWidthSpace;
+解决方案：在src/vite-env.d.ts中添加代码
+javascriptdeclare module &quot;*.vue&quot; {
+    import type { DefineComponent } from &quot;vue&quot;; 
+    const vueComponent: DefineComponent&amp;#x3C;{}, {}, any&gt;; 
+    export default vueComponent;
+}
+123454.ts.config.ts{}大括号上报红 &amp;ZeroWidthSpace;
+解决方案： 关掉vscode重启
+5.引入element-plus组件报红 &amp;ZeroWidthSpace;
+解决方案： 同下面的6
+ &amp;ZeroWidthSpace;
+6.vite.config.ts中报红 &amp;ZeroWidthSpace;
+解决方案修改ts.config.ts
+typescript// 改之前
+&quot;moduleResolution&quot;: &quot;bundler&quot;,
+// 改之后
+&quot;moduleResolution&quot;: &quot;node&quot;,
+
+// 这句话可以删除，从 TypeScript 3.8 开始，这个选项已经被废弃了
+&quot;allowImportingTsExtensions&quot;: true,
+1234567修改tsconfig.node.json
+typescript// 改之前
+&quot;moduleResolution&quot;: &quot;bundler&quot;,
+// 改之后
+&quot;moduleResolution&quot;: &quot;node&quot;,
+12348.  快速生成vue3的模板 &amp;ZeroWidthSpace;
+vscode - 文件 - 首选项 - 配置用户代码片段 - 新建全局用户代码片段文件 - 命名为vue3, - 回车粘入以下代码
+json{
+    &quot;Print to console&quot;: {
+        &quot;scope&quot;: &quot;vue&quot;, //指定文件类型，只有.vue文件可以触发
+        &quot;prefix&quot;: &quot;v3&quot;, //自定义触发指令，我这里设置输入v3按下回车即可快速生成模板
+        &quot;body&quot;: [ //定义模板内容
+            &quot;&amp;#x3C;script setup lang=&#39;ts&#39;&gt;&quot;,
+            &quot;&quot;,
+            &quot;&amp;#x3C;/script&gt;&quot;,
+            &quot;&quot;,
+            &quot;&amp;#x3C;template&gt;&quot;,
+            &quot;    &amp;#x3C;div class=\&quot;$1\&quot;&gt;&quot;,
+            &quot;       $2&quot;,
+            &quot;    &amp;#x3C;/div&gt;&quot;,
+            &quot;&amp;#x3C;/template&gt;&quot;,
+            &quot;&quot;,
+            &quot;&amp;#x3C;style lang=&#39;scss&#39; scoped&gt;&quot;,
+            &quot;&quot;,
+            &quot;&amp;#x3C;/style&gt;&quot;
+        ],
+        &quot;description&quot;: &quot;Log output to console&quot;
+    }
+}
+123456789101112131415161718192021229. sass报错 &amp;ZeroWidthSpace;
+vite有内置的sass配置信息，所以直接安装sass即可
+pnpm install sass
+110. 父向子传值 &amp;ZeroWidthSpace;
+defineProps() &amp;ZeroWidthSpace;
+typescriptinterface Props {/* ... */}
+
+defineProps&amp;#x3C;Props&gt;()
+123接口或对象字面类型可以包含从其他文件导入的类型引用，但是，传递给 defineProps 的泛型参数本身不能是一个导入的类型
+
+Parent.vue
+
+vue&amp;#x3C;script setup lang=&#39;ts&#39;&gt;
+import { ref } from &#39;vue&#39;;
+import Child from &#39;./Child.vue&#39;
+const user = ref(&quot;李四&quot;)
+&amp;#x3C;/script&gt;
+
+
+&amp;#x3C;template&gt;
+  &amp;#x3C;div class=&quot;test&quot;&gt;
+    &amp;#x3C;p&gt;{{ user }}&amp;#x3C;/p&gt;
+    &amp;#x3C;Child :user=&quot;user&quot;/&gt;
+    &amp;#x3C;!-- &amp;#x3C;p&gt;&amp;#x3C;button @click=&quot;count++&quot;&gt;修改数据&amp;#x3C;/button&gt;&amp;#x3C;/p&gt; --&gt;
+  &amp;#x3C;/div&gt;
+&amp;#x3C;/template&gt;
+
+&amp;#x3C;style lang=&#39;scss&#39; scoped&gt;
+
+&amp;#x3C;/style&gt;
+123456789101112131415161718Child.vue
+vue&amp;#x3C;script setup lang=&#39;ts&#39;&gt;
+
+interface Props {
+  user: string
+  age?: number
+}
+ 
+
+//在ts中调用要返回props
+// const props = defineProps&amp;#x3C;Props&gt;()
+// console.log(props.user)
+
+&amp;#x3C;/script&gt;
+
+&amp;#x3C;template&gt;
+    &amp;#x3C;div class=&quot;&quot;&gt;
+       &amp;#x3C;!-- child
+1234567891011121314151617</p></article></a><a class="m-nav-link" href="/website/tech/Typescript/TypeScript应用" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="TypeScript应用" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="typescript应用" class="title" data-v-4cce99de>TypeScript应用</h5></div><p class="desc" data-v-4cce99de>1. 什么是TypeScript &amp;ZeroWidthSpace;
+TypeScript入门教程： http://ts.xcatliu.com/basics/
+
+
+TypeScript是一种添加了类型系统的 JavaScript，适用于任何规模的项目
+TypeScript 是静态类型
+
+
+动态类型是指在运行时才会进行类型检查
+静态类型是指编译阶段就能确定每个变量的类型
+
+2.安装、编译 &amp;ZeroWidthSpace;
+使用typescript编译 &amp;ZeroWidthSpace;
+npm install -g typescript
+1创建tsconfig.json &amp;ZeroWidthSpace;
+参考： https://www.jianshu.com/p/c616c4f475cd
+
+该文件一定保存在项目根目录，是编译ts文件的编译选项
+
+当我们项目下面有一个 tsconfig.json 文件的时候，他就不会在检查其他文件的 ts 文件了，而是直接把 tsconfig.json 所在文件夹来当作根目录，我们可以通过 tsconfig.json 来配置 ts 的编译器行为
+javascripttsc -h  //查看帮助信息
+tsc --init //在根目录生成tsconfig.json
+12修改tsconfig.json &amp;ZeroWidthSpace;
+案例: 不允许传入null, 不允许使用any类型
+typescript// 在我们定义 属性类型 初始值的时候 允许给他赋值为 null
+let productName: string = null    // ok
+
+interface Product {
+    title: string,
+    price: number
+}
+
+function printProcutPrice(p: Product) {
+    console.log(p.price)
+}
+
+printProcutPrice(null)    // ok
+12345678910111213以上代码原本可以正常编译，但做下面修改后会报错tsconfig.json
+json{
+    &quot;compilerOptions&quot;: {
+        &quot;strictNullChecks&quot;: true,       // 严格检查 null，现在上面的的代码就会报错了
+        &quot;noImplicitAny&quot;: true           // 不允许使用隐式类型 any
+    }
+}
+123456json// 编译后文件所在目录
+&quot;outDir&quot;: &quot;./dist&quot;,
+//是否移除注释
+&quot;removeComments&quot;: true
+1234执行编译 &amp;ZeroWidthSpace;
+即使编译出错也会生成js文件
+
+使用ts-node直接编译并执行，
+
+npm i ts-node -g
+npm i @types/node -g
+
+//运行
+ts-node hello.ts
+123453.原始数据类型 &amp;ZeroWidthSpace;
+tsx
+{
+  // 字符串
+  let str: string = &quot;5&quot;
+
+  //数值
+  let num: number = 6
+
+  //布尔值
+
+  let flag: boolean = true
+
+  // null
+
+  let userInfo: null;
+
+  //undefined
+
+  let data: undefined;  
+}
+12345678910111213141516171819204. any和unknown类型 &amp;ZeroWidthSpace;
+1.任意值 any类型 &amp;ZeroWidthSpace;
+
+任意值（Any）用来表示允许赋值为任意类型。
+在任意值上访问任何属性都是允许的
+变量如果在声明的时候，未指定其类型，那么它会被识别为任意值类型
+
+tsxlet a: any = 1
+a = &quot;b&quot;
+console.log(a.a)  //undefined
+1232.unknown类型 &amp;ZeroWidthSpace;
+unknown 类型是 TS3 新增的类型，这个类型与 any 类型类似，可以设置任何的类型值，随后可以更改类型。如果事先不检查类型，使用any类型，调用了不存在的方法，编译时不会报错，代码运行时才会发现错误但是使用unknown 类型不一样，如果不进行类型判断，执行相关操作编译器就会报错test.ts
+typescriptlet val: any = 22;
+val = &quot;string value&quot;;
+val = new Array();
+val.doesnotexist(33);  //编译不报错，运行时才报错
+console.log(val);
+12345上述的错误，大家可能不会犯，但是项目大时，参与的人多时，就很难避免这样类似的问题，因此unknown 类型出现了。
+typescriptlet val: unknown = 22;
+val = &quot;string value&quot;;
+val = new Array();
+val.push(33);   // 编译报错
+console.log(val);
+12345解决方案: 先判断类型
+typescriptlet val: unknown = 22;
+val = &quot;string value&quot;;
+val = new Array();
+if (val instanceof Array) {
+    val.push(33);
+}
+console.log(val);
+1234567虽然有些麻烦，但是相比 any 类型说，更加安全，在代码编译期间，就能帮我们发现由于类型造成的问题，因此在大多的场景，建议使用 unknown 类型替代 any。
+5. 类型推论 &amp;ZeroWidthSpace;
+TypeScript 会在没有明确的指定类型的时候推测出一个类型，这就是类型推论
+tsxlet a = &quot;7&quot;   //类型字符串
+a = 8 //报错  //类型数子
+12如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 any 类型而完全不被类型检查
+tsxlet a;
+a = 7
+a = &#39;c&#39;
+1236. 联合类型 &amp;ZeroWidthSpace;
+联合类型（Union Types）表示取值可以为多种类型中的一种。当 TypeScript 不确定一个联合类型的变量到底是哪个类型的时候，我们只能访问此联合类型的所有类型里共有的属性或方法下方代码编译报错：
+tsxfunction getLength(something: string | number): number {
+  return something.length;
+}
+123联合类型的变量在被赋值的时候，会根据类型推论的规则推断出一个类型
+tsxlet myFavoriteNumber: string | number;
+myFavoriteNumber = &#39;seven&#39;;
+console.log(myFavoriteNumber.length); // 5
+myFavoriteNumber = 7;
+console.log(myFavoriteNumber.length); // 编译时报错
+123457. 对象的类型——接口 &amp;ZeroWidthSpace;
+在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。
+接口类型 &amp;ZeroWidthSpace;
+用于对「对象的形状（Shape）」进行描述。
+
+赋值的时候，变量的形状必须和接口的形状保持一致
+定义的变量比接口少了一些属性是不允许的
+多一些属性也是不允许的
+
+tsx{
+  interface Cat{
+    nickname: string,
+    age:number
+  }
+
+  let cat : Cat = {
+    nickname: &#39;a&#39;,
+    age: 7
+  }
+}
+1234567891011可选属性 &amp;ZeroWidthSpace;
+tsxinterface Cat{
+  nickname: string,
+  age:number,
+  skin?: string
+}
+12345只读属性 &amp;ZeroWidthSpace;
+希望对象中的一些字段只能在创建的时候被赋值，那么可以用 readonly 定义只读属性：只读的约束存在于第一次给对象赋值的时候，而不是第一次给只读属性赋值的时候
+tsxinterface Person {
+  readonly id: number;
+  name: string;
+  age?: number;
+}
+
+let tom: Person = {
+  id: 89757,
+  name: &#39;Tom&#39;,
+  gender: &#39;male&#39;
+};
+
+tom.id = 9527;
+123456789101112138. 数组类型 &amp;ZeroWidthSpace;
+在 TypeScript 中，数组类型有多种定义方式，比较灵活。
+使用「类型 + 方括号」来表示数组 &amp;ZeroWidthSpace;
+数组的项中不允许出现其他的类型
+tsxlet fibonacci: number[] = [1, 1, 2, 3, 5];
+1数组泛型 &amp;ZeroWidthSpace;
+{
+   let userList : Array&amp;#x3C;string&gt; = [&#39;a&#39;,&#39;b&#39;]
+}
+123用接口表示数组 &amp;ZeroWidthSpace;
+tsx{
+  interface IUser {
+    [index:number]: string
+  }
+  let userList :IUser  = [&#39;a&#39;,&#39;b&#39;]
+}
+123456any 在数组中的应用 &amp;ZeroWidthSpace;
+一个比较常见的做法是，用 any 表示数组中允许出现任意类型
+tsx{
+  let num: any[] = [1,&#39;a&#39;]
+}
+1239.函数的类型 &amp;ZeroWidthSpace;
+一个函数有输入和输出，要在 TypeScript 中对其进行约束
+1. 函数声明 &amp;ZeroWidthSpace;
+需要把输入和输出都考虑到，其中函数声明的类型定义较简单
+tsx{
+  // 没有返回值
+  function fun1(x: string, y: number): void {
+    console.log(x + y)
+  }
+  fun1(&#39;1&#39;, 2)
+
+  // 有返回值
+  function fun2(x: string, y: number): string {
+    return x + y
+  }
+  fun2(&#39;1&#39;, 2)
+}
+12345678910111213
+输入多余的（或者少于要求的）参数，是不被允许的
+
+2. 函数表达式 &amp;ZeroWidthSpace;
+tsx{
+  //myFun1通过类型推断为右边函数的类型
+  let myFun1 = function(x: string,y:number):string {
+    return x + y
+  }
+
+  //手动定义myFun2的函数类型
+  let myFun2 : (x: string,y:number)=&gt;string = function(x: string,y:number):string {
+    return x + y
+  }
+}
+1234567891011
+在 TypeScript 的类型定义中，=&amp;gt; 用来表示函数的定义，左边是输入类型，需要用括号括起来，右边是输出类型。
+
+3. 用接口定义函数的形状 &amp;ZeroWidthSpace;
+tsxinterface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+  return source.search(subString) !== -1;
+}
+123456784. 可选参数 &amp;ZeroWidthSpace;
+与接口中的可选属性类似，我们用 ? 表示可选的参数
+tsx{
+  let myFun = function(x: string,y?:number):string{
+    return x + y
+  }
+  myFun(&#39;1&#39;)
+}
+123456
+可选参数必须接在必需参数后面
+
+5. 参数默认值 &amp;ZeroWidthSpace;
+tsxfunction buildName(firstName: string, lastName: string = &#39;Cat&#39;) {
+  return firstName + &#39; &#39; + lastName;
+}
+1236. 函数重载 &amp;ZeroWidthSpace;
+我们重复定义了多次函数 reverse，前几次都是函数定义，最后一次是函数实现
+tsx{
+  function reverse(x: number): number;
+  function reverse(x: string): string;
+  function reverse(x: number | string): number | string | void {
+    if (typeof x === &#39;number&#39;) {
+      return Number(x.toString().split(&#39;&#39;).reverse().join(&#39;&#39;));
+    } else if (typeof x === &#39;string&#39;) {
+      return x.split(&#39;&#39;).reverse().join(&#39;&#39;);
+    }
+  }
+}
+123456789101110. 类型断言 &amp;ZeroWidthSpace;
+类型断言（Type Assertion）可以用来手动指定一个值的类型。
+tsx{
+  interface Cat{
+    name: string,
+    run(): void
+  }
+  interface Fish{
+    name: string,
+    swim(): void
+  }
+
+  function getName(animal: Cat | Fish){
+
+    //报错，因为只能访问Cat和Fish的共同属性
+    if (typeof animal.swim === &#39;function&#39;){
+      return true
+    }
+  }
+}
+123456789101112131415161718而有时候，我们确实需要在还不确定类型的时候就访问其中一个类型特有的属性或方法此时可以使用类型断言，将 animal 断言成 Fish
+tsxinterface Cat {
+  name: string,
+  run(): void
+}
+
+interface Fish {
+  name: string,
+  swim(): void
+}
+
+const getAnimalName = function (animal: Cat | Fish): string {
+  if (typeof (animal as Cat).run === &#39;function&#39;) {
+    // animal.run() //报错
+    (animal as Cat).run()
+  } else {
+    (animal as Fish).swim()
+  }
+  return animal.name
+}
+
+let cat: Cat = {
+  name: &#39;lucy&#39;,
+  run() {
+    console.log(&#39;run&#39;);
+  }
+}
+let fish: Fish = {
+  name: &#39;nancy&#39;,
+  swim() {
+    console.log(&#39;swim&#39;);
+  }
+}
+
+// let catname:string = getAnimalName(cat)
+let animalname: string = getAnimalName(fish)
+123456789101112131415161718192021222324252627282930313233343511. 内置对象 &amp;ZeroWidthSpace;
+tsx//
+1</p></article></a><a class="m-nav-link" href="/website/tech/Typescript/TypeScript进阶" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="TypeScript进阶" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="typescript进阶" class="title" data-v-4cce99de>TypeScript进阶</h5></div><!----></article></a><a class="m-nav-link" href="/website/tech/Typescript/装饰器" data-v-69c8db37 data-v-4cce99de><article class="box" data-v-4cce99de><div class="box-header" data-v-4cce99de><div class="icon" data-v-4cce99de><img src="🟨" alt="装饰器" onerror="this.parentElement.style.display = &#39;none&#39;" data-v-4cce99de></div><h5 id="装饰器" class="title" data-v-4cce99de>装饰器</h5></div><p class="desc" data-v-4cce99de>一、简介 &amp;ZeroWidthSpace;
+
+装饰器本质是一种特殊的函数，它可以对：类、属性、方法、参数进行扩展，同时能让代码更简洁。
+装饰器自2015年在ECMAScript-6中被提出到现在，已将近10年。
+截止目前，装饰器依然是实验性特性 ，需要开发者手动调整配置，来开启装饰器支持。
+装饰器有 5 种：
+
+1⃣类装饰器
+2⃣属性装饰器
+3⃣方法装饰器
+4⃣访问器装饰器
+5⃣参数装饰器
+
+备注：虽然TypeScript5.0中可以直接使用**类装饰器**，但为了确保其他装饰器可用，现阶段使用时，仍建议使用experimentalDecorators配置来开启装饰器支持，而且不排除在来的版本中，官方会进一步调整装饰器的相关语法！
+参考：《TypeScript 5.0发版公告》
+
+二、类装饰器 &amp;ZeroWidthSpace;
+基本语法 &amp;ZeroWidthSpace;
+INFO
+类装饰器是一个应用在类声明上的函数，可以为类添加额外的功能，或添加额外的逻辑。
+
+typescript/* 
+  Demo函数会在Person类定义时执行
+  参数说明：
+    ○ target参数是被装饰的类，即：Person
+*/
+function Demo(target: Function) {
+  console.log(target)
+}
+
+// 使用装饰器
+@Demo
+class Person { }
+123456789101112应用举例 &amp;ZeroWidthSpace;
+:::tips
+需求：定义一个装饰器，实现Person实例调用toString时返回JSON.stringify的执行结果。
+:::
+typescript// 使用装饰器重写toString方法 + 封闭其原型对象
+function CustomString(target: Function) {
+  // 向被装饰类的原型上添加自定义的 toString 方法
+  target.prototype.toString = function () {
+    return JSON.stringify(this)
+  }
+  // 封闭其原型对象，禁止随意操作其原型对象
+  Object.seal(target.prototype)
+}
+
+// 使用 CustomString 装饰器
+@CustomString
+class Person {
+  constructor(public name: string, public age: number) { }
+  speak() {
+    console.log(&#39;你好呀！&#39;)
+  }
+}
+
+/* 测试代码如下 */
+let p1 = new Person(&#39;张三&#39;, 18)
+// 输出：{&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:18}
+console.log(p1.toString())
+// 禁止随意操作其原型对象
+interface Person {
+  a: any
+}
+// Person.prototype.a = 100 // 此行会报错：Cannot add property a, object is not extensible
+// console.log(p1.a)
+1234567891011121314151617181920212223242526272829关于返回值 &amp;ZeroWidthSpace;
+INFO
+类装饰器有返回值：若类装饰器返回一个新的类，那这个新类将替换掉被装饰的类。
+类装饰器无返回值：若类装饰器无返回值或返回undefined，那被装饰的类不会被替换。
+
+typescriptfunction demo(target:Function){
+  // 装饰器有返回值时，该返回值会替换掉被装饰的类
+  return class {
+    test(){
+      console.log(200)
+      console.log(300)
+      console.log(400)
+    }
+  }
+}
+
+@demo
+class Person {
+  test(){
+    console.log(100)
+  }
+}
+
+console.log(Person)
+12345678910111213141516171819关于构造类型 &amp;ZeroWidthSpace;
+
+在 TypeScript 中，Function 类型所表示的范围十分广泛，包括：普通函数、箭头函数、方法等等。但并非Function 类型的函数都可以被 new 关键字实例化，例如箭头函数是不能被实例化的，那么 TypeScript 中概如何声明一个构造类型呢？有以下两种方式：
+
+typescript/*
+  ○ new     表示：该类型是可以用new操作符调用。
+  ○ ...args 表示：构造器可以接受【任意数量】的参数。
+  ○ any[]   表示：构造器可以接受【任意类型】的参数。
+  ○ {}      表示：返回类型是对象(非null、非undefined的对象)。
+*/
+
+// 定义Constructor类型，其含义是构造类型
+type Constructor = new (...args: any[]) =&gt; {};
+
+function test(fn:Constructor){}
+class Person {}
+test(Person)
+12345678910111213typescript// 定义一个构造类型，且包含一个静态属性 wife
+type Constructor = {
+  new(...args: any[]): {}; // 构造签名
+  wife: string; // wife属性
+};
+
+function test(fn:Constructor){}
+class Person {
+  static wife = &#39;asd&#39;
+}
+test(Person)
+1234567891011替换被装饰的类 &amp;ZeroWidthSpace;
+对于高级一些的装饰器，不仅仅是覆盖一个原型上的方法，还要有更多功能，例如添加新的方法和状态。
+:::tips
+需求：设计一个LogTime装饰器，可以给实例添加一个属性，用于记录实例对象的创建时间，再添加一个方法用于读取创建时间。
+:::
+typescript// User接口
+interface User {
+  getTime(): Date
+  log(): void
+}
+
+// 自定义类型Class
+type Constructor = new (...args: any[]) =&gt; {}
+
+// 创建一个装饰器，为类添加日志功能和创建时间
+function LogTime&amp;#x3C;T extends Constructor&gt;(target: T) {
+  return class extends target {
+    createdTime: Date;
+    constructor(...args: any[]) {
+      super(...args);
+      this.createdTime = new Date(); // 记录对象创建时间
+    }
+    getTime() {
+      return `该对象创建时间为：${this.createdTime}`;
+    }
+  };
+}
+
+@LogTime
+class User {
+  constructor(
+    public name: string,
+    public age: number
+  ) { }
+  speak() {
+    console.log(`${this.name}说：你好啊！`)
+  }
+}
+
+const user1 = new User(&#39;张三&#39;, 13);
+user1.speak()
+console.log(user1.getTime())
+12345678910111213141516171819202122232425262728293031323334353637三、装饰器工厂 &amp;ZeroWidthSpace;
+装饰器工厂是一个返回装饰器函数的函数，可以为装饰器添加参数，可以更灵活地控制装饰器的行为。
+:::tips
+需求**：**定义一个LogInfo类装饰器工厂，实现Person实例可以调用到introduce方法，且introduce中输出内容的次数，由LogInfo接收的参数决定。
+:::
+typescriptinterface Person {
+  introduce: () =&gt; void
+}
+
+// 定义一个装饰器工厂 LogInfo，它接受一个参数 n，返回一个类装饰器
+function LogInfo(n:number) {
+  // 装饰器函数，target 是被装饰的类
+  return function(target: Function){
+    target.prototype.introduce = function () {
+      for (let i = 0; i &amp;#x3C; n; i++) {
+        console.log(`我的名字：${this.name}，我的年龄：${this.age}`)
+      }
+    }
+  }
+}
+
+@LogInfo(5)
+class Person {
+  constructor(
+    public name: string,
+    public age: number
+  ) { }
+  speak() {
+    console.log(&#39;你好呀！&#39;)
+  }
+}
+
+let p1 = new Person(&#39;张三&#39;, 18)
+// console.log(p1) // 打印的p1是：_classThis，转换的JS版本比较旧时，会出现，不必纠结
+p1.speak()
+p1.introduce()
+12345678910111213141516171819202122232425262728293031四、装饰器组合 &amp;ZeroWidthSpace;
+装饰器可以组合使用，执行顺序为：先【由上到下】的执行所有的装饰器工厂，依次获取到装饰器，然后再【由下到上】执行所有的装饰器。
+typescript//装饰器
+function test1(target:Function) {
+  console.log(&#39;test1&#39;)
+}
+//装饰器工厂
+function test2() {
+  console.log(&#39;test2工厂&#39;)
+  return function (target:Function) { 
+    console.log(&#39;test2&#39;)
+  }
+}
+//装饰器工厂
+function test3() {
+  console.log(&#39;test3工厂&#39;)
+  return function (target:Function) { 
+    console.log(&#39;test3&#39;)
+  }
+}
+//装饰器
+function test4(target:Function) {
+  console.log(&#39;test4&#39;)
+}
+
+@test1
+@test2()
+@test3()
+@test4
+class Person { }
+
+/*
+  控制台打印：
+    test2工厂
+    test3工厂
+    test4
+    test3
+    test2
+    test1
+*/
+1234567891011121314151617181920212223242526272829303132333435363738typescript// 自定义类型Class
+type Constructor = new (...args: any[]) =&gt; {}
+
+interface Person {
+  introduce():void
+  getTime():void
+}
+
+// 使用装饰器重写toString方法 + 封闭其原型对象
+function customToString(target: Function) {
+  // 向被装饰类的原型上添加自定义的 toString 方法
+  target.prototype.toString = function () {
+    return JSON.stringify(this)
+  }
+  // 封闭其原型对象，禁止随意操作其原型对象
+  Object.seal(target.prototype)
+}
+
+// 创建一个装饰器，为类添加日志功能和创建时间
+function LogTime&amp;#x3C;T extends Constructor&gt;(target: T) {
+  return class extends target {
+    createdTime: Date;
+    constructor(...args: any[]) {
+      super(...args);
+      this.createdTime = new Date(); // 记录对象创建时间
+    }
+    getTime() {
+      return `该对象创建时间为：${this.createdTime}`;
+    }
+  };
+}
+
+// 定义一个装饰器工厂 LogInfo，它接受一个参数 n，返回一个类装饰器
+function LogInfo(n:number) {
+  // 装饰器函数，target 是被装饰的类
+  return function(target: Function){
+    target.prototype.introduce = function () {
+      for (let i = 0; i &amp;#x3C; n; i++) {
+        console.log(`我的名字：${this.name}，我的年龄：${this.age}`)
+      }
+    }
+  }
+}
+
+@customToString
+@LogInfo(3)
+@LogTime
+class Person {
+  constructor(
+    public name: string,
+    public age: number
+  ) { }
+  speak() {
+    console.log(&#39;你好呀！&#39;)
+  }
+}
+
+const p1 = new Person(&#39;张三&#39;,18)
+console.log(p1.toString())
+p1.introduce()
+console.log(p1.getTime())
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061五、属性装饰器 &amp;ZeroWidthSpace;
+基本语法 &amp;ZeroWidthSpace;
+typescript/* 
+  参数说明：
+    ○ target: 对于静态属性来说值是类，对于实例属性来说值是类的原型对象。
+    ○ propertyKey: 属性名。
+*/
+function Demo(target: object, propertyKey: string) {
+  console.log(target,propertyKey)
+}
+
+class Person {
+  @Demo name: string
+  @Demo age: number
+  @Demo static school:string
+
+  constructor(name: string, age: number) {
+    this.name = name
+    this.age = age
+  }
+}
+
+const p1 = new Person(&#39;张三&#39;, 18)
+123456789101112131415161718192021关于属性遮蔽 &amp;ZeroWidthSpace;
+
+如下代码中：当构造器中的this.age = age试图在实例上赋值时，实际上是调用了原型上age属性的set方法。
+
+typescriptclass Person {
+  name: string
+  age: number
+  constructor(name: string, age: number) {
+    this.name = name
+    this.age = age
+  }
+}
+
+let value = 99
+// 使用defineProperty给Person原型添加age属性，并配置对应的get与set
+Object.defineProperty(Person.prototype, &#39;age&#39;, {
+  get() {
+    return value
+  },
+  set(val) {
+    value = val
+  }
+})
+
+const p1 = new Person(&#39;张三&#39;, 18)
+console.log(p1.age) //18
+console.log(Person.prototype.age)//18
+1234567891011121314151617181920212223应用举例 &amp;ZeroWidthSpace;
+:::tips
+需求：定义一个State属性装饰器，来监视属性的修改。
+:::
+typescript// 声明一个装饰器函数 State，用于捕获数据的修改
+function State(target: object, propertyKey: string) {
+  // 存储属性的内部值
+  let key = `__${propertyKey}`;
+
+  // 使用 Object.defineProperty 替换类的原始属性
+  // 重新定义属性，使其使用自定义的 getter 和 setter
+  Object.defineProperty(target, propertyKey, {
+    get () {
+      return this[key]
+    },
+    set(newVal: string){
+      console.log(`${propertyKey}的最新值为：${newVal}`);
+      this[key] = newVal
+    },
+    enumerable: true, 
+    configurable: true,
+  });
+}
+
+class Person {
+  name: string;
+  //使用State装饰器
+  @State age: number;
+  school = &#39;atguigu&#39;;
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+const p1 = new Person(&#39;张三&#39;, 18);
+const p2 = new Person(&#39;李四&#39;, 30);
+
+p1.age = 80
+p2.age = 90
+
+console.log(&#39;
+1234567891011121314151617181920212223242526272829303132333435363738</p></article></a><!--]--></div><!--]--></div></div></main><footer class="VPDocFooter" data-v-aa9d3751 data-v-11e93384><!--[--><!--]--><div class="edit-info" data-v-11e93384><!----><div class="last-updated" data-v-11e93384><p class="VPLastUpdated" data-v-11e93384 data-v-46396952>最后更新于: <time datetime="2026-04-27T06:37:32.000Z" data-v-46396952></time></p></div></div><!----></footer><!--[--><!--[--><!--[--><!--]--><!--]--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-3b5ac462 data-v-285d3ca7><div class="container" data-v-285d3ca7><!----><!----></div></footer><!--[--><!--]--></div><!--]--></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"friends_index.md\":\"BCAkJ_YP\",\"index.md\":\"Dazr8Gld\",\"life_index.md\":\"Dq17JTE5\",\"life_posts_2026-04-26-普普通通的一天.md\":\"gnWzxfCi\",\"nav_index.md\":\"DKlmWesK\",\"projects_index.md\":\"DaDZzGEF\",\"reading_index.md\":\"X4gfrZbm\",\"tech_git_01-git使用总结.md\":\"6SJwVME4\",\"tech_git_02-团队协作的流程.md\":\"Bx5jmW6x\",\"tech_git_gitee.md\":\"D6V2Xxkm\",\"tech_git_git笔记.md\":\"SU-cO5gp\",\"tech_git_index.md\":\"Dd4ZTmqj\",\"tech_html_1.canvas绘图.md\":\"TGt2uima\",\"tech_html_2.svg矢量图.md\":\"CoXNaqry\",\"tech_html_3.地理定位-webgl版本.md\":\"IiCOFLS7\",\"tech_html_index.md\":\"CzENsegK\",\"tech_index.md\":\"5vtQAA18\",\"tech_javascript_00-重点知识总结.md\":\"BI9coLq5\",\"tech_javascript_01-javascript基础-变量声明-打印-数据类型.md\":\"BmAPecvS\",\"tech_javascript_02-运算符.md\":\"CHx2ordS\",\"tech_javascript_03-分支结构-循环结构.md\":\"CyufXYis\",\"tech_javascript_04. 函数.md\":\"BkkY2gSW\",\"tech_javascript_05-数组和对象.md\":\"B3XoU7qJ\",\"tech_javascript_06-内置对象.md\":\"DFoNRmSo\",\"tech_javascript_07_dom操作.md\":\"DN_f1j4C\",\"tech_javascript_08_获取元素常见的尺寸.md\":\"CgWk0FQC\",\"tech_javascript_09_定时器.md\":\"DSvea0gU\",\"tech_javascript_10-js中的事件.md\":\"Di_Nwzq-\",\"tech_javascript_11-dom节点的操作.md\":\"DxVpzP8Q\",\"tech_javascript_12-图片懒加载的原理和代码实现.md\":\"DECtuk5B\",\"tech_javascript_13-ajax.md\":\"DeggBbnu\",\"tech_javascript_14-json-server的使用.md\":\"D_d3PYcr\",\"tech_javascript_15-深拷贝.md\":\"Bs53OrPg\",\"tech_javascript_15-用charles抓包数据.md\":\"ByqGza6t\",\"tech_javascript_16-正则表达式.md\":\"B_FhdsiW\",\"tech_javascript_17.bom对象.md\":\"TeYK53i2\",\"tech_javascript_18.三种本地存储.md\":\"Cd2Plihn\",\"tech_javascript_19.闭包.md\":\"C5lo-tMo\",\"tech_javascript_20-构造函数和原型链.md\":\"B-IaANk9\",\"tech_javascript_21-this指向_js面向对象开发.md\":\"COJHtSEa\",\"tech_javascript_22-防抖_节流_回流_重绘.md\":\"whZFLUNd\",\"tech_javascript_es6课件.md\":\"DNnZHy_O\",\"tech_javascript_index.md\":\"QEb298w4\",\"tech_javascript_自己整理的笔记.md\":\"DtBKg8iK\",\"tech_node_01-nodejs基础（已看）.md\":\"vmCjScpk\",\"tech_node_02-nodejs的模块.md\":\"P3JtWf-_\",\"tech_node_03-express框架的使用.md\":\"oHL5_ND4\",\"tech_node_04-nodejs数据库访问.md\":\"BCoqR5Be\",\"tech_node_05-express的中间件和文件上传.md\":\"CtDkO8JV\",\"tech_node_06-结合express实现购物车逻辑前后端.md\":\"CqQPveje\",\"tech_node_07-登录注册和token的使用.md\":\"Dd0erGD6\",\"tech_node_08-websocket.md\":\"EQmwZBry\",\"tech_node_09-ejs和pug.md\":\"BWipSc9y\",\"tech_node_index.md\":\"WqX1isoA\",\"tech_node_nvm的使用.md\":\"C-iyqHPS\",\"tech_python_index.md\":\"CsucMkR7\",\"tech_python_python学习路线.md\":\"v2otwVxl\",\"tech_python_python的基础知识.md\":\"Ctgm3QzA\",\"tech_react_01-react的安装-jsx语法.md\":\"Bf6ZC8Fv\",\"tech_react_02-函数组件和react hooks.md\":\"d-88MskI\",\"tech_react_03-了解react中class组件.md\":\"D6oxcRgt\",\"tech_react_04-了解react的生命周期.md\":\"CR5Qk3mB\",\"tech_react_04-了解并记忆react的生命周期.md\":\"BOhGuB69\",\"tech_react_05-安装react devtools.md\":\"DOmE9zy_\",\"tech_react_06-react路由v6的使用.md\":\"CLYo-ji3\",\"tech_react_07-sass_antd-mobileui组件库实现swiper效果.md\":\"BccI-ibA\",\"tech_react_08-了解-受控组件和非受控组件.md\":\"DWI3kEs_\",\"tech_react_09-了解-react的纯函数和副作用的理解.md\":\"-mrZqUnA\",\"tech_react_10-react之性能优化.md\":\"D1ta4qPq\",\"tech_react_11-只背-不讲-redux状态管理.md\":\"C45mBK72\",\"tech_react_12-redux toolkit状态管理.md\":\"DdmjXEbq\",\"tech_react_13-react移动端适配的配置.md\":\"BbwcP3U4\",\"tech_react_14-老资料参考-后台管理项目开发流程.md\":\"hW-aQs3m\",\"tech_react_15-最新版-后台管理项目开发流程.md\":\"DbW_y4Ml\",\"tech_react_16-富文本编辑器wangeditor的使用.md\":\"DDqwAVi7\",\"tech_react_17-excel导入导出.md\":\"DYoEG3sf\",\"tech_react_18-权限管理之动态添加路由.md\":\"C11QliPv\",\"tech_react_index.md\":\"BlmTKBOg\",\"tech_react_react路由跳转.md\":\"DCsLkDXE\",\"tech_react_闭包，防抖，深拷贝，数组去重.md\":\"CWkbhWkH\",\"tech_typescript_01-typescript基础.md\":\"8xgfx6RS\",\"tech_typescript_02-typescript进阶.md\":\"b7jl3HgG\",\"tech_typescript_03-中后台项目-vue3_ts_vite_pinia-elment-plus.md\":\"iAaSFdrK\",\"tech_typescript_index.md\":\"DwwAjwVl\",\"tech_typescript_typescript应用.md\":\"DkxfXGno\",\"tech_typescript_typescript进阶.md\":\"Bz0UbLk0\",\"tech_typescript_装饰器.md\":\"_HWRgEyP\",\"tech_uniapp_1.uniapp框架.md\":\"BqlLVRvk\",\"tech_uniapp_2.uniapp中状态管理.md\":\"BLS2wVlg\",\"tech_uniapp_3.uview-plus的使用.md\":\"xVijVL7o\",\"tech_uniapp_4.app打包.md\":\"BBMzLdi6\",\"tech_uniapp_index.md\":\"DdJ5Wkfx\",\"tech_vue_01_vue模板语法-指令.md\":\"Bqol8skg\",\"tech_vue_02-响应式系统-method-computed-watch.md\":\"BBQkxMx3\",\"tech_vue_03_了解class和style的动态绑定.md\":\"BTjKEdI5\",\"tech_vue_04_vue3生命周期函数.md\":\"CKPqdCo_\",\"tech_vue_05_了解表单的输入绑定.md\":\"D5l0EB11\",\"tech_vue_06_vue项目搭建-单页面应用.md\":\"BaxaKW8q\",\"tech_vue_07_组件.md\":\"BsimXp7o\",\"tech_vue_07_组件1.md\":\"DYQpEooG\",\"tech_vue_09-vue3项目开发中注意事项.md\":\"BnM4vzrb\",\"tech_vue_10-组件2.md\":\"BLwK0HPF\",\"tech_vue_11-内置组件.md\":\"BxlTMYff\",\"tech_vue_12-vue3组合式api.md\":\"wOk9gYV6\",\"tech_vue_12-深拷贝.md\":\"Do6HNCKk\",\"tech_vue_13_vue3路由(1).md\":\"BSz42-Yn\",\"tech_vue_14_vue3路由(2).md\":\"7j__rtkc\",\"tech_vue_15_vuex状态管理.md\":\"DvRgzWZ_\",\"tech_vue_16_富文本编辑器wangeditor的使用.md\":\"xCXlwhUv\",\"tech_vue_17_vue3_excel导入导出.md\":\"BEzN8DQh\",\"tech_vue_17_vue3_vuex_js_el-plus_vite.md\":\"B3OHOJx7\",\"tech_vue_18-深拷贝.md\":\"Bsxd1bPv\",\"tech_vue_index.md\":\"C2lctmU7\",\"tech_前端工程化_docker_docker使用文档.md\":\"upz6z7rD\",\"tech_前端工程化_docker_docker静态二进制文件.md\":\"C8AvbbLw\",\"tech_前端工程化_docker_本地部署x86测试.md\":\"Dv0HaqrA\",\"tech_前端工程化_docker使用文档.md\":\"Dbte_6Rz\",\"tech_前端工程化_docker静态二进制文件.md\":\"DWkPxx9j\",\"tech_前端工程化_index.md\":\"DDiwPi6F\",\"tech_前端工程化_mack的使用文档.md\":\"BsArwKoE\",\"tech_前端工程化_nginx-clearn.md\":\"DcR6s1U3\",\"tech_前端工程化_nginx-create.md\":\"CEjE6u-7\",\"tech_前端工程化_nginx_nginx-clearn.md\":\"C-G5Cv2Z\",\"tech_前端工程化_nginx_nginx-create.md\":\"BFOylkQZ\",\"tech_前端工程化_nginx_nginx使用文档.md\":\"BrgW9Ch-\",\"tech_前端工程化_nginx_trzsz.md\":\"tUaQ1wt1\",\"tech_前端工程化_nginx使用文档.md\":\"BjYAIzBr\",\"tech_前端工程化_trzsz.md\":\"CbKml2yi\",\"tech_前端工程化_本地部署x86测试.md\":\"CErBV9Hi\",\"tech_前端微服务_index.md\":\"CLtDQJ4g\",\"tech_前端微服务_乾坤.md\":\"CV2BKHny\",\"tech_前端微服务_乾坤微服务.md\":\"Dzw1GRk-\",\"tech_小程序_01.微信小程序基础.md\":\"BXvmd14q\",\"tech_小程序_02.wxml组件和模板语法.md\":\"DlgQfP_Z\",\"tech_小程序_03.生命周期和页面逻辑.md\":\"DKYEIfCd\",\"tech_小程序_04.组件化开发.md\":\"Cbyql5E3\",\"tech_小程序_05.小程序的发布和配置.md\":\"mZQ4-U1x\",\"tech_小程序_06.常用api.md\":\"Dg35AY_l\",\"tech_小程序_07.小程序中安装sass.md\":\"B65rfaOL\",\"tech_小程序_08.小程序中使用vant.md\":\"DZDBWVJ4\",\"tech_小程序_09.自定义tabbar.md\":\"DRZVOAOI\",\"tech_小程序_10.常用组件.md\":\"BvqtIg_o\",\"tech_小程序_11.线上图标字体的处理.md\":\"CgFGKySU\",\"tech_小程序_12.wxs的使用.md\":\"jREBzV9X\",\"tech_小程序_13.微信小程序登录流程.md\":\"jDJkrDjs\",\"tech_小程序_14.api封装.md\":\"DyT1yWdA\",\"tech_小程序_15.微信授权.md\":\"DsEJ1tVm\",\"tech_小程序_16.小程序分包.md\":\"CctgohJg\",\"tech_小程序_17.微信支付.md\":\"CuR6mQ_F\",\"tech_小程序_18.webview组件.md\":\"CfRIqCE4\",\"tech_小程序_19.自定义导航栏.md\":\"DYIXWWxb\",\"tech_小程序_index.md\":\"C_l3dyrz\",\"tech_数据可视化_1.数据可视化-echarts.md\":\"BZnQ_C2k\",\"tech_数据可视化_2.可视化大屏.md\":\"CWLHrMJO\",\"tech_数据可视化_index.md\":\"BcvkrHS4\",\"tech_计算机网络_httphttps 协议.md\":\"CJvNSEMm\",\"tech_计算机网络_icmp重定向.md\":\"CS5bt5av\",\"tech_计算机网络_index.md\":\"jJu8Cw7j\",\"tech_计算机网络_ip地址、端口和协议.md\":\"DVV4qRW5\",\"tech_计算机网络_restful api开发规范.md\":\"DHxR7PB4\",\"tech_计算机网络_服务器防火墙开关.md\":\"CZKovu2V\",\"tech_计算机网络_计算机网络基础.md\":\"DPYAsH88\",\"work_index.md\":\"0Catce0a\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"Code · AI · Agent · Life\",\"description\":\"有鹏在折腾的日常生活，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等\",\"base\":\"/website/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"i18nRouting\":false,\"logo\":\"/logo.png\",\"nav\":[{\"text\":\"主页\",\"link\":\"/\"},{\"text\":\"生活\",\"link\":\"/life/\"},{\"text\":\"工作\",\"link\":\"/work/\"},{\"text\":\"读书笔记\",\"link\":\"/reading/\"},{\"text\":\"项目经验\",\"link\":\"/projects/\"},{\"text\":\"技术栈\",\"link\":\"/tech/\"},{\"text\":\"前端导航\",\"link\":\"/nav/\"},{\"text\":\"友情链接\",\"link\":\"/friends/\"}],\"sidebar\":{},\"aside\":\"left\",\"outline\":{\"level\":\"deep\",\"label\":\"目录\"},\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/chenyp-01\"}],\"footer\":{},\"lastUpdated\":{\"text\":\"最后更新于\",\"formatOptions\":{\"dateStyle\":\"short\",\"timeStyle\":\"medium\"}},\"docFooter\":{\"prev\":\"上一篇\",\"next\":\"下一篇\"},\"returnToTopLabel\":\"回到顶部\",\"sidebarMenuLabel\":\"菜单\",\"darkModeSwitchLabel\":\"主题\",\"lightModeSwitchTitle\":\"切换到浅色模式\",\"darkModeSwitchTitle\":\"切换到深色模式\"},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":true}");</script>
+    
+  </body>
+</html>
