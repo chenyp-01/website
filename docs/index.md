@@ -18,7 +18,6 @@ hero:
       theme: alt
     - text: 读书笔记
       link: /reading/
-      # theme: /life/
     - text: 前端导航
       link: /nav/
       theme: alt
@@ -59,6 +58,11 @@ features:
   object-fit: cover;
   cursor: pointer;
   margin-top: -40px;
+}
+
+/* hero 操作按钮：去掉浅色描边（避免浅色背景下出现"白色边框"感） */
+.m-home-layout .VPHero .actions .VPButton {
+  border: none;
 }
 
 /* 头像 hover：爱的魔力转圈圈 */
