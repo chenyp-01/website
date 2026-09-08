@@ -1,6 +1,8 @@
 /**
  * 彩色氛围背景（极光光斑）
  * 由 MBackgroundFx 组件控制显隐，浅色/深色模式自动适配
+ * 光斑颜色跟随 rainbow 动画的品牌色变量（--vp-c-brand-1 / --vp-c-brand-next）循环变化，
+ * 与首页 logo 周围的光晕渲染色保持一致
  * -------------------------------------------------------------------------- */
 
 /* 深色模式下给 body 一个更"有氛围"的深蓝紫渐变底色 */
@@ -24,13 +26,13 @@ html.dark body {
   will-change: transform;
 }
 
-/* 浅色模式：柔和糖果色 */
+/* 浅色模式：品牌色循环的柔和光斑（透明度压低，避免喧宾夺主） */
 .o1 {
   top: -22vmax;
   left: -14vmax;
   width: 72vmax;
   height: 72vmax;
-  background: radial-gradient(circle at 35% 35%, rgba(255, 158, 203, 0.4), transparent 62%);
+  background: radial-gradient(circle at 35% 35%, color-mix(in srgb, var(--vp-c-brand-1) 40%, transparent), transparent 62%);
   animation: fx-drift-1 21s ease-in-out infinite alternate;
 }
 .o2 {
@@ -38,7 +40,7 @@ html.dark body {
   right: -16vmax;
   width: 68vmax;
   height: 68vmax;
-  background: radial-gradient(circle at 60% 40%, rgba(127, 216, 255, 0.38), transparent 62%);
+  background: radial-gradient(circle at 60% 40%, color-mix(in srgb, var(--vp-c-brand-next) 38%, transparent), transparent 62%);
   animation: fx-drift-2 26s ease-in-out infinite alternate;
 }
 .o3 {
@@ -46,7 +48,7 @@ html.dark body {
   left: 8vmax;
   width: 74vmax;
   height: 74vmax;
-  background: radial-gradient(circle at 40% 60%, rgba(196, 167, 255, 0.36), transparent 62%);
+  background: radial-gradient(circle at 40% 60%, color-mix(in srgb, var(--vp-c-brand-next) 36%, transparent), transparent 62%);
   animation: fx-drift-3 24s ease-in-out infinite alternate;
 }
 .o4 {
@@ -54,7 +56,7 @@ html.dark body {
   right: 4vmax;
   width: 58vmax;
   height: 58vmax;
-  background: radial-gradient(circle at 55% 55%, rgba(155, 240, 217, 0.32), transparent 60%);
+  background: radial-gradient(circle at 55% 55%, color-mix(in srgb, var(--vp-c-brand-1) 32%, transparent), transparent 60%);
   animation: fx-drift-4 19s ease-in-out infinite alternate;
 }
 /* 底部中央：兜住页脚区域的色彩，避免底部中间一片空白 */
@@ -63,26 +65,26 @@ html.dark body {
   left: 50%;
   width: 70vmax;
   height: 46vmax;
-  background: radial-gradient(circle at 50% 30%, rgba(255, 190, 220, 0.3), transparent 62%);
+  background: radial-gradient(circle at 50% 30%, color-mix(in srgb, color-mix(in srgb, var(--vp-c-brand-1) 25%, var(--vp-c-brand-next)) 30%, transparent), transparent 62%);
   animation: fx-drift-5 22s ease-in-out infinite alternate;
   transform: translateX(-50%);
 }
 
 /* 深色模式：浓郁霓虹，压低透明度避免刺眼 */
 html.dark .o1 {
-  background: radial-gradient(circle at 35% 35%, rgba(255, 92, 176, 0.2), transparent 62%);
+  background: radial-gradient(circle at 35% 35%, color-mix(in srgb, var(--vp-c-brand-1) 20%, transparent), transparent 62%);
 }
 html.dark .o2 {
-  background: radial-gradient(circle at 60% 40%, rgba(64, 186, 255, 0.18), transparent 62%);
+  background: radial-gradient(circle at 60% 40%, color-mix(in srgb, var(--vp-c-brand-next) 18%, transparent), transparent 62%);
 }
 html.dark .o3 {
-  background: radial-gradient(circle at 40% 60%, rgba(158, 110, 255, 0.18), transparent 62%);
+  background: radial-gradient(circle at 40% 60%, color-mix(in srgb, var(--vp-c-brand-next) 18%, transparent), transparent 62%);
 }
 html.dark .o4 {
-  background: radial-gradient(circle at 55% 55%, rgba(64, 235, 190, 0.14), transparent 60%);
+  background: radial-gradient(circle at 55% 55%, color-mix(in srgb, var(--vp-c-brand-1) 14%, transparent), transparent 60%);
 }
 html.dark .o5 {
-  background: radial-gradient(circle at 50% 30%, rgba(255, 112, 180, 0.14), transparent 62%);
+  background: radial-gradient(circle at 50% 30%, color-mix(in srgb, color-mix(in srgb, var(--vp-c-brand-1) 12%, var(--vp-c-brand-next)) 14%, transparent), transparent 62%);
 }
 
 @keyframes fx-drift-1 {
