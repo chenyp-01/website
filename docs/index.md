@@ -18,6 +18,7 @@ hero:
       theme: alt
     - text: 读书笔记
       link: /reading/
+      theme: alt
     - text: 前端导航
       link: /nav/
       theme: alt

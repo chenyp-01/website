@@ -33,6 +33,18 @@ const svg = computed(() => {
   return ''
 })
 
+/** 字符串图标：路径/URL（图片）还是文本（emoji）？
+ * 图片路径按 <img> 渲染；emoji 按文本渲染（避免被当作 src 404 后隐藏） */
+const isImage = computed(() => {
+  if (typeof props.icon !== 'string') return false
+  const i = props.icon.trim()
+  return (
+    /^https?:\/\//i.test(i) ||
+    i.startsWith('/') ||
+    /\.(png|jpe?g|gif|svg|webp|ico|avif)([?#].*)?$/i.test(i)
+  )
+})
+
 const resolvedLink = computed(() => {
   if (isExternal.value) return props.link
   return withBase(normalizeInternalLink(props.link))
@@ -50,12 +62,15 @@ const resolvedLink = computed(() => {
     <article class="box">
       <div class="box-header">
         <div v-if="svg" class="icon" v-html="svg"></div>
-        <div v-else-if="icon && typeof icon === 'string'" class="icon">
+        <div v-else-if="isImage" class="icon">
           <img
             :src="withBase(icon)"
             :alt="title"
             onerror="this.parentElement.style.display = 'none'"
           />
+        </div>
+        <div v-else-if="icon && typeof icon === 'string'" class="icon">
+          <span class="icon-text">{{ icon }}</span>
         </div>
         <h5 v-if="title" :id="formatTitle" class="title">{{ title }}</h5>
       </div>
@@ -114,6 +129,9 @@ const resolvedLink = computed(() => {
     :deep(img) {
       border-radius: 4px;
       width: var(--m-nav-icon-size);
+    }
+    .icon-text {
+      line-height: 1;
     }
   }
 
