@@ -9,6 +9,7 @@ import { usePageId } from '../composables'
 import MNavVisitor from './MNavVisitor.vue'
 import MDocFooter from './MDocFooter.vue'
 import MBackgroundFx from './MBackgroundFx.vue'
+import MPlayer from './MPlayer.vue'
 
 const { Layout } = DefaultTheme
 const { isDark, theme, frontmatter } = useData()
@@ -65,6 +66,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 <template>
   <MBackgroundFx />
+  <MPlayer />
   <Layout v-bind="$attrs">
     <!--
       相关插槽
